@@ -19,7 +19,9 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 #import <FDControl/UIView+FDLayout.h>
 #import <FDControl/NSString+FDOperator.h>
+#import <FDControl/UIColor+FDColor.h>
 #else
 #import "UIView+FDLayout.h"
 #import "NSString+FDOperator.h"
+#import "UIColor+FDColor.h"
 #endif
