@@ -15,8 +15,8 @@
 		4514D20D21BFADD20076290D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D20C21BFADD20076290D /* main.m */; };
 		4514D21721BFADD20076290D /* DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D21621BFADD20076290D /* DemoTests.m */; };
 		4514D22221BFADD20076290D /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D22121BFADD20076290D /* DemoUITests.m */; };
-		4514D23021BFAE480076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D22F21BFAE480076290D /* FDControl.framework */; };
-		4514D23121BFAE480076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D22F21BFAE480076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; };
+		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4514D23221BFAE480076290D /* Embed Frameworks */ = {
+		4514D23C21BFBA990076290D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4514D23121BFAE480076290D /* FDControl.framework in Embed Frameworks */,
+				4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 		4514D21D21BFADD20076290D /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4514D22121BFADD20076290D /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		4514D22321BFADD20076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4514D22F21BFAE480076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4514D23D21BFBAA50076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4514D23021BFAE480076290D /* FDControl.framework in Frameworks */,
+				4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 		4514D1F121BFADCF0076290D = {
 			isa = PBXGroup;
 			children = (
-				4514D22F21BFAE480076290D /* FDControl.framework */,
+				4514D23D21BFBAA50076290D /* FDControl.framework */,
 				4514D1FC21BFADCF0076290D /* Demo */,
 				4514D21521BFADD20076290D /* DemoTests */,
 				4514D22021BFADD20076290D /* DemoUITests */,
@@ -161,7 +161,7 @@
 				4514D1F621BFADCF0076290D /* Sources */,
 				4514D1F721BFADCF0076290D /* Frameworks */,
 				4514D1F821BFADCF0076290D /* Resources */,
-				4514D23221BFAE480076290D /* Embed Frameworks */,
+				4514D23C21BFBA990076290D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

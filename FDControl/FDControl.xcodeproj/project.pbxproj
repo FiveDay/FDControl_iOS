@@ -10,6 +10,8 @@
 		4514D1E121BFAD8A0076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D1D721BFAD8A0076290D /* FDControl.framework */; };
 		4514D1E621BFAD8A0076290D /* FDControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D1E521BFAD8A0076290D /* FDControlTests.m */; };
 		4514D1E821BFAD8A0076290D /* FDControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D1DA21BFAD8A0076290D /* FDControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D23521BFB4420076290D /* UIView+FDLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D23621BFB4420076290D /* UIView+FDLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		4514D1E021BFAD8A0076290D /* FDControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FDControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4514D1E521BFAD8A0076290D /* FDControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDControlTests.m; sourceTree = "<group>"; };
 		4514D1E721BFAD8A0076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4514D23521BFB4420076290D /* UIView+FDLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FDLayout.h"; sourceTree = "<group>"; };
+		4514D23621BFB4420076290D /* UIView+FDLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		4514D1D921BFAD8A0076290D /* FDControl */ = {
 			isa = PBXGroup;
 			children = (
+				4514D23321BFB3450076290D /* Category */,
 				4514D1DA21BFAD8A0076290D /* FDControl.h */,
 				4514D1DB21BFAD8A0076290D /* Info.plist */,
 			);
@@ -86,6 +91,23 @@
 			path = FDControlTests;
 			sourceTree = "<group>";
 		};
+		4514D23321BFB3450076290D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4514D23421BFB3DD0076290D /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4514D23421BFB3DD0076290D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				4514D23521BFB4420076290D /* UIView+FDLayout.h */,
+				4514D23621BFB4420076290D /* UIView+FDLayout.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,6 +115,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

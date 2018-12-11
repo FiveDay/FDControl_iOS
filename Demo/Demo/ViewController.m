@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import <FDControl/FDControl.h>
+
 @interface ViewController ()
 
 @end
