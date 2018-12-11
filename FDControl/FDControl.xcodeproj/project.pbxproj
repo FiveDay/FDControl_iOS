@@ -12,6 +12,8 @@
 		4514D1E821BFAD8A0076290D /* FDControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D1DA21BFAD8A0076290D /* FDControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D23521BFB4420076290D /* UIView+FDLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D23621BFB4420076290D /* UIView+FDLayout.m */; };
+		4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D24221BFC05E0076290D /* NSString+FDOperator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24321BFC05E0076290D /* NSString+FDOperator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		4514D1E721BFAD8A0076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4514D23521BFB4420076290D /* UIView+FDLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FDLayout.h"; sourceTree = "<group>"; };
 		4514D23621BFB4420076290D /* UIView+FDLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FDLayout.m"; sourceTree = "<group>"; };
+		4514D24221BFC05E0076290D /* NSString+FDOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FDOperator.h"; sourceTree = "<group>"; };
+		4514D24321BFC05E0076290D /* NSString+FDOperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDOperator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,8 @@
 		4514D23321BFB3450076290D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				4514D24121BFBF4D0076290D /* NSString */,
+				4514D24021BFBDC40076290D /* UIColor */,
 				4514D23421BFB3DD0076290D /* UIView */,
 			);
 			path = Category;
@@ -108,6 +114,22 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
+		4514D24021BFBDC40076290D /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		4514D24121BFBF4D0076290D /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				4514D24221BFC05E0076290D /* NSString+FDOperator.h */,
+				4514D24321BFC05E0076290D /* NSString+FDOperator.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -115,6 +137,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 			);
@@ -217,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
+				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
