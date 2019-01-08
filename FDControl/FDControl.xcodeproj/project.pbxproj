@@ -16,6 +16,8 @@
 		4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24321BFC05E0076290D /* NSString+FDOperator.m */; };
 		4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D24621BFC56C0076290D /* UIColor+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24721BFC56C0076290D /* UIColor+FDColor.m */; };
+		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; };
+		4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,8 @@
 		4514D24321BFC05E0076290D /* NSString+FDOperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDOperator.m"; sourceTree = "<group>"; };
 		4514D24621BFC56C0076290D /* UIColor+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FDColor.h"; sourceTree = "<group>"; };
 		4514D24721BFC56C0076290D /* UIColor+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDColor.m"; sourceTree = "<group>"; };
+		4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDGradient.h"; sourceTree = "<group>"; };
+		4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDGradient.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		4514D1D921BFAD8A0076290D /* FDControl */ = {
 			isa = PBXGroup;
 			children = (
+				4587C99221DDE37A005AE3AB /* Control */,
 				4514D23321BFB3450076290D /* Category */,
 				4514D1DA21BFAD8A0076290D /* FDControl.h */,
 				4514D1DB21BFAD8A0076290D /* Info.plist */,
@@ -102,6 +107,7 @@
 		4514D23321BFB3450076290D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				4587C99421DDE672005AE3AB /* UIImage */,
 				4514D24121BFBF4D0076290D /* NSString */,
 				4514D24021BFBDC40076290D /* UIColor */,
 				4514D23421BFB3DD0076290D /* UIView */,
@@ -136,6 +142,30 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
+		4587C99221DDE37A005AE3AB /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				4587C99321DDE3B5005AE3AB /* Button */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		4587C99321DDE3B5005AE3AB /* Button */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		4587C99421DDE672005AE3AB /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */,
+				4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -143,6 +173,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
 				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
@@ -249,6 +280,7 @@
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
+				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
