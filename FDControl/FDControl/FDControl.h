@@ -17,10 +17,16 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FDControl/PublicHeader.h>
 
+//Control
+#import <FDControl/FDActivityIndicatorView.h>
+// Category
 #import <FDControl/UIView+FDLayout.h>
 #import <FDControl/NSString+FDOperator.h>
 #import <FDControl/UIColor+FDColor.h>
 #else
+//Control
+#import "FDActivityIndicatorView.h"
+// Category
 #import "UIView+FDLayout.h"
 #import "NSString+FDOperator.h"
 #import "UIColor+FDColor.h"

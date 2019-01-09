@@ -19,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    FDActivityIndicatorView* activity = [[FDActivityIndicatorView alloc]initWithFrame:CGRectMake(100, 200, 100, 100)];
+    [self.view addSubview:activity];
+    [activity startAnimating];
 }
 
 
