@@ -26,6 +26,8 @@
 		45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CF521E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m */; };
 		45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CF821E5C43800E5E9A9 /* FDActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CF921E5C43800E5E9A9 /* FDActivityIndicatorView.m */; };
+		45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CFC21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h */; };
+		45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		45894CF521E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorCircle.m; sourceTree = "<group>"; };
 		45894CF821E5C43800E5E9A9 /* FDActivityIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorView.h; sourceTree = "<group>"; };
 		45894CF921E5C43800E5E9A9 /* FDActivityIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorView.m; sourceTree = "<group>"; };
+		45894CFC21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallScale.h; sourceTree = "<group>"; };
+		45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallScale.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,8 @@
 			children = (
 				45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */,
 				45894CEC21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m */,
+				45894CFC21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h */,
+				45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
@@ -332,6 +339,7 @@
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
+				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
 				45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */,

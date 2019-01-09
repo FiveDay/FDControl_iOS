@@ -14,7 +14,7 @@
     
     CAShapeLayer* layer = [CAShapeLayer new];
     UIBezierPath* path = [UIBezierPath bezierPath];
-    [path addArcWithCenter:CGPointMake(size.width / 2, size.height / 1) radius:size.width / 2 startAngle:0 endAngle:M_PI * 2 clockwise:NO];
+    [path addArcWithCenter:CGPointMake(size.width / 2, size.height / 2) radius:size.width / 2 startAngle:0 endAngle:M_PI * 2 clockwise:NO];
     layer.fillColor = color.CGColor;
     layer.backgroundColor = nil;
     layer.path = path.CGPath;

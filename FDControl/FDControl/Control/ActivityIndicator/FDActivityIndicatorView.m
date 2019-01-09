@@ -8,6 +8,7 @@
 
 #import "FDActivityIndicatorView.h"
 #import "FDActivityIndicatorAnimationBallPulse.h"
+#import "FDActivityIndicatorAnimationBallScale.h"
 
 @interface FDActivityIndicatorView ()
 @property(strong, nonatomic)UIColor* tintColor;
@@ -46,7 +47,7 @@
 }
 
 - (void)setupAnimation {
-    FDActivityIndicatorAnimationBallPulse* animation = [FDActivityIndicatorAnimationBallPulse new];
+    FDActivityIndicatorAnimationBallScale* animation = [FDActivityIndicatorAnimationBallScale new];
     CGSize size = self.frame.size;
     [animation setupAnimation:self.layer size:size color:_tintColor];
 }
