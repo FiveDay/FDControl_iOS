@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface UIColor (FDColor)
+/**
+ *  [in]: hexStr looks like RGB\RGBA\RRGGBB\RRGGBBAA, also has prefix with '#' or '0X' .
+ */
 + (instancetype)colorWithHexString:(NSString *)hexStr;
 @end
