@@ -28,6 +28,8 @@
 		45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CF921E5C43800E5E9A9 /* FDActivityIndicatorView.m */; };
 		45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CFC21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h */; };
 		45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */; };
+		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
+		6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B4B4321F842360073662D /* UIImage+FDColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		45894CF921E5C43800E5E9A9 /* FDActivityIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorView.m; sourceTree = "<group>"; };
 		45894CFC21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallScale.h; sourceTree = "<group>"; };
 		45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallScale.m; sourceTree = "<group>"; };
+		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
+		6D3B4B4321F842360073662D /* UIImage+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,8 @@
 			children = (
 				4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */,
 				4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */,
+				6D3B4B4221F842360073662D /* UIImage+FDColor.h */,
+				6D3B4B4321F842360073662D /* UIImage+FDColor.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -237,6 +243,7 @@
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 				45894CF621E59B5A00E5E9A9 /* FDActivityIndicatorCircle.h in Headers */,
+				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
+				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
