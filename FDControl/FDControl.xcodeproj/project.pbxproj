@@ -28,6 +28,14 @@
 		45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CF921E5C43800E5E9A9 /* FDActivityIndicatorView.m */; };
 		45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CFC21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h */; };
 		45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */; };
+		45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936AB62241E13C0073C9E2 /* UIImageView+FDWebImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936AB72241E13C0073C9E2 /* FDWebImageDownloaderOperation.h */; };
+		45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936AB82241E13C0073C9E2 /* FDWebImageDownloader.m */; };
+		45936AC12241E13D0073C9E2 /* FDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936AB92241E13C0073C9E2 /* FDWebImageManager.h */; };
+		45936AC22241E13D0073C9E2 /* FDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936ABA2241E13C0073C9E2 /* FDWebImageManager.m */; };
+		45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936ABB2241E13C0073C9E2 /* UIImageView+FDWebImageView.m */; };
+		45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936ABC2241E13C0073C9E2 /* FDWebImageDownloaderOperation.m */; };
+		45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936ABD2241E13D0073C9E2 /* FDWebImageDownloader.h */; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
 		6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B4B4321F842360073662D /* UIImage+FDColor.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +75,14 @@
 		45894CF921E5C43800E5E9A9 /* FDActivityIndicatorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorView.m; sourceTree = "<group>"; };
 		45894CFC21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallScale.h; sourceTree = "<group>"; };
 		45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallScale.m; sourceTree = "<group>"; };
+		45936AB62241E13C0073C9E2 /* UIImageView+FDWebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDWebImageView.h"; sourceTree = "<group>"; };
+		45936AB72241E13C0073C9E2 /* FDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		45936AB82241E13C0073C9E2 /* FDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWebImageDownloader.m; sourceTree = "<group>"; };
+		45936AB92241E13C0073C9E2 /* FDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWebImageManager.h; sourceTree = "<group>"; };
+		45936ABA2241E13C0073C9E2 /* FDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWebImageManager.m; sourceTree = "<group>"; };
+		45936ABB2241E13C0073C9E2 /* UIImageView+FDWebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDWebImageView.m"; sourceTree = "<group>"; };
+		45936ABC2241E13C0073C9E2 /* FDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		45936ABD2241E13D0073C9E2 /* FDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWebImageDownloader.h; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
 		6D3B4B4321F842360073662D /* UIImage+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +185,7 @@
 		4587C99221DDE37A005AE3AB /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				45936AB52241E0D60073C9E2 /* WebImageView */,
 				45894CE921E4A58600E5E9A9 /* ActivityIndicator */,
 				4587C99321DDE3B5005AE3AB /* Button */,
 			);
@@ -226,6 +243,21 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		45936AB52241E0D60073C9E2 /* WebImageView */ = {
+			isa = PBXGroup;
+			children = (
+				45936AB62241E13C0073C9E2 /* UIImageView+FDWebImageView.h */,
+				45936ABB2241E13C0073C9E2 /* UIImageView+FDWebImageView.m */,
+				45936ABD2241E13D0073C9E2 /* FDWebImageDownloader.h */,
+				45936AB82241E13C0073C9E2 /* FDWebImageDownloader.m */,
+				45936AB72241E13C0073C9E2 /* FDWebImageDownloaderOperation.h */,
+				45936ABC2241E13C0073C9E2 /* FDWebImageDownloaderOperation.m */,
+				45936AB92241E13C0073C9E2 /* FDWebImageManager.h */,
+				45936ABA2241E13C0073C9E2 /* FDWebImageManager.m */,
+			);
+			path = WebImageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -233,12 +265,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
 				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
 				45894CF221E59A9000E5E9A9 /* FDActivityIndicatorShape.h in Headers */,
+				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
+				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
+				45936AC12241E13D0073C9E2 /* FDWebImageManager.h in Headers */,
 				45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
@@ -344,13 +380,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
+				45936AC22241E13D0073C9E2 /* FDWebImageManager.m in Sources */,
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
+				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
 				45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */,
+				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,
+				45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */,
 				45894CF321E59A9000E5E9A9 /* FDActivityIndicatorShape.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
 			);

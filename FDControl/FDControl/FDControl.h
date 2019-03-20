@@ -19,6 +19,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 //Control
 #import <FDControl/FDActivityIndicatorView.h>
+#import <FDControl/UIImageView+FDWebImageView.h>
 // Category
 #import <FDControl/UIView+FDLayout.h>
 #import <FDControl/NSString+FDOperator.h>
@@ -26,6 +27,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #else
 //Control
 #import "FDActivityIndicatorView.h"
+#import "UIIMageView+FDWebImageView.h"
 // Category
 #import "UIView+FDLayout.h"
 #import "NSString+FDOperator.h"
