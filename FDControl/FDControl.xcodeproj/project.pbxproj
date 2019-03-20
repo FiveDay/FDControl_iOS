@@ -16,6 +16,10 @@
 		4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24321BFC05E0076290D /* NSString+FDOperator.m */; };
 		4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D24621BFC56C0076290D /* UIColor+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24721BFC56C0076290D /* UIColor+FDColor.m */; };
+		45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 45820E3421EF358C0052F033 /* FDPopMenu.h */; };
+		45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3521EF358C0052F033 /* FDPopMenu.m */; };
+		45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 45820E3821EF39CB0052F033 /* FDPopMenuItem.h */; };
+		45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3921EF39CB0052F033 /* FDPopMenuItem.m */; };
 		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; };
 		4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */; };
 		45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */; };
@@ -53,6 +57,10 @@
 		4514D24321BFC05E0076290D /* NSString+FDOperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDOperator.m"; sourceTree = "<group>"; };
 		4514D24621BFC56C0076290D /* UIColor+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FDColor.h"; sourceTree = "<group>"; };
 		4514D24721BFC56C0076290D /* UIColor+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDColor.m"; sourceTree = "<group>"; };
+		45820E3421EF358C0052F033 /* FDPopMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPopMenu.h; sourceTree = "<group>"; };
+		45820E3521EF358C0052F033 /* FDPopMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPopMenu.m; sourceTree = "<group>"; };
+		45820E3821EF39CB0052F033 /* FDPopMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPopMenuItem.h; sourceTree = "<group>"; };
+		45820E3921EF39CB0052F033 /* FDPopMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPopMenuItem.m; sourceTree = "<group>"; };
 		4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDGradient.h"; sourceTree = "<group>"; };
 		4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDGradient.m"; sourceTree = "<group>"; };
 		45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallPulse.h; sourceTree = "<group>"; };
@@ -162,9 +170,21 @@
 			path = NSString;
 			sourceTree = "<group>";
 		};
+		45820E3321EF355C0052F033 /* PopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				45820E3821EF39CB0052F033 /* FDPopMenuItem.h */,
+				45820E3921EF39CB0052F033 /* FDPopMenuItem.m */,
+				45820E3421EF358C0052F033 /* FDPopMenu.h */,
+				45820E3521EF358C0052F033 /* FDPopMenu.m */,
+			);
+			path = PopMenu;
+			sourceTree = "<group>";
+		};
 		4587C99221DDE37A005AE3AB /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				45820E3321EF355C0052F033 /* PopMenu */,
 				45894CE921E4A58600E5E9A9 /* ActivityIndicator */,
 				4587C99321DDE3B5005AE3AB /* Button */,
 			);
@@ -229,10 +249,12 @@
 			files = (
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
+				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
 				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
 				45894CF221E59A9000E5E9A9 /* FDActivityIndicatorShape.h in Headers */,
+				45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */,
 				45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
@@ -337,11 +359,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
+				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
+				45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */,
 				45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */,
 				45894CF321E59A9000E5E9A9 /* FDActivityIndicatorShape.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
