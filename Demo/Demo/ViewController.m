@@ -29,6 +29,11 @@
     webImageView.height = 100;
     [webImageView fd_setImageWithURL:[NSURL URLWithString:@"http://www.pptbz.com/pptpic/UploadFiles_6909/201203/2012031220134655.jpg"]];
     [self.view addSubview:webImageView];
+    
+    NSString* string = [NSString new];
+    string = @"";
+    NSString* md5 = [string fd_toMD5String16];
+    NSLog(@"md5:%@", md5);
 }
 
 

@@ -36,6 +36,12 @@
 		45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936ABB2241E13C0073C9E2 /* UIImageView+FDWebImageView.m */; };
 		45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936ABC2241E13C0073C9E2 /* FDWebImageDownloaderOperation.m */; };
 		45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936ABD2241E13D0073C9E2 /* FDWebImageDownloader.h */; };
+		45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936AD3224361350073C9E2 /* NSString+FDMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45936AD6224361350073C9E2 /* NSString+FDMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936AD4224361350073C9E2 /* NSString+FDMD5.m */; };
+		45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936AD8224367660073C9E2 /* FDDiskCache.h */; };
+		45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936AD9224367660073C9E2 /* FDDiskCache.m */; };
+		45936ADE2243A0A20073C9E2 /* NSString+FDFileDirectory.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936ADC2243A0A20073C9E2 /* NSString+FDFileDirectory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936ADD2243A0A20073C9E2 /* NSString+FDFileDirectory.m */; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
 		6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B4B4321F842360073662D /* UIImage+FDColor.m */; };
 /* End PBXBuildFile section */
@@ -83,6 +89,12 @@
 		45936ABB2241E13C0073C9E2 /* UIImageView+FDWebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDWebImageView.m"; sourceTree = "<group>"; };
 		45936ABC2241E13C0073C9E2 /* FDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		45936ABD2241E13D0073C9E2 /* FDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWebImageDownloader.h; sourceTree = "<group>"; };
+		45936AD3224361350073C9E2 /* NSString+FDMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FDMD5.h"; sourceTree = "<group>"; };
+		45936AD4224361350073C9E2 /* NSString+FDMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDMD5.m"; sourceTree = "<group>"; };
+		45936AD8224367660073C9E2 /* FDDiskCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDDiskCache.h; sourceTree = "<group>"; };
+		45936AD9224367660073C9E2 /* FDDiskCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDDiskCache.m; sourceTree = "<group>"; };
+		45936ADC2243A0A20073C9E2 /* NSString+FDFileDirectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FDFileDirectory.h"; sourceTree = "<group>"; };
+		45936ADD2243A0A20073C9E2 /* NSString+FDFileDirectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDFileDirectory.m"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
 		6D3B4B4321F842360073662D /* UIImage+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +190,10 @@
 			children = (
 				4514D24221BFC05E0076290D /* NSString+FDOperator.h */,
 				4514D24321BFC05E0076290D /* NSString+FDOperator.m */,
+				45936AD3224361350073C9E2 /* NSString+FDMD5.h */,
+				45936AD4224361350073C9E2 /* NSString+FDMD5.m */,
+				45936ADC2243A0A20073C9E2 /* NSString+FDFileDirectory.h */,
+				45936ADD2243A0A20073C9E2 /* NSString+FDFileDirectory.m */,
 			);
 			path = NSString;
 			sourceTree = "<group>";
@@ -185,6 +201,7 @@
 		4587C99221DDE37A005AE3AB /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				45936AD7224366960073C9E2 /* DiskCache */,
 				45936AB52241E0D60073C9E2 /* WebImageView */,
 				45894CE921E4A58600E5E9A9 /* ActivityIndicator */,
 				4587C99321DDE3B5005AE3AB /* Button */,
@@ -258,6 +275,15 @@
 			path = WebImageView;
 			sourceTree = "<group>";
 		};
+		45936AD7224366960073C9E2 /* DiskCache */ = {
+			isa = PBXGroup;
+			children = (
+				45936AD8224367660073C9E2 /* FDDiskCache.h */,
+				45936AD9224367660073C9E2 /* FDDiskCache.m */,
+			);
+			path = DiskCache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,6 +291,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45936ADE2243A0A20073C9E2 /* NSString+FDFileDirectory.h in Headers */,
+				45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */,
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
@@ -279,6 +307,7 @@
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 				45894CF621E59B5A00E5E9A9 /* FDActivityIndicatorCircle.h in Headers */,
+				45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */,
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,16 +409,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
+				45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */,
 				45936AC22241E13D0073C9E2 /* FDWebImageManager.m in Sources */,
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
+				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
 				45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */,
 				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,
+				45936AD6224361350073C9E2 /* NSString+FDMD5.m in Sources */,
 				45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */,
 				45894CF321E59A9000E5E9A9 /* FDActivityIndicatorShape.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,

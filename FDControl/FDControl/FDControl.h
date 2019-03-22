@@ -23,6 +23,8 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 // Category
 #import <FDControl/UIView+FDLayout.h>
 #import <FDControl/NSString+FDOperator.h>
+#import <FDControl/NSString+FDMD5.h>
+#import <FDControl/NSString+FDFileDirectory.h>
 #import <FDControl/UIColor+FDColor.h>
 #else
 //Control
@@ -31,5 +33,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 // Category
 #import "UIView+FDLayout.h"
 #import "NSString+FDOperator.h"
+#import "NSString+FDMD5.h"
+#import "NSString+FDFileDirectory.h"
 #import "UIColor+FDColor.h"
 #endif
