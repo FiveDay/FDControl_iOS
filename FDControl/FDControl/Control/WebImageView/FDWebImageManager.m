@@ -8,9 +8,11 @@
 
 #import "FDWebImageManager.h"
 #import "FDWebImageDownloader.h"
+#import "FDMemoryCache.h"
+#import "FDDiskCache.h"
 
 @interface FDWebImageManager ()
-@property(strong, nonatomic)FDWebImageDownloader* imageDownloader;
+@property(strong, nonatomic, nonnull)FDWebImageDownloader* imageDownloader;
 @end
 
 @implementation FDWebImageManager
@@ -26,13 +28,35 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        _imageDownloader = [FDWebImageDownloader shared];
+        _imageDownloader = [FDWebImageDownloader new];
     }
     return self;
 }
 
 - (void)loadImageWith:(NSURL*)url
-            completed:(nullable FDWebImageManagerCompletedBlock)completedBlock {
-    [self.imageDownloader downloadImageWithURL:url completed:completedBlock];
+            completed:(FDWebImageManagerCompletedBlock)completedBlock {
+    FDMemoryCache* memCache = [[FDMemoryCache alloc]init];
+    NSData* data = [memCache objectForKey:url.absoluteString];
+    UIImage* image = [UIImage imageWithData:data];
+    if (data && image) {
+        completedBlock(image, nil);
+    }else {
+        FDDiskCache* diskCache = [[FDDiskCache alloc]initWithKey:url.absoluteString];
+        [diskCache queryData:^(NSData * _Nullable data) {
+            UIImage* image = [UIImage imageWithData:data];
+            if (image) {
+                completedBlock(image, nil);
+            }else {
+                [self.imageDownloader downloadImageWithURL:url completed:^(UIImage * _Nullable image, NSError * _Nullable error) {
+                    if (!error) {
+                        [diskCache storeData:UIImagePNGRepresentation(image) completion:nil];
+                        completedBlock(image, nil);
+                    }else {
+                        completedBlock(nil, error);
+                    }
+                }];
+            }
+        }];
+    }
 }
 @end

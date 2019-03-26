@@ -15,7 +15,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FDWebImageDownloader : NSObject
 
-+ (instancetype)shared;
 
 - (void)downloadImageWithURL:(NSURL*)url completed:(nullable FDWebImageDownloaderCompletedBlock)completedBlock;
 

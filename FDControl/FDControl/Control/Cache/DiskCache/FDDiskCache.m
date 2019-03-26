@@ -58,11 +58,17 @@ static void _FDDiskCacheSetGlobal(FDDiskCache* cache, NSString* key) {
         FDDiskCache* globalCache = _FDDiskCacheGetGlobao(key);
         if (globalCache) return globalCache;
         
+        _key = key;
         NSString* nameSpace = @"com.fiveday.FDDiskCache";
         NSString* cacheDirectory = [NSString fd_cacheDirectory];
         _diskRootPath = [cacheDirectory stringByAppendingPathComponent:nameSpace];
-        _fileManager = [[NSFileManager alloc]init];
-        [_fileManager createDirectoryAtPath:_diskRootPath withIntermediateDirectories:YES attributes:nil error:nil];
+        _fileManager = [NSFileManager defaultManager];
+        if (![_fileManager fileExistsAtPath:_diskRootPath]) {
+            BOOL ret = [_fileManager createDirectoryAtPath:_diskRootPath withIntermediateDirectories:YES attributes:nil error:nil];
+            if (!ret) {
+                return nil;
+            }
+        }
         
         _ioQueue = dispatch_queue_create("com.fiveday.FDDiskCache", DISPATCH_QUEUE_SERIAL);
         
@@ -71,40 +77,57 @@ static void _FDDiskCacheSetGlobal(FDDiskCache* cache, NSString* key) {
     return self;
 }
 
-- (void)storeData:(NSData*)data {
+- (void)dealloc {
+}
+
+- (void)storeData:(NSData*)data completion:(FDDiskCacheStoreCompletedBlock)completion {
     NSParameterAssert(data);
     
+    typeof(self) __weak weakSelf = self;
     dispatch_async(self.ioQueue, ^{
-        NSString* fileName = [self.key fd_toMD5String16];
-        NSString* filePath = [self.diskRootPath stringByAppendingPathComponent:fileName];
-        [self.fileManager createFileAtPath:filePath contents:data attributes:nil];
+        @synchronized (weakSelf) {
+            NSString* fileName = [weakSelf.key fd_toMD5String16];
+            NSString* filePath = [weakSelf.diskRootPath stringByAppendingPathComponent:fileName];
+            BOOL ret = [weakSelf.fileManager createFileAtPath:filePath contents:data attributes:nil];
+            if (completion) {
+                completion(ret);
+            }
+        }
     });
 }
 
 - (void)queryData:(FDDiskCacheQueryCompletedBlock)completion {
+    typeof(self) __weak weakSelf = self;
     dispatch_async(self.ioQueue, ^{
-        NSString* fileName = [self.key fd_toMD5String16];
-        NSString* filePath = [self.diskRootPath stringByAppendingPathComponent:fileName];
-        NSData* data = [NSData dataWithContentsOfFile:filePath];
-        if (completion) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                completion(data);
-            });
+        @synchronized (weakSelf) {
+            NSString* fileName = [weakSelf.key fd_toMD5String16];
+            NSString* filePath = [weakSelf.diskRootPath stringByAppendingPathComponent:fileName];
+            NSData* data = [NSData dataWithContentsOfFile:filePath];
+            if (completion) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(data);
+                });
+            }
         }
     });
 }
 
-- (void)removeData:(FDDiskCacheCompletedBlock)completion {
+- (void)removeData:(FDDiskCacheRemoveCompletedBlock)completion {
+    typeof(self) __weak weakSelf = self;
     dispatch_async(self.ioQueue, ^{
-        NSString* fileName = [self.key fd_toMD5String16];
-        NSString* filePath = [self.diskRootPath stringByAppendingPathComponent:fileName];
-        NSError* error;
-        [self.fileManager removeItemAtPath:filePath error:&error];
-        if (completion) {
-            dispatch_async(dispatch_get_main_queue(), ^{
-                completion(error);
-            });
+        @synchronized (weakSelf) {
+            NSString* fileName = [weakSelf.key fd_toMD5String16];
+            NSString* filePath = [weakSelf.diskRootPath stringByAppendingPathComponent:fileName];
+            NSError* error;
+            [weakSelf.fileManager removeItemAtPath:filePath error:&error];
+            if (completion) {
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completion(error);
+                });
+            }
         }
     });
 }
+
+
 @end

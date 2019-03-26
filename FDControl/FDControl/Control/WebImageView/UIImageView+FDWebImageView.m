@@ -11,10 +11,15 @@
 
 @implementation UIImageView (FDWebImageView)
 
-- (void)fd_setImageWithURL:(nonnull NSURL *)url {
+- (void)fd_setImageWithURL:(nonnull NSURL*)url
+          placeholderImage:(nullable UIImage*)placeholder {
+    
     NSParameterAssert(url);
     NSParameterAssert([url isKindOfClass:NSURL.class]);
     
+    if (placeholder) {
+        self.image = placeholder;
+    }
     __weak __typeof(self)wself = self;
 
     [[FDWebImageManager shared]loadImageWith:url completed:^(UIImage * _Nullable image, NSError * _Nullable error) {

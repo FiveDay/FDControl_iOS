@@ -27,7 +27,7 @@
     webImageView.top = 200;
     webImageView.width = 100;
     webImageView.height = 100;
-    [webImageView fd_setImageWithURL:[NSURL URLWithString:@"http://www.pptbz.com/pptpic/UploadFiles_6909/201203/2012031220134655.jpg"]];
+    [webImageView fd_setImageWithURL:[NSURL URLWithString:@"http://www.pptbz.com/pptpic/UploadFiles_6909/201203/2012031220134655.jpg"] placeholderImage:nil];
     [self.view addSubview:webImageView];
     
     NSString* string = [NSString new];

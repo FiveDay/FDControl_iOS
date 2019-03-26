@@ -15,10 +15,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FDWebImageDownloaderOperation : NSOperation
 
-- (instancetype)initWithRequest:(NSURLRequest*)request
-                        session:(NSURLSession*)session;
++ (instancetype)new UNAVAILABLE_ATTRIBUTE;
+- (instancetype)init UNAVAILABLE_ATTRIBUTE;
 
-- (void)addCompleteBlock:(nullable FDWebImageDownloaderOperationCompletedBlock) completedBlock;
+- (instancetype)initWithRequest:(NSURLRequest*)request
+                        session:(NSURLSession*)session
+                 completedBlock:(nullable FDWebImageDownloaderOperationCompletedBlock)completedBlock;
 @end
 
 NS_ASSUME_NONNULL_END

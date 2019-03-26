@@ -27,19 +27,17 @@
 @synthesize executing = _executing;
 @synthesize finished = _finished;
 
-- (instancetype)init {
-    @throw [NSException exceptionWithName:@"FDWebImageDonloaderOperation init error" reason:@"FDWebImageDownloaderOperation must be initialized with a request. Use the designated initializer to init." userInfo:nil];
-    return [super init];
-}
-
 - (instancetype)initWithRequest:(NSURLRequest*)request
-                        session:(NSURLSession*)session {
+                        session:(NSURLSession*)session
+                 completedBlock:(nullable FDWebImageDownloaderOperationCompletedBlock)completedBlock {
     if (self = [super init]) {
         NSParameterAssert(request);
         NSParameterAssert(session);
         
         _request = request;
         _session = session;
+        _completedBlock = completedBlock;
+
     }
     return self;
 }
@@ -53,12 +51,14 @@
         self.finished = YES;
         return;
     }
+    __weak __typeof(self) wself = self;
+    
     self.dataTask = [self.session dataTaskWithRequest:self.request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             
         }else {
             UIImage* image = [UIImage imageWithData:data];
-            self.completedBlock(image, error);
+            wself.completedBlock(image, error);
         }
     }];
     [self.dataTask resume];
@@ -90,9 +90,5 @@
     [self willChangeValueForKey:@"isExecuting"];
     _executing = executing;
     [self didChangeValueForKey:@"isExecuting"];
-}
-
-- (void)addCompleteBlock:(nullable FDWebImageDownloaderOperationCompletedBlock) completedBlock {
-    self.completedBlock = completedBlock;
 }
 @end

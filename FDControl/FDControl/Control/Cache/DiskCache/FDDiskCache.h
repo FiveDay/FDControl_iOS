@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^FDDiskCacheStoreCompletedBlock)(BOOL isSuccess);
 typedef void(^FDDiskCacheQueryCompletedBlock)(NSData* _Nullable data);
-typedef void(^FDDiskCacheCompletedBlock)(NSError* _Nullable error);
+typedef void(^FDDiskCacheRemoveCompletedBlock)(NSError* _Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,9 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable instancetype)initWithKey:(NSString*)key;
 
-- (void)storeData:(NSData*)data;
-- (void)queryData:(FDDiskCacheQueryCompletedBlock)completion;
-- (void)removeData:(FDDiskCacheCompletedBlock)completion;
+- (void)storeData:(NSData*)data completion:(nullable FDDiskCacheStoreCompletedBlock)completion;
+- (void)queryData:(nullable FDDiskCacheQueryCompletedBlock)completion;
+- (void)removeData:(nullable FDDiskCacheRemoveCompletedBlock)completion;
 
 @end
 

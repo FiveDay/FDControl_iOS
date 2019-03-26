@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (FDWebImageView)
 
-- (void)fd_setImageWithURL:(nonnull NSURL*)url;
+- (void)fd_setImageWithURL:(nonnull NSURL*)url
+          placeholderImage:(nullable UIImage*)placeholder;
 
 @end
 

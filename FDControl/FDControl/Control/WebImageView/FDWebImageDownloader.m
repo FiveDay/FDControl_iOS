@@ -18,15 +18,6 @@
 
 @implementation FDWebImageDownloader
 
-+ (instancetype)shared {
-    static FDWebImageDownloader* _instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _instance = [[self alloc]init];
-    });
-    return _instance;
-}
-
 - (instancetype)init {
     if (self = [super init]) {
         _httpHeaders = [@{@"Accept": @"image/*;q=0.8"} mutableCopy];
@@ -46,8 +37,8 @@
                    completed:(nullable FDWebImageDownloaderCompletedBlock)completedBlock; {
     NSMutableURLRequest* request = [[NSMutableURLRequest alloc]initWithURL:url];
     request.allHTTPHeaderFields = self.httpHeaders;
-    FDWebImageDownloaderOperation* op = [[FDWebImageDownloaderOperation alloc]initWithRequest:request session:self.session];
-    [op addCompleteBlock:completedBlock];
+    FDWebImageDownloaderOperation* op = [[FDWebImageDownloaderOperation alloc]initWithRequest:request session:self.session completedBlock:completedBlock];
     [self.downloadQueue addOperation:op];
 }
+
 @end
