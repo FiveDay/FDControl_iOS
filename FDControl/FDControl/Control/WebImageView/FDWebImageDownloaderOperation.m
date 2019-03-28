@@ -55,11 +55,11 @@
     
     self.dataTask = [self.session dataTaskWithRequest:self.request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            
-        }else {
-            UIImage* image = [UIImage imageWithData:data];
-            wself.completedBlock(image, error);
+            wself.completedBlock(nil, error);
+            return;
         }
+        UIImage* image = [UIImage imageWithData:data];
+        wself.completedBlock(image, error);
     }];
     [self.dataTask resume];
 }

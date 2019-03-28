@@ -22,7 +22,7 @@
     }
     __weak __typeof(self)wself = self;
 
-    [[FDWebImageManager shared]loadImageWith:url completed:^(UIImage * _Nullable image, NSError * _Nullable error) {
+    [[FDWebImageManager shared]loadImageWithURL:url completed:^(UIImage * _Nullable image, NSError * _Nullable error) {
         [[NSOperationQueue mainQueue]addOperationWithBlock:^{
             wself.image = image;
         }];

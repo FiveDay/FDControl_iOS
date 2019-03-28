@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
-- (void)loadImageWith:(nonnull NSURL*)url completed:(nullable FDWebImageManagerCompletedBlock)completedBlock;
+- (void)loadImageWithURL:(nonnull NSURL*)url completed:(nullable FDWebImageManagerCompletedBlock)completedBlock;
 
 @end
 
