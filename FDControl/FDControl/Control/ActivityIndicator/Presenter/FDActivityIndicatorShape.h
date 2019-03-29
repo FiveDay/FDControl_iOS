@@ -11,6 +11,6 @@
 
 @interface FDActivityIndicatorShape : NSObject
 
-+ (CALayer*)getCircleWith:(CGSize)size color:(UIColor*)color;
++ (CALayer*)getBallWith:(CGSize)size color:(UIColor*)color;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation FDActivityIndicatorShape
 
-+ (CALayer*)getCircleWith:(CGSize)size color:(UIColor*)color {
++ (CALayer*)getBallWith:(CGSize)size color:(UIColor*)color {
     
     CAShapeLayer* layer = [CAShapeLayer new];
     UIBezierPath* path = [UIBezierPath bezierPath];

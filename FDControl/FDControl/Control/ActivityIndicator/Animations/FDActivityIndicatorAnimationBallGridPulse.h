@@ -1,16 +1,20 @@
 //
-//  FDActivityIndicatorAnimationBallPulse.h
+//  FDActivityIndicatorAnimationBallGridPulse.h
 //  FDControl
 //
-//  Created by zhangyu528 on 2019/1/8.
+//  Created by zhangyu528 on 2019/3/28.
 //  Copyright © 2019 zhangyu528. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface FDActivityIndicatorAnimationBallPulse : NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+@interface FDActivityIndicatorAnimationBallGridPulse : NSObject
 
 - (void)setupAnimation:(CALayer*) layer color:(UIColor*)color;
 
 @end
+
+NS_ASSUME_NONNULL_END

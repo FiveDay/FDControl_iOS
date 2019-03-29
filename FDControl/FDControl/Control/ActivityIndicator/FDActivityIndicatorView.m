@@ -8,22 +8,25 @@
 
 #import "FDActivityIndicatorView.h"
 #import "FDActivityIndicatorAnimationBallPulse.h"
+#import "FDActivityIndicatorAnimationBallGridPulse.h"
 #import "FDActivityIndicatorAnimationBallScale.h"
 
 @interface FDActivityIndicatorView ()
-@property(strong, nonatomic)UIColor* tintColor;
+@property(assign, nonatomic)FDActivityIndicatorType type;
 @end
 
 @implementation FDActivityIndicatorView
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame type:(FDActivityIndicatorType)type {
     if (self = [super initWithFrame:frame]) {
+        
         self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.7];
-        _tintColor = [UIColor whiteColor];
         self.hidden = YES;
+        _tintColor = [UIColor whiteColor];
+        _type = type;
         _isAnimating = NO;
-        self.layer.speed = 0;
-        [self setupAnimation];
+
+        [self setupAnimationByType:_type];
     }
     return self;
 }
@@ -46,10 +49,27 @@
     self.layer.speed = 0;
 }
 
-- (void)setupAnimation {
-    FDActivityIndicatorAnimationBallScale* animation = [FDActivityIndicatorAnimationBallScale new];
-    CGSize size = self.frame.size;
-    [animation setupAnimation:self.layer size:size color:_tintColor];
+- (void)setupAnimationByType:(FDActivityIndicatorType)type {
+    
+    switch (type) {
+        case ballPulse: {
+            FDActivityIndicatorAnimationBallPulse* animation = [FDActivityIndicatorAnimationBallPulse new];
+            [animation setupAnimation:self.layer color:self.tintColor];
+            break;
+        }
+        case ballGridPulse: {
+            FDActivityIndicatorAnimationBallGridPulse* animation = [FDActivityIndicatorAnimationBallGridPulse new];
+            [animation setupAnimation:self.layer color:self.tintColor];
+            break;
+        }
+        case ballScale: {
+            FDActivityIndicatorAnimationBallScale* animation = [FDActivityIndicatorAnimationBallScale new];
+            [animation setupAnimation:self.layer color:self.tintColor];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 /*

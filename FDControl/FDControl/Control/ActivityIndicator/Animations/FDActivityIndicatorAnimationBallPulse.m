@@ -12,7 +12,7 @@
 
 @implementation FDActivityIndicatorAnimationBallPulse
 
-- (void)setupAnimation:(CALayer*) layer size:(CGSize)size color:(UIColor*)color {
+- (void)setupAnimation:(CALayer*) layer color:(UIColor*)color {
     // Animation
     CFTimeInterval duration = 0.75;
     CAMediaTimingFunction* timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.2 :0.68 :0.18 :1.08];
@@ -24,23 +24,25 @@
     animation.repeatCount = HUGE;
     animation.removedOnCompletion = NO;
     
-    // Draw circle
-    CGFloat circleNum = 3;
-    CGFloat circleSpacing = 2;
-    CGFloat circleSize = (size.width - (circleNum - 1)*circleSpacing) / circleNum;
+    // Draw ball layout
+    CGFloat ballNum = 3;
+    CGFloat ballSpacing = 2;
+    CGSize size = layer.bounds.size;
+
+    CGFloat ballSize = (size.width - (ballNum - 1)*ballSpacing) / ballNum;
     CGFloat x = (layer.bounds.size.width - size.width) / 2;
-    CGFloat y = (layer.bounds.size.height - circleSize) / 2;
+    CGFloat y = (layer.bounds.size.height - ballSize) / 2;
     CFTimeInterval beginTime = CACurrentMediaTime();
     NSArray<NSNumber*>* beginTimes = @[@0.12, @0.24, @0.36];
     
     for (NSInteger index = 0; index < 3; index ++) {
-        CALayer* circle = [FDActivityIndicatorShape getCircleWith:CGSizeMake(circleSize, circleSize) color:color];
-        CGRect frame = CGRectMake(x + circleSize * index + circleSpacing, y, circleSize, circleSize);
-        circle.frame = frame;
+        CALayer* ball = [FDActivityIndicatorShape getBallWith:CGSizeMake(ballSize, ballSize) color:color];
+        CGRect frame = CGRectMake(x + ballSize * index + index * ballSpacing, y, ballSize, ballSize);
+        ball.frame = frame;
         // Add animation
         animation.beginTime = beginTime + beginTimes[index].doubleValue;
-        [circle addAnimation:animation forKey:@"animation"];
-        [layer addSublayer:circle];
+        [ball addAnimation:animation forKey:@"animation"];
+        [layer addSublayer:ball];
     }
 }
 @end

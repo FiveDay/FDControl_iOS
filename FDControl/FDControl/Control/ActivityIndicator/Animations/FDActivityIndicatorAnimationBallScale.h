@@ -10,5 +10,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FDActivityIndicatorAnimationBallScale : NSObject
-- (void)setupAnimation:(CALayer*) layer size:(CGSize)size color:(UIColor*)color;
+- (void)setupAnimation:(CALayer*) layer color:(UIColor*)color;
 @end

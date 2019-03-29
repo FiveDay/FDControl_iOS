@@ -19,9 +19,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    FDActivityIndicatorView* activity = [[FDActivityIndicatorView alloc]initWithFrame:CGRectMake(100, 200, 100, 100)];
-    [self.view addSubview:activity];
-    [activity startAnimating];
+    
+    CGRect frame = CGRectMake(0, 100, 40, 40);
+    FDActivityIndicatorView* ac1 = [[FDActivityIndicatorView alloc]initWithFrame:frame type:ballScale];
+    [self.view addSubview:ac1];
+    [ac1 startAnimating];
+    
+    frame = CGRectMake(50, 100, 40, 40);
+    FDActivityIndicatorView* ac2 = [[FDActivityIndicatorView alloc]initWithFrame:frame type:ballPulse];
+    [self.view addSubview:ac2];
+    [ac2 startAnimating];
+    
+    frame = CGRectMake(100, 100, 40, 40);
+    FDActivityIndicatorView* ac3 = [[FDActivityIndicatorView alloc]initWithFrame:frame type:ballGridPulse];
+    [self.view addSubview:ac3];
+    [ac3 startAnimating];
 }
 
 
