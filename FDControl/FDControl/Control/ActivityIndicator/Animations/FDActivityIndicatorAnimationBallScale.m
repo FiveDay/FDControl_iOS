@@ -10,7 +10,19 @@
 
 #import "FDActivityIndicatorShape.h"
 
+@interface FDActivityIndicatorAnimationBallScale ()
+@property(assign, nonatomic)CGFloat radius;
+@end
+
 @implementation FDActivityIndicatorAnimationBallScale
+
+- (instancetype)initWithBallRadius:(CGFloat)radius {
+    if (self = [super init]) {
+        _radius = radius;
+    }
+    return self;
+}
+
 - (void)setupAnimation:(CALayer*)layer color:(UIColor*)color {
     
     // Scale animation
@@ -35,11 +47,9 @@
     animationGroup.removedOnCompletion = NO;
     
     //Draw circle
-    CGFloat ballRadius = layer.bounds.size.width < layer.bounds.size.height?layer.bounds.size.width:layer.bounds.size.height;
-    CGSize ballSize = CGSizeMake(ballRadius, ballRadius);
+    CGSize ballSize = CGSizeMake(self.radius * 2, self.radius * 2);
     CALayer* ball = [FDActivityIndicatorShape getBallWith:ballSize color:color];
-    ball.frame = CGRectMake(0, 0,
-                              ballSize.width, ballSize.height);
+    ball.frame = CGRectMake(0, 0, ballSize.width, ballSize.height);
     // Add animation
     [ball addAnimation:animationGroup forKey:@"animation"];
     [layer addSublayer:ball];

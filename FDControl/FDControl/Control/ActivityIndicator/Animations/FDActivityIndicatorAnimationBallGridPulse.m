@@ -9,42 +9,68 @@
 #import "FDActivityIndicatorAnimationBallGridPulse.h"
 #import "FDActivityIndicatorShape.h"
 
+@interface FDActivityIndicatorAnimationBallGridPulse ()
+@property(assign, nonatomic)CGFloat radius;
+@end
+
 @implementation FDActivityIndicatorAnimationBallGridPulse
+
+- (instancetype)initWithBallRadius:(CGFloat)radius {
+    if (self = [super init]) {
+        _radius = radius;
+    }
+    return self;
+}
 
 - (void)setupAnimation:(CALayer*) layer color:(UIColor*)color {
     
-    //Animation
-    CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
-    animation.values = @[@1, @0.3, @1];
-    animation.keyTimes = @[@0, @0.3, @1];
-    animation.removedOnCompletion = NO;
-    animation.repeatCount = HUGE;
-    CFTimeInterval duration = 0.75;
-    animation.duration = duration;
-    CAMediaTimingFunction* timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.2 :0.68 :0.18 :1.08];
-    animation.timingFunctions = @[timingFunction, timingFunction];
+    CAMediaTimingFunction* timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault];
+    
+    //Scale Animation
+    CAKeyframeAnimation* keyScaleAni = [CAKeyframeAnimation animationWithKeyPath:@"transform.scale"];
+    keyScaleAni.values = @[@1, @0.5, @1];
+    keyScaleAni.keyTimes = @[@0, @0.5, @1];
+    keyScaleAni.timingFunctions = @[timingFunction, timingFunction];
+    
+    //Opacity Animation
+    CAKeyframeAnimation* keyOpacityAni= [CAKeyframeAnimation animationWithKeyPath:@"opacity"];
+    keyOpacityAni.keyTimes = @[@0, @0.5, @1];
+    keyOpacityAni.values = @[@1, @0.7, @1];
+    keyOpacityAni.timingFunctions = @[timingFunction, timingFunction];
+
+    
+    // Animation Group
+    CAAnimationGroup* animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[keyScaleAni, keyOpacityAni];
+    animationGroup.repeatCount = HUGE;
+    animationGroup.removedOnCompletion = NO;
     
     //Draw grid circle layout
     NSInteger balls= 3;
     NSInteger groups = 3;
     CGFloat spacing = 2;
     CGSize size = layer.bounds.size;
-    CGFloat ballSize = (size.width - (balls + 1)*spacing) / balls;
-    ballSize = ballSize < (size.height - (groups + 1)*spacing) / balls? ballSize:(size.height - (groups + 1)*spacing)/balls;
-    CGFloat x = (layer.bounds.size.width - size.width) / 2;
+    CGSize ballSize = CGSizeMake(self.radius * 2, self.radius * 2);
+    CGFloat x = 0;
     CGFloat y = (layer.bounds.size.height - size.height) / 2;
     
     CFTimeInterval beginTime = CACurrentMediaTime();
-    NSArray<NSNumber*>* beginTimes = @[@0.12, @0.24, @0.36];
+    NSArray<NSNumber*>* beginTimes = @[@-0.06, @0.25, @-0.17,
+                                       @0.48, @0.31, @0.03,
+                                       @0.46, @0.78, @0.45];
+    NSArray<NSNumber*>* durations = @[@0.72, @1.02, @1.28,
+                                      @1.42, @1.45, @1.18,
+                                      @0.87, @1.45, @1.06];
     
     for (NSInteger group = 0; group < groups; group++) {
         for (NSInteger index = 0; index < balls; index++) {
-            CALayer* ball = [FDActivityIndicatorShape getBallWith:CGSizeMake(ballSize, ballSize) color:color];
-            CGRect frame = CGRectMake(x + ballSize * index + spacing, y + group * ballSize, ballSize, ballSize);
+            CALayer* ball = [FDActivityIndicatorShape getBallWith:ballSize color:color];
+            CGRect frame = CGRectMake(x + ballSize.width * index + index * spacing, y + group * ballSize.height + group * spacing, ballSize.width, ballSize.height);
             ball.frame = frame;
             //Add animation
-            animation.beginTime = beginTime + beginTimes[index].doubleValue;
-            [ball addAnimation:animation forKey:@"animation"];
+            animationGroup.duration = durations[balls * group + index].doubleValue;
+            animationGroup.beginTime = beginTime + beginTimes[balls*group + index].doubleValue;
+            [ball addAnimation:animationGroup forKey:@"animation"];
             [layer addSublayer:ball];
         }
     }

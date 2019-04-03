@@ -20,18 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    CGRect frame = CGRectMake(0, 100, 40, 40);
-    FDActivityIndicatorView* ac1 = [[FDActivityIndicatorView alloc]initWithFrame:frame type:ballScale];
+    FDActivityIndicatorView* ac1 = [[FDActivityIndicatorView alloc]initWithOrign:CGPointMake(0, 100) andBallScaleWithRadius:10];
     [self.view addSubview:ac1];
     [ac1 startAnimating];
     
-    frame = CGRectMake(50, 100, 40, 40);
-    FDActivityIndicatorView* ac2 = [[FDActivityIndicatorView alloc]initWithFrame:frame type:ballPulse];
+    FDActivityIndicatorView* ac2 = [[FDActivityIndicatorView alloc]initWithOrign:CGPointMake(0, 200) andBallPulseWithRadius:10];
     [self.view addSubview:ac2];
     [ac2 startAnimating];
     
-    frame = CGRectMake(100, 100, 40, 40);
-    FDActivityIndicatorView* ac3 = [[FDActivityIndicatorView alloc]initWithFrame:frame type:ballGridPulse];
+    FDActivityIndicatorView* ac3 = [[FDActivityIndicatorView alloc]initWithOrign:CGPointMake(0, 400) andBallGridPulseWithRadius:10];
+    ac3.tintColor = [UIColor greenColor];
     [self.view addSubview:ac3];
     [ac3 startAnimating];
 }

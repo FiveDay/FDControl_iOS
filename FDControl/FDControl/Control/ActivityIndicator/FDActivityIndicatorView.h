@@ -21,10 +21,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic)UIColor* tintColor;
 @property(assign, nonatomic, readonly)BOOL isAnimating;
 
+@property(assign, nonatomic, readonly)CGRect frame;
+@property(assign, nonatomic, readonly)CGRect bounds;
+
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithFrame:(CGRect)frame UNAVAILABLE_ATTRIBUTE;
 
-- (instancetype)initWithFrame:(CGRect)frame type:(FDActivityIndicatorType)type;
+- (instancetype)initWithOrign:(CGPoint)orign andBallScaleWithRadius:(CGFloat)radius;
+- (instancetype)initWithOrign:(CGPoint)orign andBallPulseWithRadius:(CGFloat)radius;
+- (instancetype)initWithOrign:(CGPoint)orign andBallGridPulseWithRadius:(CGFloat)radius;
 
 - (void)startAnimating;
 - (void)stopAnimating;

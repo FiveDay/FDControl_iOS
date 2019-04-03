@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FDActivityIndicatorAnimationBallGridPulse : NSObject
 
+- (instancetype)initWithBallRadius:(CGFloat)radius;
+
 - (void)setupAnimation:(CALayer*) layer color:(UIColor*)color;
 
 @end

@@ -11,6 +11,8 @@
 
 @interface FDActivityIndicatorAnimationBallPulse : NSObject
 
+- (instancetype)initWithBallRadius:(CGFloat)radius;
+
 - (void)setupAnimation:(CALayer*) layer color:(UIColor*)color;
 
 @end

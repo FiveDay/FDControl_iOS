@@ -10,7 +10,17 @@
 
 #import "FDActivityIndicatorShape.h"
 
+@interface FDActivityIndicatorAnimationBallPulse ()
+@property(assign, nonatomic)CGFloat radius;
+@end
 @implementation FDActivityIndicatorAnimationBallPulse
+
+- (instancetype)initWithBallRadius:(CGFloat)radius {
+    if (self = [super init]) {
+        _radius = radius;
+    }
+    return self;
+}
 
 - (void)setupAnimation:(CALayer*) layer color:(UIColor*)color {
     // Animation
@@ -27,17 +37,16 @@
     // Draw ball layout
     CGFloat ballNum = 3;
     CGFloat ballSpacing = 2;
-    CGSize size = layer.bounds.size;
 
-    CGFloat ballSize = (size.width - (ballNum - 1)*ballSpacing) / ballNum;
-    CGFloat x = (layer.bounds.size.width - size.width) / 2;
-    CGFloat y = (layer.bounds.size.height - ballSize) / 2;
+    CGSize ballSize = CGSizeMake(self.radius * 2, self.radius * 2);
+    CGFloat x = 0;
+    CGFloat y = (layer.bounds.size.height - ballSize.height) / 2;
     CFTimeInterval beginTime = CACurrentMediaTime();
     NSArray<NSNumber*>* beginTimes = @[@0.12, @0.24, @0.36];
     
-    for (NSInteger index = 0; index < 3; index ++) {
-        CALayer* ball = [FDActivityIndicatorShape getBallWith:CGSizeMake(ballSize, ballSize) color:color];
-        CGRect frame = CGRectMake(x + ballSize * index + index * ballSpacing, y, ballSize, ballSize);
+    for (NSInteger index = 0; index < ballNum; index ++) {
+        CALayer* ball = [FDActivityIndicatorShape getBallWith:ballSize color:color];
+        CGRect frame = CGRectMake(x + ballSize.width * index + index * ballSpacing, y, ballSize.width, ballSize.height);
         ball.frame = frame;
         // Add animation
         animation.beginTime = beginTime + beginTimes[index].doubleValue;
