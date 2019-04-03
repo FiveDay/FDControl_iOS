@@ -6,7 +6,8 @@
 //  Copyright © 2019 zhangyu528. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FDAnimationView.h"
+
 
 typedef enum : NSUInteger {
     ballPulse,
@@ -16,10 +17,12 @@ typedef enum : NSUInteger {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDActivityIndicatorView : UIView
+@interface FDActivityIndicatorView : FDAnimationView {
+@private
+    FDActivityIndicatorType _type;
+}
 
 @property(strong, nonatomic)UIColor* tintColor;
-@property(assign, nonatomic, readonly)BOOL isAnimating;
 
 @property(assign, nonatomic, readonly)CGRect frame;
 @property(assign, nonatomic, readonly)CGRect bounds;
@@ -31,8 +34,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithOrign:(CGPoint)orign andBallPulseWithRadius:(CGFloat)radius;
 - (instancetype)initWithOrign:(CGPoint)orign andBallGridPulseWithRadius:(CGFloat)radius;
 
-- (void)startAnimating;
-- (void)stopAnimating;
 
 @end
 

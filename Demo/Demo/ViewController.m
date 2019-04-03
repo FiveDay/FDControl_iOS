@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    FDActivityIndicatorView* ac1 = [[FDActivityIndicatorView alloc]initWithOrign:CGPointMake(0, 100) andBallScaleWithRadius:10];
+    FDActivityIndicatorView* ac1 = [[FDActivityIndicatorView alloc]initWithOrign:CGPointMake(0, 100) andBallScaleWithRadius:30];
     [self.view addSubview:ac1];
     [ac1 startAnimating];
     
