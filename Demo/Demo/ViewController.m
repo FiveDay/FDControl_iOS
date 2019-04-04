@@ -32,6 +32,11 @@
     ac3.tintColor = [UIColor greenColor];
     [self.view addSubview:ac3];
     [ac3 startAnimating];
+    
+    FDActivityIndicatorView* ac4 = [[FDActivityIndicatorView alloc]initWithOrign:CGPointMake(0, 500) andBallClipRotateRadius:60];
+    ac4.tintColor = [UIColor redColor];
+    [self.view addSubview:ac4];
+    [ac4 startAnimating];
 }
 
 

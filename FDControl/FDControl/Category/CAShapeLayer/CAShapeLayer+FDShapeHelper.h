@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CAShapeLayer (FDShapeHelper)
 
 + (CAShapeLayer*)dotShapeLayer:(CGSize)size color:(CGColorRef)color;
++ (CAShapeLayer*)circleThirdFourShapeLayer:(CGSize)size color:(CGColorRef)color;
 
 @end
 

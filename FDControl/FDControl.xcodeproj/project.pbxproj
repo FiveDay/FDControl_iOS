@@ -22,6 +22,8 @@
 		453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F3C2254B96B006CC30A /* FDAnimationView.m */; };
 		453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F402254C552006CC30A /* CAShapeLayer+FDShapeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F412254C552006CC30A /* CAShapeLayer+FDShapeHelper.m */; };
+		453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F442255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h */; };
+		453A6F472255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F452255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m */; };
 		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; };
 		4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */; };
 		45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */; };
@@ -67,6 +69,8 @@
 		453A6F3C2254B96B006CC30A /* FDAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAnimationView.m; sourceTree = "<group>"; };
 		453A6F402254C552006CC30A /* CAShapeLayer+FDShapeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+FDShapeHelper.h"; sourceTree = "<group>"; };
 		453A6F412254C552006CC30A /* CAShapeLayer+FDShapeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+FDShapeHelper.m"; sourceTree = "<group>"; };
+		453A6F442255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallClipRotate.h; sourceTree = "<group>"; };
+		453A6F452255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallClipRotate.m; sourceTree = "<group>"; };
 		4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDGradient.h"; sourceTree = "<group>"; };
 		4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDGradient.m"; sourceTree = "<group>"; };
 		45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallPulse.h; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 				45894CFD21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m */,
 				453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */,
 				453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */,
+				453A6F442255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h */,
+				453A6F452255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
+				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
@@ -381,6 +388,7 @@
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
 				45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */,
+				453A6F472255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m in Sources */,
 				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
 				45894CF321E59A9000E5E9A9 /* FDActivityIndicatorShape.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,

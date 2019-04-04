@@ -12,7 +12,9 @@
 typedef enum : NSUInteger {
     ballPulse,
     ballGridPulse,
-    ballScale,
+    ballClipRotate,
+    squareSpin,
+    ballScale = 12,
 } FDActivityIndicatorType;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -33,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithOrign:(CGPoint)orign andBallScaleWithRadius:(CGFloat)radius;
 - (instancetype)initWithOrign:(CGPoint)orign andBallPulseWithRadius:(CGFloat)radius;
 - (instancetype)initWithOrign:(CGPoint)orign andBallGridPulseWithRadius:(CGFloat)radius;
-
+- (instancetype)initWithOrign:(CGPoint)orign andBallClipRotateRadius:(CGFloat)radius;
 
 @end
 

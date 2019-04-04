@@ -10,6 +10,7 @@
 
 #import "FDActivityIndicatorAnimationBallPulse.h"
 #import "FDActivityIndicatorAnimationBallGridPulse.h"
+#import "FDActivityIndicatorAnimationBallClipRotate.h"
 #import "FDActivityIndicatorAnimationBallScale.h"
 
 @interface FDActivityIndicatorView ()
@@ -51,6 +52,16 @@
     return self;
 }
 
+- (instancetype)initWithOrign:(CGPoint)orign andBallClipRotateRadius:(CGFloat)radius {
+    CGRect frame = CGRectMake(orign.x, orign.y, radius * 2, radius * 2);
+    if (self = [super initWithFrame:frame]) {
+        _radius = radius;
+        _type = ballClipRotate;
+        _tintColor = [UIColor blueColor];
+    }
+    return self;
+}
+
 - (void)setupAnimation {
     [super setupAnimation];
     
@@ -65,6 +76,11 @@
             [_animation setupAnimation:self.layer color:self.tintColor];
             break;
         }
+        case ballClipRotate: {
+            _animation = [[FDActivityIndicatorAnimationBallClipRotate alloc]initWithRadius:self.radius];
+            [_animation setupAnimation:self.layer color:self.tintColor];
+            break;
+        }
         case ballScale: {
             _animation = [[FDActivityIndicatorAnimationBallScale alloc]initWithBallRadius:self.radius];
             [_animation setupAnimation:self.layer color:self.tintColor];
@@ -74,8 +90,5 @@
             break;
     }
 }
-
-
-
 
 @end
