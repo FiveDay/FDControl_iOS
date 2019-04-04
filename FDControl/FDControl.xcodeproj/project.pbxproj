@@ -20,6 +20,8 @@
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F3C2254B96B006CC30A /* FDAnimationView.m */; };
+		453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F402254C552006CC30A /* CAShapeLayer+FDShapeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F412254C552006CC30A /* CAShapeLayer+FDShapeHelper.m */; };
 		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; };
 		4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */; };
 		45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */; };
@@ -63,6 +65,8 @@
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
 		453A6F3C2254B96B006CC30A /* FDAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAnimationView.m; sourceTree = "<group>"; };
+		453A6F402254C552006CC30A /* CAShapeLayer+FDShapeHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+FDShapeHelper.h"; sourceTree = "<group>"; };
+		453A6F412254C552006CC30A /* CAShapeLayer+FDShapeHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CAShapeLayer+FDShapeHelper.m"; sourceTree = "<group>"; };
 		4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDGradient.h"; sourceTree = "<group>"; };
 		4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDGradient.m"; sourceTree = "<group>"; };
 		45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallPulse.h; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 		4514D23321BFB3450076290D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				453A6F3F2254C512006CC30A /* CAShapeLayer */,
 				4587C99421DDE672005AE3AB /* UIImage */,
 				4514D24121BFBF4D0076290D /* NSString */,
 				4514D24021BFBDC40076290D /* UIColor */,
@@ -172,6 +177,15 @@
 				4514D24321BFC05E0076290D /* NSString+FDOperator.m */,
 			);
 			path = NSString;
+			sourceTree = "<group>";
+		};
+		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
+			isa = PBXGroup;
+			children = (
+				453A6F402254C552006CC30A /* CAShapeLayer+FDShapeHelper.h */,
+				453A6F412254C552006CC30A /* CAShapeLayer+FDShapeHelper.m */,
+			);
+			path = CAShapeLayer;
 			sourceTree = "<group>";
 		};
 		4587C99221DDE37A005AE3AB /* Control */ = {
@@ -245,6 +259,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
@@ -366,6 +381,7 @@
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
 				45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */,
+				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
 				45894CF321E59A9000E5E9A9 /* FDActivityIndicatorShape.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,

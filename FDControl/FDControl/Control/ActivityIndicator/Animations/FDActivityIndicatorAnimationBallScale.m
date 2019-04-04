@@ -8,7 +8,7 @@
 
 #import "FDActivityIndicatorAnimationBallScale.h"
 
-#import "FDActivityIndicatorShape.h"
+#import "CAShapeLayer+FDShapeHelper.h"
 
 @interface FDActivityIndicatorAnimationBallScale ()
 @property(assign, nonatomic)CGFloat radius;
@@ -48,7 +48,7 @@
     
     //Draw circle
     CGSize ballSize = CGSizeMake(self.radius * 2, self.radius * 2);
-    CALayer* ball = [FDActivityIndicatorShape getBallWith:ballSize color:color];
+    CALayer* ball = [CAShapeLayer dotShapeLayer:ballSize color:color.CGColor];
     ball.frame = CGRectMake(0, 0, ballSize.width, ballSize.height);
     // Add animation
     [ball addAnimation:animationGroup forKey:@"animation"];

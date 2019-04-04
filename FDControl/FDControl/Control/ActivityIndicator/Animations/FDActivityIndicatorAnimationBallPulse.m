@@ -9,6 +9,7 @@
 #import "FDActivityIndicatorAnimationBallPulse.h"
 
 #import "FDActivityIndicatorShape.h"
+#import "CAShapeLayer+FDShapeHelper.h"
 
 @interface FDActivityIndicatorAnimationBallPulse ()
 @property(assign, nonatomic)CGFloat radius;
@@ -45,7 +46,7 @@
     NSArray<NSNumber*>* beginTimes = @[@0.12, @0.24, @0.36];
     
     for (NSInteger index = 0; index < ballNum; index ++) {
-        CALayer* ball = [FDActivityIndicatorShape getBallWith:ballSize color:color];
+        CALayer* ball = [CAShapeLayer dotShapeLayer:ballSize color:color.CGColor];
         CGRect frame = CGRectMake(x + ballSize.width * index + index * ballSpacing, y, ballSize.width, ballSize.height);
         ball.frame = frame;
         // Add animation

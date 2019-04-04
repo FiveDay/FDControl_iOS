@@ -7,7 +7,8 @@
 //
 
 #import "FDActivityIndicatorAnimationBallGridPulse.h"
-#import "FDActivityIndicatorShape.h"
+
+#import "CAShapeLayer+FDShapeHelper.h"
 
 @interface FDActivityIndicatorAnimationBallGridPulse ()
 @property(assign, nonatomic)CGFloat radius;
@@ -64,7 +65,7 @@
     
     for (NSInteger group = 0; group < groups; group++) {
         for (NSInteger index = 0; index < balls; index++) {
-            CALayer* ball = [FDActivityIndicatorShape getBallWith:ballSize color:color];
+            CALayer* ball = [CAShapeLayer dotShapeLayer:ballSize color:color.CGColor];
             CGRect frame = CGRectMake(x + ballSize.width * index + index * spacing, y + group * ballSize.height + group * spacing, ballSize.width, ballSize.height);
             ball.frame = frame;
             //Add animation
