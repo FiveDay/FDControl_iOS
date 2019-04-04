@@ -8,7 +8,6 @@
 
 #import "FDActivityIndicatorAnimationBallPulse.h"
 
-#import "FDActivityIndicatorShape.h"
 #import "CAShapeLayer+FDShapeHelper.h"
 
 @interface FDActivityIndicatorAnimationBallPulse ()

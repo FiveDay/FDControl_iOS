@@ -62,7 +62,9 @@
     NSArray<NSNumber*>* durations = @[@0.72, @1.02, @1.28,
                                       @1.42, @1.45, @1.18,
                                       @0.87, @1.45, @1.06];
-    
+    CALayer* container = [CALayer layer];
+    container.bounds = CGRectMake(0, 0, balls * self.radius * 2 + 2 * spacing, balls * self.radius * 2 + 2 * spacing);
+    container.position = CGPointMake(layer.bounds.size.width / 2, layer.bounds.size.height / 2);
     for (NSInteger group = 0; group < groups; group++) {
         for (NSInteger index = 0; index < balls; index++) {
             CALayer* ball = [CAShapeLayer dotShapeLayer:ballSize color:color.CGColor];
@@ -72,9 +74,10 @@
             animationGroup.duration = durations[balls * group + index].doubleValue;
             animationGroup.beginTime = beginTime + beginTimes[balls*group + index].doubleValue;
             [ball addAnimation:animationGroup forKey:@"animation"];
-            [layer addSublayer:ball];
+            [container addSublayer:ball];
         }
     }
+    [layer addSublayer:container];
 }
 
 @end

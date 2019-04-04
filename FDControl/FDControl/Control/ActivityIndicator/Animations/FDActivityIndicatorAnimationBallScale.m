@@ -49,7 +49,8 @@
     //Draw circle
     CGSize ballSize = CGSizeMake(self.radius * 2, self.radius * 2);
     CALayer* ball = [CAShapeLayer dotShapeLayer:ballSize color:color.CGColor];
-    ball.frame = CGRectMake(0, 0, ballSize.width, ballSize.height);
+    ball.position = CGPointMake(layer.frame.size.width / 2, layer.frame.size.height / 2);
+    ball.bounds = CGRectMake(0, 0, ballSize.width, ballSize.height);
     // Add animation
     [ball addAnimation:animationGroup forKey:@"animation"];
     [layer addSublayer:ball];

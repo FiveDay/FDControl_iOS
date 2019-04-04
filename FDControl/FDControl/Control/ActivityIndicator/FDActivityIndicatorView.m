@@ -14,50 +14,40 @@
 #import "FDActivityIndicatorAnimationBallScale.h"
 
 @interface FDActivityIndicatorView ()
-@property(assign, nonatomic)CGFloat radius;
 @end
 
 
 @implementation FDActivityIndicatorView
 
-@synthesize frame = _frame, bounds = _bounds;
-
-- (instancetype)initWithOrign:(CGPoint)orign andBallScaleWithRadius:(CGFloat)radius {
-    CGRect frame = CGRectMake(orign.x, orign.y, radius * 2, radius * 2);
-    if (self = [super initWithFrame:frame]) {
-        _radius = radius;
-        _tintColor = [UIColor blueColor];
-        _type = ballScale;
-    }
-    return self;
++ (instancetype)ballScaleWithRadius:(CGFloat)radius {
+    FDActivityIndicatorView* instance = [[self alloc]initWithType:ballScale];
+    instance.radius = radius;
+    return instance;
 }
 
-- (instancetype)initWithOrign:(CGPoint)orign andBallPulseWithRadius:(CGFloat)radius {
-    CGRect frame = CGRectMake(orign.x, orign.y, radius * 2 * 3 + 4, radius * 2 * 3 + 4);
-    if (self = [super initWithFrame:frame]) {
-        _radius = radius;
-        _tintColor = [UIColor blueColor];
-        _type = ballPulse;
-    }
-    return self;
++ (instancetype)ballPulseWithRadius:(CGFloat)radius {
+    FDActivityIndicatorView* instance = [[self alloc]initWithType:ballPulse];
+    instance.radius = radius;
+    return instance;
 }
 
-- (instancetype)initWithOrign:(CGPoint)orign andBallGridPulseWithRadius:(CGFloat)radius {
-    CGRect frame = CGRectMake(orign.x, orign.y, radius * 2 * 3 + 4, radius * 2 * 3 + 4);
-    if (self = [super initWithFrame:frame]) {
-        _radius = radius;
-        _tintColor = [UIColor blueColor];
-        _type = ballGridPulse;
-    }
-    return self;
++ (instancetype)ballGridPulseWithRadius:(CGFloat)radius {
+    FDActivityIndicatorView* instance = [[self alloc]initWithType:ballGridPulse];
+    instance.radius = radius;
+    return instance;
 }
 
-- (instancetype)initWithOrign:(CGPoint)orign andBallClipRotateRadius:(CGFloat)radius {
-    CGRect frame = CGRectMake(orign.x, orign.y, radius * 2, radius * 2);
-    if (self = [super initWithFrame:frame]) {
-        _radius = radius;
-        _type = ballClipRotate;
-        _tintColor = [UIColor blueColor];
++ (instancetype)ballClipRotateRadius:(CGFloat)radius {
+    FDActivityIndicatorView* instance = [[self alloc]initWithType:ballClipRotate];
+    instance.radius = radius;
+    return instance;
+}
+
+- (instancetype)initWithType:(FDActivityIndicatorType)type {
+    if (self = [super init]) {
+        _radius = 20;
+        _tintColor = [UIColor whiteColor];
+        _type = type;
     }
     return self;
 }

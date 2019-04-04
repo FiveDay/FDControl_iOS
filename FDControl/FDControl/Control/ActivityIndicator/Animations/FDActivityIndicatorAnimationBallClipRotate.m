@@ -47,7 +47,8 @@
     [circle addAnimation:aniGroup forKey:@"animation"];
     
     //Add subLayer
-    circle.frame = CGRectMake(0, 0, circleSize.width, circleSize.height);
+    circle.position = CGPointMake(layer.frame.size.width / 2, layer.frame.size.height / 2);
+    circle.bounds = CGRectMake(0, 0, circleSize.width, circleSize.height);
     [layer addSublayer:circle];
 }
 @end

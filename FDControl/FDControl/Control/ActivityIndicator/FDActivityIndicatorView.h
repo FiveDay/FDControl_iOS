@@ -25,17 +25,15 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 @property(strong, nonatomic)UIColor* tintColor;
-
-@property(assign, nonatomic, readonly)CGRect frame;
-@property(assign, nonatomic, readonly)CGRect bounds;
+@property(assign, nonatomic)CGFloat radius;
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithFrame:(CGRect)frame UNAVAILABLE_ATTRIBUTE;
 
-- (instancetype)initWithOrign:(CGPoint)orign andBallScaleWithRadius:(CGFloat)radius;
-- (instancetype)initWithOrign:(CGPoint)orign andBallPulseWithRadius:(CGFloat)radius;
-- (instancetype)initWithOrign:(CGPoint)orign andBallGridPulseWithRadius:(CGFloat)radius;
-- (instancetype)initWithOrign:(CGPoint)orign andBallClipRotateRadius:(CGFloat)radius;
++ (instancetype)ballScaleWithRadius:(CGFloat)radius;
++ (instancetype)ballPulseWithRadius:(CGFloat)radius;
++ (instancetype)ballGridPulseWithRadius:(CGFloat)radius;
++ (instancetype)ballClipRotateRadius:(CGFloat)radius;
 
 @end
 

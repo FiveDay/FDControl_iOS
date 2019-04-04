@@ -8,8 +8,6 @@
 
 #import "CAShapeLayer+FDShapeHelper.h"
 
-#import <UIKit/UIKit.h>
-
 @implementation CAShapeLayer (FDShapeHelper)
 
 + (CAShapeLayer*)dotShapeLayer:(CGSize)size color:(CGColorRef)color {
@@ -24,9 +22,9 @@
 
 + (CAShapeLayer*)circleThirdFourShapeLayer:(CGSize)size color:(CGColorRef)color {
     CAShapeLayer* layer = [CAShapeLayer new];
-    UIBezierPath* path = [UIBezierPath bezierPath];
-    [path addArcWithCenter:CGPointMake(size.width / 2, size.height / 2) radius:size.width / 2 startAngle:- 3 * M_PI / 4 endAngle: - 1 * M_PI / 4 clockwise:NO];
-    layer.path = path.CGPath;
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathAddArc(path, nil, size.width / 2, size.height / 2, size.width / 2, 3 * M_PI / 4, 1 * M_PI / 4, NO);
+    layer.path = path;
     layer.fillColor = nil;
     layer.backgroundColor = nil;
     layer.strokeColor = color;
