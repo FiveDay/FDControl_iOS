@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(strong, nonatomic)UIColor* tintColor;
 @property(assign, nonatomic)CGFloat radius;
+@property(assign, nonatomic)CGFloat squareWidth;
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithFrame:(CGRect)frame UNAVAILABLE_ATTRIBUTE;
@@ -35,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)ballGridPulseWithRadius:(CGFloat)radius;
 + (instancetype)ballClipRotateRadius:(CGFloat)radius;
 
++ (instancetype)squareSpinWidth:(CGFloat)width;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,7 @@
 #import "FDActivityIndicatorAnimationBallGridPulse.h"
 #import "FDActivityIndicatorAnimationBallClipRotate.h"
 #import "FDActivityIndicatorAnimationBallScale.h"
+#import "FDActivityIndicatorAnimationSquareSpin.h"
 
 @interface FDActivityIndicatorView ()
 @end
@@ -43,9 +44,16 @@
     return instance;
 }
 
++ (instancetype)squareSpinWidth:(CGFloat)width {
+    FDActivityIndicatorView* instance = [[self alloc]initWithType:squareSpin];
+    instance.squareWidth = width;
+    return instance;
+}
+
 - (instancetype)initWithType:(FDActivityIndicatorType)type {
     if (self = [super init]) {
         _radius = 20;
+        _squareWidth = 30;
         _tintColor = [UIColor whiteColor];
         _type = type;
     }
@@ -68,6 +76,11 @@
         }
         case ballClipRotate: {
             _animation = [[FDActivityIndicatorAnimationBallClipRotate alloc]initWithRadius:self.radius];
+            [_animation setupAnimation:self.layer color:self.tintColor];
+            break;
+        }
+        case squareSpin: {
+            _animation = [[FDActivityIndicatorAnimationSquareSpin alloc]initWithWidth:self.squareWidth];
             [_animation setupAnimation:self.layer color:self.tintColor];
             break;
         }

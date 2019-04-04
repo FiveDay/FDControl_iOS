@@ -32,4 +32,14 @@
     layer.frame = CGRectMake(0, 0, size.width, size.height);
     return layer;
 }
+
++ (CAShapeLayer*)squareShapeLayer:(CGSize)size color:(CGColorRef)color {
+    CAShapeLayer* layer = [CAShapeLayer new];
+    CGPathRef path = CGPathCreateWithRect(CGRectMake(0, 0, size.width, size.height), nil);
+    layer.fillColor = color;
+    layer.backgroundColor = nil;
+    layer.path = path;
+    layer.frame = CGRectMake(0, 0, size.width, size.height);
+    return layer;
+}
 @end
