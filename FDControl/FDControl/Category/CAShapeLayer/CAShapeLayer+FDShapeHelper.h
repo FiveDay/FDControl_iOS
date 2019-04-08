@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (CAShapeLayer*)dotShapeLayer:(CGSize)size color:(CGColorRef)color;
 + (CAShapeLayer*)circleThirdFourShapeLayer:(CGSize)size color:(CGColorRef)color;
 + (CAShapeLayer*)squareShapeLayer:(CGSize)size color:(CGColorRef)color;
++ (CAShapeLayer*)triangleShapelayer:(CGSize)size color:(CGColorRef)color;
 
 @end
 

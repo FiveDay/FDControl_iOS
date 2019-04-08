@@ -42,4 +42,15 @@
     layer.frame = CGRectMake(0, 0, size.width, size.height);
     return layer;
 }
+
++ (CAShapeLayer*)triangleShapelayer:(CGSize)size color:(CGColorRef)color {
+    CAShapeLayer* layer = [CAShapeLayer new];
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPoint points[] = { CGPointMake(size.width / 2, 0), CGPointMake(0, size.height), CGPointMake(size.width, size.height) };
+    CGPathAddLines(path, nil, points, 3);
+    layer.path = path;
+    layer.fillColor = color;
+    layer.backgroundColor = nil;
+    return layer;
+}
 @end

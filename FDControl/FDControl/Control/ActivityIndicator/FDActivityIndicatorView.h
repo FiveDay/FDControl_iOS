@@ -15,6 +15,7 @@ typedef enum : NSUInteger {
     ballClipRotate,
     squareSpin,
     ballScale = 12,
+    triangleSkewSpin = 25,
 } FDActivityIndicatorType;
 
 NS_ASSUME_NONNULL_BEGIN
@@ -27,9 +28,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic)UIColor* tintColor;
 @property(assign, nonatomic)CGFloat radius;
 @property(assign, nonatomic)CGFloat squareWidth;
+@property(assign, nonatomic)CGSize triangleSize;
 
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 - (instancetype)initWithFrame:(CGRect)frame UNAVAILABLE_ATTRIBUTE;
+
+- (instancetype)initWithType:(FDActivityIndicatorType)type;
 
 + (instancetype)ballScaleWithRadius:(CGFloat)radius;
 + (instancetype)ballPulseWithRadius:(CGFloat)radius;
@@ -37,6 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)ballClipRotateRadius:(CGFloat)radius;
 
 + (instancetype)squareSpinWidth:(CGFloat)width;
++ (instancetype)triangleSkewSpinWithSize:(CGSize)size;
 @end
 
 NS_ASSUME_NONNULL_END

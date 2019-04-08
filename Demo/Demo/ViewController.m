@@ -50,6 +50,13 @@
     ac5.tintColor = [UIColor greenColor];
     [self.view addSubview:ac5];
     [ac5 startAnimating];
+    
+    FDActivityIndicatorView* ac6 = [FDActivityIndicatorView triangleSkewSpinWithSize:CGSizeMake(60, 40)];
+    ac6.frame = CGRectMake(ac5.right, ac1.bottom, 100, 100);
+    ac6.tintColor = [UIColor greenColor];
+    [self.view addSubview:ac6];
+    [ac6 startAnimating];
+    
 }
 
 

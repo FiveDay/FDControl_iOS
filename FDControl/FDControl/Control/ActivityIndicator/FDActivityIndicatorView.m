@@ -13,6 +13,7 @@
 #import "FDActivityIndicatorAnimationBallClipRotate.h"
 #import "FDActivityIndicatorAnimationBallScale.h"
 #import "FDActivityIndicatorAnimationSquareSpin.h"
+#import "fdactivityIndicatorAnimationTriangleSkewSpin.h"
 
 @interface FDActivityIndicatorView ()
 @end
@@ -50,10 +51,17 @@
     return instance;
 }
 
++ (instancetype)triangleSkewSpinWithSize:(CGSize)size {
+    FDActivityIndicatorView* instance = [[self alloc]initWithType:triangleSkewSpin];
+    instance.triangleSize = size;
+    return instance;
+}
+
 - (instancetype)initWithType:(FDActivityIndicatorType)type {
     if (self = [super init]) {
         _radius = 20;
         _squareWidth = 30;
+        _triangleSize = CGSizeMake(60, 40);
         _tintColor = [UIColor whiteColor];
         _type = type;
     }
@@ -88,6 +96,10 @@
             _animation = [[FDActivityIndicatorAnimationBallScale alloc]initWithBallRadius:self.radius];
             [_animation setupAnimation:self.layer color:self.tintColor];
             break;
+        }
+        case triangleSkewSpin: {
+            _animation = [[FDActivityIndicatorAnimationTriangleSkewSpin alloc]initWithSize:self.triangleSize];
+            [_animation setupAnimation:self.layer color:self.tintColor];
         }
         default:
             break;
