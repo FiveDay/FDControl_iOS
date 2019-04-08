@@ -44,6 +44,8 @@
 		45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936ADD2243A0A20073C9E2 /* NSString+FDFileDirectory.m */; };
 		45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936AE2224A1B670073C9E2 /* FDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936AE3224A1B670073C9E2 /* FDMemoryCache.m */; };
+		6D050CC1225B0DED00B4FAF1 /* FDWebImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CBF225B0DED00B4FAF1 /* FDWebImageCoder.h */; };
+		6D050CC2225B0DED00B4FAF1 /* FDWebImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CC0225B0DED00B4FAF1 /* FDWebImageCoder.m */; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
 		6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B4B4321F842360073662D /* UIImage+FDColor.m */; };
 /* End PBXBuildFile section */
@@ -99,6 +101,8 @@
 		45936ADD2243A0A20073C9E2 /* NSString+FDFileDirectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDFileDirectory.m"; sourceTree = "<group>"; };
 		45936AE2224A1B670073C9E2 /* FDMemoryCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDMemoryCache.h; sourceTree = "<group>"; };
 		45936AE3224A1B670073C9E2 /* FDMemoryCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDMemoryCache.m; sourceTree = "<group>"; };
+		6D050CBF225B0DED00B4FAF1 /* FDWebImageCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDWebImageCoder.h; sourceTree = "<group>"; };
+		6D050CC0225B0DED00B4FAF1 /* FDWebImageCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDWebImageCoder.m; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
 		6D3B4B4321F842360073662D /* UIImage+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +271,7 @@
 		45936AB52241E0D60073C9E2 /* WebImageView */ = {
 			isa = PBXGroup;
 			children = (
+				6D050CBE225B0DB000B4FAF1 /* ImageCoder */,
 				45936AB62241E13C0073C9E2 /* UIImageView+FDWebImageView.h */,
 				45936ABB2241E13C0073C9E2 /* UIImageView+FDWebImageView.m */,
 				45936ABD2241E13D0073C9E2 /* FDWebImageDownloader.h */,
@@ -306,6 +311,15 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		6D050CBE225B0DB000B4FAF1 /* ImageCoder */ = {
+			isa = PBXGroup;
+			children = (
+				6D050CBF225B0DED00B4FAF1 /* FDWebImageCoder.h */,
+				6D050CC0225B0DED00B4FAF1 /* FDWebImageCoder.m */,
+			);
+			path = ImageCoder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -320,6 +334,7 @@
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
+				6D050CC1225B0DED00B4FAF1 /* FDWebImageCoder.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
 				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
@@ -438,6 +453,7 @@
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
+				6D050CC2225B0DED00B4FAF1 /* FDWebImageCoder.m in Sources */,
 				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
