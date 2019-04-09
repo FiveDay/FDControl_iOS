@@ -16,7 +16,7 @@ typedef void(^IMAGEDECOMPRESSEDBLOCK)(UIImage* compressedImage);
 @interface UIImageView (FDImageCoder)
 
 /*异步对image解码*/
-- (void)fd_asyncDecompressedImageWithImage:(nullable UIImage*)image completionHandler:(void (^)(UIImage* compressedImage))completionHandler;
+- (void)fd_asyncDecompressedImageWithImage:(nullable UIImage*)image completionHandler:(void (^)(UIImage* _Nullable compressedImage))completionHandler;
 
 @end
 

@@ -102,7 +102,7 @@ static const size_t kBitsPerComponent = 8;
     return nil;
 }
 
-- (void)fd_asyncDecompressedImageWithImage:(UIImage *)image completionHandler:(void (^)(UIImage * _Nonnull))completionHandler
+- (void)fd_asyncDecompressedImageWithImage:(UIImage *)image completionHandler:(void (^)(UIImage * _Nullable))completionHandler
 {
     __weak typeof(self) weakSelf = self;
     
