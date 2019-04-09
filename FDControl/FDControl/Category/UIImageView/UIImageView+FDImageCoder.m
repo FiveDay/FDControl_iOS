@@ -1,5 +1,5 @@
 //
-//  FDWebImageCoder.m
+//  FDimageCoder.m
 //  FDControl
 //
 //  Created by zhang nan on 2019/4/8.
@@ -13,15 +13,15 @@ static const size_t kBitsPerComponent = 8;
 @implementation UIImageView (FDImageCoder)
 
 //是否对图片解码
-+ (BOOL)shouldDecodeImage:(nullable UIImage*)webImage
++ (BOOL)shouldDecodeImage:(nullable UIImage*)image
 {
     //如果图片为空，不解码
-    if (!webImage) {
+    if (!image) {
         return NO;
     }
     
     //如果图片为动图，不解码
-    if (webImage.images != nil) {
+    if (image.images != nil) {
         return NO;
     }
     
@@ -43,16 +43,16 @@ static const size_t kBitsPerComponent = 8;
     return hasAlphaInfo;
 }
 
-- (UIImage*)fd_decompressedImageWithImage:(nullable UIImage*)webImage
+- (UIImage*)fd_decompressedImageWithImage:(nullable UIImage*)image
 {
-    if (![[self class] shouldDecodeImage:webImage]) {
+    if (![[self class] shouldDecodeImage:image]) {
         return nil;
     }
     
     @autoreleasepool {
         CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
         
-        CGImageRef imageRef = webImage.CGImage;
+        CGImageRef imageRef = image.CGImage;
         
         //图片是否包含alpha信息
         BOOL hasAlphaInfo = [self fd_hasAlpha:imageRef];
@@ -84,14 +84,14 @@ static const size_t kBitsPerComponent = 8;
                                                         colorSpaceRef,
                                                         bitmapInfo);
         if (contextRef == NULL) {
-            return webImage;
+            return image;
         }
         
         CGContextDrawImage(contextRef, CGRectMake(0, 0, width, height), imageRef);
         
         //https://www.cnblogs.com/zkwarrior/p/5665216.html
         CGImageRef newImageRefWithoutAlpha = CGBitmapContextCreateImage(contextRef);
-        UIImage* decodedImage = [UIImage imageWithCGImage:newImageRefWithoutAlpha scale:webImage.scale orientation:webImage.imageOrientation];
+        UIImage* decodedImage = [UIImage imageWithCGImage:newImageRefWithoutAlpha scale:image.scale orientation:image.imageOrientation];
         
         CGContextRelease(contextRef);
         CGImageRelease(newImageRefWithoutAlpha);

@@ -13,9 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (FDImageCoder)
 
-+ (BOOL)shouldDecodeImage:(nullable UIImage*)webImage;
++ (BOOL)shouldDecodeImage:(nullable UIImage*)image;
 
-- (UIImage*)fd_decompressedImageWithImage:(nullable UIImage*)webImage;
+- (UIImage*)fd_decompressedImageWithImage:(nullable UIImage*)image;
 
 @end
 
