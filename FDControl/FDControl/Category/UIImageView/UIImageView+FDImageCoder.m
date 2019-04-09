@@ -104,6 +104,16 @@ static const size_t kBitsPerComponent = 8;
 
 - (void)fd_asyncDecompressedImageWithImage:(UIImage *)image completionHandler:(void (^)(UIImage * _Nonnull))completionHandler
 {
+    __weak typeof(self) weakSelf = self;
     
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+                   , ^{
+                       __strong typeof(self) strongSelf = weakSelf;
+                       
+                       UIImage* decompressedImage = [strongSelf fd_DecompressedImageWithImage:image];
+                       if (completionHandler) {
+                           completionHandler(decompressedImage);
+                       }
+                   });
 }
 @end
