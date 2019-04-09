@@ -43,7 +43,7 @@ static const size_t kBitsPerComponent = 8;
     return hasAlphaInfo;
 }
 
-- (UIImage*)fd_asynDecompressedImageWithImage:(nullable UIImage*)image
+- (UIImage*)fd_DecompressedImageWithImage:(nullable UIImage*)image
 {
     if (![[self class] shouldDecodeImage:image]) {
         return nil;
@@ -100,5 +100,10 @@ static const size_t kBitsPerComponent = 8;
     }
     
     return nil;
+}
+
+- (void)fd_asyncDecompressedImageWithImage:(UIImage *)image completionHandler:(void (^)(UIImage * _Nonnull))completionHandler
+{
+    
 }
 @end

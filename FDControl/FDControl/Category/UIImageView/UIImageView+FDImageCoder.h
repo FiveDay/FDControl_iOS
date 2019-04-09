@@ -11,13 +11,18 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void(^IMAGEDECOMPRESSEDBLOCK)(UIImage* compressedImage);
+
 @interface UIImageView (FDImageCoder)
 
 /* 判断当前image是否可以解码*/
 + (BOOL)shouldDecodeImage:(nullable UIImage*)image;
 
+/*同步对image解码*/
+- (UIImage*)fd_DecompressedImageWithImage:(nullable UIImage*)image;
+
 /*异步对image解码*/
-- (UIImage*)fd_asynDecompressedImageWithImage:(nullable UIImage*)image;
+- (void)fd_asyncDecompressedImageWithImage:(nullable UIImage*)image completionHandler:(void (^)(UIImage* compressedImage))completionHandler;
 
 @end
 
