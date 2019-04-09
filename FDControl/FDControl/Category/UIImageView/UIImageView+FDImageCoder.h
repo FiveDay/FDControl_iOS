@@ -1,5 +1,5 @@
 //
-//  FDWebImageCoder.h
+//  UIImageView+FDImageCoder.h
 //  FDControl
 //
 //  Created by zhang nan on 2019/4/8.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDWebImageCoder : NSObject
+@interface UIImageView (FDImageCoder)
 
 + (BOOL)shouldDecodeImage:(nullable UIImage*)webImage;
 

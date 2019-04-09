@@ -6,11 +6,11 @@
 //  Copyright © 2019 zhangyu528. All rights reserved.
 //
 
-#import "FDWebImageCoder.h"
+#import "UIImageView+FDImageCoder.h"
 
 static const size_t kBitsPerComponent = 8;
 
-@implementation FDWebImageCoder
+@implementation UIImageView (FDImageCoder)
 
 //是否对图片解码
 + (BOOL)shouldDecodeImage:(nullable UIImage*)webImage
