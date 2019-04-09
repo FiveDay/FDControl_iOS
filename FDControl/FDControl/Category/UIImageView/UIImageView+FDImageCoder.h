@@ -13,9 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (FDImageCoder)
 
+/* 判断当前image是否可以解码*/
 + (BOOL)shouldDecodeImage:(nullable UIImage*)image;
 
-- (UIImage*)fd_decompressedImageWithImage:(nullable UIImage*)image;
+/*异步对image解码*/
+- (UIImage*)fd_asynDecompressedImageWithImage:(nullable UIImage*)image;
 
 @end
 
