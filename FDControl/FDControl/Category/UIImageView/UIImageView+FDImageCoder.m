@@ -8,7 +8,15 @@
 
 #import "UIImageView+FDImageCoder.h"
 
+#define ImageDecodeErrorDomain  @"com.FDControl.UIImageView+FDImageCoder"
+
 static const size_t kBitsPerComponent = 8;
+
+typedef NS_ENUM(NSUInteger, DECODEIMAGEERRORCODE) {
+    DecodeImageErrorCode_Unknown        = -90000,
+    DecodeImageErrorCode_NeedNotDecode  = -90001,
+    DecodeImageErrorCode_CGContextError = -90002,
+};
 
 @implementation UIImageView (FDImageCoder)
 
@@ -43,9 +51,15 @@ static const size_t kBitsPerComponent = 8;
     return hasAlphaInfo;
 }
 
-- (UIImage*)fd_DecompressedImageWithImage:(nullable UIImage*)image
+- (UIImage*)fd_DecompressedImageWithImage:(nullable UIImage*)image error:(NSError**)error
 {
+    DECODEIMAGEERRORCODE decodeErrorCode = DecodeImageErrorCode_Unknown;
+    
     if (![[self class] shouldDecodeImage:image]) {
+        decodeErrorCode = DecodeImageErrorCode_NeedNotDecode;
+        NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"传入图片为空或为动图。" forKey:NSLocalizedDescriptionKey];
+        *error = [[NSError alloc]initWithDomain:ImageDecodeErrorDomain code:decodeErrorCode userInfo:userInfo];
+        
         return nil;
     }
     
@@ -84,6 +98,10 @@ static const size_t kBitsPerComponent = 8;
                                                         colorSpaceRef,
                                                         bitmapInfo);
         if (contextRef == NULL) {
+            decodeErrorCode = DecodeImageErrorCode_CGContextError;
+            NSDictionary *userInfo = [NSDictionary dictionaryWithObject:@"解码上下文环境创建失败" forKey:NSLocalizedDescriptionKey];
+            *error = [[NSError alloc]initWithDomain:ImageDecodeErrorDomain code:decodeErrorCode userInfo:userInfo];
+            
             return image;
         }
         
@@ -96,13 +114,15 @@ static const size_t kBitsPerComponent = 8;
         CGContextRelease(contextRef);
         CGImageRelease(newImageRefWithoutAlpha);
         
+        //如果成功，将输出错误参数清空
+        *error = nil;
+        
         return decodedImage;
     }
-    
-    return nil;
 }
 
-- (void)fd_asyncDecompressedImageWithImage:(UIImage *)image completionHandler:(void (^)(UIImage * _Nullable))completionHandler
+//TODO: 暂时没有考虑大图缩放的case
+- (void)fd_asyncDecompressedImageWithImage:(UIImage *)image completionHandler:(void (^)(NSError* _Nullable, UIImage* _Nullable, UIImage * _Nullable))completionHandler
 {
     __weak typeof(self) weakSelf = self;
     
@@ -110,9 +130,11 @@ static const size_t kBitsPerComponent = 8;
                    , ^{
                        __strong typeof(self) strongSelf = weakSelf;
                        
-                       UIImage* decompressedImage = [strongSelf fd_DecompressedImageWithImage:image];
+                       NSError* error = nil;
+                       
+                       UIImage* decompressedImage = [strongSelf fd_DecompressedImageWithImage:image error:&error];
                        if (completionHandler) {
-                           completionHandler(decompressedImage);
+                           completionHandler(error, image, decompressedImage);
                        }
                    });
 }
