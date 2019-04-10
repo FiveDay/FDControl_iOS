@@ -17,6 +17,7 @@
 		4514D22221BFADD20076290D /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D22121BFADD20076290D /* DemoUITests.m */; };
 		4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; };
 		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D050D0C225E175B00B4FAF1 /* testimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D050D0B225E175B00B4FAF1 /* testimage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		4514D22121BFADD20076290D /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		4514D22321BFADD20076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4514D23D21BFBAA50076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D050D0B225E175B00B4FAF1 /* testimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testimage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		4514D1F121BFADCF0076290D = {
 			isa = PBXGroup;
 			children = (
+				6D050D0A225E175B00B4FAF1 /* resources */,
 				4514D23D21BFBAA50076290D /* FDControl.framework */,
 				4514D1FC21BFADCF0076290D /* Demo */,
 				4514D21521BFADD20076290D /* DemoTests */,
@@ -149,6 +152,15 @@
 				4514D22321BFADD20076290D /* Info.plist */,
 			);
 			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		6D050D0A225E175B00B4FAF1 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D050D0B225E175B00B4FAF1 /* testimage.jpg */,
+			);
+			name = resources;
+			path = Demo/resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +270,7 @@
 				4514D20A21BFADD20076290D /* LaunchScreen.storyboard in Resources */,
 				4514D20721BFADD20076290D /* Assets.xcassets in Resources */,
 				4514D20521BFADCF0076290D /* Main.storyboard in Resources */,
+				6D050D0C225E175B00B4FAF1 /* testimage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

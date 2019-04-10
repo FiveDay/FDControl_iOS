@@ -34,6 +34,9 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 //UIColor Category
 #import <FDControl/UIColor+FDColor.h>
 
+//UIImageView Category
+#import <FDControl/UIImageView+FDImageCoder.h>
+
 #else
 
 //FDActivityIndicator Control
@@ -51,4 +54,5 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "NSString+FDMD5.h"
 #import "NSString+FDFileDirectory.h"
 #import "UIColor+FDColor.h"
+#import "UIImageView+FDImageCoder.h"
 #endif

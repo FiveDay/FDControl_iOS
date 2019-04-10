@@ -45,7 +45,7 @@
 		45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 45936AE2224A1B670073C9E2 /* FDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 45936AE3224A1B670073C9E2 /* FDMemoryCache.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
-		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; };
+		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
 		6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B4B4321F842360073662D /* UIImage+FDColor.m */; };
 /* End PBXBuildFile section */
@@ -328,7 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */,
-				6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */,
 				45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */,
 				45936ADE2243A0A20073C9E2 /* NSString+FDFileDirectory.h in Headers */,
 				45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */,
@@ -337,6 +336,7 @@
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
+				6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */,
 				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
 				45894CF221E59A9000E5E9A9 /* FDActivityIndicatorShape.h in Headers */,
 				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
