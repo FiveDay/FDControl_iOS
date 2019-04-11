@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import "WebJsDemoViewController.h"
+#import "NativeFunctionForJs.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +20,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    WebJsDemoViewController* web = [[WebJsDemoViewController alloc]init];
+    web.nativeDelegate = [NativeFunctionForJs new];
+    UINavigationController* root = [[UINavigationController alloc]initWithRootViewController:web];
+    web.url = [NSURL URLWithString:@"http://localhost:8080"];
+    _window.rootViewController = root;
+    [_window makeKeyAndVisible];
     return YES;
 }
 
