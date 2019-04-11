@@ -15,7 +15,9 @@ typedef void(^IMAGEDECOMPRESSEDBLOCK)(NSError* error, UIImage* originImage, UIIm
 
 @interface UIImageView (FDImageCoder)
 
-/* 向当前imageView 设置图片，无需进行imageView.image = image操作
+/*
+ * @description 向当前imageView 设置图片，无需进行imageView.image = image操作
+ * @param       image 是外部期望设置给imageview的图片
  */
 - (void)fd_asyncSetImageOnMainThread:(UIImage*)image;
 
