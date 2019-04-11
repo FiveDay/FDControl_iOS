@@ -15,12 +15,10 @@ typedef void(^IMAGEDECOMPRESSEDBLOCK)(NSError* error, UIImage* originImage, UIIm
 
 @interface UIImageView (FDImageCoder)
 
-/*异步对image解码
- * error            : 返回错误描述&code等
- * originImage      : 解码前原始图片
- * compressedImage  : 解码后图片
+/* 向当前imageView 设置图片，无需进行imageView.image = image操作
  */
-- (void)fd_asyncDecompressedImageWithImage:(nullable UIImage*)image completionHandler:(void (^)(NSError* _Nullable error, UIImage* originImage, UIImage* _Nullable compressedImage))completionHandler;
+- (void)fd_asyncSetImageOnMainThread:(UIImage*)image;
+
 
 @end
 

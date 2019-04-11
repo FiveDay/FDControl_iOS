@@ -18,6 +18,7 @@
 		4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; };
 		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6D050D0C225E175B00B4FAF1 /* testimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D050D0B225E175B00B4FAF1 /* testimage.jpg */; };
+		6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		4514D22321BFADD20076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4514D23D21BFBAA50076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D050D0B225E175B00B4FAF1 /* testimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testimage.jpg; sourceTree = "<group>"; };
+		6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewDecoderViewController.h; sourceTree = "<group>"; };
+		6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewDecoderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				4514D20821BFADD20076290D /* LaunchScreen.storyboard */,
 				4514D20B21BFADD20076290D /* Info.plist */,
 				4514D20C21BFADD20076290D /* main.m */,
+				6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */,
+				6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 			files = (
 				4514D20221BFADCF0076290D /* ViewController.m in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
+				6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */,
 				4514D1FF21BFADCF0076290D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

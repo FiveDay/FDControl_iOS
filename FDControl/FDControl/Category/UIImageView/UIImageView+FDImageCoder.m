@@ -20,6 +20,26 @@ typedef NS_ENUM(NSUInteger, DECODEIMAGEERRORCODE) {
 
 @implementation UIImageView (FDImageCoder)
 
+# pragma mark - public
+- (void)fd_asyncSetImageOnMainThread:(UIImage*)image
+{
+    if (!image) {
+        return ;
+    }
+    
+    __weak typeof(self) weakSelf = self;
+    [self fd_asyncDecompressedImageWithImage:image completionHandler:^(NSError * _Nullable error, UIImage * _Nonnull originImage, UIImage * _Nullable compressedImage) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            __strong typeof(self) strongSelf = weakSelf;
+            if (!error) {
+                strongSelf.image = compressedImage;
+            }
+        });
+        
+    }];
+}
+
+# pragma mark - private
 //是否对图片解码
 + (BOOL)shouldDecodeImage:(nullable UIImage*)image
 {
