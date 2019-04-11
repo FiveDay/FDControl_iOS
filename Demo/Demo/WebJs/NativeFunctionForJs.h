@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NativeFunctionForJs : NSObject <FDNativeInterface>
 
-- (NSDictionary*)getTokenUserId;
+- (NSDictionary*)getTokenUserId:(id)data;
 
 @end
 

@@ -9,17 +9,19 @@
 #import <UIKit/UIKit.h>
 
 #import "FDNativeInterface.h"
-#import "FDJSInterface.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDWebJsViewController : UIViewController
 
+typedef void (^FDWebResponseCallback)(id responseData);
+
 @property(nonatomic, strong, nullable)NSURL* url;
 @property(nonatomic, copy, nullable)NSString* navTitle;
 
 @property(nonatomic, strong, nullable)id <FDNativeInterface> nativeDelegate;
-@property(nonatomic, weak, nullable)id <FDJSInterface> jsDelegate;
+
+- (void)callJsHandler:(NSString*)name data:(id)data response:(FDWebResponseCallback)response;
 
 @end
 

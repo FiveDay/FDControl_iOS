@@ -11,8 +11,7 @@
 
 @implementation NativeFunctionForJs
 
-- (NSDictionary*)getTokenUserId {
-    NSLog(@"NativeFunctionForJs getTokenUserId");
+- (NSDictionary*)getTokenUserId:(id)data {
     NSString* token = @"fdfdfd";
     NSString* user_id = @"ffffs";
     NSDictionary* response = @{
