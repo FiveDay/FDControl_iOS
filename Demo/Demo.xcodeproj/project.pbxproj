@@ -17,6 +17,8 @@
 		4514D22221BFADD20076290D /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D22121BFADD20076290D /* DemoUITests.m */; };
 		4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; };
 		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
+		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		4514D22121BFADD20076290D /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		4514D22321BFADD20076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4514D23D21BFBAA50076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		453A6F55225C8C0B006CC30A /* WebJsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebJsDemoViewController.h; sourceTree = "<group>"; };
+		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
+		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
+		453A6F68225DB664006CC30A /* NativeFunctionForJs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeFunctionForJs.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				453A6F66225DB61C006CC30A /* WebJs */,
 				4514D1FD21BFADCF0076290D /* AppDelegate.h */,
 				4514D1FE21BFADCF0076290D /* AppDelegate.m */,
 				4514D20021BFADCF0076290D /* ViewController.h */,
@@ -149,6 +156,17 @@
 				4514D22321BFADD20076290D /* Info.plist */,
 			);
 			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		453A6F66225DB61C006CC30A /* WebJs */ = {
+			isa = PBXGroup;
+			children = (
+				453A6F55225C8C0B006CC30A /* WebJsDemoViewController.h */,
+				453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */,
+				453A6F67225DB664006CC30A /* NativeFunctionForJs.h */,
+				453A6F68225DB664006CC30A /* NativeFunctionForJs.m */,
+			);
+			path = WebJs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,8 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D20221BFADCF0076290D /* ViewController.m in Sources */,
+				453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
 				4514D1FF21BFADCF0076290D /* AppDelegate.m in Sources */,
+				453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

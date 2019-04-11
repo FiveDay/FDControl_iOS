@@ -18,16 +18,22 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <FDControl/PublicHeader.h>
 
 //Control
+#import <FDControl/FDWebJsViewController.h>
 #import <FDControl/FDActivityIndicatorView.h>
 // Category
+#import <FDControl/NSObject+FDPropertyMethod.h>
+#import <FDControl/NSDictionary+FDJSONSerialization.h>
 #import <FDControl/UIView+FDLayout.h>
 #import <FDControl/NSString+FDOperator.h>
 #import <FDControl/UIColor+FDColor.h>
 #import <FDControl/CAShapeLayer+FDShapeHelper.h>
 #else
 //Control
+#import "FDWebJsViewController.h"
 #import "FDActivityIndicatorView.h"
 // Category
+#import "NSObject+FDPropertyMethod.h"
+#import "NSDictionary+FDJSONSerialization.h"
 #import "UIView+FDLayout.h"
 #import "NSString+FDOperator.h"
 #import "UIColor+FDColor.h"
