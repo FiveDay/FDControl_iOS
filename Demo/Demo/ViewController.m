@@ -9,9 +9,18 @@
 #import "ViewController.h"
 
 #import <FDControl/FDControl.h>
+#import <UIKit/UITableViewController.h>
 
-@interface ViewController ()
+@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
+//存放测试vc的交互容器
+@property(nonatomic, strong) UITableViewController* tableViewController;
+
+//存放测试vc类名、用于tableview数据显示
+@property(nonatomic, strong) NSMutableArray* testVCClassNameArray;
+
+//导航控制器
+//@property(nonatomic, strong) UINavigationController* navigationController;
 @end
 
 @implementation ViewController
@@ -19,44 +28,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = [UIColor blackColor];
     
-    FDActivityIndicatorView* ac1 = [FDActivityIndicatorView ballScaleWithRadius:30];
-    ac1.tintColor = [UIColor greenColor];
-    ac1.frame = CGRectMake(0, 100, 100, 100);
-    [self.view addSubview:ac1];
-    [ac1 startAnimating];
+    //添加tableviewcontroller
+    [self addChildViewController:self.tableViewController];
+    [self.view addSubview:self.tableViewController.tableView];
     
-    FDActivityIndicatorView* ac2 = [FDActivityIndicatorView ballPulseWithRadius:10];
-    ac2.frame = CGRectMake(ac1.right, 100, 100, 100);
-    ac2.tintColor = [UIColor greenColor];
-    [self.view addSubview:ac2];
-    [ac2 startAnimating];
-    
-    FDActivityIndicatorView* ac3 = [FDActivityIndicatorView ballGridPulseWithRadius:10];
-    ac3.frame = CGRectMake(ac2.right, 100, 100, 100);
-    ac3.tintColor = [UIColor greenColor];
-    [self.view addSubview:ac3];
-    [ac3 startAnimating];
-    
-    FDActivityIndicatorView* ac4 = [FDActivityIndicatorView ballClipRotateRadius:60];
-    ac4.frame = CGRectMake(ac3.right, 100, 100, 100);
-    ac4.tintColor = [UIColor greenColor];
-    [self.view addSubview:ac4];
-    [ac4 startAnimating];
-    
-    FDActivityIndicatorView* ac5 = [FDActivityIndicatorView squareSpinWidth:60];
-    ac5.frame = CGRectMake(0, ac1.bottom, 100, 100);
-    ac5.tintColor = [UIColor greenColor];
-    [self.view addSubview:ac5];
-    [ac5 startAnimating];
-    
-    FDActivityIndicatorView* ac6 = [FDActivityIndicatorView triangleSkewSpinWithSize:CGSizeMake(60, 40)];
-    ac6.frame = CGRectMake(ac5.right, ac1.bottom, 100, 100);
-    ac6.tintColor = [UIColor greenColor];
-    [self.view addSubview:ac6];
-    [ac6 startAnimating];
-    
+    //添加测试vc
+    [self.testVCClassNameArray addObject:@"UIImageViewDecoderViewController"];
 }
 
 
@@ -65,5 +43,79 @@
     // Dispose of any resources that can be recreated.
 }
 
+# pragma mark - lazy
+- (UITableViewController*)tableViewController
+{    
+    if (!_tableViewController) {
+        _tableViewController = [[UITableViewController alloc]initWithStyle:UITableViewStylePlain];
+        _tableViewController.tableView.delegate = self;
+        _tableViewController.tableView.dataSource = self;
+    }
+    
+    return _tableViewController;
+}
 
+- (NSMutableArray*)testVCClassNameArray
+{
+    if (!_testVCClassNameArray) {
+        _testVCClassNameArray = [NSMutableArray arrayWithCapacity:0];
+        
+    }
+    
+    return _testVCClassNameArray;
+}
+
+# pragma mark - delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row >= self.testVCClassNameArray.count) {
+        return ;
+    }
+    
+    UITableViewCell* selectedCell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    [selectedCell setSelected:NO];
+    
+    //点击cell
+    //1: 创建对象
+    Class cls = NSClassFromString(self.testVCClassNameArray[indexPath.row]);
+    if (!cls) {
+        return ;
+    }
+    
+    UIViewController* dynamicCreatedViewController = [[cls alloc]init];
+    
+    [self.navigationController pushViewController:dynamicCreatedViewController animated:YES];
+    
+}
+
+# pragma mark - dataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.testVCClassNameArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row >= self.testVCClassNameArray.count) {
+        return nil;
+    }
+    
+    NSString* commonIdentifier = @"cell_identifier";
+    
+    UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:commonIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:commonIdentifier];
+    }
+    
+    //设置cell相关内容
+    [cell.textLabel setText:self.testVCClassNameArray[indexPath.row]];
+    
+    return cell;
+}
 @end

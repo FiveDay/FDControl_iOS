@@ -7,12 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
-#import "WebJsDemoViewController.h"
-#import "NativeFunctionForJs.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
-
+@property(nonatomic, strong) ViewController* mainVC;
 @end
 
 @implementation AppDelegate
@@ -20,14 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    _window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    WebJsDemoViewController* web = [[WebJsDemoViewController alloc]init];
-    web.nativeDelegate = [NativeFunctionForJs new];
-    UINavigationController* root = [[UINavigationController alloc]initWithRootViewController:web];
-    web.url = [NSURL URLWithString:@"http://localhost:8080"];
-    _window.rootViewController = root;
-    [_window makeKeyAndVisible];
+    CGRect frame = [[UIScreen mainScreen]bounds];
+    self.window = [[UIWindow alloc]initWithFrame:frame];
+    _mainVC = [[ViewController alloc]initWithNibName:nil bundle:nil];
+    UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:_mainVC];
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
