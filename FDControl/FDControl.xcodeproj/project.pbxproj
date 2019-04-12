@@ -33,6 +33,10 @@
 		453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */; };
+		45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 45820E3421EF358C0052F033 /* FDPopMenu.h */; };
+		45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3521EF358C0052F033 /* FDPopMenu.m */; };
+		45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 45820E3821EF39CB0052F033 /* FDPopMenuItem.h */; };
+		45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3921EF39CB0052F033 /* FDPopMenuItem.m */; };
 		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; };
 		4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */; };
 		45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */; };
@@ -99,6 +103,10 @@
 		453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDNativeInterface.h; sourceTree = "<group>"; };
 		453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDPropertyMethod.h"; sourceTree = "<group>"; };
 		453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDPropertyMethod.m"; sourceTree = "<group>"; };
+		45820E3421EF358C0052F033 /* FDPopMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPopMenu.h; sourceTree = "<group>"; };
+		45820E3521EF358C0052F033 /* FDPopMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPopMenu.m; sourceTree = "<group>"; };
+		45820E3821EF39CB0052F033 /* FDPopMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPopMenuItem.h; sourceTree = "<group>"; };
+		45820E3921EF39CB0052F033 /* FDPopMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPopMenuItem.m; sourceTree = "<group>"; };
 		4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDGradient.h"; sourceTree = "<group>"; };
 		4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDGradient.m"; sourceTree = "<group>"; };
 		45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallPulse.h; sourceTree = "<group>"; };
@@ -264,10 +272,22 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		45820E3321EF355C0052F033 /* PopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				45820E3821EF39CB0052F033 /* FDPopMenuItem.h */,
+				45820E3921EF39CB0052F033 /* FDPopMenuItem.m */,
+				45820E3421EF358C0052F033 /* FDPopMenu.h */,
+				45820E3521EF358C0052F033 /* FDPopMenu.m */,
+			);
+			path = PopMenu;
+			sourceTree = "<group>";
+		};
 		4587C99221DDE37A005AE3AB /* Control */ = {
 			isa = PBXGroup;
 			children = (
 				453A6F50225C4890006CC30A /* WebJsViewController */,
+				45820E3321EF355C0052F033 /* PopMenu */,
 				45894CE921E4A58600E5E9A9 /* ActivityIndicator */,
 				4587C99321DDE3B5005AE3AB /* Button */,
 			);
@@ -377,6 +397,7 @@
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */,
+				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
 				453A6F4E225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.h in Headers */,
@@ -385,6 +406,7 @@
 				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
 				45894CF221E59A9000E5E9A9 /* FDActivityIndicatorShape.h in Headers */,
 				45A20443225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h in Headers */,
+				45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */,
 				45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */,
 				45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
@@ -493,6 +515,7 @@
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
+				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
@@ -506,6 +529,7 @@
 				453A6F4B2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.m in Sources */,
 				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,
+				45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */,
 				45894CF721E59B5A00E5E9A9 /* FDActivityIndicatorCircle.m in Sources */,
 				453A6F54225C49B9006CC30A /* FDWebJsViewController.m in Sources */,
 				45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */,
