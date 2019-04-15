@@ -16,8 +16,8 @@
     CIVector *vector1 = [CIVector vectorWithX:rect.size.width * param.endPoint.x Y:rect.size.height * (1 - param.endPoint.y)];
     [ciFilter setValue:vector0 forKey:@"inputPoint0"];
     [ciFilter setValue:vector1 forKey:@"inputPoint1"];
-    [ciFilter setValue:[CIColor colorWithCGColor:param.startColor] forKey:@"inputColor0"];
-    [ciFilter setValue:[CIColor colorWithCGColor:param.endColor] forKey:@"inputColor1"];
+    [ciFilter setValue:[CIColor colorWithCGColor:param.startColor.CGColor] forKey:@"inputColor0"];
+    [ciFilter setValue:[CIColor colorWithCGColor:param.endColor.CGColor] forKey:@"inputColor1"];
     
     CIImage *ciImage = ciFilter.outputImage;
     CIContext *con = [CIContext contextWithOptions:nil];
@@ -32,8 +32,8 @@
     CIFilter* ciFilter = [CIFilter filterWithName:@"CIRadialGradient"];
     [ciFilter setValue:@(param.startRadius) forKey:@"inputRadius0"];
     [ciFilter setValue:@(param.endRadius) forKey:@"inputRadius1"];
-    [ciFilter setValue:[CIColor colorWithCGColor:param.startColor] forKey:@"inputColor0"];
-    [ciFilter setValue:[CIColor colorWithCGColor:param.endColor] forKey:@"inputColor1"];
+    [ciFilter setValue:[CIColor colorWithCGColor:param.startColor.CGColor] forKey:@"inputColor0"];
+    [ciFilter setValue:[CIColor colorWithCGColor:param.endColor.CGColor] forKey:@"inputColor1"];
     CIVector *vectorCenter = [CIVector vectorWithX:rect.size.width * param.centerPoint.x Y:rect.size.height * (1 - param.centerPoint.y)];
     [ciFilter setValue:vectorCenter forKey:kCIInputCenterKey];
     

@@ -11,8 +11,8 @@
 typedef struct FDLinearGradientParam {
     CGPoint startPoint;
     CGPoint endPoint;
-    CGColorRef startColor;
-    CGColorRef endColor;
+    UIColor* startColor;
+    UIColor* endColor;
 }FDLinearGradientParam;
 
 typedef struct FDRadialGradientParam {
@@ -20,8 +20,8 @@ typedef struct FDRadialGradientParam {
     CGPoint centerPoint;
     CGFloat startRadius;
     CGFloat endRadius;
-    CGColorRef startColor;
-    CGColorRef endColor;
+    UIColor* startColor;
+    UIColor* endColor;
 }FDRadialGradientParam;
 
 
