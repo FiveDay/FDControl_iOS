@@ -10,4 +10,22 @@
 
 @implementation FDRouterRegParam
 
+- (NSUInteger)hash {
+    return YES;
+}
+
+- (BOOL)isEqual:(id)object {
+    
+    if (self == object) {
+        return YES;
+    }
+    
+    if ([object isMemberOfClass:[FDRouterRegParam class]]) {
+        FDRouterRegParam* regObj = object;
+        if ([regObj.path isEqualToString:self.path]) {
+            return YES;
+        }
+    }
+    return NO;
+}
 @end

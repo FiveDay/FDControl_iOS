@@ -14,7 +14,7 @@
 
 @implementation FDRouter
 
-+ (instancetype)shared:(NSArray<FDRouterRegParam*>*)routes {
++ (instancetype)shared:(NSSet<FDRouterRegParam*>*)routes {
     static FDRouter* _instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -35,6 +35,6 @@
 }
 
 - (void)push:(NSString*)path {
-    
+
 }
 @end
