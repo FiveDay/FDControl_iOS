@@ -20,50 +20,36 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/UINavigationController+FDRouter.h>
 //Control
 #import <FDControl/FDWebJsViewController.h>
-//FDActivityIndicator Control
 #import <FDControl/FDActivityIndicatorView.h>
-// Category
-#import <FDControl/NSObject+FDPropertyMethod.h>
-#import <FDControl/NSDictionary+FDJSONSerialization.h>
-//UIImage WebImage Control
 #import <FDControl/UIImageView+FDWebImageView.h>
-//Cache Control
 #import <FDControl/FDDiskCache.h>
 #import <FDControl/FDMemoryCache.h>
 
-//UIView Category
+// Category
+#import <FDControl/NSObject+FDPropertyMethod.h>
+#import <FDControl/NSDictionary+FDJSONSerialization.h>
 #import <FDControl/UIView+FDLayout.h>
-//NSString Category
 #import <FDControl/NSString+FDOperator.h>
 #import <FDControl/NSString+FDMD5.h>
 #import <FDControl/NSString+FDFileDirectory.h>
-//UIColor Category
 #import <FDControl/UIColor+FDColor.h>
 #import <FDControl/CAShapeLayer+FDShapeHelper.h>
-
-//UIImageView Category
 #import <FDControl/UIImageView+FDImageCoder.h>
-
+#import <FDControl/NSBundle+FDMainBundle.h>
 #else
 //Router
 #import "UINavigationController+FDRouter.h"
 
 //Control
 #import "FDWebJsViewController.h"
-
-//FDActivityIndicator Control
 #import "FDActivityIndicatorView.h"
-// Category
-#import "NSObject+FDPropertyMethod.h"
-#import "NSDictionary+FDJSONSerialization.h"
-//UIImage WebImage Control
 #import "UIImageView+FDWebImageView.h"
-
-//Cache Control
 #import "FDDiskCache.h"
 #import "FDMemoryCache.h"
 
 //Category
+#import "NSObject+FDPropertyMethod.h"
+#import "NSDictionary+FDJSONSerialization.h"
 #import "UIView+FDLayout.h"
 #import "NSString+FDOperator.h"
 #import "NSString+FDMD5.h"
@@ -71,4 +57,5 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "UIColor+FDColor.h"
 #import "CAShapeLayer+FDShapeHelper.h"
 #import "UIImageView+FDImageCoder.h"
+#import "NSBundle+FDMainBundle.h"
 #endif

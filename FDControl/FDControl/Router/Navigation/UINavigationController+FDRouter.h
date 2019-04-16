@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)installRoutes:(NSSet<FDNavigationRouterRegParam*>*)routes;
 
 - (void)navTo:(NSString*)path;
-
+- (void)navToUrl:(NSURL*)url;
 @end
 
 NS_ASSUME_NONNULL_END

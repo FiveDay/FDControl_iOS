@@ -15,4 +15,8 @@
     return [self stringByTrimmingCharactersInSet:set];
 }
 
+- (NSString*)stringByTrimming:(NSString*)string {
+    NSCharacterSet* set = [NSCharacterSet characterSetWithCharactersInString:@"/"];
+    return [self stringByTrimmingCharactersInSet:set];
+}
 @end

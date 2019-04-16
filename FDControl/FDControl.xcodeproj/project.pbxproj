@@ -81,6 +81,8 @@
 		45A2046C226470F500C068AE /* FDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046A226470F500C068AE /* FDRouter.m */; };
 		45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204782265794E00C068AE /* UINavigationController+FDRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45A2047B2265794E00C068AE /* UINavigationController+FDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204792265794E00C068AE /* UINavigationController+FDRouter.m */; };
+		45A2047F2265BE8900C068AE /* NSBundle+FDMainBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2047D2265BE8900C068AE /* NSBundle+FDMainBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A204802265BE8900C068AE /* NSBundle+FDMainBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2047E2265BE8900C068AE /* NSBundle+FDMainBundle.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -175,6 +177,8 @@
 		45A2046A226470F500C068AE /* FDRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRouter.m; sourceTree = "<group>"; };
 		45A204782265794E00C068AE /* UINavigationController+FDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDRouter.h"; sourceTree = "<group>"; };
 		45A204792265794E00C068AE /* UINavigationController+FDRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDRouter.m"; sourceTree = "<group>"; };
+		45A2047D2265BE8900C068AE /* NSBundle+FDMainBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+FDMainBundle.h"; sourceTree = "<group>"; };
+		45A2047E2265BE8900C068AE /* NSBundle+FDMainBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+FDMainBundle.m"; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 		4514D23321BFB3450076290D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				45A2047C2265BDEE00C068AE /* NSBundle */,
 				453A6F3F2254C512006CC30A /* CAShapeLayer */,
 				45A20445225E01C900C068AE /* NSDictionary */,
 				453A6F61225CAEB0006CC30A /* NSObject */,
@@ -486,6 +491,15 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		45A2047C2265BDEE00C068AE /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				45A2047D2265BE8900C068AE /* NSBundle+FDMainBundle.h */,
+				45A2047E2265BE8900C068AE /* NSBundle+FDMainBundle.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,6 +516,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A2047F2265BE8900C068AE /* NSBundle+FDMainBundle.h in Headers */,
 				45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */,
 				45A204672264705800C068AE /* FDRouterRegParam.h in Headers */,
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
@@ -653,6 +668,7 @@
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
 				45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
+				45A204802265BE8900C068AE /* NSBundle+FDMainBundle.m in Sources */,
 				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,

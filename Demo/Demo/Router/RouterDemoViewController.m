@@ -28,17 +28,18 @@
     
     UIButton* pushB = [UIButton new];
     pushB.backgroundColor = [UIColor greenColor];
-    [pushB setTitle:@"pushA" forState:UIControlStateNormal];
+    [pushB setTitle:@"pushB" forState:UIControlStateNormal];
     [pushB addTarget:self action:@selector(onPushB) forControlEvents:UIControlEventTouchUpInside];
     pushB.frame = CGRectMake(0, 300, 100, 60);
     [self.view addSubview:pushB];
 }
 
 - (void)onPushA {
-    [self.navigationController navTo:@"/Router/aRed"];
+    [self.navigationController navTo:@"Router/aRed"];
 }
 
 - (void)onPushB {
-    [self.navigationController navTo:@"/Router/bGreen"];
+    NSURL* url = [NSURL URLWithString:@"FDControlDemo://Router/bGreen"];
+    [self.navigationController navToUrl:url];
 }
 @end

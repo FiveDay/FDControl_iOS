@@ -21,4 +21,9 @@
     [self pushViewController:viewCtl animated:YES];
 }
 
+- (void)navToUrl:(NSURL*)url {
+    Class cls = [[FDRouter shared]navToUrl:url];
+    UIViewController* viewCtl = [cls new];
+    [self pushViewController:viewCtl animated:YES];
+}
 @end

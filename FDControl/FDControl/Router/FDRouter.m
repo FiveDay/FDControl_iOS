@@ -9,10 +9,12 @@
 #import "FDRouter.h"
 
 #import <UIKit/UIKit.h>
+#import "FDControl.h"
 
 @interface FDRouter ()
 @property(strong, nonatomic)NSSet<FDRouterRegParam*>* routes;
 @property(strong, nonatomic)NSMutableDictionary* routeTable;
+@property(strong, nonatomic)NSString* scheme;
 @end
 
 @implementation FDRouter
@@ -30,19 +32,34 @@
     if (routes == nil || routes.count == 0) {
         return nil;
     }
+
     _routes = routes;
+    _scheme = [NSBundle firstScheme]?[NSBundle firstScheme]:@"FDControlDemo";
+    _scheme = [_scheme stringByAppendingString:@"://"];
     _routeTable = [NSMutableDictionary new];
     NSArray* ary = [_routes allObjects];
     for (FDRouterRegParam* param in ary) {
-        if ([param objectForKey:@"component"] && [param objectForKey:@"path"]) {
-            [_routeTable setObject:[param objectForKey:@"component"] forKey:[param objectForKey:@"path"]];
+        Class component = [param objectForKey:@"component"];
+        NSString* path = [param objectForKey:@"path"];
+        if ( component && path ) {
+            path = [path stringByTrimming:@"/"];
+            NSString* uri = [_scheme stringByAppendingString:path];
+            [_routeTable setObject:component forKey:uri];
         };
     }
     return self;
 }
 
 - (Class)navTo:(NSString*)path {
-    Class cls = [self.routeTable objectForKey:path];
+    path = [path stringByTrimming:@"/"];
+    NSString* uri = [self.scheme stringByAppendingString:path];
+    Class cls = [self.routeTable objectForKey:uri];
+    return cls;
+}
+
+- (Class)navToUrl:(NSURL*)url {
+    NSString* uri = [url absoluteString];
+    Class cls = [self.routeTable objectForKey:uri];
     return cls;
 }
 @end

@@ -11,5 +11,6 @@
 @interface NSString (FDOperator)
 
 - (NSString*)stringByTrimmingWhitespaceAndNewLine;
+- (NSString*)stringByTrimming:(NSString*)string;
 
 @end
