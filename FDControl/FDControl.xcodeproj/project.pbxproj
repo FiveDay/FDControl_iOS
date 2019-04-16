@@ -75,10 +75,12 @@
 		45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044B225F194E00C068AE /* FDWebProgressView.m */; };
 		45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2044E225F22B800C068AE /* FDWebViewJavascriptBridge.h */; };
 		45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044F225F22B800C068AE /* FDWebViewJavascriptBridge.m */; };
-		45A204672264705800C068AE /* FDRouterRegParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204652264705800C068AE /* FDRouterRegParam.h */; };
+		45A204672264705800C068AE /* FDRouterRegParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204652264705800C068AE /* FDRouterRegParam.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45A204682264705800C068AE /* FDRouterRegParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204662264705800C068AE /* FDRouterRegParam.m */; };
 		45A2046B226470F500C068AE /* FDRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A20469226470F500C068AE /* FDRouter.h */; };
 		45A2046C226470F500C068AE /* FDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046A226470F500C068AE /* FDRouter.m */; };
+		45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204782265794E00C068AE /* UINavigationController+FDRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A2047B2265794E00C068AE /* UINavigationController+FDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204792265794E00C068AE /* UINavigationController+FDRouter.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -171,6 +173,8 @@
 		45A204662264705800C068AE /* FDRouterRegParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRouterRegParam.m; sourceTree = "<group>"; };
 		45A20469226470F500C068AE /* FDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRouter.h; sourceTree = "<group>"; };
 		45A2046A226470F500C068AE /* FDRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRouter.m; sourceTree = "<group>"; };
+		45A204782265794E00C068AE /* UINavigationController+FDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDRouter.h"; sourceTree = "<group>"; };
+		45A204792265794E00C068AE /* UINavigationController+FDRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDRouter.m"; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -464,12 +468,22 @@
 		45A2046422646F9900C068AE /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				45A204772265792300C068AE /* Navigation */,
 				45A204652264705800C068AE /* FDRouterRegParam.h */,
 				45A204662264705800C068AE /* FDRouterRegParam.m */,
 				45A20469226470F500C068AE /* FDRouter.h */,
 				45A2046A226470F500C068AE /* FDRouter.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		45A204772265792300C068AE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				45A204782265794E00C068AE /* UINavigationController+FDRouter.h */,
+				45A204792265794E00C068AE /* UINavigationController+FDRouter.m */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
@@ -488,6 +502,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */,
+				45A204672264705800C068AE /* FDRouterRegParam.h in Headers */,
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
 				45A20448225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h in Headers */,
@@ -495,11 +511,9 @@
 				45A20442225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h in Headers */,
 				453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */,
 				453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */,
-				45A204672264705800C068AE /* FDRouterRegParam.h in Headers */,
 				453A6F53225C49B9006CC30A /* FDWebJsViewController.h in Headers */,
 				45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */,
 				45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */,
-				45A2046B226470F500C068AE /* FDRouter.h in Headers */,
 				45936ADE2243A0A20073C9E2 /* NSString+FDFileDirectory.h in Headers */,
 				45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */,
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
@@ -507,6 +521,7 @@
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */,
+				45A2046B226470F500C068AE /* FDRouter.h in Headers */,
 				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
@@ -648,6 +663,7 @@
 				45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */,
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
 				45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */,
+				45A2047B2265794E00C068AE /* UINavigationController+FDRouter.m in Sources */,
 				453A6F54225C49B9006CC30A /* FDWebJsViewController.m in Sources */,
 				45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */,
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,

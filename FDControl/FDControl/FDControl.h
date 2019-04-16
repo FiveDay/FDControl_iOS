@@ -16,7 +16,8 @@ FOUNDATION_EXPORT double FDControlVersionNumber;
 FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FDControl/PublicHeader.h>
-
+//Router
+#import <FDControl/UINavigationController+FDRouter.h>
 //Control
 #import <FDControl/FDWebJsViewController.h>
 //FDActivityIndicator Control
@@ -44,6 +45,9 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/UIImageView+FDImageCoder.h>
 
 #else
+//Router
+#import "UINavigationController+FDRouter.h"
+
 //Control
 #import "FDWebJsViewController.h"
 

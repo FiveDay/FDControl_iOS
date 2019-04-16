@@ -7,7 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import <FDControl/FDControl.h>
+
 #import "ViewController.h"
+#import "RouterAViewController.h"
+#import "RouterBViewController.h"
+
 @interface AppDelegate ()
 @property(nonatomic, strong) ViewController* mainVC;
 @end
@@ -17,6 +22,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSSet* routes = [NSSet setWithArray:@[@{@"path":@"/Router/aRed",
+                                            @"component":[RouterAViewController class]
+                                            },
+                                          @{@"path":@"/Router/bGreen",
+                                            @"component":[RouterBViewController class]
+                                            },
+                                          @{@"path":@"/Router/bGreen",
+                                            @"component":[RouterBViewController class]
+                                            }]];
+    [UINavigationController installRoutes:routes];
+    
     CGRect frame = [[UIScreen mainScreen]bounds];
     self.window = [[UIWindow alloc]initWithFrame:frame];
     _mainVC = [[ViewController alloc]initWithNibName:nil bundle:nil];

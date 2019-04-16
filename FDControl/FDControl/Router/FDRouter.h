@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "FDRouterRegParam.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -16,11 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)new UNAVAILABLE_ATTRIBUTE;
 - (instancetype)init UNAVAILABLE_ATTRIBUTE;
 
-+ (instancetype)shared:(NSSet<FDRouterRegParam*>*)routes;
++ (instancetype)shared;
 
-- (void)push:(NSString*)path;
-
-
+- (instancetype)installRoutes:(NSSet<FDRouterRegParam*>*)routes;
+- (Class)navTo:(NSString*)path;
 @end
 
 NS_ASSUME_NONNULL_END

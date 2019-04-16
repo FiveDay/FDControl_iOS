@@ -19,6 +19,9 @@
 		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
 		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
+		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
+		45A204732264987200C068AE /* RouterAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204722264987200C068AE /* RouterAViewController.m */; };
+		45A204762264988700C068AE /* RouterBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204752264988700C068AE /* RouterBViewController.m */; };
 		6D050D0C225E175B00B4FAF1 /* testimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D050D0B225E175B00B4FAF1 /* testimage.jpg */; };
 		6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */; };
 /* End PBXBuildFile section */
@@ -76,6 +79,12 @@
 		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
 		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
 		453A6F68225DB664006CC30A /* NativeFunctionForJs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeFunctionForJs.m; sourceTree = "<group>"; };
+		45A2046E226495A100C068AE /* RouterDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterDemoViewController.h; sourceTree = "<group>"; };
+		45A2046F226495A100C068AE /* RouterDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterDemoViewController.m; sourceTree = "<group>"; };
+		45A204712264987200C068AE /* RouterAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterAViewController.h; sourceTree = "<group>"; };
+		45A204722264987200C068AE /* RouterAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterAViewController.m; sourceTree = "<group>"; };
+		45A204742264988700C068AE /* RouterBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterBViewController.h; sourceTree = "<group>"; };
+		45A204752264988700C068AE /* RouterBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterBViewController.m; sourceTree = "<group>"; };
 		6D050D0B225E175B00B4FAF1 /* testimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testimage.jpg; sourceTree = "<group>"; };
 		6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewDecoderViewController.h; sourceTree = "<group>"; };
 		6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewDecoderViewController.m; sourceTree = "<group>"; };
@@ -132,6 +141,7 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				45A2046D2264957800C068AE /* Router */,
 				453A6F66225DB61C006CC30A /* WebJs */,
 				4514D1FD21BFADCF0076290D /* AppDelegate.h */,
 				4514D1FE21BFADCF0076290D /* AppDelegate.m */,
@@ -175,6 +185,19 @@
 				453A6F68225DB664006CC30A /* NativeFunctionForJs.m */,
 			);
 			path = WebJs;
+			sourceTree = "<group>";
+		};
+		45A2046D2264957800C068AE /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				45A2046E226495A100C068AE /* RouterDemoViewController.h */,
+				45A2046F226495A100C068AE /* RouterDemoViewController.m */,
+				45A204712264987200C068AE /* RouterAViewController.h */,
+				45A204722264987200C068AE /* RouterAViewController.m */,
+				45A204742264988700C068AE /* RouterBViewController.h */,
+				45A204752264988700C068AE /* RouterBViewController.m */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		6D050D0A225E175B00B4FAF1 /* resources */ = {
@@ -318,9 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A204762264988700C068AE /* RouterBViewController.m in Sources */,
 				4514D20221BFADCF0076290D /* ViewController.m in Sources */,
 				453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
+				45A204732264987200C068AE /* RouterAViewController.m in Sources */,
+				45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */,
 				6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */,
 				4514D1FF21BFADCF0076290D /* AppDelegate.m in Sources */,
 				453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */,
