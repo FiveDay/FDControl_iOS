@@ -11,8 +11,8 @@
 
 @implementation UINavigationController (FDRouter)
 
-+ (void)installRoutes:(NSSet<FDNavigationRouterRegParam*>*)routes {
-    [[FDRouter shared]installRoutes:routes];
++ (void)registerRoutes:(NSSet<FDNavigationRouterRegParam*>*)routes {
+    [[FDRouter shared]registerRoutes:routes];
 }
 
 - (void)navTo:(NSString*)path {
@@ -23,6 +23,12 @@
 
 - (void)navToUrl:(NSURL*)url {
     Class cls = [[FDRouter shared]navToUrl:url];
+    UIViewController* viewCtl = [cls new];
+    [self pushViewController:viewCtl animated:YES];
+}
+
+- (void)navToName:(NSString*)name param:(NSDictionary*)param {
+    Class cls = [[FDRouter shared]navToName:name param:param];
     UIViewController* viewCtl = [cls new];
     [self pushViewController:viewCtl animated:YES];
 }

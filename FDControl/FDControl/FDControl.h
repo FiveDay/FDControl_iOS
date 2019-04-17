@@ -29,6 +29,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/NSObject+FDPropertyMethod.h>
 #import <FDControl/NSDictionary+FDJSONSerialization.h>
 #import <FDControl/UIView+FDLayout.h>
+#import <FDControl/NSString+FDURL.h>
 #import <FDControl/NSString+FDOperator.h>
 #import <FDControl/NSString+FDMD5.h>
 #import <FDControl/NSString+FDFileDirectory.h>
@@ -51,6 +52,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "NSObject+FDPropertyMethod.h"
 #import "NSDictionary+FDJSONSerialization.h"
 #import "UIView+FDLayout.h"
+#import "NSString+FDURL.h"
 #import "NSString+FDOperator.h"
 #import "NSString+FDMD5.h"
 #import "NSString+FDFileDirectory.h"

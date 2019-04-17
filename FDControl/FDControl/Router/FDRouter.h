@@ -19,10 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 
-- (instancetype)installRoutes:(NSSet<FDRouterRegParam*>*)routes;
+- (void)registerRoutes:(NSSet<FDRouterRegParam*>*)routes;
 
-- (Class)navTo:(NSString*)path;
-- (Class)navToUrl:(NSURL*)url;
+- (nullable Class)navTo:(NSString*)path;
+- (nullable Class)navToUrl:(NSURL*)url;
+- (nullable Class)navToName:(NSString*)name param:(NSDictionary*)param;
+
 @end
 
 NS_ASSUME_NONNULL_END

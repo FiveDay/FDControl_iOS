@@ -22,16 +22,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    NSSet* routes = [NSSet setWithArray:@[@{@"path":@"/Router/aRed",
-                                            @"component":[RouterAViewController class]
+    NSSet* routes = [NSSet setWithArray:@[
+                                            @{@"path":@"/Router/aRed",
+                                              @"component":@"RouterAViewController",
+                                              @"name":@"aRed"
                                             },
-                                          @{@"path":@"/Router/bGreen",
-                                            @"component":[RouterBViewController class]
+                                            @{@"path":@"/Router/bGreen",
+                                              @"component":@"RouterBViewController",
                                             },
-                                          @{@"path":@"/Router/bGreen",
-                                            @"component":[RouterBViewController class]
+                                            @{@"path":@"/Router/bGreen",
+                                              @"component":@"RouterBViewController",
                                             }]];
-    [UINavigationController installRoutes:routes];
+    [UINavigationController registerRoutes:routes];
     
     CGRect frame = [[UIScreen mainScreen]bounds];
     self.window = [[UIWindow alloc]initWithFrame:frame];

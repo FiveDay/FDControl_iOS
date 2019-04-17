@@ -18,10 +18,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UINavigationController (FDRouter)
 
-+ (void)installRoutes:(NSSet<FDNavigationRouterRegParam*>*)routes;
++ (void)registerRoutes:(NSSet<FDNavigationRouterRegParam*>*)routes;
 
 - (void)navTo:(NSString*)path;
 - (void)navToUrl:(NSURL*)url;
+- (void)navToName:(NSString*)name param:(nullable NSDictionary*)param;
+
 @end
 
 NS_ASSUME_NONNULL_END

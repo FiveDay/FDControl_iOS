@@ -32,14 +32,25 @@
     [pushB addTarget:self action:@selector(onPushB) forControlEvents:UIControlEventTouchUpInside];
     pushB.frame = CGRectMake(0, 300, 100, 60);
     [self.view addSubview:pushB];
+    
+    UIButton* pushC = [UIButton new];
+    pushC.backgroundColor = [UIColor redColor];
+    [pushC setTitle:@"pushC" forState:UIControlStateNormal];
+    [pushC addTarget:self action:@selector(onPushC) forControlEvents:UIControlEventTouchUpInside];
+    pushC.frame = CGRectMake(0, 400, 100, 60);
+    [self.view addSubview:pushC];
 }
 
 - (void)onPushA {
-    [self.navigationController navTo:@"Router/aRed"];
+    [self.navigationController navTo:@"/Router/aRed"];
 }
 
 - (void)onPushB {
     NSURL* url = [NSURL URLWithString:@"FDControlDemo://Router/bGreen"];
     [self.navigationController navToUrl:url];
+}
+
+- (void)onPushC {
+    [self.navigationController navToName:@"aRed" param:nil];
 }
 @end
