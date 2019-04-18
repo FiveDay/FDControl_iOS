@@ -42,15 +42,15 @@
 }
 
 - (void)onPushA {
-    [self.navigationController navTo:@"/Router/aRed"];
+    [self.navigationController navTo:@"/Router/aRed?colorId=123&name=kinno"];
 }
 
 - (void)onPushB {
-    NSURL* url = [NSURL URLWithString:@"FDControlDemo://Router/bGreen"];
+    NSURL* url = [NSURL URLWithString:@"FDControlDemo://localhost/Router/bGreen"];
     [self.navigationController navToUrl:url];
 }
 
 - (void)onPushC {
-    [self.navigationController navToName:@"aRed" param:nil];
+    [self.navigationController navToName:@"aRed" param:@{@"colorId":@(123)}];
 }
 @end

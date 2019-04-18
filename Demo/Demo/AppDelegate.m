@@ -23,7 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     NSSet* routes = [NSSet setWithArray:@[
-                                            @{@"path":@"/Router/aRed",
+                                          @{@"path":@"/Router/aRed/",
                                               @"component":@"RouterAViewController",
                                               @"name":@"aRed"
                                             },

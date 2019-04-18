@@ -10,6 +10,8 @@
 
 #import "FDRouterRegParam.h"
 
+typedef void(^FDRouterHandle)(_Nullable Class component, NSDictionary* _Nullable  params);
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDRouter : NSObject
@@ -21,9 +23,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)registerRoutes:(NSSet<FDRouterRegParam*>*)routes;
 
-- (nullable Class)navTo:(NSString*)path;
-- (nullable Class)navToUrl:(NSURL*)url;
-- (nullable Class)navToName:(NSString*)name param:(NSDictionary*)param;
+- (void)navTo:(NSString*)path handle:(nullable FDRouterHandle)handle;
+- (void)navToUrl:(NSURL*)url handle:(nullable FDRouterHandle)handle;
+- (nullable Class)navToName:(NSString*)name;
 
 @end
 

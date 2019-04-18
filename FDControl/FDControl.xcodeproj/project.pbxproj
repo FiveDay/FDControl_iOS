@@ -85,6 +85,8 @@
 		45A204802265BE8900C068AE /* NSBundle+FDMainBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2047E2265BE8900C068AE /* NSBundle+FDMainBundle.m */; };
 		45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204822266F0C200C068AE /* NSString+FDURL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45A204852266F0C200C068AE /* NSString+FDURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204832266F0C200C068AE /* NSString+FDURL.m */; };
+		45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2048622671B0800C068AE /* UIViewController+FDRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A2048922671B0800C068AE /* UIViewController+FDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2048722671B0800C068AE /* UIViewController+FDRouter.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -183,6 +185,8 @@
 		45A2047E2265BE8900C068AE /* NSBundle+FDMainBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+FDMainBundle.m"; sourceTree = "<group>"; };
 		45A204822266F0C200C068AE /* NSString+FDURL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+FDURL.h"; sourceTree = "<group>"; };
 		45A204832266F0C200C068AE /* NSString+FDURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDURL.m"; sourceTree = "<group>"; };
+		45A2048622671B0800C068AE /* UIViewController+FDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FDRouter.h"; sourceTree = "<group>"; };
+		45A2048722671B0800C068AE /* UIViewController+FDRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FDRouter.m"; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -510,6 +514,8 @@
 		45A204812265EB5900C068AE /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				45A2048622671B0800C068AE /* UIViewController+FDRouter.h */,
+				45A2048722671B0800C068AE /* UIViewController+FDRouter.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -530,6 +536,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
 				45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */,
 				45A2047F2265BE8900C068AE /* NSBundle+FDMainBundle.h in Headers */,
 				45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */,
@@ -687,6 +694,7 @@
 				45A204802265BE8900C068AE /* NSBundle+FDMainBundle.m in Sources */,
 				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
+				45A2048922671B0800C068AE /* UIViewController+FDRouter.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
 				453A6F472255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m in Sources */,
 				453A6F4B2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.m in Sources */,
