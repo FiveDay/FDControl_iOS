@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithParam:(NSDictionary*)param;
 
-@property(strong, nonatomic, nullable)NSDictionary* params;
+@property(strong, nonatomic, nullable)NSDictionary* param;
 
 @end
 

@@ -11,19 +11,26 @@
 
 @implementation UIViewController (FDRouter)
 
-static char kAssociatedParamsObjectKey;
+static char kAssociatedParamObjectKey;
 
 + (instancetype) viewControllerWithParam:(NSDictionary*)param {
     return [[self alloc]initWithParam:param];
 }
 
-- (void)setParams:(NSDictionary *)paramsDictionary
-{
-    objc_setAssociatedObject(self, &kAssociatedParamsObjectKey, paramsDictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (instancetype)initWithParam:(NSDictionary*)param {
+    if (self = [self init]) {
+        self.param = param;
+    }
+    return self;
 }
 
-- (NSDictionary *)params
+- (void)setParam:(NSDictionary *)paramDictionary
 {
-    return objc_getAssociatedObject(self, &kAssociatedParamsObjectKey);
+    objc_setAssociatedObject(self, &kAssociatedParamObjectKey, paramDictionary, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSDictionary *)param
+{
+    return objc_getAssociatedObject(self, &kAssociatedParamObjectKey);
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "RouterAViewController.h"
+#import <FDControl/FDControl.h>
 
 @interface RouterAViewController ()
 
@@ -14,18 +15,13 @@
 
 @implementation RouterAViewController
 
-- (instancetype)initWithParam:(NSDictionary*)param {
-    if (self = [super init]) {
-        if ([[param objectForKey:@"colorId"]isEqualToString:@"123"]) {
-            self.view.backgroundColor = [UIColor greenColor];
-        }
-    }
-    return self;
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
+    if ([[self.param objectForKey:@"colorId"]isEqualToString:@"123"]) {
+        self.view.backgroundColor = [UIColor greenColor];
+    }
 }
 
 /*

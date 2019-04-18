@@ -150,11 +150,11 @@
     }
     Class cls = NSClassFromString([subRoutes objectForKey:@"component"]);
     
-    NSMutableDictionary* params = [NSMutableDictionary new];
+    NSMutableDictionary* param = [NSMutableDictionary new];
     for (NSURLQueryItem* item in urlComponents.queryItems) {
-        [params setObject:item.value forKey:item.name];
+        [param setObject:item.value forKey:item.name];
     }
-    UIViewController* ctl = [cls viewControllerWithParam:params];
+    UIViewController* ctl = [cls viewControllerWithParam:param];
     return ctl;
 }
 - (UIViewController*)navToUrl:(NSURL*)url {
@@ -168,11 +168,11 @@
         subRoutes = [subRoutes objectForKey:pathComponent];
     }
     Class cls = NSClassFromString([subRoutes objectForKey:@"component"]);
-    NSMutableDictionary* params = [NSMutableDictionary new];
+    NSMutableDictionary* param = [NSMutableDictionary new];
     for (NSURLQueryItem* item in urlComponents.queryItems) {
-        [params setObject:item.value forKey:item.name];
+        [param setObject:item.value forKey:item.name];
     }
-    UIViewController* ctl = [cls viewControllerWithParam:params];
+    UIViewController* ctl = [cls viewControllerWithParam:param];
     return ctl;
 }
 
