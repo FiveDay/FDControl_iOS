@@ -14,6 +14,13 @@
 
 @implementation RouterBViewController
 
+- (instancetype)initWithParam:(NSDictionary*)param {
+    if (self = [super init]) {
+        
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

@@ -7,7 +7,6 @@
 //
 
 #import "UINavigationController+FDRouter.h"
-#import "FDControl.h"
 #import "FDRouter.h"
 
 @implementation UINavigationController (FDRouter)
@@ -17,22 +16,25 @@
 }
 
 - (void)navTo:(NSString*)path {
-    [[FDRouter shared]navTo:path handle:^(Class  _Nullable __unsafe_unretained component, NSDictionary * _Nullable params) {
-        UIViewController* viewCtl = [component viewControllerWithParam:params];
-        [self pushViewController:viewCtl animated:YES];
-    }];
+//    [[FDRouter shared]navTo:path handle:^(Class  _Nullable __unsafe_unretained component, NSDictionary * _Nullable params) {
+//        UIViewController* viewCtl = [component viewControllerWithParam:params];
+//        [self pushViewController:viewCtl animated:YES];
+//    }];
+    UIViewController* viewCtl = [[FDRouter shared]navTo:path];
+    [self pushViewController:viewCtl animated:YES];
 }
 
 - (void)navToUrl:(NSURL*)url {
-    [[FDRouter shared]navToUrl:url handle:^(Class  _Nullable __unsafe_unretained component, NSDictionary * _Nullable params) {
-        UIViewController* viewCtl = [component viewControllerWithParam:params];
-        [self pushViewController:viewCtl animated:YES];
-    }];
+//    [[FDRouter shared]navToUrl:url handle:^(Class  _Nullable __unsafe_unretained component, NSDictionary * _Nullable params) {
+//        UIViewController* viewCtl = [component viewControllerWithParam:params];
+//        [self pushViewController:viewCtl animated:YES];
+//    }];
+    UIViewController* viewCtl = [[FDRouter shared]navToUrl:url];
+    [self pushViewController:viewCtl animated:YES];
 }
 
 - (void)navToName:(NSString*)name param:(NSDictionary*)param {
-    Class cls = [[FDRouter shared]navToName:name];
-    UIViewController* viewCtl = [cls viewControllerWithParam:param];
+    UIViewController* viewCtl = [[FDRouter shared]navToName:name param:param];
     [self pushViewController:viewCtl animated:YES];
 }
 @end

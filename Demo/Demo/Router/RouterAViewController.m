@@ -14,6 +14,14 @@
 
 @implementation RouterAViewController
 
+- (instancetype)initWithParam:(NSDictionary*)param {
+    if (self = [super init]) {
+        if ([[param objectForKey:@"colorId"]isEqualToString:@"123"]) {
+            self.view.backgroundColor = [UIColor greenColor];
+        }
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)viewControllerWithParam:(NSDictionary*)param;
 
+- (instancetype)initWithParam:(NSDictionary*)param;
+
 @property(strong, nonatomic, nullable)NSDictionary* params;
 
 @end

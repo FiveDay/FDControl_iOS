@@ -14,7 +14,7 @@
 static char kAssociatedParamsObjectKey;
 
 + (instancetype) viewControllerWithParam:(NSDictionary*)param {
-    return [self new];
+    return [[self alloc]initWithParam:param];
 }
 
 - (void)setParams:(NSDictionary *)paramsDictionary

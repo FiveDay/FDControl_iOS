@@ -51,6 +51,6 @@
 }
 
 - (void)onPushC {
-    [self.navigationController navToName:@"aRed" param:@{@"colorId":@(123)}];
+    [self.navigationController navToName:@"aRed" param:@{@"colorId":@"153"}];
 }
 @end
