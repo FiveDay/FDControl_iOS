@@ -42,6 +42,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 //UIImageView Category
 #import <FDControl/UIImageView+FDImageCoder.h>
+#import <FDControl/UIButton+FDImageTitleVerticalLayout.h>
 
 #else
 //Control
@@ -67,4 +68,5 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "UIColor+FDColor.h"
 #import "CAShapeLayer+FDShapeHelper.h"
 #import "UIImageView+FDImageCoder.h"
+#import "UIButton+FDImageTitleVerticalLayout.h"
 #endif

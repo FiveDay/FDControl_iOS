@@ -35,6 +35,7 @@
     
     //添加测试vc
     [self.testVCClassNameArray addObject:@"UIImageViewDecoderViewController"];
+    [self.testVCClassNameArray addObject:@"ButtonDemoViewController"];
 }
 
 
