@@ -16,19 +16,11 @@
 }
 
 - (void)navTo:(NSString*)path {
-//    [[FDRouter shared]navTo:path handle:^(Class  _Nullable __unsafe_unretained component, NSDictionary * _Nullable params) {
-//        UIViewController* viewCtl = [component viewControllerWithParam:params];
-//        [self pushViewController:viewCtl animated:YES];
-//    }];
     UIViewController* viewCtl = [[FDRouter shared]navTo:path];
     [self pushViewController:viewCtl animated:YES];
 }
 
 - (void)navToUrl:(NSURL*)url {
-//    [[FDRouter shared]navToUrl:url handle:^(Class  _Nullable __unsafe_unretained component, NSDictionary * _Nullable params) {
-//        UIViewController* viewCtl = [component viewControllerWithParam:params];
-//        [self pushViewController:viewCtl animated:YES];
-//    }];
     UIViewController* viewCtl = [[FDRouter shared]navToUrl:url];
     [self pushViewController:viewCtl animated:YES];
 }
