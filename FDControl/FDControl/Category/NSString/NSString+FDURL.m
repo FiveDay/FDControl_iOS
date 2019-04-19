@@ -11,7 +11,7 @@
 @implementation NSString (FDURL)
 
 - (BOOL)isValidURL {
-    NSURL *url = [NSURL URLWithString:[self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    NSURL *url = [NSURL URLWithString:self];
     if (url) {
         return YES;
     }

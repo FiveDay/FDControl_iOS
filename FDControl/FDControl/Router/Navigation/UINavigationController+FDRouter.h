@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)navToUrl:(NSURL*)url;
 - (void)navToName:(NSString*)name param:(nullable NSDictionary*)param;
 
+- (void)presentTo:(NSString*)path;
+- (void)presentToUrl:(NSURL*)url;
+- (void)presentToName:(NSString*)name param:(nullable NSDictionary*)param;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -39,6 +39,13 @@
     [pushC addTarget:self action:@selector(onPushC) forControlEvents:UIControlEventTouchUpInside];
     pushC.frame = CGRectMake(0, 400, 100, 60);
     [self.view addSubview:pushC];
+    
+    UIButton* presentD = [UIButton new];
+    presentD.backgroundColor = [UIColor redColor];
+    [presentD setTitle:@"presentD" forState:UIControlStateNormal];
+    [presentD addTarget:self action:@selector(onPresentD) forControlEvents:UIControlEventTouchUpInside];
+    presentD.frame = CGRectMake(0, 500, 100, 60);
+    [self.view addSubview:presentD];
 }
 
 - (void)onPushA {
@@ -52,5 +59,9 @@
 
 - (void)onPushC {
     [self.navigationController navToName:@"aRed" param:@{@"colorId":@"153"}];
+}
+
+- (void)onPresentD {
+    [self.navigationController presentTo:@"/Router/aRed?colorId=123&name=kinno"];
 }
 @end

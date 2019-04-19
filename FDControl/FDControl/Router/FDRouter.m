@@ -157,6 +157,7 @@
     UIViewController* ctl = [cls viewControllerWithParam:param];
     return ctl;
 }
+
 - (UIViewController*)navToUrl:(NSURL*)url {
     if (!url) {
         return nil;
