@@ -79,6 +79,8 @@
 		45A204A822730F8000C068AE /* FDAudioFrequencySpectrum.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204A622730F8000C068AE /* FDAudioFrequencySpectrum.m */; };
 		45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204A92273129800C068AE /* FDFrequencySpectrumIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45A204AC2273129800C068AE /* FDFrequencySpectrumIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */; };
+		45A204B42276E57800C068AE /* FDRect180UpDownAni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204B22276E57800C068AE /* FDRect180UpDownAni.h */; };
+		45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B32276E57800C068AE /* FDRect180UpDownAni.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -171,6 +173,8 @@
 		45A204A622730F8000C068AE /* FDAudioFrequencySpectrum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAudioFrequencySpectrum.m; sourceTree = "<group>"; };
 		45A204A92273129800C068AE /* FDFrequencySpectrumIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFrequencySpectrumIndicator.h; sourceTree = "<group>"; };
 		45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFrequencySpectrumIndicator.m; sourceTree = "<group>"; };
+		45A204B22276E57800C068AE /* FDRect180UpDownAni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRect180UpDownAni.h; sourceTree = "<group>"; };
+		45A204B32276E57800C068AE /* FDRect180UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect180UpDownAni.m; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -464,12 +468,22 @@
 		45A204A42272B23500C068AE /* AudioFrequencySpectrum */ = {
 			isa = PBXGroup;
 			children = (
+				45A204B12276E3F200C068AE /* Animations */,
 				45A204A522730F8000C068AE /* FDAudioFrequencySpectrum.h */,
 				45A204A622730F8000C068AE /* FDAudioFrequencySpectrum.m */,
 				45A204A92273129800C068AE /* FDFrequencySpectrumIndicator.h */,
 				45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */,
 			);
 			path = AudioFrequencySpectrum;
+			sourceTree = "<group>";
+		};
+		45A204B12276E3F200C068AE /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				45A204B22276E57800C068AE /* FDRect180UpDownAni.h */,
+				45A204B32276E57800C068AE /* FDRect180UpDownAni.m */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
@@ -503,6 +517,7 @@
 				45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */,
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
+				45A204B42276E57800C068AE /* FDRect180UpDownAni.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				45A204A722730F8000C068AE /* FDAudioFrequencySpectrum.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
@@ -627,6 +642,7 @@
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */,
+				45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */,
 				45936AC22241E13D0073C9E2 /* FDWebImageManager.m in Sources */,
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
