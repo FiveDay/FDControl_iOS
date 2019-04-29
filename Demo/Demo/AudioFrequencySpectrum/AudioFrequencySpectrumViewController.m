@@ -19,8 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    FDFrequencySpectrumIndicator* indicator = [[FDFrequencySpectrumIndicator alloc]initWithFrequencyNum:@6];
-    indicator.frame = CGRectMake(0, 100, 200, 100);
+    FDFrequencySpectrumIndicatorConfig* config = [FDFrequencySpectrumIndicatorConfig new];
+    config.frequencyNum = @45;
+    FDFrequencySpectrumIndicator* indicator = [[FDFrequencySpectrumIndicator alloc]initWithConfig:config];
+    indicator.frame = CGRectMake(0, 100, self.view.frame.size.width, 300);
     [self.view addSubview:indicator];
     [indicator startTest];
 }
