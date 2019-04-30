@@ -10,6 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    FDRect180UpDownType,
+    FDRect360UpDownType,
+} FDFrequencySpectrumIndicatorType;
+
 @interface FDFrequencySpectrumIndicatorConfig : NSObject
 //default:@8
 @property(strong, nonatomic, nullable)NSNumber* frequencyNum;
@@ -19,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(assign, nonatomic)CGFloat frequencyWidth;
 //defatul:4.0
 @property(assign, nonatomic)CGFloat frequencyMargin;
+//default:FDRect180UpDownType
+@property(assign, nonatomic)FDFrequencySpectrumIndicatorType frequencyType;
 @end
 
 @protocol FDFrequencySpectrumIndicatorDataSource <NSObject>

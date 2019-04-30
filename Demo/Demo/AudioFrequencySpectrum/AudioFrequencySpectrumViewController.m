@@ -21,6 +21,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     FDFrequencySpectrumIndicatorConfig* config = [FDFrequencySpectrumIndicatorConfig new];
     config.frequencyNum = @45;
+//    config.frequencyType = FDRect360UpDownType;
     FDFrequencySpectrumIndicator* indicator = [[FDFrequencySpectrumIndicator alloc]initWithConfig:config];
     indicator.frame = CGRectMake(0, 100, self.view.frame.size.width, 300);
     [self.view addSubview:indicator];

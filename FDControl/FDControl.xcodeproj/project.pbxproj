@@ -81,6 +81,8 @@
 		45A204AC2273129800C068AE /* FDFrequencySpectrumIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */; };
 		45A204B42276E57800C068AE /* FDRect180UpDownAni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204B22276E57800C068AE /* FDRect180UpDownAni.h */; };
 		45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B32276E57800C068AE /* FDRect180UpDownAni.m */; };
+		45A204B82277070300C068AE /* FDRect360UpDownAni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204B62277070300C068AE /* FDRect360UpDownAni.h */; };
+		45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B72277070300C068AE /* FDRect360UpDownAni.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -175,6 +177,8 @@
 		45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFrequencySpectrumIndicator.m; sourceTree = "<group>"; };
 		45A204B22276E57800C068AE /* FDRect180UpDownAni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRect180UpDownAni.h; sourceTree = "<group>"; };
 		45A204B32276E57800C068AE /* FDRect180UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect180UpDownAni.m; sourceTree = "<group>"; };
+		45A204B62277070300C068AE /* FDRect360UpDownAni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRect360UpDownAni.h; sourceTree = "<group>"; };
+		45A204B72277070300C068AE /* FDRect360UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect360UpDownAni.m; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -482,6 +486,8 @@
 			children = (
 				45A204B22276E57800C068AE /* FDRect180UpDownAni.h */,
 				45A204B32276E57800C068AE /* FDRect180UpDownAni.m */,
+				45A204B62277070300C068AE /* FDRect360UpDownAni.h */,
+				45A204B72277070300C068AE /* FDRect360UpDownAni.m */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -526,6 +532,7 @@
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
 				453A6F4E225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.h in Headers */,
+				45A204B82277070300C068AE /* FDRect360UpDownAni.h in Headers */,
 				453A6F4A2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
 				6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */,
@@ -643,6 +650,7 @@
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */,
 				45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */,
+				45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */,
 				45936AC22241E13D0073C9E2 /* FDWebImageManager.m in Sources */,
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
