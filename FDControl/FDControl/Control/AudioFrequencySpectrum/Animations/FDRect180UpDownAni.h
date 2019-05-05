@@ -10,10 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDRect180UpDownAni : CALayer
+@interface FDRect180UpDownAni : CAGradientLayer
 
-- (instancetype)initWithColor:(CGColorRef)color
-                        width:(CGFloat)width
+- (instancetype)initWithWidth:(CGFloat)width
                        margin:(CGFloat)margin
                           num:(NSUInteger)num;
 

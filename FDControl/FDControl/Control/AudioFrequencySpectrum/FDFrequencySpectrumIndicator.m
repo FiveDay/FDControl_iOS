@@ -41,7 +41,7 @@
         
         switch (_frequencyType) {
             case FDRect180UpDownType:
-                _animationLayer = [[FDRect180UpDownAni alloc]initWithColor:_tintColor.CGColor width:_frequencyWidth margin:_frequencyMargin num:_frequencyNum.unsignedIntegerValue];
+                _animationLayer = [[FDRect180UpDownAni alloc]initWithWidth:_frequencyWidth margin:_frequencyMargin num:_frequencyNum.unsignedIntegerValue];
                 break;
             case FDRect360UpDownType:
                 _animationLayer = [[FDRect360UpDownAni alloc]initWithColor:_tintColor.CGColor width:_frequencyWidth num:_frequencyNum.unsignedIntegerValue];

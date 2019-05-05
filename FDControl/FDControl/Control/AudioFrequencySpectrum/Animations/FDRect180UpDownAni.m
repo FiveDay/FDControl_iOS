@@ -9,34 +9,36 @@
 #import "FDRect180UpDownAni.h"
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
+#import "FDControl.h"
 
 @interface FDRect180UpDownAni ()
 @property(assign, nonatomic)NSUInteger rectNum;
-@property(assign, nonatomic)CGColorRef tintColor;
 @property(assign, nonatomic)CGFloat rectWidth;
 @property(assign, nonatomic)CGFloat rectMargin;
-@property(strong, nonatomic)NSMutableArray<CAGradientLayer*>* rectLayers;
+@property(strong, nonatomic)NSMutableArray<CALayer*>* rectLayers;
 @end
 
 @implementation FDRect180UpDownAni
 
-- (instancetype)initWithColor:(CGColorRef)color
-                        width:(CGFloat)width
+- (instancetype)initWithWidth:(CGFloat)width
                        margin:(CGFloat)margin
                           num:(NSUInteger)num {
     if (self = [super init]) {
-        _tintColor = color;
         _rectWidth = width;
         _rectMargin = margin;
         _rectNum = num;
         
+        self.mask = [CALayer new];
+        self.colors = @[(__bridge id)[UIColor colorWithHexString:@"#ff0000"].CGColor,
+                        (__bridge id)[UIColor colorWithHexString:@"#fff200"].CGColor,
+                        (__bridge id)[UIColor colorWithHexString:@"#1e9600"].CGColor];
+        self.startPoint = CGPointZero;
+        self.endPoint = CGPointMake(1, 1);
         _rectLayers = [NSMutableArray new];
         for (int index = 0; index < _rectNum; index++) {
-            CAGradientLayer* rect = [CAGradientLayer new];
-            rect.colors = @[(__bridge id)_tintColor,
-                                      (__bridge id)[UIColor colorWithRed:14.f/255 green:52.f/255 blue:67.f/255 alpha:1.0f].CGColor];
-            rect.locations = @[@0.6, @1.0];
-            [self addSublayer:rect];
+            CALayer* rect = [CALayer new];
+            rect.backgroundColor = [UIColor whiteColor].CGColor;
+            [self.mask addSublayer:rect];
             [_rectLayers addObject:rect];
         }
     }

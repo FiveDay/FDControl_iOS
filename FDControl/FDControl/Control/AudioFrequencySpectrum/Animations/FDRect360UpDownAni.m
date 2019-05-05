@@ -9,13 +9,14 @@
 #import "FDRect360UpDownAni.h"
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
+#import "FDControl.h"
 
 @interface FDRect360UpDownAni ()
 @property(assign, nonatomic)CGFloat radius;
 @property(assign, nonatomic)NSUInteger rectNum;
 @property(assign, nonatomic)CGColorRef tintColor;
 @property(assign, nonatomic)CGFloat rectWidth;
-@property(strong, nonatomic)NSMutableArray<CAGradientLayer*>* rectLayers;
+@property(strong, nonatomic)NSMutableArray<CALayer*>* rectLayers;
 @property(strong, nonatomic)CALayer* backgroundCircleLayer;
 @end
 
@@ -30,20 +31,27 @@
         _rectWidth = width;
         _rectNum = num;
         
+        self.mask = [CALayer new];
+        self.colors = @[(__bridge id)[UIColor colorWithHexString:@"#ff0000"].CGColor,
+                        (__bridge id)[UIColor colorWithHexString:@"#fff200"].CGColor,
+                        (__bridge id)[UIColor colorWithHexString:@"#1e9600"].CGColor];
+        self.startPoint = CGPointZero;
+        self.endPoint = CGPointMake(1, 1);
         _rectLayers = [NSMutableArray new];
         //弧度
         CGFloat angle = (360.f / self.rectNum)*M_PI/180;
 
         for (int index = 0; index < _rectNum; index++) {
-            CAGradientLayer* rect = [CAGradientLayer new];
+            CALayer* rect = [CALayer new];
 
-            rect.colors = @[(__bridge id)_tintColor,
-                            (__bridge id)[UIColor colorWithRed:14.f/255 green:52.f/255 blue:67.f/255 alpha:1.0f].CGColor];
-            rect.locations = @[@0.6, @1.0];
+//            rect.colors = @[(__bridge id)_tintColor,
+//                            (__bridge id)[UIColor colorWithRed:14.f/255 green:52.f/255 blue:67.f/255 alpha:1.0f].CGColor];
+//            rect.locations = @[@0.6, @1.0];
             CGAffineTransform transform = CGAffineTransformMakeRotation(angle*index);
             rect.affineTransform = transform;
             rect.anchorPoint = CGPointMake(0.5, 1);
-            [self addSublayer:rect];
+            rect.backgroundColor = [UIColor whiteColor].CGColor;
+            [self.mask addSublayer:rect];
             [_rectLayers addObject:rect];
         }
         
@@ -74,7 +82,7 @@
                      0,
                      0);
         self.rectLayers[index].bounds
-        = CGRectMake(0, 0, self.rectWidth, -40 * frequencyDatas[index].floatValue);
+        = CGRectMake(0, 0, self.rectWidth, -100 * frequencyDatas[index].floatValue);
     }
 }
 

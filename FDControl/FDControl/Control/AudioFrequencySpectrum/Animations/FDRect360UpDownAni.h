@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 
-@interface FDRect360UpDownAni : CALayer
+@interface FDRect360UpDownAni : CAGradientLayer
 
 - (instancetype)initWithColor:(CGColorRef)color
                         width:(CGFloat)width
