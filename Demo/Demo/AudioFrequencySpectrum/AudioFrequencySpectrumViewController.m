@@ -26,6 +26,13 @@
     indicator.frame = CGRectMake(0, 100, self.view.frame.size.width, 300);
     [self.view addSubview:indicator];
     [indicator startTest];
+    
+    FDFrequencySpectrumIndicatorConfig* config2 = [FDFrequencySpectrumIndicatorConfig new];
+    config2.frequencyNum = @45;
+    FDFrequencySpectrumIndicator* indicator2 = [[FDFrequencySpectrumIndicator alloc]initWithConfig:config2];
+    indicator2.frame = CGRectMake(0, 400, self.view.frame.size.width, 300);
+    [self.view addSubview:indicator2];
+    [indicator2 startTest];
 }
 
 /*

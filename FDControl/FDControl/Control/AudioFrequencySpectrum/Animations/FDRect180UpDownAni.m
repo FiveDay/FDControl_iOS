@@ -45,6 +45,21 @@
     return self;
 }
 
+- (void)layoutSublayers {
+    [super layoutSublayers];
+    
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    for (int index = 0; index < _rectNum; index++) {
+        self.rectLayers[index].frame
+        = CGRectMake(self.rectMargin + index * self.rectWidth + index * self.rectMargin,
+                     self.frame.size.height,
+                     self.rectWidth,
+                     0);
+    }
+    [CATransaction commit];
+}
+
 - (void)updateData:(NSMutableArray<NSNumber*>*) frequencyDatas {
     for (int index = 0; index < frequencyDatas.count; index ++) {
         if ((index + 1) > self.rectNum) {

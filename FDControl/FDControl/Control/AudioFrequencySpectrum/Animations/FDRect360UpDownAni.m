@@ -17,7 +17,6 @@
 @property(assign, nonatomic)CGColorRef tintColor;
 @property(assign, nonatomic)CGFloat rectWidth;
 @property(strong, nonatomic)NSMutableArray<CALayer*>* rectLayers;
-@property(strong, nonatomic)CALayer* backgroundCircleLayer;
 @end
 
 @implementation FDRect360UpDownAni
@@ -43,10 +42,6 @@
 
         for (int index = 0; index < _rectNum; index++) {
             CALayer* rect = [CALayer new];
-
-//            rect.colors = @[(__bridge id)_tintColor,
-//                            (__bridge id)[UIColor colorWithRed:14.f/255 green:52.f/255 blue:67.f/255 alpha:1.0f].CGColor];
-//            rect.locations = @[@0.6, @1.0];
             CGAffineTransform transform = CGAffineTransformMakeRotation(angle*index);
             rect.affineTransform = transform;
             rect.anchorPoint = CGPointMake(0.5, 1);
@@ -54,21 +49,31 @@
             [self.mask addSublayer:rect];
             [_rectLayers addObject:rect];
         }
-        
-        _backgroundCircleLayer =  [CALayer new];
-        _backgroundCircleLayer.borderColor = [UIColor whiteColor].CGColor;
-        _backgroundCircleLayer.borderWidth = 1.f;
-        _backgroundCircleLayer.bounds = CGRectMake(0, 0, 2*_radius, 2*_radius);
-        _backgroundCircleLayer.position = self.position;
-        _backgroundCircleLayer.cornerRadius = _radius;
-        [self addSublayer:_backgroundCircleLayer];
     }
     return self;
 }
 
-- (void)updateData:(NSMutableArray<NSNumber*>*) frequencyDatas {
-    _backgroundCircleLayer.position = self.position;
+- (void)layoutSublayers {
+    [super layoutSublayers];
     
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    CGFloat angle = 360.f / self.rectNum;
+    CGPoint center = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
+    for (int index = 0; index < _rectNum; index++) {
+        CGPoint position = [self calcCircleCoordinateWithCenter:center andWithAngle:angle*index andWithRadius:self.radius];
+        self.rectLayers[index].frame
+        = CGRectMake(position.x,
+                     position.y,
+                     0,
+                     0);
+        self.rectLayers[index].bounds
+        = CGRectMake(0, 0, self.rectWidth, 0);
+    }
+    [CATransaction commit];
+}
+    
+- (void)updateData:(NSMutableArray<NSNumber*>*) frequencyDatas {    
     CGFloat angle = 360.f / self.rectNum;
     CGPoint center = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
     for (int index = 0; index < frequencyDatas.count; index ++) {
