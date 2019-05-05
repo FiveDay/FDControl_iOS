@@ -42,6 +42,7 @@
             rect.locations = @[@0.6, @1.0];
             CGAffineTransform transform = CGAffineTransformMakeRotation(angle*index);
             rect.affineTransform = transform;
+            rect.anchorPoint = CGPointMake(0.5, 1);
             [self addSublayer:rect];
             [_rectLayers addObject:rect];
         }
