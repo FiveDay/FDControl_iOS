@@ -10,6 +10,8 @@
 
 #import "FDRouterRegParam.h"
 
+typedef NSString*(^FDRouterRedirect)(NSString*);
+
 @interface FDNavigationRouterRegParam : FDRouterRegParam
 
 @end

@@ -11,7 +11,6 @@
 
 #import "FDRouterRegParam.h"
 
-//typedef void(^FDRouterHandle)(_Nullable Class component, NSDictionary* _Nullable  params);
 
 NS_ASSUME_NONNULL_BEGIN
 

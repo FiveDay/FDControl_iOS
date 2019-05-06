@@ -66,6 +66,7 @@
     for (FDRouterRegParam* param in ary) {
         
         NSString* component = [param objectForKey:@"component"];
+        FDRouterRedirect redirect = [param objectForKey:@"redirect"];
         NSString* path = [param objectForKey:@"path"];
         path = [path stringByTrimming:@"/"];
         NSString* name = [param objectForKey:@"name"];
@@ -88,7 +89,7 @@
                             [_nameTable setObject:component forKey:name];
                         }
                         [node setObject:component forKey:@"component"];
-                        
+                        [node setObject:redirect forKey:@"redirect"];
                     }
                     subRoutes = [subRoutes objectForKey:pathComponent];
                 }
@@ -97,11 +98,26 @@
     }
 }
 
-- (UIViewController*)navTo:(NSString*)path {
-    path = [path stringByTrimming:@"/"];
-    if (![path isValidURL]) {
-        return nil;
-    };
+- (NSDictionary*)getQueryparam:(NSURL*)url {
+    NSURLComponents* urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+    NSMutableDictionary* param = [NSMutableDictionary new];
+    for (NSURLQueryItem* item in urlComponents.queryItems) {
+        [param setObject:item.value forKey:item.name];
+    }
+    return [param copy];
+}
+
+- (Class)getClsOfComponent:(NSURL*)url {
+    NSURLComponents* urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
+    NSDictionary* subRoutes = self.routeTable;
+    for (NSString* pathComponent in urlComponents.path.pathComponents) {
+        subRoutes = [subRoutes objectForKey:pathComponent];
+    }
+    Class cls = NSClassFromString([subRoutes objectForKey:@"component"]);
+    return cls;
+}
+
+- (NSString*)getRedirectPath:(NSString*)path {
     NSString* uri = [self getAbsoluteUri:path];
     NSURL* url = [NSURL URLWithString:uri];
     NSURLComponents* urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
@@ -109,12 +125,24 @@
     for (NSString* pathComponent in urlComponents.path.pathComponents) {
         subRoutes = [subRoutes objectForKey:pathComponent];
     }
-    Class cls = NSClassFromString([subRoutes objectForKey:@"component"]);
-    
-    NSMutableDictionary* param = [NSMutableDictionary new];
-    for (NSURLQueryItem* item in urlComponents.queryItems) {
-        [param setObject:item.value forKey:item.name];
+    FDRouterRedirect redirect = [subRoutes objectForKey:@"redirect"];
+    if (redirect) {
+        return redirect(path);
     }
+    return path;
+}
+
+- (UIViewController*)navTo:(NSString*)path {
+    path = [path stringByTrimming:@"/"];
+    if (![path isValidURL]) {
+        return nil;
+    };
+    NSString* targetPath = [self getRedirectPath:path];
+    NSString* uri = [self getAbsoluteUri:targetPath];
+    NSURL* url = [NSURL URLWithString:uri];
+    
+    Class cls = [self getClsOfComponent:url];
+    NSDictionary* param = [self getQueryparam:url];
     UIViewController* ctl = [cls viewControllerWithParam:param];
     return ctl;
 }
@@ -123,19 +151,9 @@
     if (!url) {
         return nil;
     }
-    
     NSURLComponents* urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
-    NSDictionary* subRoutes = self.routeTable;
-    for (NSString* pathComponent in urlComponents.path.pathComponents) {
-        subRoutes = [subRoutes objectForKey:pathComponent];
-    }
-    Class cls = NSClassFromString([subRoutes objectForKey:@"component"]);
-    NSMutableDictionary* param = [NSMutableDictionary new];
-    for (NSURLQueryItem* item in urlComponents.queryItems) {
-        [param setObject:item.value forKey:item.name];
-    }
-    UIViewController* ctl = [cls viewControllerWithParam:param];
-    return ctl;
+    NSString* path = urlComponents.path;
+    return [self navTo:path];
 }
 
 - (UIViewController*)navToName:(NSString*)name param:(NSDictionary*)param {

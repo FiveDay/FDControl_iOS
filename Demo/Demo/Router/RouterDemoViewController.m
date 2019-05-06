@@ -20,7 +20,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     UIButton* pushA = [UIButton new];
-    [pushA setTitle:@"pushA" forState:UIControlStateNormal];
+    [pushA setTitle:@"/Router/aRed" forState:UIControlStateNormal];
     pushA.backgroundColor = [UIColor redColor];
     [pushA addTarget:self action:@selector(onPushA) forControlEvents:UIControlEventTouchUpInside];
     pushA.frame = CGRectMake(0, 200, 100, 60);
@@ -28,21 +28,21 @@
     
     UIButton* pushB = [UIButton new];
     pushB.backgroundColor = [UIColor greenColor];
-    [pushB setTitle:@"pushB" forState:UIControlStateNormal];
+    [pushB setTitle:@"FDControlDemo://localhost/Router/bGreen" forState:UIControlStateNormal];
     [pushB addTarget:self action:@selector(onPushB) forControlEvents:UIControlEventTouchUpInside];
     pushB.frame = CGRectMake(0, 300, 100, 60);
     [self.view addSubview:pushB];
     
     UIButton* pushC = [UIButton new];
     pushC.backgroundColor = [UIColor redColor];
-    [pushC setTitle:@"pushC" forState:UIControlStateNormal];
+    [pushC setTitle:@"aRed" forState:UIControlStateNormal];
     [pushC addTarget:self action:@selector(onPushC) forControlEvents:UIControlEventTouchUpInside];
     pushC.frame = CGRectMake(0, 400, 100, 60);
     [self.view addSubview:pushC];
     
     UIButton* presentD = [UIButton new];
     presentD.backgroundColor = [UIColor redColor];
-    [presentD setTitle:@"presentD" forState:UIControlStateNormal];
+    [presentD setTitle:@"presentD:/Router/aRed?colorId=123&name=kinno" forState:UIControlStateNormal];
     [presentD addTarget:self action:@selector(onPresentD) forControlEvents:UIControlEventTouchUpInside];
     presentD.frame = CGRectMake(0, 500, 100, 60);
     [self.view addSubview:presentD];

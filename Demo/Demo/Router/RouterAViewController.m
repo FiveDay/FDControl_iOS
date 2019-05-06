@@ -19,9 +19,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
-    if ([[self.param objectForKey:@"colorId"]isEqualToString:@"123"]) {
-        self.view.backgroundColor = [UIColor greenColor];
-    }
 }
 
 /*
