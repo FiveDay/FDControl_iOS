@@ -81,6 +81,26 @@
 		45A2045F2260980D00C068AE /* UIColor+FDPalettes.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2045D2260980D00C068AE /* UIColor+FDPalettes.m */; };
 		45A204622260A4BF00C068AE /* UIColor+FDGradientColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204602260A4BF00C068AE /* UIColor+FDGradientColor.h */; };
 		45A204632260A4BF00C068AE /* UIColor+FDGradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204612260A4BF00C068AE /* UIColor+FDGradientColor.m */; };
+		45A2043D225DF8CC00C068AE /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A20435225DF8CC00C068AE /* WKWebViewJavascriptBridge.h */; };
+		45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A20436225DF8CC00C068AE /* WebViewJavascriptBridge.h */; };
+		45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20437225DF8CC00C068AE /* WebViewJavascriptBridge.m */; };
+		45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20438225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m */; };
+		45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20439225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m */; };
+		45A20442225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2043A225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h */; };
+		45A20443225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2043B225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h */; };
+		45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2043C225DF8CC00C068AE /* WKWebViewJavascriptBridge.m */; };
+		45A20448225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A20446225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A20449225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20447225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m */; };
+		45A2044C225F194F00C068AE /* FDWebProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2044A225F194E00C068AE /* FDWebProgressView.h */; };
+		45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044B225F194E00C068AE /* FDWebProgressView.m */; };
+		45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2044E225F22B800C068AE /* FDWebViewJavascriptBridge.h */; };
+		45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044F225F22B800C068AE /* FDWebViewJavascriptBridge.m */; };
+		45A204992269B77300C068AE /* NSDictionary+FDData.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204972269B77300C068AE /* NSDictionary+FDData.h */; };
+		45A2049A2269B77300C068AE /* NSDictionary+FDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204982269B77300C068AE /* NSDictionary+FDData.m */; };
+		45A2049E2269B84F00C068AE /* NSData+FDDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2049C2269B84F00C068AE /* NSData+FDDictionary.h */; };
+		45A2049F2269B84F00C068AE /* NSData+FDDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2049D2269B84F00C068AE /* NSData+FDDictionary.m */; };
+		45A204A22269B98000C068AE /* NSDictionary+FDPlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204A02269B98000C068AE /* NSDictionary+FDPlist.h */; };
+		45A204A32269B98000C068AE /* NSDictionary+FDPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204A12269B98000C068AE /* NSDictionary+FDPlist.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -175,6 +195,26 @@
 		45A2045D2260980D00C068AE /* UIColor+FDPalettes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDPalettes.m"; sourceTree = "<group>"; };
 		45A204602260A4BF00C068AE /* UIColor+FDGradientColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FDGradientColor.h"; sourceTree = "<group>"; };
 		45A204612260A4BF00C068AE /* UIColor+FDGradientColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDGradientColor.m"; sourceTree = "<group>"; };
+		45A20435225DF8CC00C068AE /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		45A20436225DF8CC00C068AE /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		45A20437225DF8CC00C068AE /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		45A20438225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		45A20439225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		45A2043A225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		45A2043B225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		45A2043C225DF8CC00C068AE /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		45A20446225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FDJSONSerialization.h"; sourceTree = "<group>"; };
+		45A20447225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FDJSONSerialization.m"; sourceTree = "<group>"; };
+		45A2044A225F194E00C068AE /* FDWebProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDWebProgressView.h; sourceTree = "<group>"; };
+		45A2044B225F194E00C068AE /* FDWebProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDWebProgressView.m; sourceTree = "<group>"; };
+		45A2044E225F22B800C068AE /* FDWebViewJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		45A2044F225F22B800C068AE /* FDWebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		45A204972269B77300C068AE /* NSDictionary+FDData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FDData.h"; sourceTree = "<group>"; };
+		45A204982269B77300C068AE /* NSDictionary+FDData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FDData.m"; sourceTree = "<group>"; };
+		45A2049C2269B84F00C068AE /* NSData+FDDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FDDictionary.h"; sourceTree = "<group>"; };
+		45A2049D2269B84F00C068AE /* NSData+FDDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FDDictionary.m"; sourceTree = "<group>"; };
+		45A204A02269B98000C068AE /* NSDictionary+FDPlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FDPlist.h"; sourceTree = "<group>"; };
+		45A204A12269B98000C068AE /* NSDictionary+FDPlist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FDPlist.m"; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -241,6 +281,7 @@
 		4514D23321BFB3450076290D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				45A2049B2269B83900C068AE /* NSData */,
 				453A6F3F2254C512006CC30A /* CAShapeLayer */,
 				45A20445225E01C900C068AE /* NSDictionary */,
 				453A6F61225CAEB0006CC30A /* NSObject */,
@@ -478,6 +519,43 @@
 			path = Permission;
 			sourceTree = "<group>";
 		};
+		45A20434225DF89300C068AE /* WebviewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				45A2043A225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h */,
+				45A20438225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m */,
+				45A20436225DF8CC00C068AE /* WebViewJavascriptBridge.h */,
+				45A20437225DF8CC00C068AE /* WebViewJavascriptBridge.m */,
+				45A2043B225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h */,
+				45A20439225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m */,
+				45A20435225DF8CC00C068AE /* WKWebViewJavascriptBridge.h */,
+				45A2043C225DF8CC00C068AE /* WKWebViewJavascriptBridge.m */,
+			);
+			path = WebviewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+		45A20445225E01C900C068AE /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				45A20446225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h */,
+				45A20447225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m */,
+				45A204972269B77300C068AE /* NSDictionary+FDData.h */,
+				45A204982269B77300C068AE /* NSDictionary+FDData.m */,
+				45A204A02269B98000C068AE /* NSDictionary+FDPlist.h */,
+				45A204A12269B98000C068AE /* NSDictionary+FDPlist.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		45A2049B2269B83900C068AE /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				45A2049C2269B84F00C068AE /* NSData+FDDictionary.h */,
+				45A2049D2269B84F00C068AE /* NSData+FDDictionary.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,8 +588,10 @@
 				45A2045A2260710700C068AE /* FDPermissionMng.h in Headers */,
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
+				45A204992269B77300C068AE /* NSDictionary+FDData.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
+				45A2049E2269B84F00C068AE /* NSData+FDDictionary.h in Headers */,
 				45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */,
 				45A204622260A4BF00C068AE /* UIColor+FDGradientColor.h in Headers */,
 				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
@@ -528,6 +608,7 @@
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
 				45936AC12241E13D0073C9E2 /* FDWebImageManager.h in Headers */,
 				45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */,
+				45A204A22269B98000C068AE /* NSDictionary+FDPlist.h in Headers */,
 				45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
@@ -638,7 +719,9 @@
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
+				45A2049F2269B84F00C068AE /* NSData+FDDictionary.m in Sources */,
 				453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */,
+				45A204A32269B98000C068AE /* NSDictionary+FDPlist.m in Sources */,
 				6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
@@ -655,6 +738,7 @@
 				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,
 				45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */,
+				45A2049A2269B77300C068AE /* NSDictionary+FDData.m in Sources */,
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
 				45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */,
 				453A6F54225C49B9006CC30A /* FDWebJsViewController.m in Sources */,
