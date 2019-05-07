@@ -10,6 +10,8 @@
 
 @interface UIColor (FDColor)
 
++ (instancetype _Nullable)colorWithHexString:(NSString *)hexStr;
+
 + (instancetype)colorWithRgba:(CGFloat)r g:(CGFloat)g b:(CGFloat)b alpha:(CGFloat)a;
 
 + (instancetype)colorWithRgb:(CGFloat)r g:(CGFloat)g b:(CGFloat)b;
