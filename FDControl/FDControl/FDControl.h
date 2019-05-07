@@ -30,6 +30,8 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/FDDiskCache.h>
 #import <FDControl/FDMemoryCache.h>
 
+#import  <FDControl/UIImage+FDGradient.h>
+
 //UIView Category
 #import <FDControl/UIControl+FDTargetAction.h>
 #import <FDControl/UIView+FDLayout.h>
@@ -73,6 +75,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "CAShapeLayer+FDShapeHelper.h"
 #import "UIImageView+FDImageCoder.h"
 #import "UIImage+FDColor.h"
+#imort  "UIImage+FDGradient.h"
 #import "UIButton+FDImageTitleVerticalLayout.h"
 #import "UIButton+FDConvenientMethod.h"
 #import "UIButton+FDLoadingIndicator.h"

@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic, nullable)UIImage* image;
 @property(strong, nonatomic, nullable)UIImage* backgroundImage;
 
+- (void)setBackgroundGradientColor:(UIColor*)startColor endColor:(UIColor*)endColor;
+
 @end
 
 NS_ASSUME_NONNULL_END

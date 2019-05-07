@@ -7,6 +7,7 @@
 //
 
 #import "UIButton+FDConvenientMethod.h"
+#import "FDControl.h"
 
 @implementation UIButton (FDConvenientMethod)
 
@@ -78,5 +79,15 @@
 
 - (UIImage*)backgroundImage {
     return [self backgroundImageForState:UIControlStateNormal];
+}
+
+- (void)setBackgroundGradientColor:(UIColor*)startColor endColor:(UIColor*)endColor {
+    FDLinearGradientParam param;
+    param.startColor = startColor.CGColor;
+    param.endColor = endColor.CGColor;
+    param.startPoint = CGPointMake(0, 0.5);
+    param.endPoint = CGPointMake(1, 0.5);
+    UIImage* gradientImage = [UIImage imageLinearGradientWithRect:self.bounds param:param];
+    self.backgroundImage = gradientImage;
 }
 @end

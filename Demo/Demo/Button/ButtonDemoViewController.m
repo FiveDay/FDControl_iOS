@@ -24,7 +24,7 @@
     vBtn.frame = CGRectMake(0, 100, 100, 100);
     vBtn.image = [UIImage imageNamed:@"image"];
     vBtn.title = @"abc";
-    vBtn.backgroundImage = [UIImage createImageWithColor:[UIColor blueColor] andSize:vBtn.bounds.size];
+    [vBtn setBackgroundGradientColor:[UIColor colorWithHexString:@"#12c2e9"] endColor:[UIColor colorWithHexString:@"#c471ed"]];
     vBtn.cornerRadius = 4;
     [self.view addSubview:vBtn];
     vBtn.onClick = ^(UIControl * _Nonnull sender) {

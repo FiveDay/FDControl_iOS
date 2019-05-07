@@ -43,7 +43,7 @@
 		45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3521EF358C0052F033 /* FDPopMenu.m */; };
 		45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 45820E3821EF39CB0052F033 /* FDPopMenuItem.h */; };
 		45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3921EF39CB0052F033 /* FDPopMenuItem.m */; };
-		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; };
+		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */; };
 		45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */; };
 		45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CEC21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m */; };
@@ -514,6 +514,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				452EA77D22817534004BB575 /* UIButton+FDLoadingIndicator.h in Headers */,
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 				452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */,
@@ -537,7 +538,6 @@
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */,
 				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
-				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
 				453A6F4E225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.h in Headers */,
 				453A6F4A2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.h in Headers */,
