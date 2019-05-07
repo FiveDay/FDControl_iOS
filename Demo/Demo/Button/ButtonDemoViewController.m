@@ -22,10 +22,13 @@
     
     UIButton* vBtn = [UIButton buttonWithVerticalType];
     vBtn.frame = CGRectMake(0, 100, 100, 100);
-    UIImage* image = [UIImage imageNamed:@"image"];
-    [vBtn setImage:image forState:UIControlStateNormal];
-    [vBtn setTitle:@"abc" forState:UIControlStateNormal];
-    vBtn.backgroundColor = [UIColor blueColor];
+//    UIImage* image = [UIImage imageNamed:@"image"];
+//    [vBtn setImage:image forState:UIControlStateNormal];
+//    [vBtn setTitle:@"abc" forState:UIControlStateNormal];
+    vBtn.image = [UIImage imageNamed:@"image"];
+    vBtn.title = @"abc";
+    vBtn.backgroundImage = [UIImage createImageWithColor:[UIColor blueColor] andSize:vBtn.bounds.size];
+    vBtn.cornerRadius = 4;
     [self.view addSubview:vBtn];
 
     vBtn.onClick = ^(UIControl * _Nonnull sender) {

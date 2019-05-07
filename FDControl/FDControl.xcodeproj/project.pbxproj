@@ -18,6 +18,8 @@
 		4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24721BFC56C0076290D /* UIColor+FDColor.m */; };
 		452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA773228045EC004BB575 /* UIControl+FDTargetAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA774228045EC004BB575 /* UIControl+FDTargetAction.m */; };
+		452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA77722812CFB004BB575 /* UIButton+FDConvenientMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA77A22812CFB004BB575 /* UIButton+FDConvenientMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA77822812CFB004BB575 /* UIButton+FDConvenientMethod.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,7 +85,7 @@
 		45A204922269A69700C068AE /* FDVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204902269A69700C068AE /* FDVerticalButton.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
+		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3B4B4321F842360073662D /* UIImage+FDColor.m */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,8 @@
 		4514D24721BFC56C0076290D /* UIColor+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDColor.m"; sourceTree = "<group>"; };
 		452EA773228045EC004BB575 /* UIControl+FDTargetAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+FDTargetAction.h"; sourceTree = "<group>"; };
 		452EA774228045EC004BB575 /* UIControl+FDTargetAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+FDTargetAction.m"; sourceTree = "<group>"; };
+		452EA77722812CFB004BB575 /* UIButton+FDConvenientMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FDConvenientMethod.h"; sourceTree = "<group>"; };
+		452EA77822812CFB004BB575 /* UIButton+FDConvenientMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FDConvenientMethod.m"; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -363,6 +367,8 @@
 		4587C99321DDE3B5005AE3AB /* Button */ = {
 			isa = PBXGroup;
 			children = (
+				45A2048F2269A69700C068AE /* FDVerticalButton.h */,
+				45A204902269A69700C068AE /* FDVerticalButton.m */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -480,8 +486,8 @@
 			children = (
 				45A2048B2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.h */,
 				45A2048C2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.m */,
-				45A2048F2269A69700C068AE /* FDVerticalButton.h */,
-				45A204902269A69700C068AE /* FDVerticalButton.m */,
+				452EA77722812CFB004BB575 /* UIButton+FDConvenientMethod.h */,
+				452EA77822812CFB004BB575 /* UIButton+FDConvenientMethod.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -502,6 +508,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
+				452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */,
 				452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */,
 				45A2048D2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.h in Headers */,
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
@@ -540,7 +548,6 @@
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 				45A2044C225F194F00C068AE /* FDWebProgressView.h in Headers */,
-				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,6 +672,7 @@
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
 				45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */,
 				453A6F54225C49B9006CC30A /* FDWebJsViewController.m in Sources */,
+				452EA77A22812CFB004BB575 /* UIButton+FDConvenientMethod.m in Sources */,
 				45A204922269A69700C068AE /* FDVerticalButton.m in Sources */,
 				45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */,
 				452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */,
