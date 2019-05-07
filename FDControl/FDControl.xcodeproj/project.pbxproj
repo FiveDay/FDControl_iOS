@@ -16,6 +16,8 @@
 		4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24321BFC05E0076290D /* NSString+FDOperator.m */; };
 		4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D24621BFC56C0076290D /* UIColor+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24721BFC56C0076290D /* UIColor+FDColor.m */; };
+		452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA773228045EC004BB575 /* UIControl+FDTargetAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA774228045EC004BB575 /* UIControl+FDTargetAction.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -108,6 +110,8 @@
 		4514D24321BFC05E0076290D /* NSString+FDOperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDOperator.m"; sourceTree = "<group>"; };
 		4514D24621BFC56C0076290D /* UIColor+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FDColor.h"; sourceTree = "<group>"; };
 		4514D24721BFC56C0076290D /* UIColor+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDColor.m"; sourceTree = "<group>"; };
+		452EA773228045EC004BB575 /* UIControl+FDTargetAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+FDTargetAction.h"; sourceTree = "<group>"; };
+		452EA774228045EC004BB575 /* UIControl+FDTargetAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+FDTargetAction.m"; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 		4514D23321BFB3450076290D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				452EA77222804576004BB575 /* UIControl */,
 				45A2048A2269A05B00C068AE /* UIButton */,
 				453A6F3F2254C512006CC30A /* CAShapeLayer */,
 				45A20445225E01C900C068AE /* NSDictionary */,
@@ -279,6 +284,15 @@
 				45936ADD2243A0A20073C9E2 /* NSString+FDFileDirectory.m */,
 			);
 			path = NSString;
+			sourceTree = "<group>";
+		};
+		452EA77222804576004BB575 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				452EA773228045EC004BB575 /* UIControl+FDTargetAction.h */,
+				452EA774228045EC004BB575 /* UIControl+FDTargetAction.m */,
+			);
+			path = UIControl;
 			sourceTree = "<group>";
 		};
 		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
@@ -488,6 +502,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */,
 				45A2048D2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.h in Headers */,
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
@@ -652,6 +667,7 @@
 				453A6F54225C49B9006CC30A /* FDWebJsViewController.m in Sources */,
 				45A204922269A69700C068AE /* FDVerticalButton.m in Sources */,
 				45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */,
+				452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */,
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,

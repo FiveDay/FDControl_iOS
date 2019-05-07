@@ -43,7 +43,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 //UIImageView Category
 #import <FDControl/UIImageView+FDImageCoder.h>
 #import <FDControl/UIButton+FDImageTitleVerticalLayout.h>
-
+#import <FDControl/UIControl+FDTargetAction.h>
 #else
 //Control
 #import "FDWebJsViewController.h"
@@ -61,6 +61,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "FDMemoryCache.h"
 
 //Category
+#import "UIControl+FDTargetAction.h"
 #import "UIView+FDLayout.h"
 #import "NSString+FDOperator.h"
 #import "NSString+FDMD5.h"

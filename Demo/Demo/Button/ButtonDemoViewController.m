@@ -28,6 +28,9 @@
     vBtn.backgroundColor = [UIColor blueColor];
     [self.view addSubview:vBtn];
 
+    vBtn.onClick = ^(UIControl * _Nonnull sender) {
+        sender.backgroundColor = [UIColor redColor];
+    };
 }
 
 @end
