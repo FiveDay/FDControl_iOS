@@ -29,6 +29,10 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 // Category
 #import <FDControl/NSObject+FDPropertyMethod.h>
 #import <FDControl/NSDictionary+FDJSONSerialization.h>
+#import  <FDControl/UIImage+FDGradient.h>
+
+//UIView Category
+#import <FDControl/UIControl+FDTargetAction.h>
 #import <FDControl/UIView+FDLayout.h>
 #import <FDControl/NSString+FDURL.h>
 #import <FDControl/NSString+FDOperator.h>
@@ -36,10 +40,16 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/NSString+FDFileDirectory.h>
 #import <FDControl/UIColor+FDColor.h>
 #import <FDControl/CAShapeLayer+FDShapeHelper.h>
+#import <FDControl/UIImage+FDColor.h>
+
+//UIImageView Category
 #import <FDControl/UIImageView+FDImageCoder.h>
 
 #import <FDControl/FDFrequencySpectrumIndicator.h>
 #import <FDControl/NSBundle+FDMainBundle.h>
+#import <FDControl/UIButton+FDImageTitleVerticalLayout.h>
+#import <FDControl/UIButton+FDConvenientMethod.h>
+#import <FDControl/UIButton+FDLoadingIndicator.h>
 #else
 //Router
 #import "UINavigationController+FDRouter.h"
@@ -54,6 +64,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 //Category
 #import "NSObject+FDPropertyMethod.h"
 #import "NSDictionary+FDJSONSerialization.h"
+#import "UIControl+FDTargetAction.h"
 #import "UIView+FDLayout.h"
 #import "NSString+FDURL.h"
 #import "NSString+FDOperator.h"
@@ -65,4 +76,9 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 #import "FDFrequencySpectrumindicator.h"
 #import "NSBundle+FDMainBundle.h"
+#import "UIImage+FDColor.h"
+#imort  "UIImage+FDGradient.h"
+#import "UIButton+FDImageTitleVerticalLayout.h"
+#import "UIButton+FDConvenientMethod.h"
+#import "UIButton+FDLoadingIndicator.h"
 #endif

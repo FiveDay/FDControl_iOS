@@ -23,6 +23,7 @@
 		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
 		45A204732264987200C068AE /* RouterAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204722264987200C068AE /* RouterAViewController.m */; };
 		45A204762264988700C068AE /* RouterBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204752264988700C068AE /* RouterBViewController.m */; };
+		45A204962269A80F00C068AE /* ButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204952269A80F00C068AE /* ButtonDemoViewController.m */; };
 		6D050D0C225E175B00B4FAF1 /* testimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D050D0B225E175B00B4FAF1 /* testimage.jpg */; };
 		6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,8 @@
 		45A204722264987200C068AE /* RouterAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterAViewController.m; sourceTree = "<group>"; };
 		45A204742264988700C068AE /* RouterBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterBViewController.h; sourceTree = "<group>"; };
 		45A204752264988700C068AE /* RouterBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterBViewController.m; sourceTree = "<group>"; };
+		45A204942269A80F00C068AE /* ButtonDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonDemoViewController.h; sourceTree = "<group>"; };
+		45A204952269A80F00C068AE /* ButtonDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonDemoViewController.m; sourceTree = "<group>"; };
 		6D050D0B225E175B00B4FAF1 /* testimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testimage.jpg; sourceTree = "<group>"; };
 		6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewDecoderViewController.h; sourceTree = "<group>"; };
 		6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewDecoderViewController.m; sourceTree = "<group>"; };
@@ -146,6 +149,7 @@
 			children = (
 				45A204AD227585A000C068AE /* AudioFrequencySpectrum */,
 				45A2046D2264957800C068AE /* Router */,
+				45A204932269A7E900C068AE /* Button */,
 				453A6F66225DB61C006CC30A /* WebJs */,
 				4514D1FD21BFADCF0076290D /* AppDelegate.h */,
 				4514D1FE21BFADCF0076290D /* AppDelegate.m */,
@@ -211,6 +215,15 @@
 				45A204752264988700C068AE /* RouterBViewController.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		45A204932269A7E900C068AE /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				45A204942269A80F00C068AE /* ButtonDemoViewController.h */,
+				45A204952269A80F00C068AE /* ButtonDemoViewController.m */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		6D050D0A225E175B00B4FAF1 /* resources */ = {
@@ -356,6 +369,7 @@
 			files = (
 				45A204762264988700C068AE /* RouterBViewController.m in Sources */,
 				4514D20221BFADCF0076290D /* ViewController.m in Sources */,
+				45A204962269A80F00C068AE /* ButtonDemoViewController.m in Sources */,
 				453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
 				45A204B02275862F00C068AE /* AudioFrequencySpectrumViewController.m in Sources */,

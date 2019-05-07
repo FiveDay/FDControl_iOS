@@ -37,6 +37,7 @@
     [self.testVCClassNameArray addObject:@"UIImageViewDecoderViewController"];
     [self.testVCClassNameArray addObject:@"AudioFrequencySpectrumViewController"];
     [self.testVCClassNameArray addObject:@"RouterDemoViewController"];
+    [self.testVCClassNameArray addObject:@"ButtonDemoViewController"];
 }
 
 
