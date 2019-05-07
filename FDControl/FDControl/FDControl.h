@@ -16,52 +16,46 @@ FOUNDATION_EXPORT double FDControlVersionNumber;
 FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FDControl/PublicHeader.h>
-
+//Router
+#import <FDControl/UINavigationController+FDRouter.h>
+#import <FDControl/UIViewController+FDRouter.h>
 //Control
 #import <FDControl/FDWebJsViewController.h>
-//FDActivityIndicator Control
 #import <FDControl/FDActivityIndicatorView.h>
-// Category
-#import <FDControl/NSObject+FDPropertyMethod.h>
-#import <FDControl/NSDictionary+FDJSONSerialization.h>
-//UIImage WebImage Control
 #import <FDControl/UIImageView+FDWebImageView.h>
-//Cache Control
 #import <FDControl/FDDiskCache.h>
 #import <FDControl/FDMemoryCache.h>
 
-//UIView Category
+// Category
+#import <FDControl/NSObject+FDPropertyMethod.h>
+#import <FDControl/NSDictionary+FDJSONSerialization.h>
 #import <FDControl/UIView+FDLayout.h>
-//NSString Category
+#import <FDControl/NSString+FDURL.h>
 #import <FDControl/NSString+FDOperator.h>
 #import <FDControl/NSString+FDMD5.h>
 #import <FDControl/NSString+FDFileDirectory.h>
-//UIColor Category
 #import <FDControl/UIColor+FDColor.h>
 #import <FDControl/CAShapeLayer+FDShapeHelper.h>
-
-//UIImageView Category
 #import <FDControl/UIImageView+FDImageCoder.h>
 
 #import <FDControl/FDFrequencySpectrumIndicator.h>
+#import <FDControl/NSBundle+FDMainBundle.h>
 #else
+//Router
+#import "UINavigationController+FDRouter.h"
+#import "UIViewController+FDRouter.h"
 //Control
 #import "FDWebJsViewController.h"
-
-//FDActivityIndicator Control
 #import "FDActivityIndicatorView.h"
-// Category
-#import "NSObject+FDPropertyMethod.h"
-#import "NSDictionary+FDJSONSerialization.h"
-//UIImage WebImage Control
 #import "UIImageView+FDWebImageView.h"
-
-//Cache Control
 #import "FDDiskCache.h"
 #import "FDMemoryCache.h"
 
 //Category
+#import "NSObject+FDPropertyMethod.h"
+#import "NSDictionary+FDJSONSerialization.h"
 #import "UIView+FDLayout.h"
+#import "NSString+FDURL.h"
 #import "NSString+FDOperator.h"
 #import "NSString+FDMD5.h"
 #import "NSString+FDFileDirectory.h"
@@ -70,4 +64,5 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "UIImageView+FDImageCoder.h"
 
 #import "FDFrequencySpectrumindicator.h"
+#import "NSBundle+FDMainBundle.h"
 #endif

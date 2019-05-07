@@ -7,7 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import <FDControl/FDControl.h>
+
 #import "ViewController.h"
+#import "RouterAViewController.h"
+#import "RouterBViewController.h"
+
 @interface AppDelegate ()
 @property(nonatomic, strong) ViewController* mainVC;
 @end
@@ -17,6 +22,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    FDRouterRedirect redirect = ^(NSString* path){
+        BOOL token = NO;
+        if (token) {
+            return path;
+        }else {
+            return @"/Router/bGreen";
+        }
+    };
+    
+    FDRouterRedirect redirect2 = ^(NSString* path){
+        BOOL token = YES;
+        if (token) {
+            return path;
+        }else {
+            return @"/Router/aRed";
+        }
+    };
+    NSSet* routes = [NSSet setWithArray:@[
+                                          @{@"path":@"/Router/aRed",
+                                              @"component":@"RouterAViewController",
+                                              @"name":@"aRed",
+                                              @"redirect":redirect,
+                                            },
+                                            @{@"path":@"/Router/bGreen",
+                                              @"component":@"RouterBViewController",
+                                              @"redirect":redirect2,
+                                            },
+                                            ]];
+    [UINavigationController registerRoutes:routes];
+    
     CGRect frame = [[UIScreen mainScreen]bounds];
     self.window = [[UIWindow alloc]initWithFrame:frame];
     _mainVC = [[ViewController alloc]initWithNibName:nil bundle:nil];
