@@ -10,7 +10,26 @@
 #import "FDControl.h"
 
 @implementation UIColor (FDColor)
-+ (instancetype)colorWithHexString:(NSString *)hexStr {
+
++ (instancetype)colorWithRgba:(CGFloat)r g:(CGFloat)g b:(CGFloat)b alpha:(CGFloat)a {
+    return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a];
+}
+
++ (instancetype)colorWithRgb:(CGFloat)r g:(CGFloat)g b:(CGFloat)b {
+    return [UIColor colorWithRgba:r g:g b:b alpha:1.0];
+}
+
++ (instancetype)colorWithHsba:(CGFloat)h s:(CGFloat)s b:(CGFloat)b alpha:(CGFloat)a {
+    return [UIColor colorWithHue:h/360.f saturation:s/100.0f brightness:b/100.0f alpha:a];
+}
+
++ (instancetype)colorWithHsb:(CGFloat)h s:(CGFloat)s b:(CGFloat)b {
+    return [UIColor colorWithHsba:h s:s b:b alpha:1.0];
+}
+
+
+
++ (instancetype _Nullable)colorWithHexString:(NSString *)hexStr {
     CGFloat r, g, b, a;
     if (hexStrToRGBA(hexStr, &r, &g, &b, &a)) {
         return [UIColor colorWithRed:r green:g blue:b alpha:a];

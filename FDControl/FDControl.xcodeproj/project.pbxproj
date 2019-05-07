@@ -75,8 +75,15 @@
 		45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044B225F194E00C068AE /* FDWebProgressView.m */; };
 		45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2044E225F22B800C068AE /* FDWebViewJavascriptBridge.h */; };
 		45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044F225F22B800C068AE /* FDWebViewJavascriptBridge.m */; };
+<<<<<<< HEAD
 		45A2045A2260710700C068AE /* FDPermissionMng.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204582260710700C068AE /* FDPermissionMng.h */; };
 		45A2045B2260710700C068AE /* FDPermissionMng.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204592260710700C068AE /* FDPermissionMng.m */; };
+=======
+		45A2045E2260980D00C068AE /* UIColor+FDPalettes.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2045C2260980D00C068AE /* UIColor+FDPalettes.h */; };
+		45A2045F2260980D00C068AE /* UIColor+FDPalettes.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2045D2260980D00C068AE /* UIColor+FDPalettes.m */; };
+		45A204622260A4BF00C068AE /* UIColor+FDGradientColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204602260A4BF00C068AE /* UIColor+FDGradientColor.h */; };
+		45A204632260A4BF00C068AE /* UIColor+FDGradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204612260A4BF00C068AE /* UIColor+FDGradientColor.m */; };
+>>>>>>> features/UIColor
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -165,8 +172,15 @@
 		45A2044B225F194E00C068AE /* FDWebProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDWebProgressView.m; sourceTree = "<group>"; };
 		45A2044E225F22B800C068AE /* FDWebViewJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDWebViewJavascriptBridge.h; sourceTree = "<group>"; };
 		45A2044F225F22B800C068AE /* FDWebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		45A204582260710700C068AE /* FDPermissionMng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPermissionMng.h; sourceTree = "<group>"; };
 		45A204592260710700C068AE /* FDPermissionMng.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPermissionMng.m; sourceTree = "<group>"; };
+=======
+		45A2045C2260980D00C068AE /* UIColor+FDPalettes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FDPalettes.h"; sourceTree = "<group>"; };
+		45A2045D2260980D00C068AE /* UIColor+FDPalettes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDPalettes.m"; sourceTree = "<group>"; };
+		45A204602260A4BF00C068AE /* UIColor+FDGradientColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FDGradientColor.h"; sourceTree = "<group>"; };
+		45A204612260A4BF00C068AE /* UIColor+FDGradientColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDGradientColor.m"; sourceTree = "<group>"; };
+>>>>>>> features/UIColor
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -259,6 +273,10 @@
 			children = (
 				4514D24621BFC56C0076290D /* UIColor+FDColor.h */,
 				4514D24721BFC56C0076290D /* UIColor+FDColor.m */,
+				45A2045C2260980D00C068AE /* UIColor+FDPalettes.h */,
+				45A2045D2260980D00C068AE /* UIColor+FDPalettes.m */,
+				45A204602260A4BF00C068AE /* UIColor+FDGradientColor.h */,
+				45A204612260A4BF00C068AE /* UIColor+FDGradientColor.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -457,6 +475,7 @@
 			path = NSDictionary;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		45A204572260706600C068AE /* Permission */ = {
 			isa = PBXGroup;
 			children = (
@@ -466,6 +485,8 @@
 			path = Permission;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> features/UIColor
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +507,7 @@
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
 				45A20448225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h in Headers */,
 				45A2043D225DF8CC00C068AE /* WKWebViewJavascriptBridge.h in Headers */,
+				45A2045E2260980D00C068AE /* UIColor+FDPalettes.h in Headers */,
 				45A20442225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h in Headers */,
 				453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */,
 				453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */,
@@ -500,6 +522,7 @@
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */,
+				45A204622260A4BF00C068AE /* UIColor+FDGradientColor.h in Headers */,
 				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
@@ -629,6 +652,7 @@
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
+				45A204632260A4BF00C068AE /* UIColor+FDGradientColor.m in Sources */,
 				45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
 				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
@@ -649,6 +673,7 @@
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,
 				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,
 				45936AD6224361350073C9E2 /* NSString+FDMD5.m in Sources */,
+				45A2045F2260980D00C068AE /* UIColor+FDPalettes.m in Sources */,
 				45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */,
 				45A20449225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
