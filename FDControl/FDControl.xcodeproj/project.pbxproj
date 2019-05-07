@@ -101,6 +101,28 @@
 		45A2049F2269B84F00C068AE /* NSData+FDDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2049D2269B84F00C068AE /* NSData+FDDictionary.m */; };
 		45A204A22269B98000C068AE /* NSDictionary+FDPlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204A02269B98000C068AE /* NSDictionary+FDPlist.h */; };
 		45A204A32269B98000C068AE /* NSDictionary+FDPlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204A12269B98000C068AE /* NSDictionary+FDPlist.m */; };
+		45A2043D225DF8CC00C068AE /* WKWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A20435225DF8CC00C068AE /* WKWebViewJavascriptBridge.h */; };
+		45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A20436225DF8CC00C068AE /* WebViewJavascriptBridge.h */; };
+		45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20437225DF8CC00C068AE /* WebViewJavascriptBridge.m */; };
+		45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20438225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m */; };
+		45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20439225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m */; };
+		45A20442225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2043A225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h */; };
+		45A20443225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2043B225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h */; };
+		45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2043C225DF8CC00C068AE /* WKWebViewJavascriptBridge.m */; };
+		45A20448225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A20446225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A20449225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A20447225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m */; };
+		45A2044C225F194F00C068AE /* FDWebProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2044A225F194E00C068AE /* FDWebProgressView.h */; };
+		45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044B225F194E00C068AE /* FDWebProgressView.m */; };
+		45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A2044E225F22B800C068AE /* FDWebViewJavascriptBridge.h */; };
+		45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2044F225F22B800C068AE /* FDWebViewJavascriptBridge.m */; };
+		45A204A722730F8000C068AE /* FDAudioFrequencySpectrum.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204A522730F8000C068AE /* FDAudioFrequencySpectrum.h */; };
+		45A204A822730F8000C068AE /* FDAudioFrequencySpectrum.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204A622730F8000C068AE /* FDAudioFrequencySpectrum.m */; };
+		45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204A92273129800C068AE /* FDFrequencySpectrumIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45A204AC2273129800C068AE /* FDFrequencySpectrumIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */; };
+		45A204B42276E57800C068AE /* FDRect180UpDownAni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204B22276E57800C068AE /* FDRect180UpDownAni.h */; };
+		45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B32276E57800C068AE /* FDRect180UpDownAni.m */; };
+		45A204B82277070300C068AE /* FDRect360UpDownAni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204B62277070300C068AE /* FDRect360UpDownAni.h */; };
+		45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B72277070300C068AE /* FDRect360UpDownAni.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; };
@@ -215,6 +237,28 @@
 		45A2049D2269B84F00C068AE /* NSData+FDDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FDDictionary.m"; sourceTree = "<group>"; };
 		45A204A02269B98000C068AE /* NSDictionary+FDPlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FDPlist.h"; sourceTree = "<group>"; };
 		45A204A12269B98000C068AE /* NSDictionary+FDPlist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FDPlist.m"; sourceTree = "<group>"; };
+		45A20435225DF8CC00C068AE /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		45A20436225DF8CC00C068AE /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		45A20437225DF8CC00C068AE /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		45A20438225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		45A20439225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		45A2043A225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		45A2043B225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		45A2043C225DF8CC00C068AE /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		45A20446225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+FDJSONSerialization.h"; sourceTree = "<group>"; };
+		45A20447225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+FDJSONSerialization.m"; sourceTree = "<group>"; };
+		45A2044A225F194E00C068AE /* FDWebProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDWebProgressView.h; sourceTree = "<group>"; };
+		45A2044B225F194E00C068AE /* FDWebProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDWebProgressView.m; sourceTree = "<group>"; };
+		45A2044E225F22B800C068AE /* FDWebViewJavascriptBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		45A2044F225F22B800C068AE /* FDWebViewJavascriptBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		45A204A522730F8000C068AE /* FDAudioFrequencySpectrum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAudioFrequencySpectrum.h; sourceTree = "<group>"; };
+		45A204A622730F8000C068AE /* FDAudioFrequencySpectrum.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDAudioFrequencySpectrum.m; sourceTree = "<group>"; };
+		45A204A92273129800C068AE /* FDFrequencySpectrumIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDFrequencySpectrumIndicator.h; sourceTree = "<group>"; };
+		45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDFrequencySpectrumIndicator.m; sourceTree = "<group>"; };
+		45A204B22276E57800C068AE /* FDRect180UpDownAni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRect180UpDownAni.h; sourceTree = "<group>"; };
+		45A204B32276E57800C068AE /* FDRect180UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect180UpDownAni.m; sourceTree = "<group>"; };
+		45A204B62277070300C068AE /* FDRect360UpDownAni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRect360UpDownAni.h; sourceTree = "<group>"; };
+		45A204B72277070300C068AE /* FDRect360UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect360UpDownAni.m; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -385,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				45A204572260706600C068AE /* Permission */,
+				45A204A42272B23500C068AE /* AudioFrequencySpectrum */,
 				453A6F50225C4890006CC30A /* WebJsViewController */,
 				45820E3321EF355C0052F033 /* PopMenu */,
 				45936AEA224A36AC0073C9E2 /* Cache */,
@@ -556,6 +601,53 @@
 			path = NSData;
 			sourceTree = "<group>";
 		};
+		45A20434225DF89300C068AE /* WebviewJavascriptBridge */ = {
+			isa = PBXGroup;
+			children = (
+				45A2043A225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h */,
+				45A20438225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m */,
+				45A20436225DF8CC00C068AE /* WebViewJavascriptBridge.h */,
+				45A20437225DF8CC00C068AE /* WebViewJavascriptBridge.m */,
+				45A2043B225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h */,
+				45A20439225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m */,
+				45A20435225DF8CC00C068AE /* WKWebViewJavascriptBridge.h */,
+				45A2043C225DF8CC00C068AE /* WKWebViewJavascriptBridge.m */,
+			);
+			path = WebviewJavascriptBridge;
+			sourceTree = "<group>";
+		};
+		45A20445225E01C900C068AE /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				45A20446225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h */,
+				45A20447225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		45A204A42272B23500C068AE /* AudioFrequencySpectrum */ = {
+			isa = PBXGroup;
+			children = (
+				45A204B12276E3F200C068AE /* Animations */,
+				45A204A522730F8000C068AE /* FDAudioFrequencySpectrum.h */,
+				45A204A622730F8000C068AE /* FDAudioFrequencySpectrum.m */,
+				45A204A92273129800C068AE /* FDFrequencySpectrumIndicator.h */,
+				45A204AA2273129800C068AE /* FDFrequencySpectrumIndicator.m */,
+			);
+			path = AudioFrequencySpectrum;
+			sourceTree = "<group>";
+		};
+		45A204B12276E3F200C068AE /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				45A204B22276E57800C068AE /* FDRect180UpDownAni.h */,
+				45A204B32276E57800C068AE /* FDRect180UpDownAni.m */,
+				45A204B62277070300C068AE /* FDRect360UpDownAni.h */,
+				45A204B72277070300C068AE /* FDRect360UpDownAni.m */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -572,6 +664,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
 				45A20448225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h in Headers */,
@@ -589,7 +682,9 @@
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45A204992269B77300C068AE /* NSDictionary+FDData.h in Headers */,
+				45A204B42276E57800C068AE /* FDRect180UpDownAni.h in Headers */,
 				45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */,
+				45A204A722730F8000C068AE /* FDAudioFrequencySpectrum.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				45A2049E2269B84F00C068AE /* NSData+FDDictionary.h in Headers */,
 				45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */,
@@ -598,6 +693,7 @@
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
 				453A6F4E225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.h in Headers */,
+				45A204B82277070300C068AE /* FDRect360UpDownAni.h in Headers */,
 				453A6F4A2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
 				6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */,
@@ -715,6 +811,8 @@
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */,
+				45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */,
+				45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */,
 				45936AC22241E13D0073C9E2 /* FDWebImageManager.m in Sources */,
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
@@ -729,6 +827,8 @@
 				45A204632260A4BF00C068AE /* UIColor+FDGradientColor.m in Sources */,
 				45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
+				45A204AC2273129800C068AE /* FDFrequencySpectrumIndicator.m in Sources */,
+				45A204A822730F8000C068AE /* FDAudioFrequencySpectrum.m in Sources */,
 				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
