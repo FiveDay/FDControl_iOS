@@ -27,7 +27,7 @@
         if (token) {
             return path;
         }else {
-            return @"/Router/bGreen";
+            return @"Main/RouterDemo/bGreen";
         }
     };
     
@@ -36,19 +36,47 @@
         if (token) {
             return path;
         }else {
-            return @"/Router/aRed";
+            return @"Main/RouterDemo/aRed";
         }
     };
     NSSet* routes = [NSSet setWithArray:@[
-                                          @{@"path":@"/Router/aRed",
-                                              @"component":@"RouterAViewController",
-                                              @"name":@"aRed",
-                                              @"redirect":redirect,
-                                            },
-                                            @{@"path":@"/Router/bGreen",
-                                              @"component":@"RouterBViewController",
-                                              @"redirect":redirect2,
-                                            },
+          @{
+              @"path":@"Main/UserGuideDemo",
+              @"name":@"guide",
+              @"component":@"UserGuideDemoViewController"
+            },
+          @{
+              @"path":@"Main/RouterDemo",
+              @"name":@"router",
+              @"component":@"RouterDemoViewController",
+            },
+          @{
+              @"path":@"Main/ButtonDemo",
+              @"name":@"button",
+              @"component":@"ButtonDemoViewController",
+            },
+          @{
+              @"path":@"Main/WebJsDemo",
+              @"name":@"webjs",
+              @"component":@"WebJsDemoViewController",
+            },
+          @{
+              @"path":@"Main/AudioFrequencyDemo",
+              @"name":@"audio",
+              @"component":@"AudioFrequencySpectrumDemoViewController"
+            },
+          //sub router
+          @{
+              @"path":@"Main/RouterDemo/aRed",
+              @"component":@"RouterAViewController",
+              @"name":@"aRed",
+              @"redirect":redirect,
+            },
+            @{
+              @"path":@"Main/RouterDemo/bGreen",
+              @"component":@"RouterBViewController",
+              @"redirect":redirect2,
+            },
                                             ]];
     [UINavigationController registerRoutes:routes];
     

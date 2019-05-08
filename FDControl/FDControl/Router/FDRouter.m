@@ -75,7 +75,7 @@
         NSURL* url = [NSURL URLWithString:uri];
         NSURLComponents* urlComponents = [NSURLComponents componentsWithURL:url resolvingAgainstBaseURL:NO];
         
-        if ( component && url ) {
+        if (url) {
             NSMutableDictionary* subRoutes = self.routeTable;
             for (NSString* pathComponent in urlComponents.path.pathComponents) {
                 if ([subRoutes objectForKey:pathComponent]) {
@@ -88,8 +88,12 @@
                             [node setObject:name forKey:@"name"];
                             [_nameTable setObject:component forKey:name];
                         }
-                        [node setObject:component forKey:@"component"];
-                        [node setObject:redirect forKey:@"redirect"];
+                        if (component) {
+                            [node setObject:component forKey:@"component"];
+                        }
+                        if (redirect) {
+                            [node setObject:redirect forKey:@"redirect"];
+                        }
                     }
                     subRoutes = [subRoutes objectForKey:pathComponent];
                 }

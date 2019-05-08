@@ -1,5 +1,5 @@
 //
-//  AudioFrequencySpectrumViewController.h
+//  AudioFrequencySpectrumDemoViewController.h
 //  Demo
 //
 //  Created by zhangyu528 on 2019/4/28.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AudioFrequencySpectrumViewController : UIViewController
+@interface AudioFrequencySpectrumDemoViewController : UIViewController
 
 @end
 
