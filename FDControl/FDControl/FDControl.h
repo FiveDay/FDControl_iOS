@@ -30,8 +30,6 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/NSObject+FDPropertyMethod.h>
 #import <FDControl/NSDictionary+FDJSONSerialization.h>
 #import  <FDControl/UIImage+FDGradient.h>
-
-//UIView Category
 #import <FDControl/UIControl+FDTargetAction.h>
 #import <FDControl/UIView+FDLayout.h>
 #import <FDControl/NSString+FDURL.h>
@@ -41,10 +39,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/UIColor+FDColor.h>
 #import <FDControl/CAShapeLayer+FDShapeHelper.h>
 #import <FDControl/UIImage+FDColor.h>
-
-//UIImageView Category
 #import <FDControl/UIImageView+FDImageCoder.h>
-
 #import <FDControl/FDFrequencySpectrumIndicator.h>
 #import <FDControl/NSBundle+FDMainBundle.h>
 #import <FDControl/UIButton+FDImageTitleVerticalLayout.h>
