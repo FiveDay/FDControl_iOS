@@ -24,6 +24,8 @@
 		452EA77E22817534004BB575 /* UIButton+FDLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA77C22817534004BB575 /* UIButton+FDLoadingIndicator.m */; };
 		452EA79222819ACC004BB575 /* FDVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA79022819ACC004BB575 /* FDVerticalButton.m */; };
 		452EA79322819ACC004BB575 /* FDVerticalButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA79122819ACC004BB575 /* FDVerticalButton.h */; };
+		452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7952282AD8A004BB575 /* FDUserGuideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA7982282AD8A004BB575 /* FDUserGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7962282AD8A004BB575 /* FDUserGuideView.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -150,6 +152,8 @@
 		452EA77C22817534004BB575 /* UIButton+FDLoadingIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FDLoadingIndicator.m"; sourceTree = "<group>"; };
 		452EA79022819ACC004BB575 /* FDVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDVerticalButton.m; sourceTree = "<group>"; };
 		452EA79122819ACC004BB575 /* FDVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDVerticalButton.h; sourceTree = "<group>"; };
+		452EA7952282AD8A004BB575 /* FDUserGuideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUserGuideView.h; sourceTree = "<group>"; };
+		452EA7962282AD8A004BB575 /* FDUserGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUserGuideView.m; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -286,6 +290,7 @@
 		4514D1D921BFAD8A0076290D /* FDControl */ = {
 			isa = PBXGroup;
 			children = (
+				452EA79422827B29004BB575 /* Bussiness */,
 				45A2046422646F9900C068AE /* Router */,
 				4587C99221DDE37A005AE3AB /* Control */,
 				4514D23321BFB3450076290D /* Category */,
@@ -383,6 +388,15 @@
 				452EA79122819ACC004BB575 /* FDVerticalButton.h */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		452EA79422827B29004BB575 /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7952282AD8A004BB575 /* FDUserGuideView.h */,
+				452EA7962282AD8A004BB575 /* FDUserGuideView.m */,
+			);
+			path = Bussiness;
 			sourceTree = "<group>";
 		};
 		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
@@ -670,6 +684,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
 				45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */,
@@ -855,6 +870,7 @@
 				453A6F472255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m in Sources */,
 				45A2045B2260710700C068AE /* FDPermissionMng.m in Sources */,
 				452EA77E22817534004BB575 /* UIButton+FDLoadingIndicator.m in Sources */,
+				452EA7982282AD8A004BB575 /* FDUserGuideView.m in Sources */,
 				453A6F4B2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.m in Sources */,
 				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,

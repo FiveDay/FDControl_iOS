@@ -20,6 +20,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/UINavigationController+FDRouter.h>
 #import <FDControl/UIViewController+FDRouter.h>
 //Control
+#import <FDControl/FDUserGuideView.h>
 #import <FDControl/FDWebJsViewController.h>
 #import <FDControl/FDActivityIndicatorView.h>
 #import <FDControl/UIImageView+FDWebImageView.h>
@@ -50,6 +51,7 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import "UINavigationController+FDRouter.h"
 #import "UIViewController+FDRouter.h"
 //Control
+#import "FDUserGuideView.h"
 #import "FDWebJsViewController.h"
 #import "FDActivityIndicatorView.h"
 #import "UIImageView+FDWebImageView.h"

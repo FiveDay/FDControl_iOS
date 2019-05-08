@@ -1,19 +1,19 @@
 //
-//  AudioFrequencySpectrumViewController.m
+//  AudioFrequencySpectrumDemoViewController.m
 //  Demo
 //
 //  Created by zhangyu528 on 2019/4/28.
 //  Copyright © 2019 zhangyu528. All rights reserved.
 //
 
-#import "AudioFrequencySpectrumViewController.h"
+#import "AudioFrequencySpectrumDemoViewController.h"
 #import <FDControl/FDControl.h>
 
-@interface AudioFrequencySpectrumViewController ()
+@interface AudioFrequencySpectrumDemoViewController ()
 
 @end
 
-@implementation AudioFrequencySpectrumViewController
+@implementation AudioFrequencySpectrumDemoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

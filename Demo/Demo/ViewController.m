@@ -34,10 +34,10 @@
     [self.view addSubview:self.tableViewController.tableView];
     
     //添加测试vc
-    [self.testVCClassNameArray addObject:@"UIImageViewDecoderViewController"];
-    [self.testVCClassNameArray addObject:@"AudioFrequencySpectrumViewController"];
-    [self.testVCClassNameArray addObject:@"RouterDemoViewController"];
-    [self.testVCClassNameArray addObject:@"ButtonDemoViewController"];
+    [self.testVCClassNameArray addObject:@"audio"];
+    [self.testVCClassNameArray addObject:@"router"];
+    [self.testVCClassNameArray addObject:@"butten"];
+    [self.testVCClassNameArray addObject:@"guide"];
 }
 
 
@@ -79,16 +79,7 @@
     
     [selectedCell setSelected:NO];
     
-    //点击cell
-    //1: 创建对象
-    Class cls = NSClassFromString(self.testVCClassNameArray[indexPath.row]);
-    if (!cls) {
-        return ;
-    }
-    
-    UIViewController* dynamicCreatedViewController = [[cls alloc]init];
-    
-    [self.navigationController pushViewController:dynamicCreatedViewController animated:YES];
+    [self.navigationController navToName:self.testVCClassNameArray[indexPath.row] param:nil];
     
 }
 

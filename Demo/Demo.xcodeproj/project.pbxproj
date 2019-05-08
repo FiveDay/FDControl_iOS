@@ -17,13 +17,14 @@
 		4514D22221BFADD20076290D /* DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D22121BFADD20076290D /* DemoUITests.m */; };
 		4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; };
 		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		452EA79C2282C3AC004BB575 /* UserGuideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */; };
 		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
 		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
-		45A204B02275862F00C068AE /* AudioFrequencySpectrumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204AF2275862F00C068AE /* AudioFrequencySpectrumViewController.m */; };
 		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
 		45A204732264987200C068AE /* RouterAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204722264987200C068AE /* RouterAViewController.m */; };
 		45A204762264988700C068AE /* RouterBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204752264988700C068AE /* RouterBViewController.m */; };
 		45A204962269A80F00C068AE /* ButtonDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204952269A80F00C068AE /* ButtonDemoViewController.m */; };
+		45A204B02275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204AF2275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m */; };
 		6D050D0C225E175B00B4FAF1 /* testimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D050D0B225E175B00B4FAF1 /* testimage.jpg */; };
 		6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */; };
 /* End PBXBuildFile section */
@@ -77,12 +78,12 @@
 		4514D22121BFADD20076290D /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		4514D22321BFADD20076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4514D23D21BFBAA50076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		452EA79A2282C3AC004BB575 /* UserGuideDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserGuideDemoViewController.h; sourceTree = "<group>"; };
+		452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserGuideDemoViewController.m; sourceTree = "<group>"; };
 		453A6F55225C8C0B006CC30A /* WebJsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebJsDemoViewController.h; sourceTree = "<group>"; };
 		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
 		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
 		453A6F68225DB664006CC30A /* NativeFunctionForJs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeFunctionForJs.m; sourceTree = "<group>"; };
-		45A204AE2275862F00C068AE /* AudioFrequencySpectrumViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFrequencySpectrumViewController.h; sourceTree = "<group>"; };
-		45A204AF2275862F00C068AE /* AudioFrequencySpectrumViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFrequencySpectrumViewController.m; sourceTree = "<group>"; };
 		45A2046E226495A100C068AE /* RouterDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterDemoViewController.h; sourceTree = "<group>"; };
 		45A2046F226495A100C068AE /* RouterDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterDemoViewController.m; sourceTree = "<group>"; };
 		45A204712264987200C068AE /* RouterAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterAViewController.h; sourceTree = "<group>"; };
@@ -91,6 +92,8 @@
 		45A204752264988700C068AE /* RouterBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterBViewController.m; sourceTree = "<group>"; };
 		45A204942269A80F00C068AE /* ButtonDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonDemoViewController.h; sourceTree = "<group>"; };
 		45A204952269A80F00C068AE /* ButtonDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonDemoViewController.m; sourceTree = "<group>"; };
+		45A204AE2275862F00C068AE /* AudioFrequencySpectrumDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioFrequencySpectrumDemoViewController.h; sourceTree = "<group>"; };
+		45A204AF2275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioFrequencySpectrumDemoViewController.m; sourceTree = "<group>"; };
 		6D050D0B225E175B00B4FAF1 /* testimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testimage.jpg; sourceTree = "<group>"; };
 		6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewDecoderViewController.h; sourceTree = "<group>"; };
 		6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewDecoderViewController.m; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				452EA7992282C2C8004BB575 /* UserGuide */,
 				45A204AD227585A000C068AE /* AudioFrequencySpectrum */,
 				45A2046D2264957800C068AE /* Router */,
 				45A204932269A7E900C068AE /* Button */,
@@ -184,6 +188,15 @@
 			path = DemoUITests;
 			sourceTree = "<group>";
 		};
+		452EA7992282C2C8004BB575 /* UserGuide */ = {
+			isa = PBXGroup;
+			children = (
+				452EA79A2282C3AC004BB575 /* UserGuideDemoViewController.h */,
+				452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */,
+			);
+			path = UserGuide;
+			sourceTree = "<group>";
+		};
 		453A6F66225DB61C006CC30A /* WebJs */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,15 +206,6 @@
 				453A6F68225DB664006CC30A /* NativeFunctionForJs.m */,
 			);
 			path = WebJs;
-			sourceTree = "<group>";
-		};
-		45A204AD227585A000C068AE /* AudioFrequencySpectrum */ = {
-			isa = PBXGroup;
-			children = (
-				45A204AE2275862F00C068AE /* AudioFrequencySpectrumViewController.h */,
-				45A204AF2275862F00C068AE /* AudioFrequencySpectrumViewController.m */,
-			);
-			path = AudioFrequencySpectrum;
 			sourceTree = "<group>";
 		};
 		45A2046D2264957800C068AE /* Router */ = {
@@ -224,6 +228,15 @@
 				45A204952269A80F00C068AE /* ButtonDemoViewController.m */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		45A204AD227585A000C068AE /* AudioFrequencySpectrum */ = {
+			isa = PBXGroup;
+			children = (
+				45A204AE2275862F00C068AE /* AudioFrequencySpectrumDemoViewController.h */,
+				45A204AF2275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m */,
+			);
+			path = AudioFrequencySpectrum;
 			sourceTree = "<group>";
 		};
 		6D050D0A225E175B00B4FAF1 /* resources */ = {
@@ -371,8 +384,9 @@
 				4514D20221BFADCF0076290D /* ViewController.m in Sources */,
 				45A204962269A80F00C068AE /* ButtonDemoViewController.m in Sources */,
 				453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */,
+				452EA79C2282C3AC004BB575 /* UserGuideDemoViewController.m in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
-				45A204B02275862F00C068AE /* AudioFrequencySpectrumViewController.m in Sources */,
+				45A204B02275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m in Sources */,
 				45A204732264987200C068AE /* RouterAViewController.m in Sources */,
 				45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */,
 				6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */,
