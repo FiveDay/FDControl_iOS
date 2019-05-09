@@ -82,10 +82,24 @@
     
     CGRect frame = [[UIScreen mainScreen]bounds];
     self.window = [[UIWindow alloc]initWithFrame:frame];
-    _mainVC = [[ViewController alloc]initWithNibName:nil bundle:nil];
-    UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:_mainVC];
+    
+
+    FDTabBarController* tabCtl = [[FDTabBarController alloc]initWithType:TabBarMidButtonType];
+    tabCtl.midButton.image = [UIImage imageNamed:@"+"];
+    tabCtl.midButton.titleColor = [UIColor blackColor];
+    
+    ViewController* demo1 = [ViewController new];
+    demo1.tabBarItem.title = @"Demo1";
+    [tabCtl addChildViewController:demo1];
+
+    ViewController* demo2 = [ViewController new];
+    demo2.tabBarItem.title = @"Demo2";
+    [tabCtl addChildViewController:demo2];
+    
+    UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:tabCtl];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -13,9 +13,6 @@
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
-//存放测试vc的交互容器
-@property(nonatomic, strong) UITableViewController* tableViewController;
-
 //存放测试vc类名、用于tableview数据显示
 @property(nonatomic, strong) NSMutableArray* testVCClassNameArray;
 
@@ -29,9 +26,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //添加tableviewcontroller
-    [self addChildViewController:self.tableViewController];
-    [self.view addSubview:self.tableViewController.tableView];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
     
     //添加测试vc
     [self.testVCClassNameArray addObject:@"audio"];
@@ -47,16 +43,6 @@
 }
 
 # pragma mark - lazy
-- (UITableViewController*)tableViewController
-{    
-    if (!_tableViewController) {
-        _tableViewController = [[UITableViewController alloc]initWithStyle:UITableViewStylePlain];
-        _tableViewController.tableView.delegate = self;
-        _tableViewController.tableView.dataSource = self;
-    }
-    
-    return _tableViewController;
-}
 
 - (NSMutableArray*)testVCClassNameArray
 {

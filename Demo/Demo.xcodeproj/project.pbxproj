@@ -150,6 +150,9 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				452EA7A82283D224004BB575 /* DemoList */,
+				452EA7A72283D1FD004BB575 /* ImageView */,
+				452EA7A62283C91E004BB575 /* TabBar */,
 				452EA7992282C2C8004BB575 /* UserGuide */,
 				45A204AD227585A000C068AE /* AudioFrequencySpectrum */,
 				45A2046D2264957800C068AE /* Router */,
@@ -157,15 +160,11 @@
 				453A6F66225DB61C006CC30A /* WebJs */,
 				4514D1FD21BFADCF0076290D /* AppDelegate.h */,
 				4514D1FE21BFADCF0076290D /* AppDelegate.m */,
-				4514D20021BFADCF0076290D /* ViewController.h */,
-				4514D20121BFADCF0076290D /* ViewController.m */,
 				4514D20321BFADCF0076290D /* Main.storyboard */,
 				4514D20621BFADD20076290D /* Assets.xcassets */,
 				4514D20821BFADD20076290D /* LaunchScreen.storyboard */,
 				4514D20B21BFADD20076290D /* Info.plist */,
 				4514D20C21BFADD20076290D /* main.m */,
-				6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */,
-				6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -195,6 +194,31 @@
 				452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */,
 			);
 			path = UserGuide;
+			sourceTree = "<group>";
+		};
+		452EA7A62283C91E004BB575 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		452EA7A72283D1FD004BB575 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */,
+				6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		452EA7A82283D224004BB575 /* DemoList */ = {
+			isa = PBXGroup;
+			children = (
+				4514D20021BFADCF0076290D /* ViewController.h */,
+				4514D20121BFADCF0076290D /* ViewController.m */,
+			);
+			path = DemoList;
 			sourceTree = "<group>";
 		};
 		453A6F66225DB61C006CC30A /* WebJs */ = {
