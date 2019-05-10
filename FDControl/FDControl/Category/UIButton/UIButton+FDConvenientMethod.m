@@ -67,7 +67,6 @@
 
 - (void)setImage:(UIImage *)image {
     [self setImage:image forState:UIControlStateNormal];
-    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 - (UIImage*)image {

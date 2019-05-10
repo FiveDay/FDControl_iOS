@@ -61,6 +61,7 @@ static char kAssociatedKeyFrameAnimationObjectKey;
         }
         self.plusButton.center = CGPointMake(tabBarW / 2, 0);
         self.plusButton.frame = CGRectMake(self.plusButton.frame.origin.x, btnY, btnW, btnH);
+        self.plusButton.imageView.contentMode = UIViewContentModeBottom;
     }
 }
 
