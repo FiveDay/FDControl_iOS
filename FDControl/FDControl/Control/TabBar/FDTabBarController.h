@@ -10,16 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef enum : NSUInteger {
-    TabBarDefaultType,
-    TabBarMidButtonType,
-} FDTabBarType;
-
 @interface FDTabBarController : UITabBarController
 
-@property(strong, nonatomic, nullable, readonly)UIButton* midButton;
-
-- (instancetype)initWithType:(FDTabBarType)type;
+@property(strong, nonatomic, nullable)UIButton* plusButton;
 
 @end
 

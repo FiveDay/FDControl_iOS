@@ -84,17 +84,37 @@
     self.window = [[UIWindow alloc]initWithFrame:frame];
     
 
-    FDTabBarController* tabCtl = [[FDTabBarController alloc]initWithType:TabBarMidButtonType];
-    tabCtl.midButton.image = [UIImage imageNamed:@"+"];
-    tabCtl.midButton.titleColor = [UIColor blackColor];
+    FDTabBarController* tabCtl = [FDTabBarController new];
+    tabCtl.plusButton = [UIButton new];
+    tabCtl.plusButton.image = [UIImage imageNamed:@"+"];
+    tabCtl.plusButton.titleColor = [UIColor blackColor];
     
     ViewController* demo1 = [ViewController new];
     demo1.tabBarItem.title = @"Demo1";
+    demo1.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn1_01"];
+    CAKeyframeAnimation *animation01 = [CAKeyframeAnimation animation];
+    animation01.keyPath = @"transform.scale";
+    animation01.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
+    animation01.duration = 1;
+    animation01.calculationMode = kCAAnimationCubic;
+    demo1.tabBarItem.animation = animation01;
+
     [tabCtl addChildViewController:demo1];
 
     ViewController* demo2 = [ViewController new];
     demo2.tabBarItem.title = @"Demo2";
+    demo2.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
+    
+    CAKeyframeAnimation *animation02 = [CAKeyframeAnimation animation];
+    animation02.keyPath = @"transform.scale";
+    animation02.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
+    animation02.duration = 1;
+    animation02.calculationMode = kCAAnimationCubic;
+    demo2.tabBarItem.animation = animation02;
+    
     [tabCtl addChildViewController:demo2];
+    
+//    tabCtl.tabBarButtonKeyAnimations = @[animation01, animation02];
     
     UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:tabCtl];
     self.window.rootViewController = rootVC;

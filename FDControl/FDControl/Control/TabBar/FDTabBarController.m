@@ -11,31 +11,16 @@
 
 @interface FDTabBarController ()
 @property(strong, nonatomic, nullable)FDTabBar* tabBar;
-@property(assign, nonatomic)FDTabBarType type;
 @end
 
 
 @implementation FDTabBarController
-
 @dynamic tabBar;
 
 - (instancetype)init {
-    if (self = [self initWithType:TabBarDefaultType]) {
-    }
-    return self;
-}
-
-- (instancetype)initWithType:(FDTabBarType)type {
     if (self = [super init]) {
-        _type = type;
-        switch (self.type) {
-            case TabBarMidButtonType:
-                self.tabBar = [FDTabBar new];
-                [self setValue:self.tabBar forKey:@"tabBar"];
-                break;
-            default:
-                break;
-        }
+        self.tabBar = [FDTabBar new];
+        [self setValue:self.tabBar forKey:@"tabBar"];
     }
     return self;
 }
@@ -43,11 +28,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
 
-- (UIButton*)midButton {
-    return self.tabBar.midButton;
+- (void)setPlusButton:(UIButton *)plusButton {
+    self.tabBar.plusButton = plusButton;
+}
+
+- (UIButton*)plusButton {
+    return self.tabBar.plusButton;
 }
 
 @end

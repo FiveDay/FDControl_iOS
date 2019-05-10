@@ -11,8 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDTabBar : UITabBar
-@property(strong, nonatomic, nullable, readonly)UIButton* midButton;
-
+@property(strong, nonatomic, nullable)UIButton* plusButton;
+@property(strong, nonatomic, nullable)NSArray<CAKeyframeAnimation*>* tabBarButtonKeyAnimations;
 @end
 
 NS_ASSUME_NONNULL_END

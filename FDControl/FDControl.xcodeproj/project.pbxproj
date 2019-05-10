@@ -30,6 +30,8 @@
 		452EA7A52283C37E004BB575 /* FDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7A32283C37E004BB575 /* FDTabBarController.m */; };
 		452EA7AB2283FF0E004BB575 /* FDTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7A92283FF0E004BB575 /* FDTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452EA7AC2283FF0E004BB575 /* FDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7AA2283FF0E004BB575 /* FDTabBar.m */; };
+		452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7AD22855FF9004BB575 /* UITabBarItem+FDTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA7B022855FF9004BB575 /* UITabBarItem+FDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7AE22855FF9004BB575 /* UITabBarItem+FDTabBar.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -162,6 +164,8 @@
 		452EA7A32283C37E004BB575 /* FDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTabBarController.m; sourceTree = "<group>"; };
 		452EA7A92283FF0E004BB575 /* FDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTabBar.h; sourceTree = "<group>"; };
 		452EA7AA2283FF0E004BB575 /* FDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTabBar.m; sourceTree = "<group>"; };
+		452EA7AD22855FF9004BB575 /* UITabBarItem+FDTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+FDTabBar.h"; sourceTree = "<group>"; };
+		452EA7AE22855FF9004BB575 /* UITabBarItem+FDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+FDTabBar.m"; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -414,6 +418,8 @@
 				452EA7A32283C37E004BB575 /* FDTabBarController.m */,
 				452EA7A92283FF0E004BB575 /* FDTabBar.h */,
 				452EA7AA2283FF0E004BB575 /* FDTabBar.m */,
+				452EA7AD22855FF9004BB575 /* UITabBarItem+FDTabBar.h */,
+				452EA7AE22855FF9004BB575 /* UITabBarItem+FDTabBar.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -704,6 +710,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */,
 				452EA7AB2283FF0E004BB575 /* FDTabBar.h in Headers */,
 				452EA7A42283C37E004BB575 /* FDTabBarController.h in Headers */,
 				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
@@ -906,6 +913,7 @@
 				452EA77A22812CFB004BB575 /* UIButton+FDConvenientMethod.m in Sources */,
 				45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */,
 				452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */,
+				452EA7B022855FF9004BB575 /* UITabBarItem+FDTabBar.m in Sources */,
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,

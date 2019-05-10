@@ -7,19 +7,24 @@
 //
 
 #import "FDTabBar.h"
+#import <objc/runtime.h>
+#import "UITabBarItem+FDTabBar.h"
+
+static char kAssociatedKeyFrameAnimationObjectKey;
 
 @interface FDTabBar ()
-@property(strong, nonatomic, nullable)UIButton* midButton;
+
 @end
 
 @implementation FDTabBar
 
-- (UIButton*)midButton {
-    if (_midButton == nil) {
-        _midButton = [UIButton new];
-        [self addSubview:_midButton];
+- (void)setPlusButton:(UIButton *)plusButton {
+    if (_plusButton == plusButton) {
+        return;
     }
-    return _midButton;
+    [_plusButton removeFromSuperview];
+    _plusButton = plusButton;
+    [self addSubview:_plusButton];
 }
 
 - (void)layoutSubviews {
@@ -36,6 +41,9 @@
         NSInteger index = 0;
         for (UIView* sub in self.subviews) {
             if ([sub isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
+                //setup animations
+                CAKeyframeAnimation* animation = self.items[index].animation;
+                [self setupAnimation:animation tabBarButton:((UIControl*)sub)];
                 if (self.items.count == 2
                     && index == 1) {
                     index = 2;
@@ -51,8 +59,31 @@
                 index ++;
             }
         }
-        self.midButton.center = CGPointMake(tabBarW / 2, 0);
-        self.midButton.frame = CGRectMake(self.midButton.frame.origin.x, btnY, btnW, btnH);
+        self.plusButton.center = CGPointMake(tabBarW / 2, 0);
+        self.plusButton.frame = CGRectMake(self.plusButton.frame.origin.x, btnY, btnW, btnH);
+    }
+}
+
+- (void)setupAnimation:(CAKeyframeAnimation*)animation tabBarButton:(UIControl*)tabBarButton {
+    [tabBarButton addTarget:self action:@selector(onTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+    
+    for (UIView* imageView in tabBarButton.subviews) {
+        if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
+            id propertyValue = objc_getAssociatedObject(imageView, &kAssociatedKeyFrameAnimationObjectKey);
+            if (propertyValue == nil) {
+                propertyValue = animation;
+                objc_setAssociatedObject(imageView, &kAssociatedKeyFrameAnimationObjectKey, propertyValue, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+            }
+        }
+    }
+}
+
+- (void)onTouchUpInside:(UIControl*)tabBarButton {
+    for (UIView* imageView in tabBarButton.subviews) {
+        if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
+            CAKeyframeAnimation* animation = objc_getAssociatedObject(imageView, &kAssociatedKeyFrameAnimationObjectKey);
+            [imageView.layer addAnimation:animation forKey:@"FD_KeyFrameAnimation"];
+        }
     }
 }
 @end
