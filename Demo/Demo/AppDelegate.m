@@ -84,7 +84,7 @@
     self.window = [[UIWindow alloc]initWithFrame:frame];
     
 
-    FDTabBarController* tabCtl = [FDTabBarController new];
+    UITabBarController* tabCtl = [UITabBarController new];
     tabCtl.plusButton = [UIButton new];
     tabCtl.plusButton.image = [UIImage imageNamed:@"+"];
     tabCtl.plusButton.titleColor = [UIColor blackColor];
@@ -104,6 +104,7 @@
     ViewController* demo2 = [ViewController new];
     demo2.tabBarItem.title = @"Demo2";
     demo2.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
+    demo2.tabBarItem.badgeValue = @"1";
     
     CAKeyframeAnimation *animation02 = [CAKeyframeAnimation animation];
     animation02.keyPath = @"transform.scale";
@@ -113,9 +114,7 @@
     demo2.tabBarItem.animation = animation02;
     
     [tabCtl addChildViewController:demo2];
-    
-//    tabCtl.tabBarButtonKeyAnimations = @[animation01, animation02];
-    
+        
     UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:tabCtl];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
