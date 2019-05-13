@@ -9,12 +9,12 @@
 #import "AppDelegate.h"
 #import <FDControl/FDControl.h>
 
-#import "ViewController.h"
+#import "Demo1ViewController.h"
+#import "Demo2ViewController.h"
 #import "RouterAViewController.h"
 #import "RouterBViewController.h"
 
 @interface AppDelegate ()
-@property(nonatomic, strong) ViewController* mainVC;
 @end
 
 @implementation AppDelegate
@@ -92,7 +92,7 @@
     tabCtl.plusButton.titleColor = [UIColor blackColor];
     tabCtl.plusButton.imageEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
     
-    ViewController* demo1 = [ViewController new];
+    Demo1ViewController* demo1 = [Demo1ViewController new];
     demo1.tabBarItem.title = @"Demo1";
     demo1.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn1_01"];
     demo1.tabBarItem.selectedBgColor = [UIColor blueColor];
@@ -106,7 +106,7 @@
 
     [tabCtl addChildViewController:demo1];
 
-    ViewController* demo2 = [ViewController new];
+    Demo2ViewController* demo2 = [Demo2ViewController new];
     demo2.tabBarItem.title = @"Demo2";
     demo2.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
     demo2.tabBarItem.badgeValue = @"1";

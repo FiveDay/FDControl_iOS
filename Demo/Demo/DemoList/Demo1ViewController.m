@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  Demo1ViewController.m
 //  Demo
 //
 //  Created by zhangyu528 on 2018/12/11.
 //  Copyright © 2018 zhangyu528. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Demo1ViewController.h"
 
 #import <FDControl/FDControl.h>
 #import <UIKit/UITableViewController.h>
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface Demo1ViewController () <UITableViewDelegate, UITableViewDataSource>
 
 //存放测试vc类名、用于tableview数据显示
 @property(nonatomic, strong) NSMutableArray* testVCClassNameArray;
@@ -20,7 +20,7 @@
 //@property(nonatomic, strong) UINavigationController* navigationController;
 @end
 
-@implementation ViewController
+@implementation Demo1ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
