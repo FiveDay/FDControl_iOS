@@ -26,4 +26,15 @@
     return [result copy];
 }
 
+- (void)addProperty:(const void * _Nonnull) key value:(id _Nullable) value {
+    id propertyValue = objc_getAssociatedObject(self, key);
+    if (propertyValue == nil) {
+        propertyValue = value;
+        objc_setAssociatedObject(self, key, propertyValue, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+}
+
+- (id _Nullable)getPropertyValue:(const void * _Nonnull)key {
+    return objc_getAssociatedObject(self, key);
+}
 @end

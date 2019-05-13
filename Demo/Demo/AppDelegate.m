@@ -85,6 +85,8 @@
     
 
     UITabBarController* tabCtl = [UITabBarController new];
+    tabCtl.tabBar.tintColor = [UIColor blackColor];
+    
     tabCtl.plusButton = [UIButton new];
     tabCtl.plusButton.image = [UIImage imageNamed:@"+"];
     tabCtl.plusButton.titleColor = [UIColor blackColor];
@@ -93,6 +95,8 @@
     ViewController* demo1 = [ViewController new];
     demo1.tabBarItem.title = @"Demo1";
     demo1.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn1_01"];
+    demo1.tabBarItem.selectedBgColor = [UIColor blueColor];
+
     CAKeyframeAnimation *animation01 = [CAKeyframeAnimation animation];
     animation01.keyPath = @"transform.scale";
     animation01.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
@@ -106,6 +110,7 @@
     demo2.tabBarItem.title = @"Demo2";
     demo2.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
     demo2.tabBarItem.badgeValue = @"1";
+    demo2.tabBarItem.selectedBgColor = [UIColor redColor];
     
     CAKeyframeAnimation *animation02 = [CAKeyframeAnimation animation];
     animation02.keyPath = @"transform.scale";

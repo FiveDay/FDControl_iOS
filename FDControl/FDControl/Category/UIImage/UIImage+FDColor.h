@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  *   创建size大小的Image，并使用color进行填充
  *  return: 生成的Image，如果为nil，说明参数异常，Image生成失败
  */
-+ (UIImage* _Nullable)createImageWithColor:(UIColor*)color andSize:(CGSize)size;
++ (UIImage* _Nullable)imageWithColor:(UIColor*)color andSize:(CGSize)size;
 
 @end
 

@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSArray<NSString*>*)getMethodNameArray;
 
+- (void)addProperty:(const void * _Nonnull) key value:(id _Nullable) value;
+- (id _Nullable)getPropertyValue:(const void * _Nonnull)key;
+
 @end
 
 NS_ASSUME_NONNULL_END

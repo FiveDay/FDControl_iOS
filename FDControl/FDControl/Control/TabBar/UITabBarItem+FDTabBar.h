@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UITabBarItem (FDTabBar)
 
 @property(strong, nonatomic, nullable)CAKeyframeAnimation* animation;
+@property(strong, nonatomic, nullable)UIColor* selectedBgColor;
 
 @end
 

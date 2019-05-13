@@ -18,4 +18,12 @@
 - (CAKeyframeAnimation*)animation {
     return objc_getAssociatedObject(self, _cmd);
 }
+
+- (void)setSelectedBgColor:(UIColor *)selectedBgColor {
+    objc_setAssociatedObject(self, @selector(selectedBgColor), selectedBgColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIColor*)selectedBgColor {
+    return objc_getAssociatedObject(self, _cmd);
+}
 @end
