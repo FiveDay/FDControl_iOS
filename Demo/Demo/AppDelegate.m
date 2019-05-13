@@ -88,6 +88,7 @@
     tabCtl.plusButton = [UIButton new];
     tabCtl.plusButton.image = [UIImage imageNamed:@"+"];
     tabCtl.plusButton.titleColor = [UIColor blackColor];
+    tabCtl.plusButton.imageEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
     
     ViewController* demo1 = [ViewController new];
     demo1.tabBarItem.title = @"Demo1";
@@ -114,7 +115,7 @@
     demo2.tabBarItem.animation = animation02;
     
     [tabCtl addChildViewController:demo2];
-        
+    
     UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:tabCtl];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];

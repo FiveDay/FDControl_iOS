@@ -24,13 +24,12 @@ static char kAssociatedKeyFrameAnimationObjectKey;
     }
     [_plusButton removeFromSuperview];
     _plusButton = plusButton;
-    [self addSubview:_plusButton];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    if (self.items.count ==2 || self.items.count == 4) {
+    if (self.items.count == 2 || self.items.count == 4) {
         CGFloat tabBarW = self.bounds.size.width;
         
         CGFloat btnW = tabBarW / (self.items.count + 1);
@@ -62,6 +61,7 @@ static char kAssociatedKeyFrameAnimationObjectKey;
         self.plusButton.center = CGPointMake(tabBarW / 2, 0);
         self.plusButton.frame = CGRectMake(self.plusButton.frame.origin.x, btnY, btnW, btnH);
         self.plusButton.imageView.contentMode = UIViewContentModeBottom;
+        [self addSubview:self.plusButton];
     }
 }
 
