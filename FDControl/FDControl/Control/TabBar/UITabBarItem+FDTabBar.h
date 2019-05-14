@@ -11,10 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UITabBarItem (FDTabBar)
-
-@property(strong, nonatomic, nullable)CAKeyframeAnimation* animation;
+@property(strong, nonatomic, nullable)NSArray<UIImage*>* animationImages;
+@property(strong, nonatomic, nullable)CAAnimation* animation;
 @property(strong, nonatomic, nullable)UIColor* selectedBgColor;
-
+@property(assign, nonatomic)BOOL isShowDot;
 @end
 
 NS_ASSUME_NONNULL_END

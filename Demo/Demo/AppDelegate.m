@@ -11,8 +11,8 @@
 
 #import "Demo1ViewController.h"
 #import "Demo2ViewController.h"
-#import "RouterAViewController.h"
-#import "RouterBViewController.h"
+#import "Demo3ViewController.h"
+#import "Demo4ViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -85,41 +85,20 @@
     
 
     UITabBarController* tabCtl = [UITabBarController new];
-    tabCtl.tabBar.tintColor = [UIColor blackColor];
-    
+    //设置tabBar透过
+    tabCtl.tabBar.translucent = YES;
+    //设置tabBarItem选中后image的合成颜色.
+    tabCtl.tabBar.tintColor = [UIColor blueColor];
+    //创建中间plusButton
     tabCtl.plusButton = [UIButton new];
     tabCtl.plusButton.image = [UIImage imageNamed:@"+"];
-    tabCtl.plusButton.titleColor = [UIColor blackColor];
+    //调整位plusButton的image向上拉伸20达到凸起到tabbar外.
     tabCtl.plusButton.imageEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
-    
-    Demo1ViewController* demo1 = [Demo1ViewController new];
-    demo1.tabBarItem.title = @"Demo1";
-    demo1.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn1_01"];
-    demo1.tabBarItem.selectedBgColor = [UIColor blueColor];
-
-    CAKeyframeAnimation *animation01 = [CAKeyframeAnimation animation];
-    animation01.keyPath = @"transform.scale";
-    animation01.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
-    animation01.duration = 1;
-    animation01.calculationMode = kCAAnimationCubic;
-    demo1.tabBarItem.animation = animation01;
-
-    [tabCtl addChildViewController:demo1];
-
-    Demo2ViewController* demo2 = [Demo2ViewController new];
-    demo2.tabBarItem.title = @"Demo2";
-    demo2.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
-    demo2.tabBarItem.badgeValue = @"1";
-    demo2.tabBarItem.selectedBgColor = [UIColor redColor];
-    
-    CAKeyframeAnimation *animation02 = [CAKeyframeAnimation animation];
-    animation02.keyPath = @"transform.scale";
-    animation02.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
-    animation02.duration = 1;
-    animation02.calculationMode = kCAAnimationCubic;
-    demo2.tabBarItem.animation = animation02;
-    
-    [tabCtl addChildViewController:demo2];
+    //将子viewController添加到UITabBarController上.
+    [tabCtl addChildViewController:[self demo1]];
+    [tabCtl addChildViewController:[self demo2]];
+    [tabCtl addChildViewController:[self demo3]];
+    [tabCtl addChildViewController:[self demo4]];
     
     UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:tabCtl];
     self.window.rootViewController = rootVC;
@@ -128,6 +107,77 @@
     return YES;
 }
 
+- (UIViewController*)demo1 {
+    Demo1ViewController* demo = [Demo1ViewController new];
+    demo.tabBarItem.title = @"Demo1";
+    //设置非选中图片
+    demo.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn1_01"];
+    
+    //设置demo1 tabBarItem的动画效果
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"transform.scale";
+    animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
+    animation.duration = 1;
+    animation.calculationMode = kCAAnimationCubic;
+    demo.tabBarItem.animation = animation;
+    return demo;
+}
+
+- (UIViewController*)demo2 {
+    Demo2ViewController* demo = [Demo2ViewController new];
+    demo.tabBarItem.title = @"Demo2";
+    //设置非选tabBarItem中图片
+    demo.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
+    demo.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBarBtn2_02"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //设置tabBarItem 标题属性
+    [demo.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor],
+                                              } forState:UIControlStateSelected];
+    //设置红点提醒内容
+    demo.tabBarItem.badgeValue = @"1";
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"transform.scale";
+    animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
+    animation.duration = 1;
+    animation.calculationMode = kCAAnimationCubic;
+    demo.tabBarItem.animation = animation;
+    return demo;
+}
+
+- (UIViewController*)demo3 {
+    Demo3ViewController* demo = [Demo3ViewController new];
+    demo.tabBarItem.title = @"Demo3";
+    //设置非选中图片
+    demo.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn3_01"];
+    demo.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBarBtn3_02"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //tabBarItem选中背景色.
+    demo.tabBarItem.selectedBgColor = [UIColor darkGrayColor];
+    
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
+    animation.keyPath = @"transform.scale";
+    animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
+    animation.duration = 1;
+    animation.calculationMode = kCAAnimationCubic;
+    demo.tabBarItem.animation = animation;
+    return demo;
+}
+
+- (UIViewController*)demo4 {
+    Demo3ViewController* demo = [Demo3ViewController new];
+    demo.tabBarItem.title = @"Demo4";
+    //设置非选中图片
+    demo.tabBarItem.image = [UIImage imageNamed:@"tab_home_normal"];
+    demo.tabBarItem.selectedImage = [[UIImage imageNamed:@"tab_home_00"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //设置选中帧动画图片
+    NSMutableArray* list = [NSMutableArray new];
+    for (int index = 0; index <= 50; index ++) {
+        NSString* name = [NSString stringWithFormat:@"tab_home_%02d", index];
+        UIImage* image = [UIImage imageNamed:name];
+        [list addObject:image];
+    }
+    demo.tabBarItem.animationImages = [list copy];
+    return demo;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

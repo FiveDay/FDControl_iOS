@@ -11,11 +11,11 @@
 
 @implementation UITabBarItem (FDTabBar)
 
-- (void)setAnimation:(CAKeyframeAnimation *)animation {
+- (void)setAnimation:(CAAnimation *)animation {
     objc_setAssociatedObject(self, @selector(animation), animation, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (CAKeyframeAnimation*)animation {
+- (CAAnimation*)animation {
     return objc_getAssociatedObject(self, _cmd);
 }
 
@@ -26,4 +26,22 @@
 - (UIColor*)selectedBgColor {
     return objc_getAssociatedObject(self, _cmd);
 }
+
+- (void)setIsShowDot:(BOOL)isShowDot {
+    objc_setAssociatedObject(self, @selector(isShowDot), @(isShowDot), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (BOOL)isShowDot {
+    NSNumber* value = objc_getAssociatedObject(self, _cmd);
+    return value.boolValue;
+}
+
+- (void)setAnimationImages:(NSArray<UIImage *> *)animationImages {
+    objc_setAssociatedObject(self, @selector(animationImages), animationImages, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSArray<UIImage*>*)animationImages {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
 @end
