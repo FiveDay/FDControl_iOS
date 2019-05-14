@@ -9,9 +9,11 @@
 #import "FDTabBar.h"
 #import "UITabBarItem+FDTabBar.h"
 #import "FDControl.h"
+#import "FDDotView.h"
 
 static char kAssociatedKeyFrameAnimationObjectKey;
 static char kAssociatedKeyBgImageViewObjecKey;
+static char kAssociatedKeyDotViewObjectKey;
 
 @interface FDTabBar ()
 @end
@@ -48,7 +50,7 @@ static char kAssociatedKeyBgImageViewObjecKey;
                 }
 
                 //setup animations
-                [self setupAnimation:itemIndex tabBarButton:((UIControl*)sub)];
+                [self setupCustomFunction:itemIndex tabBarButton:((UIControl*)sub)];
                 
                 if (self.items.count == 2
                     && itemIndex == 1) {
@@ -73,7 +75,7 @@ static char kAssociatedKeyBgImageViewObjecKey;
     }
 }
 
-- (void)setupAnimation:(NSInteger)itemIdex tabBarButton:(UIControl*)tabBarButton {
+- (void)setupCustomFunction:(NSInteger)itemIdex tabBarButton:(UIControl*)tabBarButton {
     [tabBarButton addTarget:self action:@selector(onTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
     CAAnimation* animation = self.items[itemIdex].animation;
     NSArray<UIImage*>* animationImages = self.items[itemIdex].animationImages;
@@ -83,6 +85,16 @@ static char kAssociatedKeyBgImageViewObjecKey;
             [((UIImageView*)imageView) setAnimationImages:animationImages];
             [((UIImageView*)imageView) setAnimationRepeatCount:1];
             [((UIImageView*)imageView) setAnimationDuration:3.0f];
+            if (self.items[itemIdex].isShowDot) {
+                FDDotView* dot = [imageView getPropertyValue:&kAssociatedKeyDotViewObjectKey];
+                if (dot == nil) {
+                    FDDotView* dot = [[FDDotView alloc]initWithRadius:2.5];
+                    dot.orgin = CGPointMake(imageView.size.width - 5, 0);
+                    dot.backgroundColor = self.items[itemIdex].dotColor;
+                    [imageView addSubview:dot];
+                    [imageView addProperty:&kAssociatedKeyDotViewObjectKey value:dot];
+                }
+            }
         }
     }
 }
@@ -108,7 +120,7 @@ static char kAssociatedKeyBgImageViewObjecKey;
         }
     }
     
-    //add animation
+    //start animation
     for (UIView* imageView in tabBarButton.subviews) {
         if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
             CAKeyframeAnimation* animation = [imageView getPropertyValue:&kAssociatedKeyFrameAnimationObjectKey];

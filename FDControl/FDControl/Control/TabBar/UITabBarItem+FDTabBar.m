@@ -44,4 +44,12 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
+- (void)setDotColor:(UIColor *)dotColor {
+    objc_setAssociatedObject(self, @selector(dotColor), dotColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (UIColor*)dotColor {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
 @end

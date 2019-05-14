@@ -32,6 +32,8 @@
 		452EA7B022855FF9004BB575 /* UITabBarItem+FDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7AE22855FF9004BB575 /* UITabBarItem+FDTabBar.m */; };
 		452EA7B322857337004BB575 /* UITabBarController+FDTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7B122857337004BB575 /* UITabBarController+FDTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452EA7B422857337004BB575 /* UITabBarController+FDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7B222857337004BB575 /* UITabBarController+FDTabBarController.m */; };
+		452EA7C4228AA659004BB575 /* FDDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7C2228AA659004BB575 /* FDDotView.h */; };
+		452EA7C5228AA659004BB575 /* FDDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C3228AA659004BB575 /* FDDotView.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -166,6 +168,8 @@
 		452EA7AE22855FF9004BB575 /* UITabBarItem+FDTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+FDTabBar.m"; sourceTree = "<group>"; };
 		452EA7B122857337004BB575 /* UITabBarController+FDTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+FDTabBarController.h"; sourceTree = "<group>"; };
 		452EA7B222857337004BB575 /* UITabBarController+FDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+FDTabBarController.m"; sourceTree = "<group>"; };
+		452EA7C2228AA659004BB575 /* FDDotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDDotView.h; sourceTree = "<group>"; };
+		452EA7C3228AA659004BB575 /* FDDotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDDotView.m; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -420,6 +424,8 @@
 				452EA7AA2283FF0E004BB575 /* FDTabBar.m */,
 				452EA7AD22855FF9004BB575 /* UITabBarItem+FDTabBar.h */,
 				452EA7AE22855FF9004BB575 /* UITabBarItem+FDTabBar.m */,
+				452EA7C2228AA659004BB575 /* FDDotView.h */,
+				452EA7C3228AA659004BB575 /* FDDotView.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -713,6 +719,7 @@
 				452EA7B322857337004BB575 /* UITabBarController+FDTabBarController.h in Headers */,
 				452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */,
 				452EA7AB2283FF0E004BB575 /* FDTabBar.h in Headers */,
+				452EA7C4228AA659004BB575 /* FDDotView.h in Headers */,
 				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
@@ -907,6 +914,7 @@
 				452EA7AC2283FF0E004BB575 /* FDTabBar.m in Sources */,
 				45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */,
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
+				452EA7C5228AA659004BB575 /* FDDotView.m in Sources */,
 				45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */,
 				45A2047B2265794E00C068AE /* UINavigationController+FDRouter.m in Sources */,
 				453A6F54225C49B9006CC30A /* FDWebJsViewController.m in Sources */,

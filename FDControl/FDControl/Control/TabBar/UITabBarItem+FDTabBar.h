@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic, nullable)CAAnimation* animation;
 @property(strong, nonatomic, nullable)UIColor* selectedBgColor;
 @property(assign, nonatomic)BOOL isShowDot;
+@property(strong, nonatomic)UIColor* dotColor;
 @end
 
 NS_ASSUME_NONNULL_END

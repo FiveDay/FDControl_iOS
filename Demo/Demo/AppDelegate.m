@@ -112,14 +112,6 @@
     demo.tabBarItem.title = @"Demo1";
     //设置非选中图片
     demo.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn1_01"];
-    
-    //设置demo1 tabBarItem的动画效果
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
-    animation.keyPath = @"transform.scale";
-    animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
-    animation.duration = 1;
-    animation.calculationMode = kCAAnimationCubic;
-    demo.tabBarItem.animation = animation;
     return demo;
 }
 
@@ -134,13 +126,6 @@
                                               } forState:UIControlStateSelected];
     //设置红点提醒内容
     demo.tabBarItem.badgeValue = @"1";
-    
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
-    animation.keyPath = @"transform.scale";
-    animation.values = @[@1.0,@1.3,@0.9,@1.15,@0.95,@1.02,@1.0];
-    animation.duration = 1;
-    animation.calculationMode = kCAAnimationCubic;
-    demo.tabBarItem.animation = animation;
     return demo;
 }
 
@@ -152,6 +137,9 @@
     demo.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBarBtn3_02"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     //tabBarItem选中背景色.
     demo.tabBarItem.selectedBgColor = [UIColor darkGrayColor];
+    //tabBarItem dot显示
+    demo.tabBarItem.isShowDot = YES;
+    demo.tabBarItem.dotColor = [UIColor blueColor];
     
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"transform.scale";
