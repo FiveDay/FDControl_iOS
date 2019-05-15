@@ -36,6 +36,8 @@
 		452EA7C5228AA659004BB575 /* FDDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C3228AA659004BB575 /* FDDotView.m */; };
 		452EA7CB228BAEAF004BB575 /* UITabBar+FDPrivateObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7C9228BAEAF004BB575 /* UITabBar+FDPrivateObject.h */; };
 		452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */; };
+		452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7CD228C080D004BB575 /* NSObject+FDRuntime.h */; };
+		452EA7D0228C080D004BB575 /* NSObject+FDRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7CE228C080D004BB575 /* NSObject+FDRuntime.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -174,6 +176,8 @@
 		452EA7C3228AA659004BB575 /* FDDotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDDotView.m; sourceTree = "<group>"; };
 		452EA7C9228BAEAF004BB575 /* UITabBar+FDPrivateObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FDPrivateObject.h"; sourceTree = "<group>"; };
 		452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FDPrivateObject.m"; sourceTree = "<group>"; };
+		452EA7CD228C080D004BB575 /* NSObject+FDRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDRuntime.h"; sourceTree = "<group>"; };
+		452EA7CE228C080D004BB575 /* NSObject+FDRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDRuntime.m"; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -473,6 +477,8 @@
 			children = (
 				453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */,
 				453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */,
+				452EA7CD228C080D004BB575 /* NSObject+FDRuntime.h */,
+				452EA7CE228C080D004BB575 /* NSObject+FDRuntime.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -777,6 +783,7 @@
 				45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */,
 				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
+				452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */,
 				45936AC12241E13D0073C9E2 /* FDWebImageManager.h in Headers */,
 				45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */,
 				45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */,
@@ -939,6 +946,7 @@
 				45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */,
 				45A20449225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m in Sources */,
 				45A2046C226470F500C068AE /* FDRouter.m in Sources */,
+				452EA7D0228C080D004BB575 /* NSObject+FDRuntime.m in Sources */,
 				45A204682264705800C068AE /* FDRouterRegParam.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
 				453A6F4F225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.m in Sources */,

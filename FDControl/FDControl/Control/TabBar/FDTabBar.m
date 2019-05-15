@@ -10,6 +10,7 @@
 #import "UITabBarItem+FDTabBar.h"
 #import "UITabBar+FDPrivateObject.h"
 #import "NSObject+FDPropertyMethod.h"
+#import "NSObject+FDRuntime.h"
 #import "UIView+FDLayout.h"
 #import "UIImage+FDColor.h"
 #import "FDDotView.h"
@@ -46,7 +47,6 @@ static char kAssociatedKeyDotViewObjectKey;
             CGFloat btnX = 0;
             CGFloat btnY = 0;
             
-            btn.tag = itemIndex;
             btnH = btn.bounds.size.height;
             
             if (self.items.count == 2
@@ -127,8 +127,14 @@ static char kAssociatedKeyDotViewObjectKey;
     NSInteger index = [self.items indexOfObject:self.selectedItem];
     
     [self enumerateTabBarButtonUsingBlock:^(UIView * _Nonnull btn) {
+        id value;
+        NSError* error;
+        NSNumber* result;
+        if ([btn validateValue:&value forKey:@"_isSelected" error:&error]) {
+            result = [btn valueForKey:@"_isSelected"];
+        }
         UIImageView* bgImageView;
-        if (btn.tag == index) {
+        if (result.boolValue) {
             bgImageView = [btn getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
             if (bgImageView == nil) {
                 bgImageView = [[UIImageView alloc]init];
