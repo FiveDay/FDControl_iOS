@@ -10,10 +10,27 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*
+ * 属性类标记
+ */
+@interface FDProperty : NSObject
+@property(nonatomic, copy, readonly) NSString* fdPropertyName;
+@property(nonatomic, copy, readonly) NSString* fdPropertyDescription;
+@end
+
+@interface FDClassAndProperties : NSObject
+@property(nonatomic, copy, readonly) NSString* fdClassName;
+@property(nonatomic, copy, readonly) NSArray* fdPropertyArray;
+@end
+
 @interface NSObject (FDPropertyMethod)
 
 - (NSArray<NSString*>*)getMethodNameArray;
 
+/*
+ * 获取类的所有属性
+ */
+- (NSArray<FDProperty*>*)getPropertyArray;
 @end
 
 NS_ASSUME_NONNULL_END

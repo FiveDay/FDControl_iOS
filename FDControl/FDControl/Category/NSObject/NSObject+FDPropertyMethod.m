@@ -10,6 +10,13 @@
 
 #import <objc/runtime.h>
 
+@interface FDProperty ()
+@property(nonatomic, copy, readwrite) NSString* fdPropertyName;
+@property(nonatomic, copy, readwrite) NSString* fdPropertyDescription;
+@end
+
+@implementation FDProperty
+@end
 
 @implementation NSObject (FDPropertyMethod)
 
@@ -26,4 +33,29 @@
     return [result copy];
 }
 
+- (NSArray<FDProperty*>*)getPropertyArray
+{
+    NSMutableArray* propertyMutableArray = [NSMutableArray array];
+    unsigned int outPropertyCount = 0;
+    objc_property_t* propertiesList = class_copyPropertyList([self class], &outPropertyCount);
+    
+    for (int i=0; i<outPropertyCount; ++i) {
+        FDProperty* fdPropertyObject = [FDProperty new];
+        objc_property_t property = propertiesList[i];
+        fdPropertyObject.fdPropertyName = [[NSString alloc]initWithUTF8String:property_getName(property)];
+        
+        //判断是否存在Set***接口。如果有，设置为description
+        NSMutableString* selString = [[NSMutableString alloc]initWithString:@"set"];
+        //fdPropertyObject.fdPropertyName);
+        SEL targetSel = NSSelectorFromString(selString);
+        if ([self respondsToSelector:targetSel]) {
+            //包含这个selector
+        }
+        
+        //缓存属性
+        [propertyMutableArray addObject:fdPropertyObject];
+    }
+    
+    return [propertyMutableArray copy];
+}
 @end
