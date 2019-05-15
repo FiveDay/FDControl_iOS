@@ -21,6 +21,7 @@
 		452EA7B722896503004BB575 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7B622896503004BB575 /* Demo2ViewController.m */; };
 		452EA7BA22897CD5004BB575 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7B922897CD5004BB575 /* Demo3ViewController.m */; };
 		452EA7C122897CEB004BB575 /* Demo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C022897CEB004BB575 /* Demo4ViewController.m */; };
+		452EA7C8228ABB5B004BB575 /* PlusButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C7228ABB5B004BB575 /* PlusButtonViewController.m */; };
 		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
 		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
 		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
@@ -89,6 +90,8 @@
 		452EA7B922897CD5004BB575 /* Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
 		452EA7BF22897CEB004BB575 /* Demo4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo4ViewController.h; sourceTree = "<group>"; };
 		452EA7C022897CEB004BB575 /* Demo4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4ViewController.m; sourceTree = "<group>"; };
+		452EA7C6228ABB5B004BB575 /* PlusButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlusButtonViewController.h; sourceTree = "<group>"; };
+		452EA7C7228ABB5B004BB575 /* PlusButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlusButtonViewController.m; sourceTree = "<group>"; };
 		453A6F55225C8C0B006CC30A /* WebJsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebJsDemoViewController.h; sourceTree = "<group>"; };
 		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
 		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
@@ -159,7 +162,6 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				452EA7A82283D224004BB575 /* DemoList */,
 				452EA7A72283D1FD004BB575 /* ImageView */,
 				452EA7A62283C91E004BB575 /* TabBar */,
 				452EA7992282C2C8004BB575 /* UserGuide */,
@@ -208,6 +210,16 @@
 		452EA7A62283C91E004BB575 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				4514D20021BFADCF0076290D /* Demo1ViewController.h */,
+				4514D20121BFADCF0076290D /* Demo1ViewController.m */,
+				452EA7B522896503004BB575 /* Demo2ViewController.h */,
+				452EA7B622896503004BB575 /* Demo2ViewController.m */,
+				452EA7B822897CD5004BB575 /* Demo3ViewController.h */,
+				452EA7B922897CD5004BB575 /* Demo3ViewController.m */,
+				452EA7BF22897CEB004BB575 /* Demo4ViewController.h */,
+				452EA7C022897CEB004BB575 /* Demo4ViewController.m */,
+				452EA7C6228ABB5B004BB575 /* PlusButtonViewController.h */,
+				452EA7C7228ABB5B004BB575 /* PlusButtonViewController.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -219,21 +231,6 @@
 				6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */,
 			);
 			path = ImageView;
-			sourceTree = "<group>";
-		};
-		452EA7A82283D224004BB575 /* DemoList */ = {
-			isa = PBXGroup;
-			children = (
-				4514D20021BFADCF0076290D /* Demo1ViewController.h */,
-				4514D20121BFADCF0076290D /* Demo1ViewController.m */,
-				452EA7B522896503004BB575 /* Demo2ViewController.h */,
-				452EA7B622896503004BB575 /* Demo2ViewController.m */,
-				452EA7B822897CD5004BB575 /* Demo3ViewController.h */,
-				452EA7B922897CD5004BB575 /* Demo3ViewController.m */,
-				452EA7BF22897CEB004BB575 /* Demo4ViewController.h */,
-				452EA7C022897CEB004BB575 /* Demo4ViewController.m */,
-			);
-			path = DemoList;
 			sourceTree = "<group>";
 		};
 		453A6F66225DB61C006CC30A /* WebJs */ = {
@@ -423,6 +420,7 @@
 				4514D20221BFADCF0076290D /* Demo1ViewController.m in Sources */,
 				452EA7C122897CEB004BB575 /* Demo4ViewController.m in Sources */,
 				45A204962269A80F00C068AE /* ButtonDemoViewController.m in Sources */,
+				452EA7C8228ABB5B004BB575 /* PlusButtonViewController.m in Sources */,
 				453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */,
 				452EA79C2282C3AC004BB575 /* UserGuideDemoViewController.m in Sources */,
 				452EA7BA22897CD5004BB575 /* Demo3ViewController.m in Sources */,

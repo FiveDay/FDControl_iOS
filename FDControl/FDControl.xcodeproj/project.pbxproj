@@ -34,6 +34,8 @@
 		452EA7B422857337004BB575 /* UITabBarController+FDTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7B222857337004BB575 /* UITabBarController+FDTabBarController.m */; };
 		452EA7C4228AA659004BB575 /* FDDotView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7C2228AA659004BB575 /* FDDotView.h */; };
 		452EA7C5228AA659004BB575 /* FDDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C3228AA659004BB575 /* FDDotView.m */; };
+		452EA7CB228BAEAF004BB575 /* UITabBar+FDPrivateObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7C9228BAEAF004BB575 /* UITabBar+FDPrivateObject.h */; };
+		452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -170,6 +172,8 @@
 		452EA7B222857337004BB575 /* UITabBarController+FDTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+FDTabBarController.m"; sourceTree = "<group>"; };
 		452EA7C2228AA659004BB575 /* FDDotView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDDotView.h; sourceTree = "<group>"; };
 		452EA7C3228AA659004BB575 /* FDDotView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDDotView.m; sourceTree = "<group>"; };
+		452EA7C9228BAEAF004BB575 /* UITabBar+FDPrivateObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FDPrivateObject.h"; sourceTree = "<group>"; };
+		452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FDPrivateObject.m"; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -426,6 +430,8 @@
 				452EA7AE22855FF9004BB575 /* UITabBarItem+FDTabBar.m */,
 				452EA7C2228AA659004BB575 /* FDDotView.h */,
 				452EA7C3228AA659004BB575 /* FDDotView.m */,
+				452EA7C9228BAEAF004BB575 /* UITabBar+FDPrivateObject.h */,
+				452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -723,6 +729,7 @@
 				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
+				452EA7CB228BAEAF004BB575 /* UITabBar+FDPrivateObject.h in Headers */,
 				45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */,
 				45A2047F2265BE8900C068AE /* NSBundle+FDMainBundle.h in Headers */,
 				45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */,
@@ -923,6 +930,7 @@
 				452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */,
 				452EA7B022855FF9004BB575 /* UITabBarItem+FDTabBar.m in Sources */,
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,
+				452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */,
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,
 				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,

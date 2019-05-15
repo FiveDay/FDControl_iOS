@@ -13,6 +13,7 @@
 #import "Demo2ViewController.h"
 #import "Demo3ViewController.h"
 #import "Demo4ViewController.h"
+#import "PlusButtonViewController.h"
 
 @interface AppDelegate ()
 @end
@@ -40,6 +41,10 @@
         }
     };
     NSSet* routes = [NSSet setWithArray:@[
+          @{
+              @"path":@"PlusButtonView",
+              @"component":@"PlusButtonViewController"
+              },
           @{
               @"path":@"Main/UserGuideDemo",
               @"name":@"guide",
@@ -93,7 +98,8 @@
     tabCtl.plusButton = [UIButton new];
     tabCtl.plusButton.image = [UIImage imageNamed:@"+"];
     //调整位plusButton的image向上拉伸20达到凸起到tabbar外.
-    tabCtl.plusButton.imageEdgeInsets = UIEdgeInsetsMake(-20, 0, 0, 0);
+    tabCtl.plusButton.imageEdgeInsets = UIEdgeInsetsMake(-30, 0, 0, 0);
+    [tabCtl.plusButton addTarget:self action:@selector(onPlusButton) forControlEvents:UIControlEventTouchUpInside];
     //将子viewController添加到UITabBarController上.
     [tabCtl addChildViewController:[self demo1]];
     [tabCtl addChildViewController:[self demo2]];
@@ -105,6 +111,10 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)onPlusButton {
+    [((UINavigationController*)self.window.rootViewController) presentTo:@"PlusButtonView"];
 }
 
 - (UIViewController*)demo1 {
@@ -151,18 +161,19 @@
 }
 
 - (UIViewController*)demo4 {
-    Demo3ViewController* demo = [Demo3ViewController new];
+    Demo4ViewController* demo = [Demo4ViewController new];
     demo.tabBarItem.title = @"Demo4";
     //设置非选中图片
     demo.tabBarItem.image = [UIImage imageNamed:@"tab_home_normal"];
+    //设置选中图片
     demo.tabBarItem.selectedImage = [[UIImage imageNamed:@"tab_home_00"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //设置选中帧动画图片
     NSMutableArray* list = [NSMutableArray new];
     for (int index = 0; index <= 50; index ++) {
         NSString* name = [NSString stringWithFormat:@"tab_home_%02d", index];
         UIImage* image = [UIImage imageNamed:name];
         [list addObject:image];
     }
+    //设置选中帧动画图片
     demo.tabBarItem.animationImages = [list copy];
     return demo;
 }

@@ -1,22 +1,23 @@
 //
-//  Demo2ViewController.m
+//  Demo3ViewController.m
 //  Demo
 //
 //  Created by zhangyu528 on 2019/5/13.
 //  Copyright © 2019 zhangyu528. All rights reserved.
 //
 
-#import "Demo2ViewController.h"
+#import "Demo3ViewController.h"
 
-@interface Demo2ViewController ()
+@interface Demo3ViewController ()
 
 @end
 
-@implementation Demo2ViewController
+@implementation Demo3ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor purpleColor];
 }
 
 /*

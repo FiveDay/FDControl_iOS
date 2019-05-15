@@ -8,7 +8,10 @@
 
 #import "FDTabBar.h"
 #import "UITabBarItem+FDTabBar.h"
-#import "FDControl.h"
+#import "UITabBar+FDPrivateObject.h"
+#import "NSObject+FDPropertyMethod.h"
+#import "UIView+FDLayout.h"
+#import "UIImage+FDColor.h"
 #import "FDDotView.h"
 
 static char kAssociatedKeyFrameAnimationObjectKey;
@@ -23,110 +26,126 @@ static char kAssociatedKeyDotViewObjectKey;
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    if (self.items.count == 2 || self.items.count == 4) {
-        CGFloat tabBarW = self.bounds.size.width;
-        
-        CGFloat btnW = tabBarW / (self.items.count + 1);
-        CGFloat btnH = 0;
-        CGFloat btnX = 0;
-        CGFloat btnY = 0;
-        
-        NSInteger itemIndex = 0;
-        NSInteger plusButtonOffsetIndex = 0;
-        for (UIView* sub in self.subviews) {
-            if ([sub isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-                sub.tag = itemIndex;
-                btnH = sub.bounds.size.height;
-                UIImageView* bgImageView = [sub getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
-                if (bgImageView == nil) {
-                    UIImageView* bgImageView = [[UIImageView alloc]init];
-                    [sub addSubview:bgImageView];
-                    [sub addProperty:&kAssociatedKeyBgImageViewObjecKey value:bgImageView];
-                }
-                bgImageView.frame = CGRectMake(0, 0, btnW, btnH);
-                NSInteger selectedIndex = [self.items indexOfObject:self.selectedItem];
-                if (sub.tag == selectedIndex) {
-                    bgImageView.image = [UIImage imageWithColor:self.items[itemIndex].selectedBgColor andSize:bgImageView.frame.size];
-                }
+    [self layoutTabBarButton];
+    [self setupBackgroundImageView];
+    [self layoutPlusButton];
+    [self setupCustomFunction];
+}
 
-                //setup animations
-                [self setupCustomFunction:itemIndex tabBarButton:((UIControl*)sub)];
-                
-                if (self.items.count == 2
-                    && itemIndex == 1) {
-                    plusButtonOffsetIndex = 2;
-                }
-                if (self.items.count == 4
-                    && itemIndex == 2) {
-                    plusButtonOffsetIndex = 3;
-                }
-                btnH = sub.bounds.size.height;
-                btnX = plusButtonOffsetIndex * btnW;
-                btnY = sub.frame.origin.y;
-                sub.frame = CGRectMake(btnX, sub.frame.origin.y, btnW, btnH);
-                itemIndex ++;
-                plusButtonOffsetIndex ++;
+- (void)layoutTabBarButton {
+    if (self.plusButton
+        &&(self.items.count == 2 || self.items.count == 4)) {
+        __block NSInteger itemIndex = 0;
+        __block NSInteger plusButtonOffsetIndex = 0;
+        
+        [self enumerateTabBarButtonUsingBlock:^(UIView * _Nonnull btn) {
+            CGFloat tabBarW = self.bounds.size.width;
+            
+            CGFloat btnW = tabBarW / (self.items.count + 1);
+            CGFloat btnH = 0;
+            CGFloat btnX = 0;
+            CGFloat btnY = 0;
+            
+            btn.tag = itemIndex;
+            btnH = btn.bounds.size.height;
+            
+            if (self.items.count == 2
+                && itemIndex == 1) {
+                plusButtonOffsetIndex = 2;
             }
-        }
-        self.plusButton.center = CGPointMake(tabBarW / 2, 0);
-        self.plusButton.frame = CGRectMake(self.plusButton.frame.origin.x, btnY, btnW, btnH);
-        self.plusButton.imageView.contentMode = UIViewContentModeBottom;
+            if (self.items.count == 4
+                && itemIndex == 2) {
+                plusButtonOffsetIndex = 3;
+            }
+            btnH = btn.bounds.size.height;
+            btnX = plusButtonOffsetIndex * btnW;
+            btnY = btn.frame.origin.y;
+            btn.frame = CGRectMake(btnX, btn.frame.origin.y, btnW, btnH);
+            itemIndex ++;
+            plusButtonOffsetIndex ++;
+        }];
+    }
+}
+
+- (void)layoutPlusButton {
+    if (self.items.count == 2 || self.items.count == 4) {
+        self.plusButton.center = CGPointMake(self.bounds.size.width / 2, 0);
+        self.plusButton.frame = CGRectMake(self.plusButton.frame.origin.x, 0, 0, 0);
+        [self.plusButton sizeToFit];
         [self addSubview:self.plusButton];
     }
 }
 
-- (void)setupCustomFunction:(NSInteger)itemIdex tabBarButton:(UIControl*)tabBarButton {
-    [tabBarButton addTarget:self action:@selector(onTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-    CAAnimation* animation = self.items[itemIdex].animation;
-    NSArray<UIImage*>* animationImages = self.items[itemIdex].animationImages;
-    for (UIView* imageView in tabBarButton.subviews) {
-        if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
-            [imageView addProperty:&kAssociatedKeyFrameAnimationObjectKey value:animation];
-            [((UIImageView*)imageView) setAnimationImages:animationImages];
-            [((UIImageView*)imageView) setAnimationRepeatCount:1];
-            [((UIImageView*)imageView) setAnimationDuration:3.0f];
-            if (self.items[itemIdex].isShowDot) {
-                FDDotView* dot = [imageView getPropertyValue:&kAssociatedKeyDotViewObjectKey];
-                if (dot == nil) {
-                    FDDotView* dot = [[FDDotView alloc]initWithRadius:2.5];
-                    dot.orgin = CGPointMake(imageView.size.width - 5, 0);
-                    dot.backgroundColor = self.items[itemIdex].dotColor;
-                    [imageView addSubview:dot];
-                    [imageView addProperty:&kAssociatedKeyDotViewObjectKey value:dot];
-                }
+- (void)setupBackgroundImageView {
+    __block NSInteger itemIndex = 0;
+    [self enumerateTabBarButtonUsingBlock:^(UIView * _Nonnull btn) {
+        UIImageView* bgImageView = [btn getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
+        if (bgImageView == nil) {
+            bgImageView = [UIImageView new];
+            [btn addSubview:bgImageView];
+            [btn addProperty:&kAssociatedKeyBgImageViewObjecKey value:bgImageView];
+        }
+        NSInteger selectedIndex = [self.items indexOfObject:self.selectedItem];
+        if (btn.tag == selectedIndex) {
+            bgImageView.image = [UIImage imageWithColor:self.items[itemIndex].selectedBgColor andSize:bgImageView.frame.size];
+        }
+        itemIndex ++;
+        //layout
+        bgImageView.frame = CGRectMake(0, 0, btn.width, btn.height);
+    }];
+}
+
+- (void)setupCustomFunction {
+    __block NSInteger itemIndex = 0;
+
+    [self enumerateTabBarButtonUsingBlock:^(UIView * _Nonnull btn) {
+        [((UIControl*)btn) addTarget:self action:@selector(onTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
+        CAAnimation* animation = self.items[itemIndex].animation;
+        NSArray<UIImage*>* animationImages = self.items[itemIndex].animationImages;
+        UIView* imageView = [self queryUITabBarSwappableImageView:btn];
+        [imageView addProperty:&kAssociatedKeyFrameAnimationObjectKey value:animation];
+        [((UIImageView*)imageView) setAnimationImages:animationImages];
+        [((UIImageView*)imageView) setAnimationRepeatCount:1];
+        [((UIImageView*)imageView) setAnimationDuration:3.0f];
+        if (self.items[itemIndex].isShowDot) {
+            FDDotView* dot = [imageView getPropertyValue:&kAssociatedKeyDotViewObjectKey];
+            if (dot == nil) {
+                FDDotView* dot = [[FDDotView alloc]initWithRadius:2.5];
+                dot.orgin = CGPointMake(imageView.size.width - 5, 0);
+                dot.backgroundColor = self.items[itemIndex].dotColor;
+                [imageView addSubview:dot];
+                [imageView addProperty:&kAssociatedKeyDotViewObjectKey value:dot];
             }
         }
-    }
+        itemIndex ++;
+    }];
+   
 }
 
 - (void)onTouchUpInside:(UIControl*)tabBarButton {
     //background image
     NSInteger index = [self.items indexOfObject:self.selectedItem];
-    for (UIView* sub in self.subviews) {
-        if ([sub isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
-            UIImageView* bgImageView;
-            if (sub.tag == index) {
-                bgImageView = [sub getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
-                if (bgImageView == nil) {
-                    bgImageView = [[UIImageView alloc]init];
-                    [sub addSubview:bgImageView];
-                    [sub addProperty:&kAssociatedKeyBgImageViewObjecKey value:bgImageView];
-                }
-                bgImageView.image = [UIImage imageWithColor:self.items[index].selectedBgColor andSize:bgImageView.frame.size];
-            }else {
-                bgImageView = [sub getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
-                bgImageView.image = nil;
+    
+    [self enumerateTabBarButtonUsingBlock:^(UIView * _Nonnull btn) {
+        UIImageView* bgImageView;
+        if (btn.tag == index) {
+            bgImageView = [btn getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
+            if (bgImageView == nil) {
+                bgImageView = [[UIImageView alloc]init];
+                [btn addSubview:bgImageView];
+                [btn addProperty:&kAssociatedKeyBgImageViewObjecKey value:bgImageView];
             }
+            bgImageView.image = [UIImage imageWithColor:self.items[index].selectedBgColor andSize:bgImageView.frame.size];
+        }else {
+            bgImageView = [btn getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
+            bgImageView.image = nil;
         }
-    }
+    }];
     
     //start animation
-    for (UIView* imageView in tabBarButton.subviews) {
-        if ([imageView isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")]) {
-            CAKeyframeAnimation* animation = [imageView getPropertyValue:&kAssociatedKeyFrameAnimationObjectKey];
-            [imageView.layer addAnimation:animation forKey:@"FD_KeyFrameAnimation"];
-            [((UIImageView*)imageView) startAnimating];
-        }
-    }
+    UIImageView* imageView = [self queryUITabBarSwappableImageView:tabBarButton];
+    CAKeyframeAnimation* animation = [imageView getPropertyValue:&kAssociatedKeyFrameAnimationObjectKey];
+    [imageView.layer addAnimation:animation forKey:@"FD_KeyFrameAnimation"];
+    [((UIImageView*)imageView) startAnimating];
 }
 @end
