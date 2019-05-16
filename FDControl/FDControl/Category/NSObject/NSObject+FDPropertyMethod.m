@@ -9,34 +9,7 @@
 #import "NSObject+FDPropertyMethod.h"
 
 #import <objc/runtime.h>
-//FDProperty
-@interface FDProperty ()
-@property(nonatomic, copy, readwrite) NSString* fdPropertyName;
-@property(nonatomic, copy, readwrite) NSString* fdPropertyDescription;
-@end
 
-@implementation FDProperty
-@end
-
-//FDSinglePropertiesItem
-@interface FDSinglePropertiesItem ()
-@property(nonatomic, copy, readwrite) NSString* fdClassName;
-@property(nonatomic, strong, readwrite) NSArray<FDProperty*>* fdPropertyArray;
-@end
-
-@implementation FDSinglePropertiesItem
-- (instancetype)init
-{
-    if (self = [super init]) {
-        _fdPropertyArray = [NSArray new];
-    }
-    
-    return self;
-}
-@end
-
-
-//
 @implementation NSObject (FDPropertyMethod)
 
 - (NSArray<NSString*>*)getMethodNameArray {
@@ -52,34 +25,23 @@
     return [result copy];
 }
 
-- (NSMutableArray<FDSinglePropertiesItem*>*)getAllPropertiesList
+- (NSArray<NSString*>*)getPropertyNameList
 {
-    NSMutableArray<FDSinglePropertiesItem*>* returnPropertyList = [NSMutableArray new];
+    NSMutableArray<NSString*>* returnPropertyList = [NSMutableArray new];
 
     Class targetClass = [self class];
     while (targetClass) {
-        NSMutableArray* propertyMutableArray = [NSMutableArray array];
         unsigned int outPropertyCount = 0;
         objc_property_t* propertiesList = class_copyPropertyList(targetClass, &outPropertyCount);
-        
         for (int i=0; i<outPropertyCount; ++i) {
-            FDProperty* fdPropertyObject = [FDProperty new];
             objc_property_t property = propertiesList[i];
-            fdPropertyObject.fdPropertyName = [[NSString alloc]initWithUTF8String:property_getName(property)];
-            
-            //缓存属性
-            [propertyMutableArray addObject:fdPropertyObject];
+            [returnPropertyList addObject:[[NSString alloc]initWithUTF8String:property_getName(property)]];
         }
-        
-        FDSinglePropertiesItem* propertyItem = [FDSinglePropertiesItem new];
-        propertyItem.fdPropertyArray = propertyMutableArray;
-        propertyItem.fdClassName = NSStringFromClass(targetClass);
-        
-        [returnPropertyList addObject:propertyItem];
-        
         targetClass = [targetClass superclass];
     }
     
     return [returnPropertyList copy];
 }
+
+
 @end
