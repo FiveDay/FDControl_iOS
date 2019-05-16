@@ -35,43 +35,6 @@
 }
 @end
 
-//FDClassProperties
-@interface FDClassProperties ()
-@property(nonatomic,strong, readwrite) NSMutableArray<FDSinglePropertiesItem*>* fdPropertyArray;
-@end
-
-@implementation FDClassProperties
-
-- (instancetype)init
-{
-    if (self = [super init]) {
-        _fdPropertyArray = [NSMutableArray new];
-    }
-    return self;
-}
-- (NSArray*)formatALLProperties
-{
-    if (self.fdPropertyArray.count <= 0) {
-        return nil;
-    }
-    
-    NSMutableArray* returnValueArray = [NSMutableArray new];
-    
-    for (FDSinglePropertiesItem* item in self.fdPropertyArray) {
-        NSMutableDictionary* dict = [NSMutableDictionary new];
-        NSMutableArray* propertyNameList = [NSMutableArray new];
-        
-        for (FDProperty* singleProperty in item.fdPropertyArray) {
-            [propertyNameList addObject:singleProperty.fdPropertyName];
-        }
-        [dict setValue:propertyNameList forKey:item.fdClassName];
-        [returnValueArray addObject:dict];
-    }
-    
-    return returnValueArray;
-}
-
-@end
 
 //
 @implementation NSObject (FDPropertyMethod)
@@ -89,14 +52,10 @@
     return [result copy];
 }
 
-- (FDClassProperties*)getAllPropertiesList
+- (NSMutableArray<FDSinglePropertiesItem*>*)getAllPropertiesList
 {
-    FDClassProperties* classProperties = [[FDClassProperties alloc]init];
-    
-    if (!classProperties) {
-        return nil;
-    }
-    
+    NSMutableArray<FDSinglePropertiesItem*>* returnPropertyList = [NSMutableArray new];
+
     Class targetClass = [self class];
     while (targetClass) {
         NSMutableArray* propertyMutableArray = [NSMutableArray array];
@@ -116,12 +75,11 @@
         propertyItem.fdPropertyArray = propertyMutableArray;
         propertyItem.fdClassName = NSStringFromClass(targetClass);
         
-        [classProperties.fdPropertyArray addObject:propertyItem];
+        [returnPropertyList addObject:propertyItem];
         
         targetClass = [targetClass superclass];
-        
     }
     
-    return classProperties;
+    return [returnPropertyList copy];
 }
 @end

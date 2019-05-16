@@ -26,15 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readonly) NSArray<FDProperty*>* fdPropertyArray;
 @end
 
-/*
- * 类的所有属性数组，包括父类
- */
-@interface FDClassProperties : NSObject
-@property(nonatomic,strong, readonly) NSMutableArray<FDSinglePropertiesItem*>* fdPropertyArray;
-
-//格式化所有属性的结构，把对象转成字典或数组。
-- (NSArray*)formatALLProperties;
-@end
 
 
 @interface NSObject (FDPropertyMethod)
@@ -42,9 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<NSString*>*)getMethodNameArray;
 
 /*
- * 获取类的所有属性的对象
+ * 获取类的所有属性
  */
-- (FDClassProperties*)getAllPropertiesList;
+- (NSMutableArray<FDSinglePropertiesItem*>*)getAllPropertiesList;
 @end
 
 NS_ASSUME_NONNULL_END
