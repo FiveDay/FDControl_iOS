@@ -22,6 +22,8 @@
         const char* name = sel_getName(sel);
         [result addObject:[NSString stringWithUTF8String:name]];
     }
+    
+    free(methods);
     return [result copy];
 }
 
@@ -38,6 +40,7 @@
             [returnPropertyList addObject:[[NSString alloc]initWithUTF8String:property_getName(property)]];
         }
         targetClass = [targetClass superclass];
+        free(propertiesList);
     }
     
     return [returnPropertyList copy];
