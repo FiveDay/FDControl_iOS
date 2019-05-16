@@ -41,6 +41,12 @@
     };
     NSSet* routes = [NSSet setWithArray:@[
           @{
+              @"path":@"Main/NSObjectDemo",
+              @"component":@"NSObjectViewController",
+              @"name":@"nsobject"
+            },
+
+          @{
               @"path":@"Main/UserGuideDemo",
               @"name":@"guide",
               @"component":@"UserGuideDemoViewController"

@@ -18,6 +18,7 @@
 		4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; };
 		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		452EA79C2282C3AC004BB575 /* UserGuideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */; };
+		452EA7D8228D5E2B004BB575 /* NSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7D7228D5E2B004BB575 /* NSObjectViewController.m */; };
 		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
 		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
 		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
@@ -80,6 +81,8 @@
 		4514D23D21BFBAA50076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		452EA79A2282C3AC004BB575 /* UserGuideDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserGuideDemoViewController.h; sourceTree = "<group>"; };
 		452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserGuideDemoViewController.m; sourceTree = "<group>"; };
+		452EA7D6228D5E2B004BB575 /* NSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectViewController.h; sourceTree = "<group>"; };
+		452EA7D7228D5E2B004BB575 /* NSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectViewController.m; sourceTree = "<group>"; };
 		453A6F55225C8C0B006CC30A /* WebJsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebJsDemoViewController.h; sourceTree = "<group>"; };
 		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
 		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
@@ -150,6 +153,7 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				452EA7D5228D5E0E004BB575 /* NSObject */,
 				452EA7992282C2C8004BB575 /* UserGuide */,
 				45A204AD227585A000C068AE /* AudioFrequencySpectrum */,
 				45A2046D2264957800C068AE /* Router */,
@@ -195,6 +199,15 @@
 				452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */,
 			);
 			path = UserGuide;
+			sourceTree = "<group>";
+		};
+		452EA7D5228D5E0E004BB575 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7D6228D5E2B004BB575 /* NSObjectViewController.h */,
+				452EA7D7228D5E2B004BB575 /* NSObjectViewController.m */,
+			);
+			path = NSObject;
 			sourceTree = "<group>";
 		};
 		453A6F66225DB61C006CC30A /* WebJs */ = {
@@ -385,6 +398,7 @@
 				45A204962269A80F00C068AE /* ButtonDemoViewController.m in Sources */,
 				453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */,
 				452EA79C2282C3AC004BB575 /* UserGuideDemoViewController.m in Sources */,
+				452EA7D8228D5E2B004BB575 /* NSObjectViewController.m in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
 				45A204B02275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m in Sources */,
 				45A204732264987200C068AE /* RouterAViewController.m in Sources */,

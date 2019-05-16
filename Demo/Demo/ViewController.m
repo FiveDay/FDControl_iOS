@@ -38,6 +38,7 @@
     [self.testVCClassNameArray addObject:@"router"];
     [self.testVCClassNameArray addObject:@"butten"];
     [self.testVCClassNameArray addObject:@"guide"];
+    [self.testVCClassNameArray addObject:@"nsobject"];
 }
 
 
