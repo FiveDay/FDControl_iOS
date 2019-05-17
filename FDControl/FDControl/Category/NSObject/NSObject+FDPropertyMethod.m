@@ -12,10 +12,10 @@
 
 @implementation NSObject (FDPropertyMethod)
 
-- (NSArray<NSString*>*)getMethodNameArray {
++ (NSArray<NSString*>*)getMethodNameArray {
     NSMutableArray* result = [NSMutableArray new];
     unsigned int methodCount = 0;
-    Method* methods = class_copyMethodList([self class], &methodCount);
+    Method* methods = class_copyMethodList(self, &methodCount);
     for (int i = 0; i < methodCount; i++) {
         Method method = methods[i];
         SEL sel = method_getName(method);
@@ -27,24 +27,30 @@
     return [result copy];
 }
 
-- (NSArray<NSString*>*)getPropertyNameList
-{
-    NSMutableArray<NSString*>* returnPropertyList = [NSMutableArray new];
-
-    Class targetClass = [self class];
-    while (targetClass) {
-        unsigned int outPropertyCount = 0;
-        objc_property_t* propertiesList = class_copyPropertyList(targetClass, &outPropertyCount);
-        for (int i=0; i<outPropertyCount; ++i) {
-            objc_property_t property = propertiesList[i];
-            [returnPropertyList addObject:[[NSString alloc]initWithUTF8String:property_getName(property)]];
-        }
-        targetClass = [targetClass superclass];
-        free(propertiesList);
++ (NSArray<NSString*>*)getPropertyNameArray {
+    NSMutableArray<NSString*>* result = [NSMutableArray new];
+    unsigned int count = 0;
+    objc_property_t* porpertyList = class_copyPropertyList(self, &count);
+    for (int i = 0; i < count; ++i) {
+        objc_property_t property = porpertyList[i];
+        [result addObject:[[NSString alloc]initWithUTF8String:property_getName(property)]];
     }
-    
-    return [returnPropertyList copy];
+    free(porpertyList);
+    return [result copy];
 }
 
++ (NSArray<NSString*>*)getStaticMethodNameArray {
+    NSMutableArray* result = [NSMutableArray new];
+    unsigned int methodCount = 0;
+    Method* methods = class_copyMethodList([self class], &methodCount);
+    for (int i = 0; i < methodCount; i++) {
+        Method method = methods[i];
+        SEL sel = method_getName(method);
+        const char* name = sel_getName(sel);
+        [result addObject:[NSString stringWithUTF8String:name]];
+    }
 
+    free(methods);
+    return [result copy];
+}
 @end

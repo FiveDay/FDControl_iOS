@@ -26,6 +26,8 @@
 		452EA79322819ACC004BB575 /* FDVerticalButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA79122819ACC004BB575 /* FDVerticalButton.h */; };
 		452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7952282AD8A004BB575 /* FDUserGuideView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452EA7982282AD8A004BB575 /* FDUserGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7962282AD8A004BB575 /* FDUserGuideView.m */; };
+		452EA7DB228D6EE0004BB575 /* NSObject+FDClassInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7D9228D6EE0004BB575 /* NSObject+FDClassInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA7DC228D6EE0004BB575 /* NSObject+FDClassInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7DA228D6EE0004BB575 /* NSObject+FDClassInformation.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -154,6 +156,8 @@
 		452EA79122819ACC004BB575 /* FDVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDVerticalButton.h; sourceTree = "<group>"; };
 		452EA7952282AD8A004BB575 /* FDUserGuideView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDUserGuideView.h; sourceTree = "<group>"; };
 		452EA7962282AD8A004BB575 /* FDUserGuideView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDUserGuideView.m; sourceTree = "<group>"; };
+		452EA7D9228D6EE0004BB575 /* NSObject+FDClassInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDClassInformation.h"; sourceTree = "<group>"; };
+		452EA7DA228D6EE0004BB575 /* NSObject+FDClassInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDClassInformation.m"; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -436,6 +440,8 @@
 			children = (
 				453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */,
 				453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */,
+				452EA7D9228D6EE0004BB575 /* NSObject+FDClassInformation.h */,
+				452EA7DA228D6EE0004BB575 /* NSObject+FDClassInformation.m */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
@@ -684,6 +690,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA7DB228D6EE0004BB575 /* NSObject+FDClassInformation.h in Headers */,
 				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
@@ -868,6 +875,7 @@
 				452EA79222819ACC004BB575 /* FDVerticalButton.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
 				453A6F472255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m in Sources */,
+				452EA7DC228D6EE0004BB575 /* NSObject+FDClassInformation.m in Sources */,
 				45A2045B2260710700C068AE /* FDPermissionMng.m in Sources */,
 				452EA77E22817534004BB575 /* UIButton+FDLoadingIndicator.m in Sources */,
 				452EA7982282AD8A004BB575 /* FDUserGuideView.m in Sources */,

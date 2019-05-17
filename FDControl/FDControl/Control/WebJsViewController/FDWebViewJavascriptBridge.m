@@ -14,7 +14,7 @@
 - (void)installNative:(id <FDNativeInterface>)delegate {
 
     NSObject* native = delegate;
-    NSArray<NSString*>* names = [native getMethodNameArray];
+    NSArray<NSString*>* names = [[native class] getMethodNameArray];
     for (NSString* name in names) {
         SEL sel = NSSelectorFromString(name);
         if ([delegate respondsToSelector:sel]) {
