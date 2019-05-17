@@ -12,6 +12,19 @@
 
 @implementation NSObject (FDPropertyMethod)
 
++ (NSArray<NSString*>*)getIvarArray {
+    NSMutableArray* result = [NSMutableArray new];
+    unsigned int count = 0;
+    Ivar* ivarList = class_copyIvarList(self, &count);
+    for (int i = 0; i < count; i++) {
+        Ivar ivar = ivarList[i];
+        const char* name = ivar_getName(ivar);
+        [result addObject:@(name)];
+    }
+    free(ivarList);
+    return [result copy];
+}
+
 + (NSArray<NSString*>*)getMethodNameArray {
     NSMutableArray* result = [NSMutableArray new];
     unsigned int methodCount = 0;

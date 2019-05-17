@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSObject (FDPropertyMethod)
 
++ (NSArray<NSString*>*)getIvarArray;
+
 + (NSArray<NSString*>*)getMethodNameArray;
 
 + (NSArray<NSString*>*)getPropertyNameArray;

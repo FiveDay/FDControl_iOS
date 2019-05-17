@@ -11,6 +11,16 @@
 
 @implementation NSObject (FDClassInformation)
 
++ (void)printVarInformation {
+    NSArray<NSString*>* list = [self getIvarArray];
+    if (list.count > 0) {
+        NSLog(@"  IVar:");
+    }
+    [list enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"    %@", obj);
+    }];
+}
+
 + (void)printPropertyInformation {
 
     NSArray<NSString*>* list = [self getPropertyNameArray];
@@ -34,6 +44,7 @@
 
 + (void)printInformation {
     NSLog(@"%@ Information:", NSStringFromClass(self));
+    [self printVarInformation];
     [self printMethodInformation];
     [self printPropertyInformation];
     [[self superclass] printInformation];
