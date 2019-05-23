@@ -66,6 +66,20 @@
 		452EA81722964DB2004BB575 /* FDLottiePrecompAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA81522964DB2004BB575 /* FDLottiePrecompAsset.m */; };
 		452EA81B22966D0B004BB575 /* FDLottieMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA81922966D0B004BB575 /* FDLottieMarker.h */; };
 		452EA81C22966D0B004BB575 /* FDLottieMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA81A22966D0B004BB575 /* FDLottieMarker.m */; };
+		452EA81F22967092004BB575 /* FDLottieTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA81D22967092004BB575 /* FDLottieTransform.h */; };
+		452EA82022967092004BB575 /* FDLottieTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA81E22967092004BB575 /* FDLottieTransform.m */; };
+		452EA823229671C7004BB575 /* FDLottieVector1D.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA821229671C7004BB575 /* FDLottieVector1D.h */; };
+		452EA824229671C7004BB575 /* FDLottieVector1D.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA822229671C7004BB575 /* FDLottieVector1D.m */; };
+		452EA82722967923004BB575 /* FDLottieMask.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA82522967923004BB575 /* FDLottieMask.h */; };
+		452EA82822967923004BB575 /* FDLottieMask.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA82622967923004BB575 /* FDLottieMask.m */; };
+		452EA82C22968387004BB575 /* FDLottieBezierPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA82A22968387004BB575 /* FDLottieBezierPath.h */; };
+		452EA82D22968387004BB575 /* FDLottieBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA82B22968387004BB575 /* FDLottieBezierPath.m */; };
+		452EA830229683C6004BB575 /* FDLottiePathElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA82E229683C6004BB575 /* FDLottiePathElement.h */; };
+		452EA831229683C6004BB575 /* FDLottiePathElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA82F229683C6004BB575 /* FDLottiePathElement.m */; };
+		452EA834229683E3004BB575 /* FDLottieCurveVertex.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA832229683E3004BB575 /* FDLottieCurveVertex.h */; };
+		452EA835229683E3004BB575 /* FDLottieCurveVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA833229683E3004BB575 /* FDLottieCurveVertex.m */; };
+		452EA838229687EA004BB575 /* FDLottieMathKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA836229687EA004BB575 /* FDLottieMathKit.h */; };
+		452EA839229687EA004BB575 /* FDLottieMathKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA837229687EA004BB575 /* FDLottieMathKit.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -234,6 +248,20 @@
 		452EA81522964DB2004BB575 /* FDLottiePrecompAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottiePrecompAsset.m; sourceTree = "<group>"; };
 		452EA81922966D0B004BB575 /* FDLottieMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieMarker.h; sourceTree = "<group>"; };
 		452EA81A22966D0B004BB575 /* FDLottieMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieMarker.m; sourceTree = "<group>"; };
+		452EA81D22967092004BB575 /* FDLottieTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieTransform.h; sourceTree = "<group>"; };
+		452EA81E22967092004BB575 /* FDLottieTransform.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieTransform.m; sourceTree = "<group>"; };
+		452EA821229671C7004BB575 /* FDLottieVector1D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieVector1D.h; sourceTree = "<group>"; };
+		452EA822229671C7004BB575 /* FDLottieVector1D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieVector1D.m; sourceTree = "<group>"; };
+		452EA82522967923004BB575 /* FDLottieMask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieMask.h; sourceTree = "<group>"; };
+		452EA82622967923004BB575 /* FDLottieMask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieMask.m; sourceTree = "<group>"; };
+		452EA82A22968387004BB575 /* FDLottieBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieBezierPath.h; sourceTree = "<group>"; };
+		452EA82B22968387004BB575 /* FDLottieBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieBezierPath.m; sourceTree = "<group>"; };
+		452EA82E229683C6004BB575 /* FDLottiePathElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottiePathElement.h; sourceTree = "<group>"; };
+		452EA82F229683C6004BB575 /* FDLottiePathElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottiePathElement.m; sourceTree = "<group>"; };
+		452EA832229683E3004BB575 /* FDLottieCurveVertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieCurveVertex.h; sourceTree = "<group>"; };
+		452EA833229683E3004BB575 /* FDLottieCurveVertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieCurveVertex.m; sourceTree = "<group>"; };
+		452EA836229687EA004BB575 /* FDLottieMathKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieMathKit.h; sourceTree = "<group>"; };
+		452EA837229687EA004BB575 /* FDLottieMathKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieMathKit.m; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -508,6 +536,7 @@
 		452EA7E2229540B8004BB575 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				452EA82922968305004BB575 /* Utility */,
 				452EA7DE22953344004BB575 /* FDLottieJSONCoding.h */,
 				452EA7DF22953344004BB575 /* FDLottieJSONCoding.m */,
 				452EA81822966CDE004BB575 /* Objects */,
@@ -523,8 +552,8 @@
 		452EA7E7229546FE004BB575 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				452EA7E422954107004BB575 /* FDLottieLayerModel.m */,
 				452EA7E322954107004BB575 /* FDLottieLayerModel.h */,
+				452EA7E422954107004BB575 /* FDLottieLayerModel.m */,
 			);
 			path = Layers;
 			sourceTree = "<group>";
@@ -534,6 +563,8 @@
 			children = (
 				452EA7E922954BE2004BB575 /* FDLottieKeyframe.h */,
 				452EA7EA22954BE2004BB575 /* FDLottieKeyframe.m */,
+				452EA821229671C7004BB575 /* FDLottieVector1D.h */,
+				452EA822229671C7004BB575 /* FDLottieVector1D.m */,
 				452EA7ED229552AA004BB575 /* FDLottieVector2D.h */,
 				452EA7EE229552AA004BB575 /* FDLottieVector2D.m */,
 				452EA7F122955535004BB575 /* FDLottieVector3D.h */,
@@ -584,8 +615,27 @@
 			children = (
 				452EA81922966D0B004BB575 /* FDLottieMarker.h */,
 				452EA81A22966D0B004BB575 /* FDLottieMarker.m */,
+				452EA81D22967092004BB575 /* FDLottieTransform.h */,
+				452EA81E22967092004BB575 /* FDLottieTransform.m */,
+				452EA82522967923004BB575 /* FDLottieMask.h */,
+				452EA82622967923004BB575 /* FDLottieMask.m */,
 			);
 			path = Objects;
+			sourceTree = "<group>";
+		};
+		452EA82922968305004BB575 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				452EA82A22968387004BB575 /* FDLottieBezierPath.h */,
+				452EA82B22968387004BB575 /* FDLottieBezierPath.m */,
+				452EA82E229683C6004BB575 /* FDLottiePathElement.h */,
+				452EA82F229683C6004BB575 /* FDLottiePathElement.m */,
+				452EA832229683E3004BB575 /* FDLottieCurveVertex.h */,
+				452EA833229683E3004BB575 /* FDLottieCurveVertex.m */,
+				452EA836229687EA004BB575 /* FDLottieMathKit.h */,
+				452EA837229687EA004BB575 /* FDLottieMathKit.m */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
@@ -876,6 +926,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA823229671C7004BB575 /* FDLottieVector1D.h in Headers */,
 				452EA7B322857337004BB575 /* UITabBarController+FDTabBarController.h in Headers */,
 				452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */,
 				452EA7F72295578B004BB575 /* FDLottieKeyframeGroup.h in Headers */,
@@ -884,6 +935,7 @@
 				452EA81622964DB2004BB575 /* FDLottiePrecompAsset.h in Headers */,
 				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
+				452EA81F22967092004BB575 /* FDLottieTransform.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
 				452EA7CB228BAEAF004BB575 /* UITabBar+FDPrivateObject.h in Headers */,
 				45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */,
@@ -901,8 +953,11 @@
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
 				45A20448225E03CD00C068AE /* NSDictionary+FDJSONSerialization.h in Headers */,
+				452EA82722967923004BB575 /* FDLottieMask.h in Headers */,
 				45A2043D225DF8CC00C068AE /* WKWebViewJavascriptBridge.h in Headers */,
+				452EA82C22968387004BB575 /* FDLottieBezierPath.h in Headers */,
 				45A2045E2260980D00C068AE /* UIColor+FDPalettes.h in Headers */,
+				452EA834229683E3004BB575 /* FDLottieCurveVertex.h in Headers */,
 				45A20442225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h in Headers */,
 				453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */,
 				453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */,
@@ -915,6 +970,7 @@
 				45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */,
 				452EA7EF229552AA004BB575 /* FDLottieVector2D.h in Headers */,
 				45A2045A2260710700C068AE /* FDPermissionMng.h in Headers */,
+				452EA838229687EA004BB575 /* FDLottieMathKit.h in Headers */,
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45A204B42276E57800C068AE /* FDRect180UpDownAni.h in Headers */,
@@ -945,6 +1001,7 @@
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
 				452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */,
 				45936AC12241E13D0073C9E2 /* FDWebImageManager.h in Headers */,
+				452EA830229683C6004BB575 /* FDLottiePathElement.h in Headers */,
 				45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */,
 				45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
@@ -1066,10 +1123,12 @@
 				452EA7E122953344004BB575 /* FDLottieJSONCoding.m in Sources */,
 				45A2049F2269B84F00C068AE /* NSData+FDDictionary.m in Sources */,
 				452EA802229561C7004BB575 /* FDLottieShapeItem.m in Sources */,
+				452EA835229683E3004BB575 /* FDLottieCurveVertex.m in Sources */,
 				453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */,
 				452EA7F82295578B004BB575 /* FDLottieKeyframeGroup.m in Sources */,
 				6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
+				452EA82D22968387004BB575 /* FDLottieBezierPath.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
 				452EA7F0229552AA004BB575 /* FDLottieVector2D.m in Sources */,
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
@@ -1097,6 +1156,8 @@
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,
 				452EA7AC2283FF0E004BB575 /* FDTabBar.m in Sources */,
 				452EA81722964DB2004BB575 /* FDLottiePrecompAsset.m in Sources */,
+				452EA839229687EA004BB575 /* FDLottieMathKit.m in Sources */,
+				452EA831229683C6004BB575 /* FDLottiePathElement.m in Sources */,
 				45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */,
 				452EA81C22966D0B004BB575 /* FDLottieMarker.m in Sources */,
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
@@ -1116,7 +1177,9 @@
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,
 				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,
+				452EA824229671C7004BB575 /* FDLottieVector1D.m in Sources */,
 				45936AD6224361350073C9E2 /* NSString+FDMD5.m in Sources */,
+				452EA82022967092004BB575 /* FDLottieTransform.m in Sources */,
 				45A2045F2260980D00C068AE /* UIColor+FDPalettes.m in Sources */,
 				45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */,
 				45A20449225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m in Sources */,
@@ -1124,6 +1187,7 @@
 				452EA80622964737004BB575 /* FDLottieFontList.m in Sources */,
 				452EA7D0228C080D004BB575 /* NSObject+FDRuntime.m in Sources */,
 				45A204682264705800C068AE /* FDRouterRegParam.m in Sources */,
+				452EA82822967923004BB575 /* FDLottieMask.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
 				453A6F4F225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.m in Sources */,
 			);

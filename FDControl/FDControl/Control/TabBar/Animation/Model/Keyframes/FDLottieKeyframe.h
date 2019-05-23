@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#import "FDLottieVector1D.h"
 #import "FDLottieVector2D.h"
+#import "FDLottieVector3D.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
