@@ -38,6 +38,34 @@
 		452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */; };
 		452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7CD228C080D004BB575 /* NSObject+FDRuntime.h */; };
 		452EA7D0228C080D004BB575 /* NSObject+FDRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7CE228C080D004BB575 /* NSObject+FDRuntime.m */; };
+		452EA7E022953344004BB575 /* FDLottieJSONCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7DE22953344004BB575 /* FDLottieJSONCoding.h */; };
+		452EA7E122953344004BB575 /* FDLottieJSONCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7DF22953344004BB575 /* FDLottieJSONCoding.m */; };
+		452EA7E522954107004BB575 /* FDLottieLayerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7E322954107004BB575 /* FDLottieLayerModel.h */; };
+		452EA7E622954107004BB575 /* FDLottieLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7E422954107004BB575 /* FDLottieLayerModel.m */; };
+		452EA7EB22954BE2004BB575 /* FDLottieKeyframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7E922954BE2004BB575 /* FDLottieKeyframe.h */; };
+		452EA7EC22954BE2004BB575 /* FDLottieKeyframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7EA22954BE2004BB575 /* FDLottieKeyframe.m */; };
+		452EA7EF229552AA004BB575 /* FDLottieVector2D.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7ED229552AA004BB575 /* FDLottieVector2D.h */; };
+		452EA7F0229552AA004BB575 /* FDLottieVector2D.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7EE229552AA004BB575 /* FDLottieVector2D.m */; };
+		452EA7F322955535004BB575 /* FDLottieVector3D.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7F122955535004BB575 /* FDLottieVector3D.h */; };
+		452EA7F422955535004BB575 /* FDLottieVector3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7F222955535004BB575 /* FDLottieVector3D.m */; };
+		452EA7F72295578B004BB575 /* FDLottieKeyframeGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7F52295578B004BB575 /* FDLottieKeyframeGroup.h */; };
+		452EA7F82295578B004BB575 /* FDLottieKeyframeGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7F62295578B004BB575 /* FDLottieKeyframeGroup.m */; };
+		452EA7FC229560A7004BB575 /* FDLottieGlyph.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7FA229560A7004BB575 /* FDLottieGlyph.h */; };
+		452EA7FD229560A7004BB575 /* FDLottieGlyph.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7FB229560A7004BB575 /* FDLottieGlyph.m */; };
+		452EA801229561C7004BB575 /* FDLottieShapeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7FF229561C7004BB575 /* FDLottieShapeItem.h */; };
+		452EA802229561C7004BB575 /* FDLottieShapeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA800229561C7004BB575 /* FDLottieShapeItem.m */; };
+		452EA80522964737004BB575 /* FDLottieFontList.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA80322964737004BB575 /* FDLottieFontList.h */; };
+		452EA80622964737004BB575 /* FDLottieFontList.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA80422964737004BB575 /* FDLottieFontList.m */; };
+		452EA80A22964A5F004BB575 /* FDLottieAssetLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA80822964A5F004BB575 /* FDLottieAssetLibrary.h */; };
+		452EA80B22964A5F004BB575 /* FDLottieAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA80922964A5F004BB575 /* FDLottieAssetLibrary.m */; };
+		452EA80E22964ACD004BB575 /* FDLottieAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA80C22964ACD004BB575 /* FDLottieAsset.h */; };
+		452EA80F22964ACD004BB575 /* FDLottieAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA80D22964ACD004BB575 /* FDLottieAsset.m */; };
+		452EA81222964C20004BB575 /* FDLottieImageAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA81022964C1F004BB575 /* FDLottieImageAsset.h */; };
+		452EA81322964C20004BB575 /* FDLottieImageAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA81122964C1F004BB575 /* FDLottieImageAsset.m */; };
+		452EA81622964DB2004BB575 /* FDLottiePrecompAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA81422964DB2004BB575 /* FDLottiePrecompAsset.h */; };
+		452EA81722964DB2004BB575 /* FDLottiePrecompAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA81522964DB2004BB575 /* FDLottiePrecompAsset.m */; };
+		452EA81B22966D0B004BB575 /* FDLottieMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA81922966D0B004BB575 /* FDLottieMarker.h */; };
+		452EA81C22966D0B004BB575 /* FDLottieMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA81A22966D0B004BB575 /* FDLottieMarker.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -178,6 +206,34 @@
 		452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FDPrivateObject.m"; sourceTree = "<group>"; };
 		452EA7CD228C080D004BB575 /* NSObject+FDRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDRuntime.h"; sourceTree = "<group>"; };
 		452EA7CE228C080D004BB575 /* NSObject+FDRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDRuntime.m"; sourceTree = "<group>"; };
+		452EA7DE22953344004BB575 /* FDLottieJSONCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieJSONCoding.h; sourceTree = "<group>"; };
+		452EA7DF22953344004BB575 /* FDLottieJSONCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieJSONCoding.m; sourceTree = "<group>"; };
+		452EA7E322954107004BB575 /* FDLottieLayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieLayerModel.h; sourceTree = "<group>"; };
+		452EA7E422954107004BB575 /* FDLottieLayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieLayerModel.m; sourceTree = "<group>"; };
+		452EA7E922954BE2004BB575 /* FDLottieKeyframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieKeyframe.h; sourceTree = "<group>"; };
+		452EA7EA22954BE2004BB575 /* FDLottieKeyframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieKeyframe.m; sourceTree = "<group>"; };
+		452EA7ED229552AA004BB575 /* FDLottieVector2D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieVector2D.h; sourceTree = "<group>"; };
+		452EA7EE229552AA004BB575 /* FDLottieVector2D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieVector2D.m; sourceTree = "<group>"; };
+		452EA7F122955535004BB575 /* FDLottieVector3D.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieVector3D.h; sourceTree = "<group>"; };
+		452EA7F222955535004BB575 /* FDLottieVector3D.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieVector3D.m; sourceTree = "<group>"; };
+		452EA7F52295578B004BB575 /* FDLottieKeyframeGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieKeyframeGroup.h; sourceTree = "<group>"; };
+		452EA7F62295578B004BB575 /* FDLottieKeyframeGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieKeyframeGroup.m; sourceTree = "<group>"; };
+		452EA7FA229560A7004BB575 /* FDLottieGlyph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieGlyph.h; sourceTree = "<group>"; };
+		452EA7FB229560A7004BB575 /* FDLottieGlyph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieGlyph.m; sourceTree = "<group>"; };
+		452EA7FF229561C7004BB575 /* FDLottieShapeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieShapeItem.h; sourceTree = "<group>"; };
+		452EA800229561C7004BB575 /* FDLottieShapeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieShapeItem.m; sourceTree = "<group>"; };
+		452EA80322964737004BB575 /* FDLottieFontList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieFontList.h; sourceTree = "<group>"; };
+		452EA80422964737004BB575 /* FDLottieFontList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieFontList.m; sourceTree = "<group>"; };
+		452EA80822964A5F004BB575 /* FDLottieAssetLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieAssetLibrary.h; sourceTree = "<group>"; };
+		452EA80922964A5F004BB575 /* FDLottieAssetLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieAssetLibrary.m; sourceTree = "<group>"; };
+		452EA80C22964ACD004BB575 /* FDLottieAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieAsset.h; sourceTree = "<group>"; };
+		452EA80D22964ACD004BB575 /* FDLottieAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieAsset.m; sourceTree = "<group>"; };
+		452EA81022964C1F004BB575 /* FDLottieImageAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieImageAsset.h; sourceTree = "<group>"; };
+		452EA81122964C1F004BB575 /* FDLottieImageAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieImageAsset.m; sourceTree = "<group>"; };
+		452EA81422964DB2004BB575 /* FDLottiePrecompAsset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottiePrecompAsset.h; sourceTree = "<group>"; };
+		452EA81522964DB2004BB575 /* FDLottiePrecompAsset.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottiePrecompAsset.m; sourceTree = "<group>"; };
+		452EA81922966D0B004BB575 /* FDLottieMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieMarker.h; sourceTree = "<group>"; };
+		452EA81A22966D0B004BB575 /* FDLottieMarker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieMarker.m; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -426,6 +482,7 @@
 		452EA79D2282D4F6004BB575 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				452EA7DD22953283004BB575 /* Animation */,
 				452EA7B122857337004BB575 /* UITabBarController+FDTabBarController.h */,
 				452EA7B222857337004BB575 /* UITabBarController+FDTabBarController.m */,
 				452EA7A92283FF0E004BB575 /* FDTabBar.h */,
@@ -438,6 +495,97 @@
 				452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		452EA7DD22953283004BB575 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7E2229540B8004BB575 /* Model */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		452EA7E2229540B8004BB575 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7DE22953344004BB575 /* FDLottieJSONCoding.h */,
+				452EA7DF22953344004BB575 /* FDLottieJSONCoding.m */,
+				452EA81822966CDE004BB575 /* Objects */,
+				452EA8072296492A004BB575 /* Assets */,
+				452EA7FE2295615B004BB575 /* ShapeItems */,
+				452EA7F92295608C004BB575 /* Text */,
+				452EA7E822954714004BB575 /* Keyframes */,
+				452EA7E7229546FE004BB575 /* Layers */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		452EA7E7229546FE004BB575 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7E422954107004BB575 /* FDLottieLayerModel.m */,
+				452EA7E322954107004BB575 /* FDLottieLayerModel.h */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		452EA7E822954714004BB575 /* Keyframes */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7E922954BE2004BB575 /* FDLottieKeyframe.h */,
+				452EA7EA22954BE2004BB575 /* FDLottieKeyframe.m */,
+				452EA7ED229552AA004BB575 /* FDLottieVector2D.h */,
+				452EA7EE229552AA004BB575 /* FDLottieVector2D.m */,
+				452EA7F122955535004BB575 /* FDLottieVector3D.h */,
+				452EA7F222955535004BB575 /* FDLottieVector3D.m */,
+				452EA7F52295578B004BB575 /* FDLottieKeyframeGroup.h */,
+				452EA7F62295578B004BB575 /* FDLottieKeyframeGroup.m */,
+			);
+			path = Keyframes;
+			sourceTree = "<group>";
+		};
+		452EA7F92295608C004BB575 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7FA229560A7004BB575 /* FDLottieGlyph.h */,
+				452EA7FB229560A7004BB575 /* FDLottieGlyph.m */,
+				452EA80322964737004BB575 /* FDLottieFontList.h */,
+				452EA80422964737004BB575 /* FDLottieFontList.m */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		452EA7FE2295615B004BB575 /* ShapeItems */ = {
+			isa = PBXGroup;
+			children = (
+				452EA7FF229561C7004BB575 /* FDLottieShapeItem.h */,
+				452EA800229561C7004BB575 /* FDLottieShapeItem.m */,
+			);
+			path = ShapeItems;
+			sourceTree = "<group>";
+		};
+		452EA8072296492A004BB575 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				452EA80822964A5F004BB575 /* FDLottieAssetLibrary.h */,
+				452EA80922964A5F004BB575 /* FDLottieAssetLibrary.m */,
+				452EA80C22964ACD004BB575 /* FDLottieAsset.h */,
+				452EA80D22964ACD004BB575 /* FDLottieAsset.m */,
+				452EA81022964C1F004BB575 /* FDLottieImageAsset.h */,
+				452EA81122964C1F004BB575 /* FDLottieImageAsset.m */,
+				452EA81422964DB2004BB575 /* FDLottiePrecompAsset.h */,
+				452EA81522964DB2004BB575 /* FDLottiePrecompAsset.m */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		452EA81822966CDE004BB575 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				452EA81922966D0B004BB575 /* FDLottieMarker.h */,
+				452EA81A22966D0B004BB575 /* FDLottieMarker.m */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
@@ -730,8 +878,10 @@
 			files = (
 				452EA7B322857337004BB575 /* UITabBarController+FDTabBarController.h in Headers */,
 				452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */,
+				452EA7F72295578B004BB575 /* FDLottieKeyframeGroup.h in Headers */,
 				452EA7AB2283FF0E004BB575 /* FDTabBar.h in Headers */,
 				452EA7C4228AA659004BB575 /* FDDotView.h in Headers */,
+				452EA81622964DB2004BB575 /* FDLottiePrecompAsset.h in Headers */,
 				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
@@ -739,8 +889,10 @@
 				45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */,
 				45A2047F2265BE8900C068AE /* NSBundle+FDMainBundle.h in Headers */,
 				45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */,
+				452EA7E022953344004BB575 /* FDLottieJSONCoding.h in Headers */,
 				45A204672264705800C068AE /* FDRouterRegParam.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
+				452EA80522964737004BB575 /* FDLottieFontList.h in Headers */,
 				452EA77D22817534004BB575 /* UIButton+FDLoadingIndicator.h in Headers */,
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 				452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */,
@@ -756,9 +908,12 @@
 				453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */,
 				453A6F53225C49B9006CC30A /* FDWebJsViewController.h in Headers */,
 				45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */,
+				452EA80A22964A5F004BB575 /* FDLottieAssetLibrary.h in Headers */,
+				452EA7EB22954BE2004BB575 /* FDLottieKeyframe.h in Headers */,
 				45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */,
 				45936ADE2243A0A20073C9E2 /* NSString+FDFileDirectory.h in Headers */,
 				45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */,
+				452EA7EF229552AA004BB575 /* FDLottieVector2D.h in Headers */,
 				45A2045A2260710700C068AE /* FDPermissionMng.h in Headers */,
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
@@ -770,6 +925,8 @@
 				45A2043E225DF8CC00C068AE /* WebViewJavascriptBridge.h in Headers */,
 				45A204622260A4BF00C068AE /* UIColor+FDGradientColor.h in Headers */,
 				45A2046B226470F500C068AE /* FDRouter.h in Headers */,
+				452EA7F322955535004BB575 /* FDLottieVector3D.h in Headers */,
+				452EA801229561C7004BB575 /* FDLottieShapeItem.h in Headers */,
 				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
 				453A6F4E225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.h in Headers */,
@@ -777,11 +934,14 @@
 				453A6F4A2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.h in Headers */,
 				4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */,
 				6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */,
+				452EA7E522954107004BB575 /* FDLottieLayerModel.h in Headers */,
 				4514D24421BFC05E0076290D /* NSString+FDOperator.h in Headers */,
 				452EA79322819ACC004BB575 /* FDVerticalButton.h in Headers */,
 				45A20443225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h in Headers */,
 				45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */,
+				452EA80E22964ACD004BB575 /* FDLottieAsset.h in Headers */,
 				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
+				452EA81B22966D0B004BB575 /* FDLottieMarker.h in Headers */,
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
 				452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */,
 				45936AC12241E13D0073C9E2 /* FDWebImageManager.h in Headers */,
@@ -791,6 +951,8 @@
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 				45A2044C225F194F00C068AE /* FDWebProgressView.h in Headers */,
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
+				452EA81222964C20004BB575 /* FDLottieImageAsset.h in Headers */,
+				452EA7FC229560A7004BB575 /* FDLottieGlyph.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,14 +1062,21 @@
 				6D3B4B4521F842360073662D /* UIImage+FDColor.m in Sources */,
 				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
+				452EA7E622954107004BB575 /* FDLottieLayerModel.m in Sources */,
+				452EA7E122953344004BB575 /* FDLottieJSONCoding.m in Sources */,
 				45A2049F2269B84F00C068AE /* NSData+FDDictionary.m in Sources */,
+				452EA802229561C7004BB575 /* FDLottieShapeItem.m in Sources */,
 				453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */,
+				452EA7F82295578B004BB575 /* FDLottieKeyframeGroup.m in Sources */,
 				6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
+				452EA7F0229552AA004BB575 /* FDLottieVector2D.m in Sources */,
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
 				45A204632260A4BF00C068AE /* UIColor+FDGradientColor.m in Sources */,
+				452EA7F422955535004BB575 /* FDLottieVector3D.m in Sources */,
 				45A2044D225F194F00C068AE /* FDWebProgressView.m in Sources */,
+				452EA7FD229560A7004BB575 /* FDLottieGlyph.m in Sources */,
 				45894CFF21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.m in Sources */,
 				45A204AC2273129800C068AE /* FDFrequencySpectrumIndicator.m in Sources */,
 				45A204A822730F8000C068AE /* FDAudioFrequencySpectrum.m in Sources */,
@@ -924,17 +1093,23 @@
 				453A6F4B2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.m in Sources */,
 				452EA7B422857337004BB575 /* UITabBarController+FDTabBarController.m in Sources */,
 				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
+				452EA7EC22954BE2004BB575 /* FDLottieKeyframe.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,
 				452EA7AC2283FF0E004BB575 /* FDTabBar.m in Sources */,
+				452EA81722964DB2004BB575 /* FDLottiePrecompAsset.m in Sources */,
 				45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */,
+				452EA81C22966D0B004BB575 /* FDLottieMarker.m in Sources */,
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
 				452EA7C5228AA659004BB575 /* FDDotView.m in Sources */,
 				45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */,
+				452EA80F22964ACD004BB575 /* FDLottieAsset.m in Sources */,
 				45A2047B2265794E00C068AE /* UINavigationController+FDRouter.m in Sources */,
 				453A6F54225C49B9006CC30A /* FDWebJsViewController.m in Sources */,
 				452EA77A22812CFB004BB575 /* UIButton+FDConvenientMethod.m in Sources */,
 				45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */,
+				452EA81322964C20004BB575 /* FDLottieImageAsset.m in Sources */,
 				452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */,
+				452EA80B22964A5F004BB575 /* FDLottieAssetLibrary.m in Sources */,
 				452EA7B022855FF9004BB575 /* UITabBarItem+FDTabBar.m in Sources */,
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,
 				452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */,
@@ -946,6 +1121,7 @@
 				45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */,
 				45A20449225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m in Sources */,
 				45A2046C226470F500C068AE /* FDRouter.m in Sources */,
+				452EA80622964737004BB575 /* FDLottieFontList.m in Sources */,
 				452EA7D0228C080D004BB575 /* NSObject+FDRuntime.m in Sources */,
 				45A204682264705800C068AE /* FDRouterRegParam.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
