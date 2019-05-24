@@ -22,16 +22,23 @@
 
 @implementation FDLottieShapeItem
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super init]) {
-        self.name = [aDecoder decodeObjectForKey:@"nm"];
-        self.type = [aDecoder decodeObjectForKey:@"ty"];
-        self.hidden = [aDecoder decodeObjectForKey:@"hd"];
-    }
-    return self;
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"name" : @"nm",
+             @"type" : @"ty",
+             @"hidden" : @"hd"
+             };
 }
 
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    
-}
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super init]) {
+//        self.name = [aDecoder decodeObjectForKey:@"nm"];
+//        self.type = [aDecoder decodeObjectForKey:@"ty"];
+//        self.hidden = [aDecoder decodeObjectForKey:@"hd"];
+//    }
+//    return self;
+//}
+//
+//- (void)encodeWithCoder:(NSCoder *)aCoder {
+//    
+//}
 @end

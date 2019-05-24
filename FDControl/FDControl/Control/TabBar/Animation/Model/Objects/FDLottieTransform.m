@@ -38,18 +38,42 @@
 
 @implementation FDLottieTransform
 
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super init]) {
-        self.anchorPoint = [aDecoder decodeObjectForKey:@"a"];
-        self.position = [aDecoder decodeObjectForKey:@"p"];
-        self.positionX = [aDecoder decodeObjectForKey:@"px"];
-        self.positionY = [aDecoder decodeObjectForKey:@"py"];
-        self.scale = [aDecoder decodeObjectForKey:@"s"];
-        self.rotation = [aDecoder decodeObjectForKey:@"r"];
-        self.opacity = [aDecoder decodeObjectForKey:@"o"];
-        self.rotationZ = [aDecoder decodeObjectForKey:@"rz"];
-    }
-    return self;
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"anchorPoint" : @"a",
+             @"position" : @"p",
+             @"positionX" : @"px",
+             @"positionY" : @"py",
+             @"scale" : @"s",
+             @"rotation" : @"r",
+             @"opacity" : @"o",
+             @"ratationZ" : @"rz"
+             };
 }
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    // value should be Class or Class name.
+    return @{@"anchorPoint" : [FDLottieKeyframeGroup class],
+             @"position" : [FDLottieKeyframeGroup class],
+             @"positionX" : [FDLottieKeyframeGroup class],
+             @"positionY" : [FDLottieKeyframeGroup class],
+             @"scale" : [FDLottieKeyframeGroup class],
+             @"rotation" : [FDLottieKeyframeGroup class],
+             @"opacity" : [FDLottieKeyframeGroup class],
+             @"ratationZ" : [FDLottieKeyframeGroup class],
+             };
+}
+
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super init]) {
+//        self.anchorPoint = [aDecoder decodeObjectForKey:@"a"];
+//        self.position = [aDecoder decodeObjectForKey:@"p"];
+//        self.positionX = [aDecoder decodeObjectForKey:@"px"];
+//        self.positionY = [aDecoder decodeObjectForKey:@"py"];
+//        self.scale = [aDecoder decodeObjectForKey:@"s"];
+//        self.rotation = [aDecoder decodeObjectForKey:@"r"];
+//        self.opacity = [aDecoder decodeObjectForKey:@"o"];
+//        self.rotationZ = [aDecoder decodeObjectForKey:@"rz"];
+//    }
+//    return self;
+//}
 @end

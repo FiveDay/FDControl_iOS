@@ -11,11 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDLottieKeyframeGroup <__covariant T> : NSObject <NSCoding>
-{
-@private
-    NSArray<FDLottieKeyframe<T>*>* _keyframes;
-}
+@interface FDLottieKeyframeGroup <__covariant T> : NSObject
 
 - (instancetype)initWithKeyframes:(NSArray<FDLottieKeyframe<id>*>*)keyframes;
 - (instancetype)initWithValue:(T)value;

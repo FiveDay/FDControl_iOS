@@ -23,67 +23,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    FDRouterRedirect redirect = ^(NSString* path){
-        BOOL token = NO;
-        if (token) {
-            return path;
-        }else {
-            return @"Main/RouterDemo/bGreen";
-        }
-    };
     
-    FDRouterRedirect redirect2 = ^(NSString* path){
-        BOOL token = YES;
-        if (token) {
-            return path;
-        }else {
-            return @"Main/RouterDemo/aRed";
-        }
-    };
-    NSSet* routes = [NSSet setWithArray:@[
-          @{
-              @"path":@"PlusButtonView",
-              @"component":@"PlusButtonViewController"
-              },
-          @{
-              @"path":@"Main/UserGuideDemo",
-              @"name":@"guide",
-              @"component":@"UserGuideDemoViewController"
-            },
-          @{
-              @"path":@"Main/RouterDemo",
-              @"name":@"router",
-              @"component":@"RouterDemoViewController",
-            },
-          @{
-              @"path":@"Main/ButtonDemo",
-              @"name":@"button",
-              @"component":@"ButtonDemoViewController",
-            },
-          @{
-              @"path":@"Main/WebJsDemo",
-              @"name":@"webjs",
-              @"component":@"WebJsDemoViewController",
-            },
-          @{
-              @"path":@"Main/AudioFrequencyDemo",
-              @"name":@"audio",
-              @"component":@"AudioFrequencySpectrumDemoViewController"
-            },
-          //sub router
-          @{
-              @"path":@"Main/RouterDemo/aRed",
-              @"component":@"RouterAViewController",
-              @"name":@"aRed",
-              @"redirect":redirect,
-            },
-            @{
-              @"path":@"Main/RouterDemo/bGreen",
-              @"component":@"RouterBViewController",
-              @"redirect":redirect2,
-            },
-                                            ]];
-    [UINavigationController registerRoutes:routes];
+    FDLottieAnimation* animation = [FDLottieAnimation animationWithNamed:@"home"];
+
+    [self registerRouter];
     
     CGRect frame = [[UIScreen mainScreen]bounds];
     self.window = [[UIWindow alloc]initWithFrame:frame];
@@ -111,6 +54,71 @@
     [self.window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)registerRouter {
+    
+    FDRouterRedirect redirect = ^(NSString* path){
+        BOOL token = NO;
+        if (token) {
+            return path;
+        }else {
+            return @"Main/RouterDemo/bGreen";
+        }
+    };
+    
+    FDRouterRedirect redirect2 = ^(NSString* path){
+        BOOL token = YES;
+        if (token) {
+            return path;
+        }else {
+            return @"Main/RouterDemo/aRed";
+        }
+    };
+    NSSet* routes = [NSSet setWithArray:@[
+                                          @{
+                                              @"path":@"PlusButtonView",
+                                              @"component":@"PlusButtonViewController"
+                                              },
+                                          @{
+                                              @"path":@"Main/UserGuideDemo",
+                                              @"name":@"guide",
+                                              @"component":@"UserGuideDemoViewController"
+                                              },
+                                          @{
+                                              @"path":@"Main/RouterDemo",
+                                              @"name":@"router",
+                                              @"component":@"RouterDemoViewController",
+                                              },
+                                          @{
+                                              @"path":@"Main/ButtonDemo",
+                                              @"name":@"button",
+                                              @"component":@"ButtonDemoViewController",
+                                              },
+                                          @{
+                                              @"path":@"Main/WebJsDemo",
+                                              @"name":@"webjs",
+                                              @"component":@"WebJsDemoViewController",
+                                              },
+                                          @{
+                                              @"path":@"Main/AudioFrequencyDemo",
+                                              @"name":@"audio",
+                                              @"component":@"AudioFrequencySpectrumDemoViewController"
+                                              },
+                                          //sub router
+                                          @{
+                                              @"path":@"Main/RouterDemo/aRed",
+                                              @"component":@"RouterAViewController",
+                                              @"name":@"aRed",
+                                              @"redirect":redirect,
+                                              },
+                                          @{
+                                              @"path":@"Main/RouterDemo/bGreen",
+                                              @"component":@"RouterBViewController",
+                                              @"redirect":redirect2,
+                                              },
+                                          ]];
+    [UINavigationController registerRoutes:routes];
 }
 
 - (void)onPlusButton {

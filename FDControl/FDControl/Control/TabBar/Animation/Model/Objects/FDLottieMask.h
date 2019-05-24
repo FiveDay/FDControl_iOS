@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FDLottieMask : NSObject <NSCoding>
+@interface FDLottieMask : NSObject
 
 @end
 

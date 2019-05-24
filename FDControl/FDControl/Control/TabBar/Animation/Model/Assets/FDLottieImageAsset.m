@@ -17,13 +17,21 @@
 
 @implementation FDLottieImageAsset
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        self.name = [aDecoder decodeObjectForKey:@"p"];
-        self.directory = [aDecoder decodeObjectForKey:@"u"];
-        self.width = [aDecoder decodeObjectForKey:@"w"];
-        self.height = [aDecoder decodeObjectForKey:@"h"];
-    }
-    return self;
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"name" : @"p",
+             @"directory" : @"u",
+             @"width" : @"w",
+             @"height" : @"h",
+             };
 }
+
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super initWithCoder:aDecoder]) {
+//        self.name = [aDecoder decodeObjectForKey:@"p"];
+//        self.directory = [aDecoder decodeObjectForKey:@"u"];
+//        self.width = [aDecoder decodeObjectForKey:@"w"];
+//        self.height = [aDecoder decodeObjectForKey:@"h"];
+//    }
+//    return self;
+//}
 @end

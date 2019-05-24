@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 /// A model that holds a vector character
 
-@interface FDLottieGlyph : NSObject <NSCoding>
+@interface FDLottieGlyph : NSObject
 
 @end
 

@@ -16,10 +16,21 @@
 
 @implementation FDLottiePrecompAsset
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        self.layers = [aDecoder decodeObjectForKey:@"layers"];
-    }
-    return self;
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"layers" : @"layers",
+             };
 }
+
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    // value should be Class or Class name.
+    return @{@"layers" : [FDLottieLayerModel class],
+             };
+}
+
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super initWithCoder:aDecoder]) {
+//        self.layers = [aDecoder decodeObjectForKey:@"layers"];
+//    }
+//    return self;
+//}
 @end

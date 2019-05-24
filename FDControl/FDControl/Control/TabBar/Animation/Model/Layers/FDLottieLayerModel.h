@@ -15,7 +15,7 @@ typedef enum : NSUInteger {
     type3d,
 } FDLottieCoordinateSpace;
 
-@interface FDLottieLayerModel : NSObject <NSCoding>
+@interface FDLottieLayerModel : NSObject
 
 @end
 

@@ -53,10 +53,12 @@ typedef enum : NSUInteger {
 @property(strong, nonatomic)NSNumber* index;
 
 /// The type of the layer.
-@property(assign, nonatomic)FDLottieLayerType type;
+/// FDLottieLayerType
+@property(strong, nonatomic)NSNumber* type;
 
 /// The coordinate space
-@property(assign, nonatomic)FDLottieCoordinateSpace coordinateSpace;
+/// FDLottieCoordinateSpace
+@property(strong, nonatomic)NSNumber* coordinateSpace;
 
 /// The in time of the layer in frames.
 @property(strong, nonatomic)NSNumber* inFrame;
@@ -74,7 +76,8 @@ typedef enum : NSUInteger {
 @property(strong, nonatomic)NSNumber* parent;
 
 /// The blending mode for the layer
-@property(assign, nonatomic)FDLottieBlendMode blendMode;
+/// FDLottieBlendMode
+@property(strong, nonatomic)NSNumber* blendMode;
 
 /// An array of masks for the layer.
 @property(strong, nonatomic, nullable)NSArray<FDLottieMask*>* masks;
@@ -83,7 +86,8 @@ typedef enum : NSUInteger {
 @property(strong, nonatomic)NSNumber* timeStretch;
 
 /// The type of matte if any.
-@property(assign, nonatomic)FDLottieMattType matte;
+/// FDLottieMattType
+@property(assign, nonatomic)NSNumber* matte;
 
 @property(strong, nonatomic)NSNumber* hidden;
 
@@ -91,27 +95,52 @@ typedef enum : NSUInteger {
 
 @implementation FDLottieLayerModel
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super init]) {
-        self.name = [aDecoder decodeObjectForKey:@"nm"];
-        self.index = [aDecoder decodeObjectForKey:@"ind"];
-        self.type = [aDecoder decodeIntegerForKey:@"ty"];
-        self.coordinateSpace = [aDecoder decodeIntegerForKey:@"ddd"];
-        self.inFrame = [aDecoder decodeObjectForKey:@"ip"];
-        self.outFrame = [aDecoder decodeObjectForKey:@"op"];
-        self.startTime = [aDecoder decodeObjectForKey:@"st"];
-        self.transform = [aDecoder decodeObjectForKey:@"ks"];
-        self.parent = [aDecoder decodeObjectForKey:@"parent"];
-        self.blendMode = [aDecoder decodeIntegerForKey:@"bm"];
-        self.masks = [aDecoder decodeObjectForKey:@"masksProperties"];
-        self.timeStretch = [aDecoder decodeObjectForKey:@"sr"];
-        self.matte = [aDecoder decodeIntegerForKey:@"tt"];
-        self.hidden = [aDecoder decodeObjectForKey:@"hd"];
-    }
-    return self;
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"name" : @"nm",
+             @"index" : @"ind",
+             @"type" : @"ty",
+             @"coordinateSpace" : @"ddd",
+             @"inFrame" : @"ip",
+             @"outFrame" : @"op",
+             @"startTime" : @"st",
+             @"transform" : @"ks",
+             @"parent" : @"parent",
+             @"blendMode" : @"bm",
+             @"masks" : @"masksProperties",
+             @"timeStretch" : @"sr",
+             @"matte" : @"tt",
+             @"hidden" : @"hd"
+             };
 }
 
-- (void)encodeWithCoder:(NSCoder *)aCoder {
-    
++ (NSDictionary *)modelContainerPropertyGenericClass {
+    // value should be Class or Class name.
+    return @{@"transform" : [FDLottieTransform class],
+             @"masks" : [FDLottieMask class],
+             };
 }
+
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super init]) {
+//        self.name = [aDecoder decodeObjectForKey:@"nm"];
+//        self.index = [aDecoder decodeObjectForKey:@"ind"];
+//        self.type = [aDecoder decodeIntegerForKey:@"ty"];
+//        self.coordinateSpace = [aDecoder decodeIntegerForKey:@"ddd"];
+//        self.inFrame = [aDecoder decodeObjectForKey:@"ip"];
+//        self.outFrame = [aDecoder decodeObjectForKey:@"op"];
+//        self.startTime = [aDecoder decodeObjectForKey:@"st"];
+//        self.transform = [aDecoder decodeObjectForKey:@"ks"];
+//        self.parent = [aDecoder decodeObjectForKey:@"parent"];
+//        self.blendMode = [aDecoder decodeIntegerForKey:@"bm"];
+//        self.masks = [aDecoder decodeObjectForKey:@"masksProperties"];
+//        self.timeStretch = [aDecoder decodeObjectForKey:@"sr"];
+//        self.matte = [aDecoder decodeIntegerForKey:@"tt"];
+//        self.hidden = [aDecoder decodeObjectForKey:@"hd"];
+//    }
+//    return self;
+//}
+//
+//- (void)encodeWithCoder:(NSCoder *)aCoder {
+//    
+//}
 @end

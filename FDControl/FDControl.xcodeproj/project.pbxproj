@@ -38,8 +38,8 @@
 		452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */; };
 		452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7CD228C080D004BB575 /* NSObject+FDRuntime.h */; };
 		452EA7D0228C080D004BB575 /* NSObject+FDRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7CE228C080D004BB575 /* NSObject+FDRuntime.m */; };
-		452EA7E022953344004BB575 /* FDLottieJSONCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7DE22953344004BB575 /* FDLottieJSONCoding.h */; };
-		452EA7E122953344004BB575 /* FDLottieJSONCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7DF22953344004BB575 /* FDLottieJSONCoding.m */; };
+		452EA7E022953344004BB575 /* FDLottieAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7DE22953344004BB575 /* FDLottieAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA7E122953344004BB575 /* FDLottieAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7DF22953344004BB575 /* FDLottieAnimation.m */; };
 		452EA7E522954107004BB575 /* FDLottieLayerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7E322954107004BB575 /* FDLottieLayerModel.h */; };
 		452EA7E622954107004BB575 /* FDLottieLayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7E422954107004BB575 /* FDLottieLayerModel.m */; };
 		452EA7EB22954BE2004BB575 /* FDLottieKeyframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7E922954BE2004BB575 /* FDLottieKeyframe.h */; };
@@ -80,6 +80,11 @@
 		452EA835229683E3004BB575 /* FDLottieCurveVertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA833229683E3004BB575 /* FDLottieCurveVertex.m */; };
 		452EA838229687EA004BB575 /* FDLottieMathKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA836229687EA004BB575 /* FDLottieMathKit.h */; };
 		452EA839229687EA004BB575 /* FDLottieMathKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA837229687EA004BB575 /* FDLottieMathKit.m */; };
+		452EA84D2297F014004BB575 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA8482297F013004BB575 /* YYClassInfo.h */; };
+		452EA84E2297F014004BB575 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA8492297F013004BB575 /* NSObject+YYModel.m */; };
+		452EA84F2297F014004BB575 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA84A2297F014004BB575 /* YYModel.h */; };
+		452EA8502297F014004BB575 /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA84B2297F014004BB575 /* NSObject+YYModel.h */; };
+		452EA8512297F014004BB575 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA84C2297F014004BB575 /* YYClassInfo.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -220,8 +225,8 @@
 		452EA7CA228BAEAF004BB575 /* UITabBar+FDPrivateObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FDPrivateObject.m"; sourceTree = "<group>"; };
 		452EA7CD228C080D004BB575 /* NSObject+FDRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDRuntime.h"; sourceTree = "<group>"; };
 		452EA7CE228C080D004BB575 /* NSObject+FDRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDRuntime.m"; sourceTree = "<group>"; };
-		452EA7DE22953344004BB575 /* FDLottieJSONCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieJSONCoding.h; sourceTree = "<group>"; };
-		452EA7DF22953344004BB575 /* FDLottieJSONCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieJSONCoding.m; sourceTree = "<group>"; };
+		452EA7DE22953344004BB575 /* FDLottieAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieAnimation.h; sourceTree = "<group>"; };
+		452EA7DF22953344004BB575 /* FDLottieAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieAnimation.m; sourceTree = "<group>"; };
 		452EA7E322954107004BB575 /* FDLottieLayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieLayerModel.h; sourceTree = "<group>"; };
 		452EA7E422954107004BB575 /* FDLottieLayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieLayerModel.m; sourceTree = "<group>"; };
 		452EA7E922954BE2004BB575 /* FDLottieKeyframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieKeyframe.h; sourceTree = "<group>"; };
@@ -262,6 +267,11 @@
 		452EA833229683E3004BB575 /* FDLottieCurveVertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieCurveVertex.m; sourceTree = "<group>"; };
 		452EA836229687EA004BB575 /* FDLottieMathKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieMathKit.h; sourceTree = "<group>"; };
 		452EA837229687EA004BB575 /* FDLottieMathKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieMathKit.m; sourceTree = "<group>"; };
+		452EA8482297F013004BB575 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		452EA8492297F013004BB575 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		452EA84A2297F014004BB575 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		452EA84B2297F014004BB575 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		452EA84C2297F014004BB575 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -536,9 +546,10 @@
 		452EA7E2229540B8004BB575 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				452EA8472297F006004BB575 /* YYModel */,
+				452EA7DE22953344004BB575 /* FDLottieAnimation.h */,
+				452EA7DF22953344004BB575 /* FDLottieAnimation.m */,
 				452EA82922968305004BB575 /* Utility */,
-				452EA7DE22953344004BB575 /* FDLottieJSONCoding.h */,
-				452EA7DF22953344004BB575 /* FDLottieJSONCoding.m */,
 				452EA81822966CDE004BB575 /* Objects */,
 				452EA8072296492A004BB575 /* Assets */,
 				452EA7FE2295615B004BB575 /* ShapeItems */,
@@ -636,6 +647,18 @@
 				452EA837229687EA004BB575 /* FDLottieMathKit.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		452EA8472297F006004BB575 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				452EA84B2297F014004BB575 /* NSObject+YYModel.h */,
+				452EA8492297F013004BB575 /* NSObject+YYModel.m */,
+				452EA8482297F013004BB575 /* YYClassInfo.h */,
+				452EA84C2297F014004BB575 /* YYClassInfo.m */,
+				452EA84A2297F014004BB575 /* YYModel.h */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
@@ -926,6 +949,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA7E022953344004BB575 /* FDLottieAnimation.h in Headers */,
 				452EA823229671C7004BB575 /* FDLottieVector1D.h in Headers */,
 				452EA7B322857337004BB575 /* UITabBarController+FDTabBarController.h in Headers */,
 				452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */,
@@ -941,7 +965,6 @@
 				45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */,
 				45A2047F2265BE8900C068AE /* NSBundle+FDMainBundle.h in Headers */,
 				45A2047A2265794E00C068AE /* UINavigationController+FDRouter.h in Headers */,
-				452EA7E022953344004BB575 /* FDLottieJSONCoding.h in Headers */,
 				45A204672264705800C068AE /* FDRouterRegParam.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				452EA80522964737004BB575 /* FDLottieFontList.h in Headers */,
@@ -949,6 +972,7 @@
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 				452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */,
 				452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */,
+				452EA8502297F014004BB575 /* NSObject+YYModel.h in Headers */,
 				45A2048D2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.h in Headers */,
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
@@ -964,6 +988,7 @@
 				453A6F53225C49B9006CC30A /* FDWebJsViewController.h in Headers */,
 				45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */,
 				452EA80A22964A5F004BB575 /* FDLottieAssetLibrary.h in Headers */,
+				452EA84D2297F014004BB575 /* YYClassInfo.h in Headers */,
 				452EA7EB22954BE2004BB575 /* FDLottieKeyframe.h in Headers */,
 				45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */,
 				45936ADE2243A0A20073C9E2 /* NSString+FDFileDirectory.h in Headers */,
@@ -1003,6 +1028,7 @@
 				45936AC12241E13D0073C9E2 /* FDWebImageManager.h in Headers */,
 				452EA830229683C6004BB575 /* FDLottiePathElement.h in Headers */,
 				45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */,
+				452EA84F2297F014004BB575 /* YYModel.h in Headers */,
 				45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
@@ -1063,6 +1089,7 @@
 				TargetAttributes = {
 					4514D1D621BFAD8A0076290D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 					};
 					4514D1DF21BFAD8A0076290D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -1120,8 +1147,9 @@
 				45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
 				452EA7E622954107004BB575 /* FDLottieLayerModel.m in Sources */,
-				452EA7E122953344004BB575 /* FDLottieJSONCoding.m in Sources */,
+				452EA7E122953344004BB575 /* FDLottieAnimation.m in Sources */,
 				45A2049F2269B84F00C068AE /* NSData+FDDictionary.m in Sources */,
+				452EA84E2297F014004BB575 /* NSObject+YYModel.m in Sources */,
 				452EA802229561C7004BB575 /* FDLottieShapeItem.m in Sources */,
 				452EA835229683E3004BB575 /* FDLottieCurveVertex.m in Sources */,
 				453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */,
@@ -1145,6 +1173,7 @@
 				45A2048922671B0800C068AE /* UIViewController+FDRouter.m in Sources */,
 				452EA79222819ACC004BB575 /* FDVerticalButton.m in Sources */,
 				4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */,
+				452EA8512297F014004BB575 /* YYClassInfo.m in Sources */,
 				453A6F472255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.m in Sources */,
 				45A2045B2260710700C068AE /* FDPermissionMng.m in Sources */,
 				452EA77E22817534004BB575 /* UIButton+FDLoadingIndicator.m in Sources */,
@@ -1331,6 +1360,8 @@
 		4514D1EC21BFAD8A0076290D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1347,6 +1378,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FDControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1354,6 +1388,8 @@
 		4514D1ED21BFAD8A0076290D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -1370,6 +1406,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.FDControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

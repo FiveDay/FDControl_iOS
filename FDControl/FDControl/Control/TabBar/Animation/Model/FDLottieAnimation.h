@@ -1,5 +1,5 @@
 //
-//  FDLottieJSONCoding.h
+//  FDLottieAnimation.h
 //  FDControl
 //
 //  Created by zhangyu528 on 2019/5/22.
@@ -10,7 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
  
-@interface FDLottieJSONCoding : NSObject <NSCoding>
+@interface FDLottieAnimation : NSObject
+
++ (nullable instancetype)animationWithNamed:(NSString*)named;
 
 @end
 

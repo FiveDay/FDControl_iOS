@@ -11,19 +11,20 @@
 
 @interface FDLottieAsset ()
 @property(copy, nonatomic)NSString* identity;
-
-
-
 @end
 
 @implementation FDLottieAsset
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super init]) {
-        self.identity = [aDecoder decodeObjectForKey:@"id"];
-        
-
-    }
-    return self;
++ (NSDictionary *)modelCustomPropertyMapper {
+    return @{@"identity" : @"id",
+             };
 }
+//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+//    if (self = [super init]) {
+//        self.identity = [aDecoder decodeObjectForKey:@"id"];
+//
+//
+//    }
+//    return self;
+//}
 @end
