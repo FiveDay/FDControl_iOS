@@ -15,6 +15,7 @@
 #import "Demo2ViewController.h"
 #import "Demo3ViewController.h"
 #import "Demo4ViewController.h"
+#import "FDTestModel.h"
 
 @interface AppDelegate ()
 @end
@@ -25,7 +26,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"home" ofType:@"json"];
+    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
+    FDJSONDecoder* decoder = [FDJSONDecoder new];
+    id obj = [decoder decode:[FDTestModel class] data:jsonData];
+    
     [self registerRouter];
     
     CGRect frame = [[UIScreen mainScreen]bounds];

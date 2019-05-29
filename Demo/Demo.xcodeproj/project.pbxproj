@@ -24,6 +24,7 @@
 		452EA7C8228ABB5B004BB575 /* PlusButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C7228ABB5B004BB575 /* PlusButtonViewController.m */; };
 		452EA83B22969EC1004BB575 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 452EA83A22969EC1004BB575 /* home.json */; };
 		452EA9B8229E73BF004BB575 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9B7229E73BF004BB575 /* Demo2ViewController.m */; };
+		452EA9CC229E8CC7004BB575 /* FDTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9CA229E8CC7004BB575 /* FDTestModel.m */; };
 		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
 		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
 		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
@@ -94,6 +95,8 @@
 		452EA9B5229E739B004BB575 /* Demo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
 		452EA9B6229E73AA004BB575 /* Demo4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4ViewController.h; sourceTree = "<group>"; };
 		452EA9B7229E73BF004BB575 /* Demo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		452EA9CA229E8CC7004BB575 /* FDTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDTestModel.m; sourceTree = "<group>"; };
+		452EA9CB229E8CC7004BB575 /* FDTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDTestModel.h; sourceTree = "<group>"; };
 		453A6F55225C8C0B006CC30A /* WebJsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebJsDemoViewController.h; sourceTree = "<group>"; };
 		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
 		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				452EA9C9229E8CB5004BB575 /* JSONDecoder */,
 				452EA7D5228D5E0E004BB575 /* NSObject */,
 				452EA7992282C2C8004BB575 /* UserGuide */,
 				452EA7A72283D1FD004BB575 /* ImageView */,
@@ -240,6 +244,15 @@
 				452EA7D7228D5E2B004BB575 /* NSObjectViewController.m */,
 			);
 			path = NSObject;
+			sourceTree = "<group>";
+		};
+		452EA9C9229E8CB5004BB575 /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				452EA9CB229E8CC7004BB575 /* FDTestModel.h */,
+				452EA9CA229E8CC7004BB575 /* FDTestModel.m */,
+			);
+			path = JSONDecoder;
 			sourceTree = "<group>";
 		};
 		453A6F66225DB61C006CC30A /* WebJs */ = {
@@ -440,6 +453,7 @@
 				4514D20D21BFADD20076290D /* main.m in Sources */,
 				45A204B02275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m in Sources */,
 				45A204732264987200C068AE /* RouterAViewController.m in Sources */,
+				452EA9CC229E8CC7004BB575 /* FDTestModel.m in Sources */,
 				45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */,
 				6D050D28225F399A00B4FAF1 /* UIImageViewDecoderViewController.m in Sources */,
 				4514D1FF21BFADCF0076290D /* AppDelegate.m in Sources */,

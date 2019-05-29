@@ -169,6 +169,11 @@
 		452EA9B2229D4BD2004BB575 /* LOTCompositionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA931229D4BD1004BB575 /* LOTCompositionContainer.m */; };
 		452EA9B3229D4BD2004BB575 /* LOTMaskContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA932229D4BD1004BB575 /* LOTMaskContainer.m */; };
 		452EA9B4229E7218004BB575 /* NSObject+FDClassInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA7D9228D6EE0004BB575 /* NSObject+FDClassInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA9BC229E8000004BB575 /* FDJSONDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9BA229E8000004BB575 /* FDJSONDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA9BD229E8000004BB575 /* FDJSONDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9BB229E8000004BB575 /* FDJSONDecoder.m */; };
+		452EA9C0229E82EC004BB575 /* FDCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9BE229E82EC004BB575 /* FDCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA9C1229E82EC004BB575 /* FDCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9BF229E82EC004BB575 /* FDCoder.m */; };
+		452EA9C3229E83A7004BB575 /* FDCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9C2229E83A7004BB575 /* FDCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -440,6 +445,11 @@
 		452EA930229D4BD1004BB575 /* LOTLayerContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTLayerContainer.h; sourceTree = "<group>"; };
 		452EA931229D4BD1004BB575 /* LOTCompositionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTCompositionContainer.m; sourceTree = "<group>"; };
 		452EA932229D4BD1004BB575 /* LOTMaskContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTMaskContainer.m; sourceTree = "<group>"; };
+		452EA9BA229E8000004BB575 /* FDJSONDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDJSONDecoder.h; sourceTree = "<group>"; };
+		452EA9BB229E8000004BB575 /* FDJSONDecoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDJSONDecoder.m; sourceTree = "<group>"; };
+		452EA9BE229E82EC004BB575 /* FDCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCoder.h; sourceTree = "<group>"; };
+		452EA9BF229E82EC004BB575 /* FDCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCoder.m; sourceTree = "<group>"; };
+		452EA9C2229E83A7004BB575 /* FDCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCoding.h; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -576,6 +586,7 @@
 		4514D1D921BFAD8A0076290D /* FDControl */ = {
 			isa = PBXGroup;
 			children = (
+				452EA9B9229E7F0D004BB575 /* JSONDecoder */,
 				452EA79422827B29004BB575 /* Bussiness */,
 				45A2046422646F9900C068AE /* Router */,
 				4587C99221DDE37A005AE3AB /* Control */,
@@ -935,6 +946,18 @@
 			path = AnimatableLayers;
 			sourceTree = "<group>";
 		};
+		452EA9B9229E7F0D004BB575 /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				452EA9BA229E8000004BB575 /* FDJSONDecoder.h */,
+				452EA9BB229E8000004BB575 /* FDJSONDecoder.m */,
+				452EA9BE229E82EC004BB575 /* FDCoder.h */,
+				452EA9BF229E82EC004BB575 /* FDCoder.m */,
+				452EA9C2229E83A7004BB575 /* FDCoding.h */,
+			);
+			path = JSONDecoder;
+			sourceTree = "<group>";
+		};
 		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1225,6 +1248,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA9BC229E8000004BB575 /* FDJSONDecoder.h in Headers */,
+				452EA9C3229E83A7004BB575 /* FDCoding.h in Headers */,
+				452EA9C0229E82EC004BB575 /* FDCoder.h in Headers */,
 				452EA9B4229E7218004BB575 /* NSObject+FDClassInformation.h in Headers */,
 				452EA973229D4BD2004BB575 /* LOTShapeRepeater.h in Headers */,
 				452EA998229D4BD2004BB575 /* LOTComposition.h in Headers */,
@@ -1460,6 +1486,7 @@
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */,
 				452EA9B2229D4BD2004BB575 /* LOTCompositionContainer.m in Sources */,
+				452EA9C1229E82EC004BB575 /* FDCoder.m in Sources */,
 				452EA98C229D4BD2004BB575 /* LOTShapeFill.m in Sources */,
 				452EA9AC229D4BD2004BB575 /* LOTInterpolatorCallback.m in Sources */,
 				452EA9AE229D4BD2004BB575 /* LOTLayerContainer.m in Sources */,
@@ -1484,6 +1511,7 @@
 				452EA9A7229D4BD2004BB575 /* LOTAnimationTransitionController.m in Sources */,
 				453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */,
 				452EA983229D4BD2004BB575 /* LOTShapeRectangle.m in Sources */,
+				452EA9BD229E8000004BB575 /* FDJSONDecoder.m in Sources */,
 				6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
