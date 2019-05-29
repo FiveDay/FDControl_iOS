@@ -14,10 +14,12 @@
 #import "UIView+FDLayout.h"
 #import "UIImage+FDColor.h"
 #import "FDDotView.h"
+#import "Lottie.h"
 
-static char kAssociatedKeyFrameAnimationObjectKey;
+static char kAssociatedKeyAnimationObjectKey;
 static char kAssociatedKeyBgImageViewObjecKey;
 static char kAssociatedKeyDotViewObjectKey;
+static char kAssociatedKeyLottieAnimationViewObjectKey;
 
 @interface FDTabBar ()
 @end
@@ -99,14 +101,35 @@ static char kAssociatedKeyDotViewObjectKey;
     __block NSInteger itemIndex = 0;
 
     [self enumerateTabBarButtonUsingBlock:^(UIView * _Nonnull btn) {
+        
+        //touch event
         [((UIControl*)btn) addTarget:self action:@selector(onTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
-        CAAnimation* animation = self.items[itemIndex].animation;
-        NSArray<UIImage*>* animationImages = self.items[itemIndex].animationImages;
+        
         UIView* imageView = [self queryUITabBarSwappableImageView:btn];
-        [imageView addProperty:&kAssociatedKeyFrameAnimationObjectKey value:animation];
-        [((UIImageView*)imageView) setAnimationImages:animationImages];
-        [((UIImageView*)imageView) setAnimationRepeatCount:1];
-        [((UIImageView*)imageView) setAnimationDuration:3.0f];
+
+        if (self.items[itemIndex].lottieName) {//Lottie animation
+            LOTAnimationView* animationView  = [btn getPropertyValue:&kAssociatedKeyLottieAnimationViewObjectKey];
+            if (animationView == nil) {
+                animationView = [LOTAnimationView animationNamed:self.items[itemIndex].lottieName];
+                animationView.userInteractionEnabled = NO;
+                animationView.frame = btn.bounds;
+                [btn addSubview:animationView];
+                [btn addProperty:&kAssociatedKeyLottieAnimationViewObjectKey value:animationView];
+            }
+        } else {
+
+            //CAAnimation
+            CAAnimation* animation = self.items[itemIndex].animation;
+            [imageView addProperty:&kAssociatedKeyAnimationObjectKey value:animation];
+            
+            //UIImageView animation
+            NSArray<UIImage*>* animationImages = self.items[itemIndex].animationImages;
+            [((UIImageView*)imageView) setAnimationImages:animationImages];
+            [((UIImageView*)imageView) setAnimationRepeatCount:1];
+            [((UIImageView*)imageView) setAnimationDuration:3.0f];
+        }
+
+        //Dot
         if (self.items[itemIndex].isShowDot) {
             FDDotView* dot = [imageView getPropertyValue:&kAssociatedKeyDotViewObjectKey];
             if (dot == nil) {
@@ -145,13 +168,23 @@ static char kAssociatedKeyDotViewObjectKey;
         }else {
             bgImageView = [btn getPropertyValue:&kAssociatedKeyBgImageViewObjecKey];
             bgImageView.image = nil;
+            
+            LOTAnimationView* animation = [btn getPropertyValue:&kAssociatedKeyLottieAnimationViewObjectKey];
+            [animation stop];
         }
     }];
     
-    //start animation
-    UIImageView* imageView = [self queryUITabBarSwappableImageView:tabBarButton];
-    CAKeyframeAnimation* animation = [imageView getPropertyValue:&kAssociatedKeyFrameAnimationObjectKey];
-    [imageView.layer addAnimation:animation forKey:@"FD_KeyFrameAnimation"];
-    [((UIImageView*)imageView) startAnimating];
+    if (self.items[index].lottieName) {//Lottie animation start
+        LOTAnimationView* animation = [tabBarButton getPropertyValue:&kAssociatedKeyLottieAnimationViewObjectKey];
+        [animation play];
+    }else {
+        UIImageView* imageView = [self queryUITabBarSwappableImageView:tabBarButton];
+        //CAnimation start
+        CAKeyframeAnimation* animation = [imageView getPropertyValue:&kAssociatedKeyAnimationObjectKey];
+        [imageView.layer addAnimation:animation forKey:@"FD_KeyFrameAnimation"];
+        
+        //UIImageView animation start
+        [((UIImageView*)imageView) startAnimating];
+    }
 }
 @end

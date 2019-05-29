@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic, nullable)UIColor* selectedBgColor;
 @property(assign, nonatomic)BOOL isShowDot;
 @property(strong, nonatomic)UIColor* dotColor;
+@property(copy, nonatomic)NSString* lottieName;
 @end
 
 NS_ASSUME_NONNULL_END

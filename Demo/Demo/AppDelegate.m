@@ -24,7 +24,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    FDLottieAnimation* animation = [FDLottieAnimation animationWithNamed:@"home"];
 
     [self registerRouter];
     
@@ -135,15 +134,16 @@
 
 - (UIViewController*)demo2 {
     Demo2ViewController* demo = [Demo2ViewController new];
-    demo.tabBarItem.title = @"Demo2";
-    //设置非选tabBarItem中图片
-    demo.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
-    demo.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBarBtn2_02"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //设置tabBarItem 标题属性
-    [demo.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor],
-                                              } forState:UIControlStateSelected];
-    //设置红点提醒内容
-    demo.tabBarItem.badgeValue = @"1";
+    demo.tabBarItem.lottieName = @"home";
+//    demo.tabBarItem.title = @"Demo2";
+//    //设置非选tabBarItem中图片
+//    demo.tabBarItem.image = [UIImage imageNamed:@"tabBarBtn2_01"];
+//    demo.tabBarItem.selectedImage = [[UIImage imageNamed:@"tabBarBtn2_02"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    //设置tabBarItem 标题属性
+//    [demo.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor blackColor],
+//                                              } forState:UIControlStateSelected];
+//    //设置红点提醒内容
+//    demo.tabBarItem.badgeValue = @"1";
     return demo;
 }
 

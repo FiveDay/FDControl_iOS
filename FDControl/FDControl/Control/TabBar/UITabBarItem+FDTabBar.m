@@ -52,4 +52,11 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
+- (void)setLottieName:(NSString *)lottieName {
+    objc_setAssociatedObject(self, @selector(lottieName), lottieName, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (NSString*)lottieName {
+    return objc_getAssociatedObject(self, _cmd);
+}
 @end
