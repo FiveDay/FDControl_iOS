@@ -10,7 +10,7 @@
 
 @implementation UIImage (FDColor)
 
-+ (UIImage* _Nullable)createImageWithColor:(UIColor*)color andSize:(CGSize)size
++ (UIImage* _Nullable)imageWithColor:(UIColor*)color andSize:(CGSize)size
 {
     if (size.width < 0.001 || size.height < 0.001 || !color) {
         //size太小，认为区域是无效值

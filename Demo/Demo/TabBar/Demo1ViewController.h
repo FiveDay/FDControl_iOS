@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  Demo1ViewController.h
 //  Demo
 //
 //  Created by zhangyu528 on 2018/12/11.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface Demo1ViewController : UITableViewController
 
 
 @end

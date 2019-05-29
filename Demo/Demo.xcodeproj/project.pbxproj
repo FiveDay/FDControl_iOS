@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4514D1FF21BFADCF0076290D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D1FE21BFADCF0076290D /* AppDelegate.m */; };
-		4514D20221BFADCF0076290D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D20121BFADCF0076290D /* ViewController.m */; };
+		4514D20221BFADCF0076290D /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D20121BFADCF0076290D /* Demo1ViewController.m */; };
 		4514D20521BFADCF0076290D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4514D20321BFADCF0076290D /* Main.storyboard */; };
 		4514D20721BFADD20076290D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4514D20621BFADD20076290D /* Assets.xcassets */; };
 		4514D20A21BFADD20076290D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4514D20821BFADD20076290D /* LaunchScreen.storyboard */; };
@@ -18,7 +18,12 @@
 		4514D23E21BFBAA50076290D /* FDControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; };
 		4514D23F21BFBAA50076290D /* FDControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4514D23D21BFBAA50076290D /* FDControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		452EA79C2282C3AC004BB575 /* UserGuideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */; };
-		452EA7D8228D5E2B004BB575 /* NSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7D7228D5E2B004BB575 /* NSObjectViewController.m */; };
+		452EA7B722896503004BB575 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		452EA7BA22897CD5004BB575 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7B922897CD5004BB575 /* Demo3ViewController.m */; };
+		452EA7C122897CEB004BB575 /* Demo4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C022897CEB004BB575 /* Demo4ViewController.m */; };
+		452EA7C8228ABB5B004BB575 /* PlusButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA7C7228ABB5B004BB575 /* PlusButtonViewController.m */; };
+		452EA83B22969EC1004BB575 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 452EA83A22969EC1004BB575 /* home.json */; };
+		452EA9B8229E73BF004BB575 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9B7229E73BF004BB575 /* Demo2ViewController.m */; };
 		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
 		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
 		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
@@ -65,8 +70,8 @@
 		4514D1FA21BFADCF0076290D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4514D1FD21BFADCF0076290D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4514D1FE21BFADCF0076290D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4514D20021BFADCF0076290D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4514D20121BFADCF0076290D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4514D20021BFADCF0076290D /* Demo1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		4514D20121BFADCF0076290D /* Demo1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
 		4514D20421BFADCF0076290D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4514D20621BFADD20076290D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4514D20921BFADD20076290D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,10 +84,16 @@
 		4514D22121BFADD20076290D /* DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoUITests.m; sourceTree = "<group>"; };
 		4514D22321BFADD20076290D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4514D23D21BFBAA50076290D /* FDControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FDControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		452EA79A2282C3AC004BB575 /* UserGuideDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserGuideDemoViewController.h; sourceTree = "<group>"; };
 		452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserGuideDemoViewController.m; sourceTree = "<group>"; };
-		452EA7D6228D5E2B004BB575 /* NSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObjectViewController.h; sourceTree = "<group>"; };
+		452EA7B522896503004BB575 /* Demo2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
+		452EA7B922897CD5004BB575 /* Demo3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
+		452EA7C022897CEB004BB575 /* Demo4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo4ViewController.m; sourceTree = "<group>"; };
+		452EA7C7228ABB5B004BB575 /* PlusButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlusButtonViewController.m; sourceTree = "<group>"; };
 		452EA7D7228D5E2B004BB575 /* NSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObjectViewController.m; sourceTree = "<group>"; };
+		452EA83A22969EC1004BB575 /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		452EA9B5229E739B004BB575 /* Demo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
+		452EA9B6229E73AA004BB575 /* Demo4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo4ViewController.h; sourceTree = "<group>"; };
+		452EA9B7229E73BF004BB575 /* Demo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
 		453A6F55225C8C0B006CC30A /* WebJsDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebJsDemoViewController.h; sourceTree = "<group>"; };
 		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
 		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
@@ -155,21 +166,19 @@
 			children = (
 				452EA7D5228D5E0E004BB575 /* NSObject */,
 				452EA7992282C2C8004BB575 /* UserGuide */,
+				452EA7A72283D1FD004BB575 /* ImageView */,
+				452EA7A62283C91E004BB575 /* TabBar */,
 				45A204AD227585A000C068AE /* AudioFrequencySpectrum */,
 				45A2046D2264957800C068AE /* Router */,
 				45A204932269A7E900C068AE /* Button */,
 				453A6F66225DB61C006CC30A /* WebJs */,
 				4514D1FD21BFADCF0076290D /* AppDelegate.h */,
 				4514D1FE21BFADCF0076290D /* AppDelegate.m */,
-				4514D20021BFADCF0076290D /* ViewController.h */,
-				4514D20121BFADCF0076290D /* ViewController.m */,
 				4514D20321BFADCF0076290D /* Main.storyboard */,
 				4514D20621BFADD20076290D /* Assets.xcassets */,
 				4514D20821BFADD20076290D /* LaunchScreen.storyboard */,
 				4514D20B21BFADD20076290D /* Info.plist */,
 				4514D20C21BFADD20076290D /* main.m */,
-				6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */,
-				6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -195,16 +204,39 @@
 		452EA7992282C2C8004BB575 /* UserGuide */ = {
 			isa = PBXGroup;
 			children = (
-				452EA79A2282C3AC004BB575 /* UserGuideDemoViewController.h */,
 				452EA79B2282C3AC004BB575 /* UserGuideDemoViewController.m */,
 			);
 			path = UserGuide;
 			sourceTree = "<group>";
 		};
+		452EA7A62283C91E004BB575 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4514D20021BFADCF0076290D /* Demo1ViewController.h */,
+				4514D20121BFADCF0076290D /* Demo1ViewController.m */,
+				452EA7B522896503004BB575 /* Demo2ViewController.h */,
+				452EA9B7229E73BF004BB575 /* Demo2ViewController.m */,
+				452EA9B5229E739B004BB575 /* Demo3ViewController.h */,
+				452EA7B922897CD5004BB575 /* Demo3ViewController.m */,
+				452EA9B6229E73AA004BB575 /* Demo4ViewController.h */,
+				452EA7C022897CEB004BB575 /* Demo4ViewController.m */,
+				452EA7C7228ABB5B004BB575 /* PlusButtonViewController.m */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		452EA7A72283D1FD004BB575 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				6D050D26225F399A00B4FAF1 /* UIImageViewDecoderViewController.h */,
+				6D050D27225F399A00B4FAF1 /* UIImageViewDecoderViewController.m */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
 		452EA7D5228D5E0E004BB575 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				452EA7D6228D5E2B004BB575 /* NSObjectViewController.h */,
 				452EA7D7228D5E2B004BB575 /* NSObjectViewController.m */,
 			);
 			path = NSObject;
@@ -255,6 +287,7 @@
 		6D050D0A225E175B00B4FAF1 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				452EA83A22969EC1004BB575 /* home.json */,
 				6D050D0B225E175B00B4FAF1 /* testimage.jpg */,
 			);
 			name = resources;
@@ -365,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA83B22969EC1004BB575 /* home.json in Resources */,
 				4514D20A21BFADD20076290D /* LaunchScreen.storyboard in Resources */,
 				4514D20721BFADD20076290D /* Assets.xcassets in Resources */,
 				4514D20521BFADCF0076290D /* Main.storyboard in Resources */,
@@ -394,11 +428,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A204762264988700C068AE /* RouterBViewController.m in Sources */,
-				4514D20221BFADCF0076290D /* ViewController.m in Sources */,
+				4514D20221BFADCF0076290D /* Demo1ViewController.m in Sources */,
+				452EA7C122897CEB004BB575 /* Demo4ViewController.m in Sources */,
+				452EA9B8229E73BF004BB575 /* Demo2ViewController.m in Sources */,
 				45A204962269A80F00C068AE /* ButtonDemoViewController.m in Sources */,
+				452EA7C8228ABB5B004BB575 /* PlusButtonViewController.m in Sources */,
 				453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */,
 				452EA79C2282C3AC004BB575 /* UserGuideDemoViewController.m in Sources */,
-				452EA7D8228D5E2B004BB575 /* NSObjectViewController.m in Sources */,
+				452EA7BA22897CD5004BB575 /* Demo3ViewController.m in Sources */,
+				452EA7B722896503004BB575 /* (null) in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
 				45A204B02275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m in Sources */,
 				45A204732264987200C068AE /* RouterAViewController.m in Sources */,
