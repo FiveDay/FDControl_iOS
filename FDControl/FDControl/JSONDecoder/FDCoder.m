@@ -22,8 +22,8 @@
 }
 
 - (id)decode:(Class)Cls key:(NSString*)key {
-    if ([[NSString new] isKindOfClass:Cls]
-        || [[NSNumber new] isKindOfClass:Cls]) {
+    if ([NSStringFromClass(Cls) isEqualToString:@"NSString"]
+        || [NSStringFromClass(Cls) isEqualToString:@"NSNumber"]) {
         return [self.jsonDic objectForKey:key];
     } else {
         id jsonObj = [self.jsonDic objectForKey:key];
@@ -33,8 +33,8 @@
             return obj;
         } else if ([jsonObj isKindOfClass:[NSArray class]]) {
             NSMutableArray* objs = [NSMutableArray new];
-            for (id obj in jsonObj) {
-                FDCoder* coder = [[FDCoder alloc]initWithJsonDic:obj];
+            for (id item in jsonObj) {
+                FDCoder* coder = [[FDCoder alloc]initWithJsonDic:item];
                 id obj = [[Cls alloc]initWithFDCoder:coder];
                 [objs addObject:obj];
             }

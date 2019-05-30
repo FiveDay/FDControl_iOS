@@ -174,6 +174,15 @@
 		452EA9C0229E82EC004BB575 /* FDCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9BE229E82EC004BB575 /* FDCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452EA9C1229E82EC004BB575 /* FDCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9BF229E82EC004BB575 /* FDCoder.m */; };
 		452EA9C3229E83A7004BB575 /* FDCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9C2229E83A7004BB575 /* FDCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA9D0229F730F004BB575 /* FDLottie.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9CF229F730F004BB575 /* FDLottie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA9D4229F737D004BB575 /* FDLottieAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9D2229F737D004BB575 /* FDLottieAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452EA9D5229F737D004BB575 /* FDLottieAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9D3229F737D004BB575 /* FDLottieAnimationView.m */; };
+		452EA9D8229F7EF9004BB575 /* FDLottieComposition.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9D6229F7EF9004BB575 /* FDLottieComposition.h */; };
+		452EA9D9229F7EF9004BB575 /* FDLottieComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9D7229F7EF9004BB575 /* FDLottieComposition.m */; };
+		452EA9DD229FA8DA004BB575 /* FDLottieLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9DB229FA8DA004BB575 /* FDLottieLayer.h */; };
+		452EA9DE229FA8DA004BB575 /* FDLottieLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9DC229FA8DA004BB575 /* FDLottieLayer.m */; };
+		452EA9E6229FBF5C004BB575 /* FDLottieShapeLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA9E4229FBF5C004BB575 /* FDLottieShapeLayer.h */; };
+		452EA9E7229FBF5C004BB575 /* FDLottieShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9E5229FBF5C004BB575 /* FDLottieShapeLayer.m */; };
 		453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */; };
 		453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */; };
 		453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F3B2254B96B006CC30A /* FDAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -450,6 +459,15 @@
 		452EA9BE229E82EC004BB575 /* FDCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCoder.h; sourceTree = "<group>"; };
 		452EA9BF229E82EC004BB575 /* FDCoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDCoder.m; sourceTree = "<group>"; };
 		452EA9C2229E83A7004BB575 /* FDCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDCoding.h; sourceTree = "<group>"; };
+		452EA9CF229F730F004BB575 /* FDLottie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottie.h; sourceTree = "<group>"; };
+		452EA9D2229F737D004BB575 /* FDLottieAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieAnimationView.h; sourceTree = "<group>"; };
+		452EA9D3229F737D004BB575 /* FDLottieAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieAnimationView.m; sourceTree = "<group>"; };
+		452EA9D6229F7EF9004BB575 /* FDLottieComposition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieComposition.h; sourceTree = "<group>"; };
+		452EA9D7229F7EF9004BB575 /* FDLottieComposition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieComposition.m; sourceTree = "<group>"; };
+		452EA9DB229FA8DA004BB575 /* FDLottieLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieLayer.h; sourceTree = "<group>"; };
+		452EA9DC229FA8DA004BB575 /* FDLottieLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieLayer.m; sourceTree = "<group>"; };
+		452EA9E4229FBF5C004BB575 /* FDLottieShapeLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDLottieShapeLayer.h; sourceTree = "<group>"; };
+		452EA9E5229FBF5C004BB575 /* FDLottieShapeLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDLottieShapeLayer.m; sourceTree = "<group>"; };
 		453A6F31224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallGridPulse.h; sourceTree = "<group>"; };
 		453A6F32224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallGridPulse.m; sourceTree = "<group>"; };
 		453A6F3B2254B96B006CC30A /* FDAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDAnimationView.h; sourceTree = "<group>"; };
@@ -958,6 +976,62 @@
 			path = JSONDecoder;
 			sourceTree = "<group>";
 		};
+		452EA9CD229F72AB004BB575 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				452EA9D1229F733D004BB575 /* Source */,
+				452EA9CE229F72E4004BB575 /* PublicHeaders */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		452EA9CE229F72E4004BB575 /* PublicHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				452EA9D2229F737D004BB575 /* FDLottieAnimationView.h */,
+				452EA9CF229F730F004BB575 /* FDLottie.h */,
+			);
+			path = PublicHeaders;
+			sourceTree = "<group>";
+		};
+		452EA9D1229F733D004BB575 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				452EA9DA229FA7DC004BB575 /* Models */,
+				452EA9D3229F737D004BB575 /* FDLottieAnimationView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		452EA9DA229FA7DC004BB575 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				452EA9E3229FBD33004BB575 /* Layers */,
+				452EA9D6229F7EF9004BB575 /* FDLottieComposition.h */,
+				452EA9D7229F7EF9004BB575 /* FDLottieComposition.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		452EA9E3229FBD33004BB575 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				452EA9E8229FC4F6004BB575 /* Shapes */,
+				452EA9DB229FA8DA004BB575 /* FDLottieLayer.h */,
+				452EA9DC229FA8DA004BB575 /* FDLottieLayer.m */,
+				452EA9E4229FBF5C004BB575 /* FDLottieShapeLayer.h */,
+				452EA9E5229FBF5C004BB575 /* FDLottieShapeLayer.m */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		452EA9E8229FC4F6004BB575 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
 		453A6F3F2254C512006CC30A /* CAShapeLayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1017,6 +1091,7 @@
 		4587C99221DDE37A005AE3AB /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				452EA9CD229F72AB004BB575 /* Lottie */,
 				452EA79D2282D4F6004BB575 /* TabBar */,
 				452EA78F22819ACC004BB575 /* Button */,
 				45A204572260706600C068AE /* Permission */,
@@ -1248,6 +1323,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA9D4229F737D004BB575 /* FDLottieAnimationView.h in Headers */,
+				452EA9D0229F730F004BB575 /* FDLottie.h in Headers */,
+				452EA9E6229FBF5C004BB575 /* FDLottieShapeLayer.h in Headers */,
 				452EA9BC229E8000004BB575 /* FDJSONDecoder.h in Headers */,
 				452EA9C3229E83A7004BB575 /* FDCoding.h in Headers */,
 				452EA9C0229E82EC004BB575 /* FDCoder.h in Headers */,
@@ -1340,6 +1418,7 @@
 				45A204622260A4BF00C068AE /* UIColor+FDGradientColor.h in Headers */,
 				45A2046B226470F500C068AE /* FDRouter.h in Headers */,
 				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
+				452EA9DD229FA8DA004BB575 /* FDLottieLayer.h in Headers */,
 				452EA980229D4BD2004BB575 /* LOTModels.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
 				452EA939229D4BD2004BB575 /* UIBezierPath.h in Headers */,
@@ -1370,6 +1449,7 @@
 				45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */,
 				452EA94F229D4BD2004BB575 /* LOTNumberInterpolator.h in Headers */,
 				452EA950229D4BD2004BB575 /* LOTTransformInterpolator.h in Headers */,
+				452EA9D8229F7EF9004BB575 /* FDLottieComposition.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
 				452EA99A229D4BD2004BB575 /* LOTAnimationView.h in Headers */,
 				452EA9A0229D4BD2004BB575 /* LOTKeyframe.h in Headers */,
@@ -1483,6 +1563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				452EA9D5229F737D004BB575 /* FDLottieAnimationView.m in Sources */,
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
 				45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */,
 				452EA9B2229D4BD2004BB575 /* LOTCompositionContainer.m in Sources */,
@@ -1551,6 +1632,7 @@
 				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
 				452EA9A5229D4BD2004BB575 /* LOTBlockCallback.m in Sources */,
 				452EA98F229D4BD2004BB575 /* LOTShapeStroke.m in Sources */,
+				452EA9E7229FBF5C004BB575 /* FDLottieShapeLayer.m in Sources */,
 				452EA94B229D4BD2004BB575 /* LOTPathInterpolator.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,
 				452EA944229D4BD2004BB575 /* UIColor+Expanded.m in Sources */,
@@ -1579,6 +1661,7 @@
 				452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */,
 				452EA97C229D4BD2004BB575 /* LOTShapeGradientFill.m in Sources */,
 				452EA96C229D4BD2004BB575 /* LOTFillRenderer.m in Sources */,
+				452EA9DE229FA8DA004BB575 /* FDLottieLayer.m in Sources */,
 				452EA7B022855FF9004BB575 /* UITabBarItem+FDTabBar.m in Sources */,
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,
 				452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */,
@@ -1603,6 +1686,7 @@
 				452EA93F229D4BD2004BB575 /* LOTBezierPath.m in Sources */,
 				452EA98D229D4BD2004BB575 /* LOTShapeTransform.m in Sources */,
 				452EA7D0228C080D004BB575 /* NSObject+FDRuntime.m in Sources */,
+				452EA9D9229F7EF9004BB575 /* FDLottieComposition.m in Sources */,
 				45A204682264705800C068AE /* FDRouterRegParam.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
 				453A6F4F225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.m in Sources */,

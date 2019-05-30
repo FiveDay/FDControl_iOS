@@ -26,10 +26,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"home" ofType:@"json"];
-    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
-    FDJSONDecoder* decoder = [FDJSONDecoder new];
-    id obj = [decoder decode:[FDTestModel class] data:jsonData];
+//    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"home" ofType:@"json"];
+//    NSData *jsonData = [[NSData alloc] initWithContentsOfFile:filePath];
+//    FDJSONDecoder* decoder = [FDJSONDecoder new];
+//    id obj = [decoder decode:[FDTestModel class] data:jsonData];
+    
+    FDLottieAnimationView* animationView = [FDLottieAnimationView animationWithNamed:@"home"];
     
     [self registerRouter];
     
