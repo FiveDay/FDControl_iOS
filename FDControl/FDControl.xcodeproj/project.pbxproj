@@ -186,6 +186,10 @@
 		453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */; };
+		4580BDDC2306B540001CB8BC /* NSData+FDCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */; };
+		4580BDDD2306B540001CB8BC /* NSData+FDCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580BDDB2306B540001CB8BC /* NSData+FDCompare.m */; };
+		4580BDE02306B7BB001CB8BC /* NSDate+FDExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4580BDDE2306B7BB001CB8BC /* NSDate+FDExchange.h */; };
+		4580BDE12306B7BB001CB8BC /* NSDate+FDExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580BDDF2306B7BB001CB8BC /* NSDate+FDExchange.m */; };
 		45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 45820E3421EF358C0052F033 /* FDPopMenu.h */; };
 		45820E3721EF358C0052F033 /* FDPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3521EF358C0052F033 /* FDPopMenu.m */; };
 		45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 45820E3821EF39CB0052F033 /* FDPopMenuItem.h */; };
@@ -457,6 +461,10 @@
 		453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDNativeInterface.h; sourceTree = "<group>"; };
 		453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDPropertyMethod.h"; sourceTree = "<group>"; };
 		453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDPropertyMethod.m"; sourceTree = "<group>"; };
+		4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FDCompare.h"; sourceTree = "<group>"; };
+		4580BDDB2306B540001CB8BC /* NSData+FDCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FDCompare.m"; sourceTree = "<group>"; };
+		4580BDDE2306B7BB001CB8BC /* NSDate+FDExchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FDExchange.h"; sourceTree = "<group>"; };
+		4580BDDF2306B7BB001CB8BC /* NSDate+FDExchange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FDExchange.m"; sourceTree = "<group>"; };
 		45820E3421EF358C0052F033 /* FDPopMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPopMenu.h; sourceTree = "<group>"; };
 		45820E3521EF358C0052F033 /* FDPopMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPopMenu.m; sourceTree = "<group>"; };
 		45820E3821EF39CB0052F033 /* FDPopMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDPopMenuItem.h; sourceTree = "<group>"; };
@@ -598,6 +606,7 @@
 		4514D23321BFB3450076290D /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				4580BDD92306B4FD001CB8BC /* NSDate */,
 				45A2049B2269B83900C068AE /* NSData */,
 				45A2047C2265BDEE00C068AE /* NSBundle */,
 				452EA77222804576004BB575 /* UIControl */,
@@ -980,6 +989,17 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		4580BDD92306B4FD001CB8BC /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */,
+				4580BDDB2306B540001CB8BC /* NSData+FDCompare.m */,
+				4580BDDE2306B7BB001CB8BC /* NSDate+FDExchange.h */,
+				4580BDDF2306B7BB001CB8BC /* NSDate+FDExchange.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		45820E3321EF355C0052F033 /* PopMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -1233,6 +1253,7 @@
 				452EA93D229D4BD2004BB575 /* LOTRadialGradientLayer.h in Headers */,
 				452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */,
 				452EA7AB2283FF0E004BB575 /* FDTabBar.h in Headers */,
+				4580BDE02306B7BB001CB8BC /* NSDate+FDExchange.h in Headers */,
 				452EA7C4228AA659004BB575 /* FDDotView.h in Headers */,
 				452EA9AF229D4BD2004BB575 /* LOTCompositionContainer.h in Headers */,
 				452EA9A1229D4BD2004BB575 /* LOTBezierData.h in Headers */,
@@ -1284,6 +1305,7 @@
 				452EA952229D4BD2004BB575 /* LOTColorInterpolator.h in Headers */,
 				452EA990229D4BD2004BB575 /* LOTValueDelegate.h in Headers */,
 				452EA940229D4BD2004BB575 /* UIColor+Expanded.h in Headers */,
+				4580BDDC2306B540001CB8BC /* NSData+FDCompare.h in Headers */,
 				452EA992229D4BD2004BB575 /* LOTCacheProvider.h in Headers */,
 				452EA979229D4BD2004BB575 /* LOTShapeGroup.h in Headers */,
 				453A6F53225C49B9006CC30A /* FDWebJsViewController.h in Headers */,
@@ -1486,6 +1508,7 @@
 				452EA983229D4BD2004BB575 /* LOTShapeRectangle.m in Sources */,
 				6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
+				4580BDE12306B7BB001CB8BC /* NSDate+FDExchange.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
 				452EA9A9229D4BD2004BB575 /* LOTKeypath.m in Sources */,
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
@@ -1532,6 +1555,7 @@
 				452EA9AA229D4BD2004BB575 /* LOTCacheProvider.m in Sources */,
 				452EA959229D4BD2004BB575 /* LOTNumberInterpolator.m in Sources */,
 				452EA98A229D4BD2004BB575 /* LOTShapeGroup.m in Sources */,
+				4580BDDD2306B540001CB8BC /* NSData+FDCompare.m in Sources */,
 				45936AC42241E13D0073C9E2 /* FDWebImageDownloaderOperation.m in Sources */,
 				452EA934229D4BD2004BB575 /* UIBezierPath.m in Sources */,
 				452EA955229D4BD2004BB575 /* LOTPointInterpolator.m in Sources */,
