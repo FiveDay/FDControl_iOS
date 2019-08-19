@@ -262,6 +262,8 @@
 		45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B32276E57800C068AE /* FDRect180UpDownAni.m */; };
 		45A204B82277070300C068AE /* FDRect360UpDownAni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204B62277070300C068AE /* FDRect360UpDownAni.h */; };
 		45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B72277070300C068AE /* FDRect360UpDownAni.m */; };
+		45A7A464230AAA5600B311CA /* UIButton+FDChainMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A7A462230AAA5600B311CA /* UIButton+FDChainMethod.h */; };
+		45A7A465230AAA5600B311CA /* UIButton+FDChainMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7A463230AAA5600B311CA /* UIButton+FDChainMethod.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -537,6 +539,8 @@
 		45A204B32276E57800C068AE /* FDRect180UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect180UpDownAni.m; sourceTree = "<group>"; };
 		45A204B62277070300C068AE /* FDRect360UpDownAni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRect360UpDownAni.h; sourceTree = "<group>"; };
 		45A204B72277070300C068AE /* FDRect360UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect360UpDownAni.m; sourceTree = "<group>"; };
+		45A7A462230AAA5600B311CA /* UIButton+FDChainMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FDChainMethod.h"; sourceTree = "<group>"; };
+		45A7A463230AAA5600B311CA /* UIButton+FDChainMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FDChainMethod.m"; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -1193,6 +1197,8 @@
 				452EA77822812CFB004BB575 /* UIButton+FDConvenientMethod.m */,
 				452EA77B22817534004BB575 /* UIButton+FDLoadingIndicator.h */,
 				452EA77C22817534004BB575 /* UIButton+FDLoadingIndicator.m */,
+				45A7A462230AAA5600B311CA /* UIButton+FDChainMethod.h */,
+				45A7A463230AAA5600B311CA /* UIButton+FDChainMethod.m */,
 			);
 			path = UIButton;
 			sourceTree = "<group>";
@@ -1262,6 +1268,7 @@
 				452EA7972282AD8A004BB575 /* FDUserGuideView.h in Headers */,
 				452EA97A229D4BD2004BB575 /* LOTShapePath.h in Headers */,
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
+				45A7A464230AAA5600B311CA /* UIButton+FDChainMethod.h in Headers */,
 				452EA997229D4BD2004BB575 /* Lottie.h in Headers */,
 				452EA993229D4BD2004BB575 /* LOTKeypath.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
@@ -1536,6 +1543,7 @@
 				452EA77E22817534004BB575 /* UIButton+FDLoadingIndicator.m in Sources */,
 				452EA7982282AD8A004BB575 /* FDUserGuideView.m in Sources */,
 				452EA99F229D4BD2004BB575 /* LOTBezierData.m in Sources */,
+				45A7A465230AAA5600B311CA /* UIButton+FDChainMethod.m in Sources */,
 				452EA941229D4BD2004BB575 /* LOTRadialGradientLayer.m in Sources */,
 				452EA988229D4BD2004BB575 /* LOTShapeCircle.m in Sources */,
 				452EA95A229D4BD2004BB575 /* LOTAnimatorNode.m in Sources */,
