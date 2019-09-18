@@ -26,7 +26,7 @@
     if (!path || !jsonData) {
         return nil;
     }
-    return [[FDJSONDecoder new]decode:self data:jsonData];
+    return [FDJSONDecoder decode:self data:jsonData];
 }
 
 - (instancetype)initWithFDCoder:(FDCoder *)coder {

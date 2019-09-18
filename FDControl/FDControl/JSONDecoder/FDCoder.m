@@ -14,9 +14,9 @@
 
 @implementation FDCoder
 
-- (instancetype)initWithJsonDic:(NSDictionary*)dic {
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary {
     if (self = [super init]) {
-        self.jsonDic = dic;
+        self.jsonDic = dictionary;
     }
     return self;
 }
@@ -27,18 +27,17 @@
         return [self.jsonDic objectForKey:key];
     } else {
         id jsonObj = [self.jsonDic objectForKey:key];
-        if ([jsonObj isKindOfClass:[NSDictionary class]]) {
-            FDCoder* coder = [[FDCoder alloc]initWithJsonDic:jsonObj];
+        if ([jsonObj isKindOfClass:[NSDictionary class]]) {//NSDictionary
+            FDCoder* coder = [[FDCoder alloc]initWithDictionary:jsonObj];
             id obj = [[Cls alloc]initWithFDCoder:coder];
             return obj;
-        } else if ([jsonObj isKindOfClass:[NSArray class]]) {
+        } else if ([jsonObj isKindOfClass:[NSArray class]]) {//NSArray
             NSMutableArray* objs = [NSMutableArray new];
             for (id item in jsonObj) {
-                FDCoder* coder = [[FDCoder alloc]initWithJsonDic:item];
+                FDCoder* coder = [[FDCoder alloc]initWithDictionary:item];
                 id obj = [[Cls alloc]initWithFDCoder:coder];
                 [objs addObject:obj];
             }
-            
             return objs;
         }
     }

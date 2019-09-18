@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FDCoder : NSObject
 
-- (instancetype)initWithJsonDic:(NSDictionary*)dic;
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 
 - (id)decode:(Class)Cls key:(NSString*)key;
 

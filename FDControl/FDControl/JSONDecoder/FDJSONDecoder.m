@@ -12,7 +12,20 @@
 
 @implementation FDJSONDecoder
 
-- (nullable id)decode:(Class)Cls data:(NSData*)data {
++ (nullable id)decode:(Class)Cls dictionary:(NSDictionary*)dictionary {
+    if (!dictionary || !Cls) {
+        return nil;
+    }
+    if ([Cls conformsToProtocol:@protocol(FDCoding)]) {
+        FDCoder* coder = [[FDCoder alloc]initWithDictionary:dictionary];
+        id obj = [[Cls alloc]initWithFDCoder:coder];
+        return obj;
+    } else {
+        return nil;
+    }
+}
+
++ (nullable id)decode:(Class)Cls data:(NSData*)data {
     if (!data || !Cls) {
         return nil;
     }
@@ -23,7 +36,7 @@
     }
     
     if ([Cls conformsToProtocol:@protocol(FDCoding)]) {
-        FDCoder* coder = [[FDCoder alloc]initWithJsonDic:dic];
+        FDCoder* coder = [[FDCoder alloc]initWithDictionary:dic];
         id obj = [[Cls alloc]initWithFDCoder:coder];
         return obj;
     } else {

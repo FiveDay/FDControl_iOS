@@ -55,6 +55,8 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 #import <FDControl/UIButton+FDConvenientMethod.h>
 #import <FDControl/UIButton+FDLoadingIndicator.h>
 #else
+//JSONDecoder
+#import "FDJSONDecoder.h"
 //Router
 #import "UINavigationController+FDRouter.h"
 #import "UIViewController+FDRouter.h"

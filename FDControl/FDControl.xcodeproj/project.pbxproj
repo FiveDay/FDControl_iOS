@@ -272,6 +272,10 @@
 		45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B32276E57800C068AE /* FDRect180UpDownAni.m */; };
 		45A204B82277070300C068AE /* FDRect360UpDownAni.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A204B62277070300C068AE /* FDRect360UpDownAni.h */; };
 		45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B72277070300C068AE /* FDRect360UpDownAni.m */; };
+		45D10D8C233232AB0090AB52 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 45D10D8B233232AB0090AB52 /* user.json */; };
+		45D10D8F233237710090AB52 /* FDJSONModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D10D8E233237710090AB52 /* FDJSONModelTest.m */; };
+		45D10D9223323BDB0090AB52 /* GHUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D10D9123323BDB0090AB52 /* GHUser.m */; };
+		45D10D94233241A20090AB52 /* ghuser.json in Resources */ = {isa = PBXBuildFile; fileRef = 45D10D93233241A20090AB52 /* ghuser.json */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -557,6 +561,11 @@
 		45A204B32276E57800C068AE /* FDRect180UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect180UpDownAni.m; sourceTree = "<group>"; };
 		45A204B62277070300C068AE /* FDRect360UpDownAni.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDRect360UpDownAni.h; sourceTree = "<group>"; };
 		45A204B72277070300C068AE /* FDRect360UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect360UpDownAni.m; sourceTree = "<group>"; };
+		45D10D8B233232AB0090AB52 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		45D10D8E233237710090AB52 /* FDJSONModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDJSONModelTest.m; sourceTree = "<group>"; };
+		45D10D9023323BDB0090AB52 /* GHUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHUser.h; sourceTree = "<group>"; };
+		45D10D9123323BDB0090AB52 /* GHUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHUser.m; sourceTree = "<group>"; };
+		45D10D93233241A20090AB52 /* ghuser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ghuser.json; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -618,6 +627,7 @@
 		4514D1E421BFAD8A0076290D /* FDControlTests */ = {
 			isa = PBXGroup;
 			children = (
+				45D10D8D233235C80090AB52 /* JSONDecoderTest */,
 				4514D1E521BFAD8A0076290D /* FDControlTests.m */,
 				4514D1E721BFAD8A0076290D /* Info.plist */,
 			);
@@ -967,11 +977,11 @@
 		452EA9B9229E7F0D004BB575 /* JSONDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				452EA9C2229E83A7004BB575 /* FDCoding.h */,
 				452EA9BA229E8000004BB575 /* FDJSONDecoder.h */,
 				452EA9BB229E8000004BB575 /* FDJSONDecoder.m */,
 				452EA9BE229E82EC004BB575 /* FDCoder.h */,
 				452EA9BF229E82EC004BB575 /* FDCoder.m */,
-				452EA9C2229E83A7004BB575 /* FDCoding.h */,
 			);
 			path = JSONDecoder;
 			sourceTree = "<group>";
@@ -1307,6 +1317,18 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		45D10D8D233235C80090AB52 /* JSONDecoderTest */ = {
+			isa = PBXGroup;
+			children = (
+				45D10D9023323BDB0090AB52 /* GHUser.h */,
+				45D10D9123323BDB0090AB52 /* GHUser.m */,
+				45D10D93233241A20090AB52 /* ghuser.json */,
+				45D10D8B233232AB0090AB52 /* user.json */,
+				45D10D8E233237710090AB52 /* FDJSONModelTest.m */,
+			);
+			path = JSONDecoderTest;
+			sourceTree = "<group>";
+		};
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1553,6 +1575,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D10D8C233232AB0090AB52 /* user.json in Resources */,
+				45D10D94233241A20090AB52 /* ghuser.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1699,6 +1723,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D1E621BFAD8A0076290D /* FDControlTests.m in Sources */,
+				45D10D9223323BDB0090AB52 /* GHUser.m in Sources */,
+				45D10D8F233237710090AB52 /* FDJSONModelTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
