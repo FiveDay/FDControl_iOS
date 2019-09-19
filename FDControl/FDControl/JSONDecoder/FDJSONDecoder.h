@@ -14,9 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FDJSONDecoder : NSObject
 
-+ (nullable id)decode:(Class)Cls dictionary:(NSDictionary*)dictionary;
-
-+ (nullable id)decode:(Class)cls data:(NSData*)data;
+//json:对象支持的数据类型NSDictionary,NString,NSdata
++ (nullable id)decode:(Class)Cls JSON:(id)json;
 
 @end
 

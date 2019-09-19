@@ -12,35 +12,29 @@
 
 @implementation FDJSONDecoder
 
-+ (nullable id)decode:(Class)Cls dictionary:(NSDictionary*)dictionary {
-    if (!dictionary || !Cls) {
-        return nil;
-    }
-    if ([Cls conformsToProtocol:@protocol(FDCoding)]) {
-        FDCoder* coder = [[FDCoder alloc]initWithDictionary:dictionary];
-        id obj = [[Cls alloc]initWithFDCoder:coder];
-        return obj;
-    } else {
-        return nil;
-    }
-}
-
-+ (nullable id)decode:(Class)Cls data:(NSData*)data {
-    if (!data || !Cls) {
-        return nil;
-    }
-    NSError* error;
-    id dic = [NSJSONSerialization JSONObjectWithData:data options:(0) error:&error];
-    if (error) {
-        return nil;
++ (nullable id)decode:(Class)Cls JSON:(id)json {
+    if (!json || json == (id)kCFNull) return nil;
+    if (Cls == Nil) return nil;
+    if (![Cls conformsToProtocol:@protocol(FDCoding)]) return nil;
+    
+    NSDictionary* dic = nil;
+    NSData* jsonData = nil;
+    
+    if ([json isKindOfClass:[NSDictionary class]]) {
+        dic = json;
+    } else if ([json isKindOfClass:[NSString class]]) {
+        jsonData = [(NSString*)json dataUsingEncoding:NSUTF8StringEncoding];
+    } else if ([json isKindOfClass:[NSData class]]) {
+        jsonData = json;
     }
     
-    if ([Cls conformsToProtocol:@protocol(FDCoding)]) {
-        FDCoder* coder = [[FDCoder alloc]initWithDictionary:dic];
-        id obj = [[Cls alloc]initWithFDCoder:coder];
-        return obj;
-    } else {
-        return nil;
+    if (jsonData) {
+        dic = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:NULL];
+        if (![dic isKindOfClass:[NSDictionary class]]) dic = nil;
     }
+    
+    FDCoder* coder = [[FDCoder alloc]initWithDictionary:dic];
+    id obj = [[Cls alloc]initWithFDCoder:coder];
+    return obj;
 }
 @end
