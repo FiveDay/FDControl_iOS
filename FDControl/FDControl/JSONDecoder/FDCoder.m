@@ -25,6 +25,8 @@
 }
 
 - (id)decode:(Class)Cls key:(NSString*)key {
+    if (key == nil || key == (id)kCFNull || Cls == (id)kCFNull) return nil;
+    
     if ([NSStringFromClass(Cls) isEqualToString:@"NSString"]) {
         id value = [self.jsonDic objectForKey:key];
         NSString* str = FDReturnNSStringFromId(value);
@@ -37,7 +39,13 @@
         id value = [self.jsonDic objectForKey:key];
         NSDate* date = FDReturnNSDateFromId(value);
         return date;
-    } else {//NSDictionary, NSArray
+    } else if ([NSStringFromClass(Cls) isEqualToString:@"NSValue"]) {
+        
+    } else if ([NSStringFromClass(Cls) isEqualToString:@"NSData"]) {
+        id value = [self.jsonDic objectForKey:key];
+        if (![value isKindOfClass:[NSData class]]) return nil;
+        return value;
+    } else {//自定义类型
         id jsonObj = [self.jsonDic objectForKey:key];
         if ([jsonObj isKindOfClass:[NSDictionary class]]) {//NSDictionary
             FDCoder* coder = [[FDCoder alloc]initWithDictionary:jsonObj];

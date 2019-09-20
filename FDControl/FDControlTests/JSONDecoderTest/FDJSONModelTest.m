@@ -51,9 +51,8 @@
     NSBundle* bundle = [NSBundle bundleForClass: [self class]];
     NSString* path = [bundle pathForResource:@"user" ofType:@"json"];
     NSData* data = [[NSData alloc]initWithContentsOfFile:path];
-    NSDictionary* dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     
-    YYTestNestRepo* resp = [FDJSONDecoder decode:[YYTestNestRepo class] dictionary:dictionary];
+    YYTestNestRepo* resp = [FDJSONDecoder decode:[YYTestNestRepo class] JSON:data];
     XCTAssert(resp.repoID.integerValue == 1234);
     XCTAssert([resp.name isEqualToString:@"YYModel"]);
     XCTAssert(resp.user.uid.integerValue == 5678);
@@ -64,10 +63,9 @@
     NSBundle* bundle = [NSBundle bundleForClass: [self class]];
     NSString* path = [bundle pathForResource:@"ghuser" ofType:@"json"];
     NSData* data = [[NSData alloc]initWithContentsOfFile:path];
-    NSDictionary* dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
     CFTimeInterval startTime = CACurrentMediaTime();
     for (int i = 0; i < 10000; i++) {
-        FDGHUser* user = [FDJSONDecoder decode:[FDGHUser class] dictionary:dictionary];
+        FDGHUser* user = [FDJSONDecoder decode:[FDGHUser class] JSON:data];
     }
     CFTimeInterval endTime = CACurrentMediaTime();
     NSLog(@"%f", (endTime - startTime) * 1000);
