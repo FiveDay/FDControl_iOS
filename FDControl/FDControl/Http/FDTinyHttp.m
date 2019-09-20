@@ -7,6 +7,7 @@
 //
 
 #import "FDTinyHttp.h"
+#import "FDTinyRequestOperation.h"
 
 @interface FDTinyHttp ()
 @property(strong, nonatomic)NSURLSessionConfiguration* configuration;
@@ -36,8 +37,10 @@
 - (void)setEnviorment:(NSString*)root {
 }
 
-- (void)startRequest:(id)request completion:(void(*)(id response, NSError* error))completion {
-    
+- (void)startRequest:(id)request completion:(void(^)(id response, NSError* error))completion {
+    NSURLRequest* req = [NSURLRequest new];//根据request生成req
+    FDTinyRequestOperation* op = [[FDTinyRequestOperation alloc]initWithRequest:req session:self.session completion:completion];
+    [self.queue addOperation:op];
 }
 
 - (NSURLSessionConfiguration*)configuration {

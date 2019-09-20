@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)shared;
 - (void)setEnviorment:(NSString*)root;
-- (void)startRequest:(id<FDTinyRequestProtocol> __nonnull)request completion:(void(*)(id __nullable response, NSError* __nullable error))completion;
+- (void)startRequest:(id<FDTinyRequestProtocol> __nonnull)request completion:(void(^)(id __nullable response, NSError* __nullable error))completion;
 
 @end
 
