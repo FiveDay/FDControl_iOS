@@ -196,6 +196,11 @@
 		45820E3B21EF39CB0052F033 /* FDPopMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45820E3921EF39CB0052F033 /* FDPopMenuItem.m */; };
 		4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4587C99821DDE71E005AE3AB /* UIImage+FDGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */; };
+		4588FB7F2334CDA700C38F4E /* FDTinyHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4588FB7D2334CDA700C38F4E /* FDTinyHttp.h */; };
+		4588FB802334CDA700C38F4E /* FDTinyHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4588FB7E2334CDA700C38F4E /* FDTinyHttp.m */; };
+		4588FB822334D32700C38F4E /* FDTinyRequestProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4588FB812334D32700C38F4E /* FDTinyRequestProtocol.h */; };
+		4588FB852334DC4800C38F4E /* FDTinyRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4588FB832334DC4800C38F4E /* FDTinyRequestOperation.h */; };
+		4588FB862334DC4800C38F4E /* FDTinyRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4588FB842334DC4800C38F4E /* FDTinyRequestOperation.m */; };
 		45894CED21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */; };
 		45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */ = {isa = PBXBuildFile; fileRef = 45894CEC21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m */; };
 		45894CFA21E5C43800E5E9A9 /* FDActivityIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45894CF821E5C43800E5E9A9 /* FDActivityIndicatorView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -473,6 +478,11 @@
 		45820E3921EF39CB0052F033 /* FDPopMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDPopMenuItem.m; sourceTree = "<group>"; };
 		4587C99521DDE71E005AE3AB /* UIImage+FDGradient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDGradient.h"; sourceTree = "<group>"; };
 		4587C99621DDE71E005AE3AB /* UIImage+FDGradient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FDGradient.m"; sourceTree = "<group>"; };
+		4588FB7D2334CDA700C38F4E /* FDTinyHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTinyHttp.h; sourceTree = "<group>"; };
+		4588FB7E2334CDA700C38F4E /* FDTinyHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTinyHttp.m; sourceTree = "<group>"; };
+		4588FB812334D32700C38F4E /* FDTinyRequestProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTinyRequestProtocol.h; sourceTree = "<group>"; };
+		4588FB832334DC4800C38F4E /* FDTinyRequestOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDTinyRequestOperation.h; sourceTree = "<group>"; };
+		4588FB842334DC4800C38F4E /* FDTinyRequestOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDTinyRequestOperation.m; sourceTree = "<group>"; };
 		45894CEB21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorAnimationBallPulse.h; sourceTree = "<group>"; };
 		45894CEC21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDActivityIndicatorAnimationBallPulse.m; sourceTree = "<group>"; };
 		45894CF821E5C43800E5E9A9 /* FDActivityIndicatorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDActivityIndicatorView.h; sourceTree = "<group>"; };
@@ -588,6 +598,7 @@
 		4514D1D921BFAD8A0076290D /* FDControl */ = {
 			isa = PBXGroup;
 			children = (
+				4588FB7C2334CC5900C38F4E /* Http */,
 				452EA79422827B29004BB575 /* Bussiness */,
 				45A2046422646F9900C068AE /* Router */,
 				4587C99221DDE37A005AE3AB /* Control */,
@@ -1042,6 +1053,18 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		4588FB7C2334CC5900C38F4E /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				4588FB812334D32700C38F4E /* FDTinyRequestProtocol.h */,
+				4588FB7D2334CDA700C38F4E /* FDTinyHttp.h */,
+				4588FB7E2334CDA700C38F4E /* FDTinyHttp.m */,
+				4588FB832334DC4800C38F4E /* FDTinyRequestOperation.h */,
+				4588FB842334DC4800C38F4E /* FDTinyRequestOperation.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		45894CE921E4A58600E5E9A9 /* ActivityIndicator */ = {
 			isa = PBXGroup;
 			children = (
@@ -1261,6 +1284,7 @@
 				452EA7AB2283FF0E004BB575 /* FDTabBar.h in Headers */,
 				4580BDE02306B7BB001CB8BC /* NSDate+FDExchange.h in Headers */,
 				452EA7C4228AA659004BB575 /* FDDotView.h in Headers */,
+				4588FB852334DC4800C38F4E /* FDTinyRequestOperation.h in Headers */,
 				452EA9AF229D4BD2004BB575 /* LOTCompositionContainer.h in Headers */,
 				452EA9A1229D4BD2004BB575 /* LOTBezierData.h in Headers */,
 				452EA98B229D4BD2004BB575 /* LOTShapeTrimPath.h in Headers */,
@@ -1283,6 +1307,7 @@
 				452EA96A229D4BD2004BB575 /* LOTRenderGroup.h in Headers */,
 				452EA969229D4BD2004BB575 /* LOTRepeaterRenderer.h in Headers */,
 				452EA982229D4BD2004BB575 /* LOTAssetGroup.h in Headers */,
+				4588FB7F2334CDA700C38F4E /* FDTinyHttp.h in Headers */,
 				452EA77D22817534004BB575 /* UIButton+FDLoadingIndicator.h in Headers */,
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 				452EA975229D4BD2004BB575 /* LOTShapeCircle.h in Headers */,
@@ -1385,6 +1410,7 @@
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 				452EA995229D4BD2004BB575 /* LOTAnimatedSwitch.h in Headers */,
 				452EA936229D4BD2004BB575 /* NSValue+Compat.h in Headers */,
+				4588FB822334D32700C38F4E /* FDTinyRequestProtocol.h in Headers */,
 				452EA943229D4BD2004BB575 /* LOTBezierPath.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1487,6 +1513,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */,
+				4588FB802334CDA700C38F4E /* FDTinyHttp.m in Sources */,
+				4588FB862334DC4800C38F4E /* FDTinyRequestOperation.m in Sources */,
 				45936ADB224367660073C9E2 /* FDDiskCache.m in Sources */,
 				452EA9B2229D4BD2004BB575 /* LOTCompositionContainer.m in Sources */,
 				452EA98C229D4BD2004BB575 /* LOTShapeFill.m in Sources */,
