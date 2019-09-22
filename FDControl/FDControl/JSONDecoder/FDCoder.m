@@ -69,7 +69,13 @@ static NSDate* FDReturnNSDateFromId(id value) {
     if ([value isKindOfClass:[NSDate class]]) return value;//NSDate->NSDate
     
     if ([value isKindOfClass:[NSString class]]) {
+        //NSString->NSDate
+        //检查NSString是否是标准格式。 //NSDate->NString  格式化为 ISO8601:"YYYY-MM-dd'T'HH:mm:ssZ"
+        NSDateFormatter* dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:standerDateFormatterString];
         
+        NSDate* convertedDate = [dateFormatter dateFromString:value];
+        return convertedDate;
     }
     return nil;
 }

@@ -10,6 +10,8 @@
 
 #import "FDCoding.h"
 
+const static NSString* _Nullable standerDateFormatterString = @"YYYY-MM-dd'T'HH:mm:ssZ";
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FDCoder : NSObject
