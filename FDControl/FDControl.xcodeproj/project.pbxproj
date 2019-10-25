@@ -16,6 +16,28 @@
 		4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24321BFC05E0076290D /* NSString+FDOperator.m */; };
 		4514D24821BFC56C0076290D /* UIColor+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4514D24621BFC56C0076290D /* UIColor+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4514D24921BFC56C0076290D /* UIColor+FDColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514D24721BFC56C0076290D /* UIColor+FDColor.m */; };
+		452A91E32362E4A40040C6A8 /* FDCoreGraphicGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91C42362E4A40040C6A8 /* FDCoreGraphicGradient.m */; };
+		452A91E42362E4A40040C6A8 /* FDCoreGraphicGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91C52362E4A40040C6A8 /* FDCoreGraphicGradient.h */; };
+		452A91E52362E4A40040C6A8 /* FDCoreGraphicColorSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91C72362E4A40040C6A8 /* FDCoreGraphicColorSpace.h */; };
+		452A91E62362E4A40040C6A8 /* FDCoreGraphicColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91C82362E4A40040C6A8 /* FDCoreGraphicColorSpace.m */; };
+		452A91E72362E4A40040C6A8 /* FDCoreGraphicContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91CA2362E4A40040C6A8 /* FDCoreGraphicContext.h */; };
+		452A91E82362E4A40040C6A8 /* FDCoreGraphicContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91CB2362E4A40040C6A8 /* FDCoreGraphicContext.m */; };
+		452A91E92362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91CD2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.h */; };
+		452A91EA2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91CE2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.m */; };
+		452A91EB2362E4A40040C6A8 /* FDCoreGraphicBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91D02362E4A40040C6A8 /* FDCoreGraphicBitmap.m */; };
+		452A91EC2362E4A40040C6A8 /* FDCoreGraphicBitmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91D12362E4A40040C6A8 /* FDCoreGraphicBitmap.h */; };
+		452A91ED2362E4A40040C6A8 /* FDCoreGraphicColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91D32362E4A40040C6A8 /* FDCoreGraphicColor.h */; };
+		452A91EE2362E4A40040C6A8 /* FDCoreGraphicColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91D42362E4A40040C6A8 /* FDCoreGraphicColor.m */; };
+		452A91EF2362E4A40040C6A8 /* FDCoreGraphicPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91D62362E4A40040C6A8 /* FDCoreGraphicPath.h */; };
+		452A91F02362E4A40040C6A8 /* FDCoreGraphicMutablePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91D72362E4A40040C6A8 /* FDCoreGraphicMutablePath.h */; };
+		452A91F12362E4A40040C6A8 /* FDCoreGraphicPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91D82362E4A40040C6A8 /* FDCoreGraphicPath.m */; };
+		452A91F22362E4A40040C6A8 /* FDCoreGraphicMutablePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91D92362E4A40040C6A8 /* FDCoreGraphicMutablePath.m */; };
+		452A91F32362E4A40040C6A8 /* FDCoreGraphicLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91DB2362E4A40040C6A8 /* FDCoreGraphicLayer.h */; };
+		452A91F42362E4A40040C6A8 /* FDCoreGraphicLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91DC2362E4A40040C6A8 /* FDCoreGraphicLayer.m */; };
+		452A91F52362E4A40040C6A8 /* FDCoreGraphicFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91DE2362E4A40040C6A8 /* FDCoreGraphicFont.m */; };
+		452A91F62362E4A40040C6A8 /* FDCoreGraphicFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91DF2362E4A40040C6A8 /* FDCoreGraphicFont.h */; };
+		452A91F72362E4A40040C6A8 /* FDCoreGraphicPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 452A91E12362E4A40040C6A8 /* FDCoreGraphicPattern.h */; };
+		452A91F82362E4A40040C6A8 /* FDCoreGraphicPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 452A91E22362E4A40040C6A8 /* FDCoreGraphicPattern.m */; };
 		452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA773228045EC004BB575 /* UIControl+FDTargetAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA774228045EC004BB575 /* UIControl+FDTargetAction.m */; };
 		452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 452EA77722812CFB004BB575 /* UIButton+FDConvenientMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -293,6 +315,28 @@
 		4514D24321BFC05E0076290D /* NSString+FDOperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+FDOperator.m"; sourceTree = "<group>"; };
 		4514D24621BFC56C0076290D /* UIColor+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+FDColor.h"; sourceTree = "<group>"; };
 		4514D24721BFC56C0076290D /* UIColor+FDColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FDColor.m"; sourceTree = "<group>"; };
+		452A91C42362E4A40040C6A8 /* FDCoreGraphicGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicGradient.m; sourceTree = "<group>"; };
+		452A91C52362E4A40040C6A8 /* FDCoreGraphicGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicGradient.h; sourceTree = "<group>"; };
+		452A91C72362E4A40040C6A8 /* FDCoreGraphicColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicColorSpace.h; sourceTree = "<group>"; };
+		452A91C82362E4A40040C6A8 /* FDCoreGraphicColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicColorSpace.m; sourceTree = "<group>"; };
+		452A91CA2362E4A40040C6A8 /* FDCoreGraphicContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicContext.h; sourceTree = "<group>"; };
+		452A91CB2362E4A40040C6A8 /* FDCoreGraphicContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicContext.m; sourceTree = "<group>"; };
+		452A91CD2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+FDCoreGraphicPattern.h"; sourceTree = "<group>"; };
+		452A91CE2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+FDCoreGraphicPattern.m"; sourceTree = "<group>"; };
+		452A91D02362E4A40040C6A8 /* FDCoreGraphicBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicBitmap.m; sourceTree = "<group>"; };
+		452A91D12362E4A40040C6A8 /* FDCoreGraphicBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicBitmap.h; sourceTree = "<group>"; };
+		452A91D32362E4A40040C6A8 /* FDCoreGraphicColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicColor.h; sourceTree = "<group>"; };
+		452A91D42362E4A40040C6A8 /* FDCoreGraphicColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicColor.m; sourceTree = "<group>"; };
+		452A91D62362E4A40040C6A8 /* FDCoreGraphicPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicPath.h; sourceTree = "<group>"; };
+		452A91D72362E4A40040C6A8 /* FDCoreGraphicMutablePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicMutablePath.h; sourceTree = "<group>"; };
+		452A91D82362E4A40040C6A8 /* FDCoreGraphicPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicPath.m; sourceTree = "<group>"; };
+		452A91D92362E4A40040C6A8 /* FDCoreGraphicMutablePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicMutablePath.m; sourceTree = "<group>"; };
+		452A91DB2362E4A40040C6A8 /* FDCoreGraphicLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicLayer.h; sourceTree = "<group>"; };
+		452A91DC2362E4A40040C6A8 /* FDCoreGraphicLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicLayer.m; sourceTree = "<group>"; };
+		452A91DE2362E4A40040C6A8 /* FDCoreGraphicFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicFont.m; sourceTree = "<group>"; };
+		452A91DF2362E4A40040C6A8 /* FDCoreGraphicFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicFont.h; sourceTree = "<group>"; };
+		452A91E12362E4A40040C6A8 /* FDCoreGraphicPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDCoreGraphicPattern.h; sourceTree = "<group>"; };
+		452A91E22362E4A40040C6A8 /* FDCoreGraphicPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDCoreGraphicPattern.m; sourceTree = "<group>"; };
 		452EA773228045EC004BB575 /* UIControl+FDTargetAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+FDTargetAction.h"; sourceTree = "<group>"; };
 		452EA774228045EC004BB575 /* UIControl+FDTargetAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+FDTargetAction.m"; sourceTree = "<group>"; };
 		452EA77722812CFB004BB575 /* UIButton+FDConvenientMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FDConvenientMethod.h"; sourceTree = "<group>"; };
@@ -588,6 +632,7 @@
 		4514D1D921BFAD8A0076290D /* FDControl */ = {
 			isa = PBXGroup;
 			children = (
+				452A91C22362E4A40040C6A8 /* CoreGraphic */,
 				452EA79422827B29004BB575 /* Bussiness */,
 				45A2046422646F9900C068AE /* Router */,
 				4587C99221DDE37A005AE3AB /* Control */,
@@ -662,6 +707,115 @@
 				45A204832266F0C200C068AE /* NSString+FDURL.m */,
 			);
 			path = NSString;
+			sourceTree = "<group>";
+		};
+		452A91C22362E4A40040C6A8 /* CoreGraphic */ = {
+			isa = PBXGroup;
+			children = (
+				452A91C32362E4A40040C6A8 /* Gradient */,
+				452A91C62362E4A40040C6A8 /* ColorSpace */,
+				452A91C92362E4A40040C6A8 /* Context */,
+				452A91CC2362E4A40040C6A8 /* Util */,
+				452A91CF2362E4A40040C6A8 /* Bitmap */,
+				452A91D22362E4A40040C6A8 /* Color */,
+				452A91D52362E4A40040C6A8 /* Path */,
+				452A91DA2362E4A40040C6A8 /* Layer */,
+				452A91DD2362E4A40040C6A8 /* Font */,
+				452A91E02362E4A40040C6A8 /* Pattern */,
+			);
+			path = CoreGraphic;
+			sourceTree = "<group>";
+		};
+		452A91C32362E4A40040C6A8 /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				452A91C42362E4A40040C6A8 /* FDCoreGraphicGradient.m */,
+				452A91C52362E4A40040C6A8 /* FDCoreGraphicGradient.h */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
+		452A91C62362E4A40040C6A8 /* ColorSpace */ = {
+			isa = PBXGroup;
+			children = (
+				452A91C72362E4A40040C6A8 /* FDCoreGraphicColorSpace.h */,
+				452A91C82362E4A40040C6A8 /* FDCoreGraphicColorSpace.m */,
+			);
+			path = ColorSpace;
+			sourceTree = "<group>";
+		};
+		452A91C92362E4A40040C6A8 /* Context */ = {
+			isa = PBXGroup;
+			children = (
+				452A91CA2362E4A40040C6A8 /* FDCoreGraphicContext.h */,
+				452A91CB2362E4A40040C6A8 /* FDCoreGraphicContext.m */,
+			);
+			path = Context;
+			sourceTree = "<group>";
+		};
+		452A91CC2362E4A40040C6A8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				452A91CD2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.h */,
+				452A91CE2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		452A91CF2362E4A40040C6A8 /* Bitmap */ = {
+			isa = PBXGroup;
+			children = (
+				452A91D02362E4A40040C6A8 /* FDCoreGraphicBitmap.m */,
+				452A91D12362E4A40040C6A8 /* FDCoreGraphicBitmap.h */,
+			);
+			path = Bitmap;
+			sourceTree = "<group>";
+		};
+		452A91D22362E4A40040C6A8 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				452A91D32362E4A40040C6A8 /* FDCoreGraphicColor.h */,
+				452A91D42362E4A40040C6A8 /* FDCoreGraphicColor.m */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		452A91D52362E4A40040C6A8 /* Path */ = {
+			isa = PBXGroup;
+			children = (
+				452A91D62362E4A40040C6A8 /* FDCoreGraphicPath.h */,
+				452A91D72362E4A40040C6A8 /* FDCoreGraphicMutablePath.h */,
+				452A91D82362E4A40040C6A8 /* FDCoreGraphicPath.m */,
+				452A91D92362E4A40040C6A8 /* FDCoreGraphicMutablePath.m */,
+			);
+			path = Path;
+			sourceTree = "<group>";
+		};
+		452A91DA2362E4A40040C6A8 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				452A91DB2362E4A40040C6A8 /* FDCoreGraphicLayer.h */,
+				452A91DC2362E4A40040C6A8 /* FDCoreGraphicLayer.m */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		452A91DD2362E4A40040C6A8 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				452A91DE2362E4A40040C6A8 /* FDCoreGraphicFont.m */,
+				452A91DF2362E4A40040C6A8 /* FDCoreGraphicFont.h */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		452A91E02362E4A40040C6A8 /* Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				452A91E12362E4A40040C6A8 /* FDCoreGraphicPattern.h */,
+				452A91E22362E4A40040C6A8 /* FDCoreGraphicPattern.m */,
+			);
+			path = Pattern;
 			sourceTree = "<group>";
 		};
 		452EA77222804576004BB575 /* UIControl */ = {
@@ -1259,6 +1413,7 @@
 				452EA93D229D4BD2004BB575 /* LOTRadialGradientLayer.h in Headers */,
 				452EA7AF22855FF9004BB575 /* UITabBarItem+FDTabBar.h in Headers */,
 				452EA7AB2283FF0E004BB575 /* FDTabBar.h in Headers */,
+				452A91F32362E4A40040C6A8 /* FDCoreGraphicLayer.h in Headers */,
 				4580BDE02306B7BB001CB8BC /* NSDate+FDExchange.h in Headers */,
 				452EA7C4228AA659004BB575 /* FDDotView.h in Headers */,
 				452EA9AF229D4BD2004BB575 /* LOTCompositionContainer.h in Headers */,
@@ -1280,6 +1435,7 @@
 				45A204672264705800C068AE /* FDRouterRegParam.h in Headers */,
 				4587C99721DDE71E005AE3AB /* UIImage+FDGradient.h in Headers */,
 				452EA942229D4BD2004BB575 /* CGGeometry+LOTAdditions.h in Headers */,
+				452A91EF2362E4A40040C6A8 /* FDCoreGraphicPath.h in Headers */,
 				452EA96A229D4BD2004BB575 /* LOTRenderGroup.h in Headers */,
 				452EA969229D4BD2004BB575 /* LOTRepeaterRenderer.h in Headers */,
 				452EA982229D4BD2004BB575 /* LOTAssetGroup.h in Headers */,
@@ -1287,11 +1443,13 @@
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 				452EA975229D4BD2004BB575 /* LOTShapeCircle.h in Headers */,
 				452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */,
+				452A91E42362E4A40040C6A8 /* FDCoreGraphicGradient.h in Headers */,
 				452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */,
 				452EA991229D4BD2004BB575 /* LOTAnimatedControl.h in Headers */,
 				45A2048D2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.h in Headers */,
 				452EA97B229D4BD2004BB575 /* LOTShapeStroke.h in Headers */,
 				453A6F422254C552006CC30A /* CAShapeLayer+FDShapeHelper.h in Headers */,
+				452A91E72362E4A40040C6A8 /* FDCoreGraphicContext.h in Headers */,
 				452EA97D229D4BD2004BB575 /* LOTShapeFill.h in Headers */,
 				452EA960229D4BD2004BB575 /* LOTPolystarAnimator.h in Headers */,
 				453A6F3D2254B96B006CC30A /* FDAnimationView.h in Headers */,
@@ -1300,6 +1458,7 @@
 				452EA964229D4BD2004BB575 /* LOTPolygonAnimator.h in Headers */,
 				45A2043D225DF8CC00C068AE /* WKWebViewJavascriptBridge.h in Headers */,
 				452EA985229D4BD2004BB575 /* LOTMask.h in Headers */,
+				452A91ED2362E4A40040C6A8 /* FDCoreGraphicColor.h in Headers */,
 				452EA94E229D4BD2004BB575 /* LOTPointInterpolator.h in Headers */,
 				45A2045E2260980D00C068AE /* UIColor+FDPalettes.h in Headers */,
 				452EA94D229D4BD2004BB575 /* LOTValueInterpolator.h in Headers */,
@@ -1316,6 +1475,7 @@
 				452EA992229D4BD2004BB575 /* LOTCacheProvider.h in Headers */,
 				452EA979229D4BD2004BB575 /* LOTShapeGroup.h in Headers */,
 				453A6F53225C49B9006CC30A /* FDWebJsViewController.h in Headers */,
+				452A91E92362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.h in Headers */,
 				45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */,
 				452EA962229D4BD2004BB575 /* LOTCircleAnimator.h in Headers */,
 				45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */,
@@ -1327,6 +1487,7 @@
 				452EA97E229D4BD2004BB575 /* LOTShapeTransform.h in Headers */,
 				452EA996229D4BD2004BB575 /* LOTAnimationCache.h in Headers */,
 				45936ABE2241E13D0073C9E2 /* UIImageView+FDWebImageView.h in Headers */,
+				452A91E52362E4A40040C6A8 /* FDCoreGraphicColorSpace.h in Headers */,
 				45894CFE21E5E12E00E5E9A9 /* FDActivityIndicatorAnimationBallScale.h in Headers */,
 				45A204B42276E57800C068AE /* FDRect180UpDownAni.h in Headers */,
 				452EA9B0229D4BD2004BB575 /* LOTMaskContainer.h in Headers */,
@@ -1345,6 +1506,7 @@
 				45820E3A21EF39CB0052F033 /* FDPopMenuItem.h in Headers */,
 				452EA980229D4BD2004BB575 /* LOTModels.h in Headers */,
 				453A6F33224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.h in Headers */,
+				452A91F02362E4A40040C6A8 /* FDCoreGraphicMutablePath.h in Headers */,
 				452EA939229D4BD2004BB575 /* UIBezierPath.h in Headers */,
 				453A6F4E225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.h in Headers */,
 				452EA999229D4BD2004BB575 /* LOTAnimationTransitionController.h in Headers */,
@@ -1364,7 +1526,9 @@
 				452EA948229D4BD2004BB575 /* LOTTrimPathNode.h in Headers */,
 				452EA96D229D4BD2004BB575 /* LOTGradientFillRender.h in Headers */,
 				452EA9B1229D4BD2004BB575 /* LOTLayerContainer.h in Headers */,
+				452A91F62362E4A40040C6A8 /* FDCoreGraphicFont.h in Headers */,
 				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
+				452A91F72362E4A40040C6A8 /* FDCoreGraphicPattern.h in Headers */,
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
 				452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */,
 				452EA935229D4BD2004BB575 /* CALayer+Compat.h in Headers */,
@@ -1380,6 +1544,7 @@
 				452EA9A8229D4BD2004BB575 /* LOTAnimationView_Internal.h in Headers */,
 				452EA933229D4BD2004BB575 /* UIColor.h in Headers */,
 				452EA954229D4BD2004BB575 /* LOTPathInterpolator.h in Headers */,
+				452A91EC2362E4A40040C6A8 /* FDCoreGraphicBitmap.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 				45A2044C225F194F00C068AE /* FDWebProgressView.h in Headers */,
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
@@ -1498,6 +1663,7 @@
 				452EA945229D4BD2004BB575 /* LOTRenderNode.m in Sources */,
 				452EA93E229D4BD2004BB575 /* CGGeometry+LOTAdditions.m in Sources */,
 				452EA977229D4BD2004BB575 /* LOTShapeStar.m in Sources */,
+				452A91EE2362E4A40040C6A8 /* FDCoreGraphicColor.m in Sources */,
 				452EA95C229D4BD2004BB575 /* LOTPolystarAnimator.m in Sources */,
 				45A204852266F0C200C068AE /* NSString+FDURL.m in Sources */,
 				45A2048E2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.m in Sources */,
@@ -1509,6 +1675,7 @@
 				452EA966229D4BD2004BB575 /* LOTGradientFillRender.m in Sources */,
 				452EA958229D4BD2004BB575 /* LOTArrayInterpolator.m in Sources */,
 				4514D23821BFB4420076290D /* UIView+FDLayout.m in Sources */,
+				452A91F12362E4A40040C6A8 /* FDCoreGraphicPath.m in Sources */,
 				45A2049F2269B84F00C068AE /* NSData+FDDictionary.m in Sources */,
 				452EA9A7229D4BD2004BB575 /* LOTAnimationTransitionController.m in Sources */,
 				453A6F34224CB806006CC30A /* FDActivityIndicatorAnimationBallGridPulse.m in Sources */,
@@ -1516,6 +1683,7 @@
 				6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */,
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				4580BDE12306B7BB001CB8BC /* NSDate+FDExchange.m in Sources */,
+				452A91EA2362E4A40040C6A8 /* NSArray+FDCoreGraphicPattern.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
 				452EA9A9229D4BD2004BB575 /* LOTKeypath.m in Sources */,
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
@@ -1528,10 +1696,12 @@
 				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
 				452EA95D229D4BD2004BB575 /* LOTPolygonAnimator.m in Sources */,
 				452EA96E229D4BD2004BB575 /* LOTRepeaterRenderer.m in Sources */,
+				452A91E62362E4A40040C6A8 /* FDCoreGraphicColorSpace.m in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				45A2048922671B0800C068AE /* UIViewController+FDRouter.m in Sources */,
 				452EA9A2229D4BD2004BB575 /* LOTAnimationCache.m in Sources */,
 				452EA79222819ACC004BB575 /* FDVerticalButton.m in Sources */,
+				452A91EB2362E4A40040C6A8 /* FDCoreGraphicBitmap.m in Sources */,
 				452EA97F229D4BD2004BB575 /* LOTAsset.m in Sources */,
 				452EA99E229D4BD2004BB575 /* LOTKeyframe.m in Sources */,
 				452EA94A229D4BD2004BB575 /* LOTColorInterpolator.m in Sources */,
@@ -1541,8 +1711,11 @@
 				452EA9AB229D4BD2004BB575 /* LOTAnimatedControl.m in Sources */,
 				45A2045B2260710700C068AE /* FDPermissionMng.m in Sources */,
 				452EA77E22817534004BB575 /* UIButton+FDLoadingIndicator.m in Sources */,
+				452A91F22362E4A40040C6A8 /* FDCoreGraphicMutablePath.m in Sources */,
+				452A91E32362E4A40040C6A8 /* FDCoreGraphicGradient.m in Sources */,
 				452EA7982282AD8A004BB575 /* FDUserGuideView.m in Sources */,
 				452EA99F229D4BD2004BB575 /* LOTBezierData.m in Sources */,
+				452A91F82362E4A40040C6A8 /* FDCoreGraphicPattern.m in Sources */,
 				45A7A465230AAA5600B311CA /* UIButton+FDChainMethod.m in Sources */,
 				452EA941229D4BD2004BB575 /* LOTRadialGradientLayer.m in Sources */,
 				452EA988229D4BD2004BB575 /* LOTShapeCircle.m in Sources */,
@@ -1555,6 +1728,7 @@
 				452EA9A5229D4BD2004BB575 /* LOTBlockCallback.m in Sources */,
 				452EA98F229D4BD2004BB575 /* LOTShapeStroke.m in Sources */,
 				452EA94B229D4BD2004BB575 /* LOTPathInterpolator.m in Sources */,
+				452A91F52362E4A40040C6A8 /* FDCoreGraphicFont.m in Sources */,
 				453A6F3E2254B96B006CC30A /* FDAnimationView.m in Sources */,
 				452EA944229D4BD2004BB575 /* UIColor+Expanded.m in Sources */,
 				452EA978229D4BD2004BB575 /* LOTShapeTrimPath.m in Sources */,
@@ -1570,6 +1744,7 @@
 				452EA7C5228AA659004BB575 /* FDDotView.m in Sources */,
 				45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */,
 				452EA9A6229D4BD2004BB575 /* LOTAnimationView.m in Sources */,
+				452A91F42362E4A40040C6A8 /* FDCoreGraphicLayer.m in Sources */,
 				452EA9A3229D4BD2004BB575 /* LOTComposition.m in Sources */,
 				452EA963229D4BD2004BB575 /* LOTRoundedRectAnimator.m in Sources */,
 				452EA957229D4BD2004BB575 /* LOTTransformInterpolator.m in Sources */,
@@ -1587,6 +1762,7 @@
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,
 				452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */,
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
+				452A91E82362E4A40040C6A8 /* FDCoreGraphicContext.m in Sources */,
 				452EA93A229D4BD2004BB575 /* NSValue+Compat.m in Sources */,
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,
 				452EA95B229D4BD2004BB575 /* LOTPathAnimator.m in Sources */,
