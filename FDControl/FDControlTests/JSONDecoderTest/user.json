@@ -4,5 +4,6 @@
     "user":{
         "uid":5678,
         "name":"ibireme"
-    }
+    },
+    "null":null
 }

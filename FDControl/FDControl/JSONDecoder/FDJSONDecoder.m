@@ -23,13 +23,13 @@
     if ([json isKindOfClass:[NSDictionary class]]) {
         dic = json;
     } else if ([json isKindOfClass:[NSString class]]) {
-        jsonData = [(NSString*)json dataUsingEncoding:NSUTF8StringEncoding];
+        jsonData = [(NSString*)json dataUsingEncoding:NSUTF8StringEncoding];//字符串转data（根据编码方式)
     } else if ([json isKindOfClass:[NSData class]]) {
         jsonData = json;
     }
     
     if (jsonData) {
-        dic = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:NULL];
+        dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingAllowFragments error:NULL];
         if (![dic isKindOfClass:[NSDictionary class]]) dic = nil;
     }
     

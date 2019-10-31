@@ -28,6 +28,7 @@
 @property NSNumber* repoID;
 @property NSString *name;
 @property YYTestNestUser *user;
+@property NSString* null;
 @end
 @implementation YYTestNestRepo
 - (instancetype)initWithFDCoder:(FDCoder *)coder {
@@ -35,6 +36,7 @@
         self.repoID =  [coder decode:[NSNumber class] key:@"repoID"];
         self.name = [coder decode:[NSString class] key:@"name"];
         self.user = [coder decode:[YYTestNestUser class] key:@"user"];
+        self.null = [coder decode:[NSString class] key:@"null"];
     }
     return self;
 }
@@ -57,6 +59,7 @@
     XCTAssert([resp.name isEqualToString:@"YYModel"]);
     XCTAssert(resp.user.uid.integerValue == 5678);
     XCTAssert([resp.user.name isEqualToString:@"ibireme"]);
+    XCTAssert(resp.null == nil);
 }
 
 - (void)testPerformace {
