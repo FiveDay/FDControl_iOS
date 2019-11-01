@@ -9,13 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "FLPublicHeader.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@class FLVStack;
 
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface FLVStack : UIView
 
-- (instancetype)initWithAlignement:(FLAlignment)alignment;
-- (void)contentView:(void(^)(UIView* content))block;
+typedef FLVStack*(^FLAlign)(FLAlignment alignment);
+
+@property(assign, nonatomic)FLAlign alignment;
+
+- (FLVStack*)contentView:(void(^)(UIView* content))block;
 
 @end
 

@@ -9,23 +9,31 @@
 #import "FLVStack.h"
 
 @interface FLVStack ()
-@property(assign, nonatomic)FLAlignment alignment;
 @property(strong, nonatomic)UIView* contentView;
+@property(assign, nonatomic)FLAlignment align;
 @end
 
 @implementation FLVStack
 
-- (instancetype)initWithAlignement:(FLAlignment)alignment {
+- (instancetype)init {
     if (self = [super init]) {
-        _alignment = alignment;
+        _align = FL_leading;
         _contentView = [UIView new];
         _contentView.bounds = self.bounds;
     }
     return self;
 }
 
-- (void)contentView:(void(^)(UIView* content))block {
+- (FLAlign)alignment {
+    return ^FLVStack*(FLAlignment alignment) {
+        self.align = alignment;
+        return self;
+    };
+}
+
+- (FLVStack*)contentView:(void(^)(UIView* content))block {
     block(self.contentView);
+    return self;
 }
 
 - (void)layoutSubviews {
@@ -33,7 +41,7 @@
     
     self.contentView.bounds = self.bounds;
     
-    switch (self.alignment) {
+    switch (self.align) {
         case FL_leading:
             [self layoutByLeading];
             break;
