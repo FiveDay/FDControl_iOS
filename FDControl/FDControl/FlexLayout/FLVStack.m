@@ -21,7 +21,7 @@
     return self;
 }
 
-- (void)layout:(void(^)(FLVStack* stack))block {
+- (void)contentView:(void(^)(FLVStack* stack))block {
     
     block(self);
     
@@ -29,13 +29,27 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
+    switch (self.alignment) {
+        case FL_leading:
+            [self layoutByLeading];
+            break;
+        case FL_center:
+            [self layoutByCenter];
+        case FL_end:
+            [self layoutByEnd];
+        default:
+            break;
+    }
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+- (void)layoutByLeading {
 }
-*/
+
+- (void)layoutByCenter {
+}
+
+- (void)layoutByEnd {
+}
+
 
 @end

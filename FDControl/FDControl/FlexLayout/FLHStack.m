@@ -21,7 +21,7 @@
     return self;
 }
 
-- (void)layout:(void(^)(FLHStack* stack))block {
+- (void)contentView:(void(^)(FLHStack* stack))block {
     
     block(self);
     

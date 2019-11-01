@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FLHStack : UIView
 
 - (instancetype)initWithAlignement:(FLAlignment)alignment;
-- (void)layout:(void(^)(FLHStack* stack))block;
+- (void)contentView:(void(^)(FLHStack* stack))block;
 
 @end
 
