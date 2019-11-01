@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+//render
+typedef UIView*(^FLRender)(UIView* content);
 //layout
 typedef UIView*(^FLPaddingAttribute)(NSNumber* top, ...);
 typedef UIView*(^FLMarginAttribute)(NSNumber* top, ...);
@@ -19,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (FlexLayout)
 
+//render
+@property(nonatomic, copy, readonly)FLRender renderTo;
 //Layout
 @property(nonatomic, copy, readonly)FLPaddingAttribute padding;
 @property(nonatomic, copy, readonly)FLMarginAttribute margin;

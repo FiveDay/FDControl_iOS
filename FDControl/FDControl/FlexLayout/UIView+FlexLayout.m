@@ -18,6 +18,13 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
 
 @implementation UIView (FlexLayout)
 
+- (FLRender)renderTo {
+    return ^UIView*(UIView* content) {
+        [content addSubview:self];
+        return self;
+    };
+}
+
 - (FLViewAtrribute*)attribute {
     FLViewAtrribute* attribute = objc_getAssociatedObject(self, kViewAttrributeKey);
     if (!attribute) {

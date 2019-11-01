@@ -30,9 +30,9 @@
     UIView* rootView;
     FLVStack* vStack = [[FLVStack alloc]initWithAlignement:FL_leading];
     [vStack contentView:^(UIView * _Nonnull content) {
-        UIView* sub = [UIView new];
-        sub.padding(@3).backgroundColor([UIColor redColor]);
-        [content addSubview:sub];
+        [UIView new].renderTo(content)
+                    .padding(@3)
+                    .backgroundColor([UIColor redColor]);
     }];
     [rootView addSubview:vStack];
 }
