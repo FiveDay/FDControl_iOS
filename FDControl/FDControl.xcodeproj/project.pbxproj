@@ -186,6 +186,16 @@
 		453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */; };
+		45623AEC236AEB47007125E6 /* FLVStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AEA236AEB47007125E6 /* FLVStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45623AED236AEB47007125E6 /* FLVStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AEB236AEB47007125E6 /* FLVStack.m */; };
+		45623AF0236AEB55007125E6 /* FLHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AEE236AEB55007125E6 /* FLHStack.h */; };
+		45623AF1236AEB55007125E6 /* FLHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AEF236AEB55007125E6 /* FLHStack.m */; };
+		45623AF3236AEF40007125E6 /* FLPublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AF2236AEF40007125E6 /* FLPublicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45623AF5236AF55C007125E6 /* FlexLayoutCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AF4236AF55C007125E6 /* FlexLayoutCase.m */; };
+		45623AF8236BD74B007125E6 /* UIView+FlexLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45623AF9236BD74B007125E6 /* UIView+FlexLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */; };
+		45623AFC236C2B8D007125E6 /* FLViewAtrribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AFA236C2B8D007125E6 /* FLViewAtrribute.h */; };
+		45623AFD236C2B8D007125E6 /* FLViewAtrribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AFB236C2B8D007125E6 /* FLViewAtrribute.m */; };
 		4580BDDC2306B540001CB8BC /* NSData+FDCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */; };
 		4580BDDD2306B540001CB8BC /* NSData+FDCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580BDDB2306B540001CB8BC /* NSData+FDCompare.m */; };
 		4580BDE02306B7BB001CB8BC /* NSDate+FDExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4580BDDE2306B7BB001CB8BC /* NSDate+FDExchange.h */; };
@@ -463,6 +473,16 @@
 		453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDNativeInterface.h; sourceTree = "<group>"; };
 		453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDPropertyMethod.h"; sourceTree = "<group>"; };
 		453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDPropertyMethod.m"; sourceTree = "<group>"; };
+		45623AEA236AEB47007125E6 /* FLVStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLVStack.h; sourceTree = "<group>"; };
+		45623AEB236AEB47007125E6 /* FLVStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLVStack.m; sourceTree = "<group>"; };
+		45623AEE236AEB55007125E6 /* FLHStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLHStack.h; sourceTree = "<group>"; };
+		45623AEF236AEB55007125E6 /* FLHStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLHStack.m; sourceTree = "<group>"; };
+		45623AF2236AEF40007125E6 /* FLPublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLPublicHeader.h; sourceTree = "<group>"; };
+		45623AF4236AF55C007125E6 /* FlexLayoutCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexLayoutCase.m; sourceTree = "<group>"; };
+		45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FlexLayout.h"; sourceTree = "<group>"; };
+		45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FlexLayout.m"; sourceTree = "<group>"; };
+		45623AFA236C2B8D007125E6 /* FLViewAtrribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewAtrribute.h; sourceTree = "<group>"; };
+		45623AFB236C2B8D007125E6 /* FLViewAtrribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLViewAtrribute.m; sourceTree = "<group>"; };
 		4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FDCompare.h"; sourceTree = "<group>"; };
 		4580BDDB2306B540001CB8BC /* NSData+FDCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FDCompare.m"; sourceTree = "<group>"; };
 		4580BDDE2306B7BB001CB8BC /* NSDate+FDExchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FDExchange.h"; sourceTree = "<group>"; };
@@ -588,6 +608,7 @@
 		4514D1D921BFAD8A0076290D /* FDControl */ = {
 			isa = PBXGroup;
 			children = (
+				45623AE9236AEA2B007125E6 /* FlexLayout */,
 				452EA79422827B29004BB575 /* Bussiness */,
 				45A2046422646F9900C068AE /* Router */,
 				4587C99221DDE37A005AE3AB /* Control */,
@@ -601,6 +622,7 @@
 		4514D1E421BFAD8A0076290D /* FDControlTests */ = {
 			isa = PBXGroup;
 			children = (
+				45623AF4236AF55C007125E6 /* FlexLayoutCase.m */,
 				4514D1E521BFAD8A0076290D /* FDControlTests.m */,
 				4514D1E721BFAD8A0076290D /* Info.plist */,
 			);
@@ -993,6 +1015,22 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		45623AE9236AEA2B007125E6 /* FlexLayout */ = {
+			isa = PBXGroup;
+			children = (
+				45623AEA236AEB47007125E6 /* FLVStack.h */,
+				45623AEB236AEB47007125E6 /* FLVStack.m */,
+				45623AEE236AEB55007125E6 /* FLHStack.h */,
+				45623AEF236AEB55007125E6 /* FLHStack.m */,
+				45623AF2236AEF40007125E6 /* FLPublicHeader.h */,
+				45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */,
+				45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */,
+				45623AFA236C2B8D007125E6 /* FLViewAtrribute.h */,
+				45623AFB236C2B8D007125E6 /* FLViewAtrribute.m */,
+			);
+			path = FlexLayout;
+			sourceTree = "<group>";
+		};
 		4580BDD92306B4FD001CB8BC /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1251,6 +1289,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45623AF8236BD74B007125E6 /* UIView+FlexLayout.h in Headers */,
+				45623AF3236AEF40007125E6 /* FLPublicHeader.h in Headers */,
+				45623AEC236AEB47007125E6 /* FLVStack.h in Headers */,
 				452EA9B4229E7218004BB575 /* NSObject+FDClassInformation.h in Headers */,
 				452EA973229D4BD2004BB575 /* LOTShapeRepeater.h in Headers */,
 				452EA998229D4BD2004BB575 /* LOTComposition.h in Headers */,
@@ -1334,6 +1375,7 @@
 				452EA974229D4BD2004BB575 /* LOTAsset.h in Headers */,
 				452EA986229D4BD2004BB575 /* LOTShapeStar.h in Headers */,
 				45A204A722730F8000C068AE /* FDAudioFrequencySpectrum.h in Headers */,
+				45623AFC236C2B8D007125E6 /* FLViewAtrribute.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				452EA99B229D4BD2004BB575 /* LOTAnimationView_Compat.h in Headers */,
 				45A2049E2269B84F00C068AE /* NSData+FDDictionary.h in Headers */,
@@ -1364,6 +1406,7 @@
 				452EA948229D4BD2004BB575 /* LOTTrimPathNode.h in Headers */,
 				452EA96D229D4BD2004BB575 /* LOTGradientFillRender.h in Headers */,
 				452EA9B1229D4BD2004BB575 /* LOTLayerContainer.h in Headers */,
+				45623AF0236AEB55007125E6 /* FLHStack.h in Headers */,
 				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
 				452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */,
@@ -1517,6 +1560,7 @@
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				4580BDE12306B7BB001CB8BC /* NSDate+FDExchange.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
+				45623AF9236BD74B007125E6 /* UIView+FlexLayout.m in Sources */,
 				452EA9A9229D4BD2004BB575 /* LOTKeypath.m in Sources */,
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
 				45A204632260A4BF00C068AE /* UIColor+FDGradientColor.m in Sources */,
@@ -1545,6 +1589,7 @@
 				452EA99F229D4BD2004BB575 /* LOTBezierData.m in Sources */,
 				45A7A465230AAA5600B311CA /* UIButton+FDChainMethod.m in Sources */,
 				452EA941229D4BD2004BB575 /* LOTRadialGradientLayer.m in Sources */,
+				45623AED236AEB47007125E6 /* FLVStack.m in Sources */,
 				452EA988229D4BD2004BB575 /* LOTShapeCircle.m in Sources */,
 				452EA95A229D4BD2004BB575 /* LOTAnimatorNode.m in Sources */,
 				453A6F4B2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.m in Sources */,
@@ -1552,6 +1597,7 @@
 				452EA96F229D4BD2004BB575 /* LOTMask.m in Sources */,
 				452EA7B422857337004BB575 /* UITabBarController+FDTabBarController.m in Sources */,
 				453A6F432254C552006CC30A /* CAShapeLayer+FDShapeHelper.m in Sources */,
+				45623AF1236AEB55007125E6 /* FLHStack.m in Sources */,
 				452EA9A5229D4BD2004BB575 /* LOTBlockCallback.m in Sources */,
 				452EA98F229D4BD2004BB575 /* LOTShapeStroke.m in Sources */,
 				452EA94B229D4BD2004BB575 /* LOTPathInterpolator.m in Sources */,
@@ -1588,6 +1634,7 @@
 				452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */,
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
 				452EA93A229D4BD2004BB575 /* NSValue+Compat.m in Sources */,
+				45623AFD236C2B8D007125E6 /* FLViewAtrribute.m in Sources */,
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,
 				452EA95B229D4BD2004BB575 /* LOTPathAnimator.m in Sources */,
 				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,
@@ -1618,6 +1665,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45623AF5236AF55C007125E6 /* FlexLayoutCase.m in Sources */,
 				4514D1E621BFAD8A0076290D /* FDControlTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

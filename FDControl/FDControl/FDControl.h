@@ -17,7 +17,8 @@ FOUNDATION_EXPORT const unsigned char FDControlVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FDControl/PublicHeader.h>
 
-
+//FlexLayout
+#import <FDControl/FLPublicHeader.h>
 //Router
 #import <FDControl/UINavigationController+FDRouter.h>
 #import <FDControl/UIViewController+FDRouter.h>
