@@ -41,6 +41,21 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
     };
 }
 
+//layout
+- (FLWidthAttribute)width {
+    return ^UIView*(CGFloat width) {
+        self.bounds = CGRectMake(0, 0, width, self.bounds.size.height);
+        return self;
+    };
+}
+
+- (FLHeightAttribute)height {
+    return ^UIView*(CGFloat height) {
+        self.bounds = CGRectMake(0, 0, self.bounds.size.width, height);
+        return self;
+    };
+}
+
 - (FLPaddingAttribute)padding {
     return ^UIView*(NSNumber* top, ...) {
         

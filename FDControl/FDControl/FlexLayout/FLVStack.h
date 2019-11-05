@@ -22,6 +22,8 @@ typedef FLVStack*(^FLAlignBlock)(FLAlign alignment);
 
 - (FLVStack*)contentView:(void(^)(UIView* content))block;
 
+- (void)applyLayout;
+
 @end
 
 NS_ASSUME_NONNULL_END

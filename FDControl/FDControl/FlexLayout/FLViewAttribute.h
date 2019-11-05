@@ -41,6 +41,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic)NSNumber* margin_right;
 @property(strong, nonatomic)NSNumber* margin_bottom;
 @property(strong, nonatomic)NSNumber* margin_left;
+
+- (void)applyLayout;
+
 @end
 
 NS_ASSUME_NONNULL_END

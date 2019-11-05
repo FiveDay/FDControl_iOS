@@ -26,6 +26,7 @@
 		452EA9B8229E73BF004BB575 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 452EA9B7229E73BF004BB575 /* Demo2ViewController.m */; };
 		453A6F57225C8C0B006CC30A /* WebJsDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */; };
 		453A6F69225DB664006CC30A /* NativeFunctionForJs.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F68225DB664006CC30A /* NativeFunctionForJs.m */; };
+		453B5BAC23716E1A00E57856 /* FlexLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453B5BAB23716E1A00E57856 /* FlexLayoutViewController.m */; };
 		45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A2046F226495A100C068AE /* RouterDemoViewController.m */; };
 		45A204732264987200C068AE /* RouterAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204722264987200C068AE /* RouterAViewController.m */; };
 		45A204762264988700C068AE /* RouterBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204752264988700C068AE /* RouterBViewController.m */; };
@@ -98,6 +99,7 @@
 		453A6F56225C8C0B006CC30A /* WebJsDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebJsDemoViewController.m; sourceTree = "<group>"; };
 		453A6F67225DB664006CC30A /* NativeFunctionForJs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFunctionForJs.h; sourceTree = "<group>"; };
 		453A6F68225DB664006CC30A /* NativeFunctionForJs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeFunctionForJs.m; sourceTree = "<group>"; };
+		453B5BAB23716E1A00E57856 /* FlexLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexLayoutViewController.m; sourceTree = "<group>"; };
 		45A2046E226495A100C068AE /* RouterDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterDemoViewController.h; sourceTree = "<group>"; };
 		45A2046F226495A100C068AE /* RouterDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterDemoViewController.m; sourceTree = "<group>"; };
 		45A204712264987200C068AE /* RouterAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterAViewController.h; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		4514D1FC21BFADCF0076290D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				453B5BAA23716CCB00E57856 /* FlexLayout */,
 				452EA7D5228D5E0E004BB575 /* NSObject */,
 				452EA7992282C2C8004BB575 /* UserGuide */,
 				452EA7A72283D1FD004BB575 /* ImageView */,
@@ -251,6 +254,14 @@
 				453A6F68225DB664006CC30A /* NativeFunctionForJs.m */,
 			);
 			path = WebJs;
+			sourceTree = "<group>";
+		};
+		453B5BAA23716CCB00E57856 /* FlexLayout */ = {
+			isa = PBXGroup;
+			children = (
+				453B5BAB23716E1A00E57856 /* FlexLayoutViewController.m */,
+			);
+			path = FlexLayout;
 			sourceTree = "<group>";
 		};
 		45A2046D2264957800C068AE /* Router */ = {
@@ -438,6 +449,7 @@
 				452EA7BA22897CD5004BB575 /* Demo3ViewController.m in Sources */,
 				452EA7B722896503004BB575 /* (null) in Sources */,
 				4514D20D21BFADD20076290D /* main.m in Sources */,
+				453B5BAC23716E1A00E57856 /* FlexLayoutViewController.m in Sources */,
 				45A204B02275862F00C068AE /* AudioFrequencySpectrumDemoViewController.m in Sources */,
 				45A204732264987200C068AE /* RouterAViewController.m in Sources */,
 				45A20470226495A100C068AE /* RouterDemoViewController.m in Sources */,

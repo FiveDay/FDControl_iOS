@@ -16,6 +16,10 @@
 #import "Demo3ViewController.h"
 #import "Demo4ViewController.h"
 
+@interface FlexLayoutViewController : UIViewController
+
+@end
+
 @interface AppDelegate ()
 @end
 
@@ -49,7 +53,7 @@
     [tabCtl addChildViewController:[self demo3]];
     [tabCtl addChildViewController:[self demo4]];
     
-    UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:tabCtl];
+    UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:[FlexLayoutViewController new]];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
     
@@ -76,6 +80,11 @@
         }
     };
     NSSet* routes = [NSSet setWithArray:@[
+          @{
+              @"path":@"Main/FlexLayout",
+              @"component":@"FlexLayoutViewController",
+              @"name":@"flexlayout"
+            },
           @{
               @"path":@"Main/NSObjectDemo",
               @"component":@"NSObjectViewController",

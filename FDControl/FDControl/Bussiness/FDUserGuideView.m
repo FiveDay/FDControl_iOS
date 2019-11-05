@@ -7,7 +7,8 @@
 //
 
 #import "FDUserGuideView.h"
-#import "FDControl.h"
+#import "UIView+FDLayout.h"
+#import "UIColor+FDColor.h"
 
 @interface FDUserGuideView () <UIScrollViewDelegate>
 @property(strong, nonatomic)UIScrollView* scrollView;

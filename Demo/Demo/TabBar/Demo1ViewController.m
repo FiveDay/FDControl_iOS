@@ -30,6 +30,7 @@
     self.tableView.dataSource = self;
     
     //添加测试vc
+    [self.testVCClassNameArray addObject:@"flexlayout"];
     [self.testVCClassNameArray addObject:@"audio"];
     [self.testVCClassNameArray addObject:@"router"];
     [self.testVCClassNameArray addObject:@"butten"];
@@ -62,9 +63,9 @@
         return ;
     }
     
-    UITableViewCell* selectedCell = [tableView cellForRowAtIndexPath:indexPath];
-    
-    [selectedCell setSelected:NO];
+//    UITableViewCell* selectedCell = [tableView cellForRowAtIndexPath:indexPath];
+//    
+//    [selectedCell setSelected:NO];
     
     [self.navigationController navToName:self.testVCClassNameArray[indexPath.row] param:nil];
     

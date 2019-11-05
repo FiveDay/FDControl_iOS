@@ -23,9 +23,9 @@
     
     //[test4] image独立解码测试
     UIImageView* decodeImageView = [UIImageView new];
-    decodeImageView.top = 150;
-    decodeImageView.width = 100;
-    decodeImageView.height = 100;
+//    decodeImageView.top = 150;
+//    decodeImageView.width = 100;
+//    decodeImageView.height = 100;
     [self.view addSubview:decodeImageView];
     NSString* jpgFilePath = [[NSBundle mainBundle]pathForResource:@"testimage" ofType:@"jpg"];
     UIImage* originImage = [UIImage imageWithContentsOfFile:jpgFilePath];

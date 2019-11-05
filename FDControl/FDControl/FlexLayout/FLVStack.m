@@ -21,7 +21,8 @@
 - (instancetype)init {
     if (self = [super init]) {
         _contentView = [UIView new];
-        _contentView.bounds = self.bounds;
+        [self addSubview:_contentView];
+        _contentView.frame = self.bounds;
         self.attribute.flexDirection = FLFlexDirectionColumn;
         self.attribute.align = FLAlignFlexStart;
     }
@@ -43,7 +44,10 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    self.contentView.bounds = self.bounds;
+    self.contentView.frame = self.bounds;
 }
 
+- (void)applyLayout {
+    [self.attribute applyLayout];
+}
 @end

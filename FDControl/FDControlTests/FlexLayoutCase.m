@@ -26,22 +26,6 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
-    UIView* rootView;
-    
-    FLVStack* vStack = [FLVStack new];
-    [vStack contentView:^(UIView * _Nonnull content) {
-        [UIView new].renderTo(content)
-                    .padding(@3)
-                    .margin(@4)
-                    .backgroundColor([UIColor redColor]);
-        [UIView new].renderTo(content)
-                    .padding(@3, @0, @2.3, @-3.4)
-                    .backgroundColor([UIColor greenColor]);
-        [[FLVStack new].alignment(FL_leading) contentView:^(UIView * _Nonnull content) {
-            
-        }].renderTo(content)
-    }].alignment(FL_leading).renderTo(rootView);
 }
 
 - (void)testPerformanceExample {

@@ -13,6 +13,7 @@ static YGConfigRef globalConfig;
 
 @interface FLViewAttribute ()
 @property(nonatomic, assign)YGNodeRef node;
+@property(nonatomic, strong)UIView* view;
 @end
 
 @implementation FLViewAttribute
@@ -27,6 +28,7 @@ static YGConfigRef globalConfig;
     if (self = [super init]) {
         _node = YGNodeNewWithConfig(globalConfig);
         YGNodeSetContext(_node, (__bridge void *) view);
+        _view = view;
     }
     return self;
 }
@@ -42,4 +44,14 @@ static YGConfigRef globalConfig;
 - (void)dealloc {
     YGNodeFree(self.node);
 }
+
+- (void)applyLayout {
+    const YGNodeRef node = self.node;
+    YGNodeCalculateLayout(
+                          node,
+                          self.view.frame.size.width,
+                          self.view.frame.size.height,
+                          YGNodeStyleGetDirection(node));
+}
+
 @end
