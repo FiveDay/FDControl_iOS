@@ -186,6 +186,33 @@
 		453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */; };
+		453B5B8F2371526700E57856 /* YGConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B742371526600E57856 /* YGConfig.cpp */; };
+		453B5B902371526700E57856 /* YGStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B752371526600E57856 /* YGStyle.h */; };
+		453B5B912371526700E57856 /* YGLayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B762371526600E57856 /* YGLayout.cpp */; };
+		453B5B922371526700E57856 /* YGNodePrint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B772371526600E57856 /* YGNodePrint.cpp */; };
+		453B5B932371526700E57856 /* YGLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B782371526600E57856 /* YGLayout.h */; };
+		453B5B942371526700E57856 /* YGEnums.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B792371526600E57856 /* YGEnums.cpp */; };
+		453B5B952371526700E57856 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B7A2371526600E57856 /* log.h */; };
+		453B5B962371526700E57856 /* YGStyle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B7B2371526600E57856 /* YGStyle.cpp */; };
+		453B5B972371526700E57856 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B7C2371526600E57856 /* Utils.cpp */; };
+		453B5B982371526700E57856 /* YGNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B7D2371526600E57856 /* YGNode.h */; };
+		453B5B992371526700E57856 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B7E2371526600E57856 /* log.cpp */; };
+		453B5B9A2371526700E57856 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B7F2371526600E57856 /* Utils.h */; };
+		453B5B9B2371526700E57856 /* Yoga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B802371526600E57856 /* Yoga.cpp */; };
+		453B5B9C2371526700E57856 /* YGNodePrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B812371526600E57856 /* YGNodePrint.h */; };
+		453B5B9D2371526700E57856 /* YGMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B822371526600E57856 /* YGMarker.h */; };
+		453B5B9E2371526700E57856 /* instrumentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B832371526600E57856 /* instrumentation.h */; };
+		453B5B9F2371526700E57856 /* CompactValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B842371526600E57856 /* CompactValue.h */; };
+		453B5BA02371526700E57856 /* YGMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B852371526600E57856 /* YGMacros.h */; };
+		453B5BA12371526700E57856 /* Yoga.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B862371526600E57856 /* Yoga.h */; };
+		453B5BA22371526700E57856 /* YGValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B872371526600E57856 /* YGValue.cpp */; };
+		453B5BA32371526700E57856 /* YGNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B882371526600E57856 /* YGNode.cpp */; };
+		453B5BA42371526700E57856 /* YGFloatOptional.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B892371526700E57856 /* YGFloatOptional.h */; };
+		453B5BA52371526700E57856 /* YGMarker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 453B5B8A2371526700E57856 /* YGMarker.cpp */; };
+		453B5BA62371526700E57856 /* YGValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B8B2371526700E57856 /* YGValue.h */; };
+		453B5BA72371526700E57856 /* YGConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B8C2371526700E57856 /* YGConfig.h */; };
+		453B5BA82371526700E57856 /* YGEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B8D2371526700E57856 /* YGEnums.h */; };
+		453B5BA92371526700E57856 /* Yoga-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B8E2371526700E57856 /* Yoga-internal.h */; };
 		45623AEC236AEB47007125E6 /* FLVStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AEA236AEB47007125E6 /* FLVStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45623AED236AEB47007125E6 /* FLVStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AEB236AEB47007125E6 /* FLVStack.m */; };
 		45623AF0236AEB55007125E6 /* FLHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AEE236AEB55007125E6 /* FLHStack.h */; };
@@ -473,6 +500,33 @@
 		453A6F5D225C9DC4006CC30A /* FDNativeInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FDNativeInterface.h; sourceTree = "<group>"; };
 		453A6F62225CAF1C006CC30A /* NSObject+FDPropertyMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+FDPropertyMethod.h"; sourceTree = "<group>"; };
 		453A6F63225CAF1C006CC30A /* NSObject+FDPropertyMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FDPropertyMethod.m"; sourceTree = "<group>"; };
+		453B5B742371526600E57856 /* YGConfig.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGConfig.cpp; path = yoga/YGConfig.cpp; sourceTree = "<group>"; };
+		453B5B752371526600E57856 /* YGStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGStyle.h; path = yoga/YGStyle.h; sourceTree = "<group>"; };
+		453B5B762371526600E57856 /* YGLayout.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGLayout.cpp; path = yoga/YGLayout.cpp; sourceTree = "<group>"; };
+		453B5B772371526600E57856 /* YGNodePrint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGNodePrint.cpp; path = yoga/YGNodePrint.cpp; sourceTree = "<group>"; };
+		453B5B782371526600E57856 /* YGLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGLayout.h; path = yoga/YGLayout.h; sourceTree = "<group>"; };
+		453B5B792371526600E57856 /* YGEnums.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGEnums.cpp; path = yoga/YGEnums.cpp; sourceTree = "<group>"; };
+		453B5B7A2371526600E57856 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log.h; path = yoga/log.h; sourceTree = "<group>"; };
+		453B5B7B2371526600E57856 /* YGStyle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGStyle.cpp; path = yoga/YGStyle.cpp; sourceTree = "<group>"; };
+		453B5B7C2371526600E57856 /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Utils.cpp; path = yoga/Utils.cpp; sourceTree = "<group>"; };
+		453B5B7D2371526600E57856 /* YGNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGNode.h; path = yoga/YGNode.h; sourceTree = "<group>"; };
+		453B5B7E2371526600E57856 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = log.cpp; path = yoga/log.cpp; sourceTree = "<group>"; };
+		453B5B7F2371526600E57856 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = yoga/Utils.h; sourceTree = "<group>"; };
+		453B5B802371526600E57856 /* Yoga.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Yoga.cpp; path = yoga/Yoga.cpp; sourceTree = "<group>"; };
+		453B5B812371526600E57856 /* YGNodePrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGNodePrint.h; path = yoga/YGNodePrint.h; sourceTree = "<group>"; };
+		453B5B822371526600E57856 /* YGMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGMarker.h; path = yoga/YGMarker.h; sourceTree = "<group>"; };
+		453B5B832371526600E57856 /* instrumentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = instrumentation.h; path = yoga/instrumentation.h; sourceTree = "<group>"; };
+		453B5B842371526600E57856 /* CompactValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompactValue.h; path = yoga/CompactValue.h; sourceTree = "<group>"; };
+		453B5B852371526600E57856 /* YGMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGMacros.h; path = yoga/YGMacros.h; sourceTree = "<group>"; };
+		453B5B862371526600E57856 /* Yoga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Yoga.h; path = yoga/Yoga.h; sourceTree = "<group>"; };
+		453B5B872371526600E57856 /* YGValue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGValue.cpp; path = yoga/YGValue.cpp; sourceTree = "<group>"; };
+		453B5B882371526600E57856 /* YGNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGNode.cpp; path = yoga/YGNode.cpp; sourceTree = "<group>"; };
+		453B5B892371526700E57856 /* YGFloatOptional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGFloatOptional.h; path = yoga/YGFloatOptional.h; sourceTree = "<group>"; };
+		453B5B8A2371526700E57856 /* YGMarker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = YGMarker.cpp; path = yoga/YGMarker.cpp; sourceTree = "<group>"; };
+		453B5B8B2371526700E57856 /* YGValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGValue.h; path = yoga/YGValue.h; sourceTree = "<group>"; };
+		453B5B8C2371526700E57856 /* YGConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGConfig.h; path = yoga/YGConfig.h; sourceTree = "<group>"; };
+		453B5B8D2371526700E57856 /* YGEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YGEnums.h; path = yoga/YGEnums.h; sourceTree = "<group>"; };
+		453B5B8E2371526700E57856 /* Yoga-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Yoga-internal.h"; path = "yoga/Yoga-internal.h"; sourceTree = "<group>"; };
 		45623AEA236AEB47007125E6 /* FLVStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLVStack.h; sourceTree = "<group>"; };
 		45623AEB236AEB47007125E6 /* FLVStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLVStack.m; sourceTree = "<group>"; };
 		45623AEE236AEB55007125E6 /* FLHStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLHStack.h; sourceTree = "<group>"; };
@@ -1015,9 +1069,44 @@
 			path = NSObject;
 			sourceTree = "<group>";
 		};
+		453B5B732371521E00E57856 /* Yoga */ = {
+			isa = PBXGroup;
+			children = (
+				453B5B842371526600E57856 /* CompactValue.h */,
+				453B5B832371526600E57856 /* instrumentation.h */,
+				453B5B7E2371526600E57856 /* log.cpp */,
+				453B5B7A2371526600E57856 /* log.h */,
+				453B5B7C2371526600E57856 /* Utils.cpp */,
+				453B5B7F2371526600E57856 /* Utils.h */,
+				453B5B742371526600E57856 /* YGConfig.cpp */,
+				453B5B8C2371526700E57856 /* YGConfig.h */,
+				453B5B792371526600E57856 /* YGEnums.cpp */,
+				453B5B8D2371526700E57856 /* YGEnums.h */,
+				453B5B892371526700E57856 /* YGFloatOptional.h */,
+				453B5B762371526600E57856 /* YGLayout.cpp */,
+				453B5B782371526600E57856 /* YGLayout.h */,
+				453B5B852371526600E57856 /* YGMacros.h */,
+				453B5B8A2371526700E57856 /* YGMarker.cpp */,
+				453B5B822371526600E57856 /* YGMarker.h */,
+				453B5B882371526600E57856 /* YGNode.cpp */,
+				453B5B7D2371526600E57856 /* YGNode.h */,
+				453B5B772371526600E57856 /* YGNodePrint.cpp */,
+				453B5B812371526600E57856 /* YGNodePrint.h */,
+				453B5B7B2371526600E57856 /* YGStyle.cpp */,
+				453B5B752371526600E57856 /* YGStyle.h */,
+				453B5B872371526600E57856 /* YGValue.cpp */,
+				453B5B8B2371526700E57856 /* YGValue.h */,
+				453B5B8E2371526700E57856 /* Yoga-internal.h */,
+				453B5B802371526600E57856 /* Yoga.cpp */,
+				453B5B862371526600E57856 /* Yoga.h */,
+			);
+			path = Yoga;
+			sourceTree = "<group>";
+		};
 		45623AE9236AEA2B007125E6 /* FlexLayout */ = {
 			isa = PBXGroup;
 			children = (
+				453B5B732371521E00E57856 /* Yoga */,
 				45623AEA236AEB47007125E6 /* FLVStack.h */,
 				45623AEB236AEB47007125E6 /* FLVStack.m */,
 				45623AEE236AEB55007125E6 /* FLHStack.h */,
@@ -1289,6 +1378,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453B5B952371526700E57856 /* log.h in Headers */,
 				45623AF8236BD74B007125E6 /* UIView+FlexLayout.h in Headers */,
 				45623AF3236AEF40007125E6 /* FLPublicHeader.h in Headers */,
 				45623AEC236AEB47007125E6 /* FLVStack.h in Headers */,
@@ -1311,9 +1401,11 @@
 				45A204AB2273129800C068AE /* FDFrequencySpectrumIndicator.h in Headers */,
 				45A7A464230AAA5600B311CA /* UIButton+FDChainMethod.h in Headers */,
 				452EA997229D4BD2004BB575 /* Lottie.h in Headers */,
+				453B5B932371526700E57856 /* YGLayout.h in Headers */,
 				452EA993229D4BD2004BB575 /* LOTKeypath.h in Headers */,
 				45A2048822671B0800C068AE /* UIViewController+FDRouter.h in Headers */,
 				452EA984229D4BD2004BB575 /* LOTLayer.h in Headers */,
+				453B5BA42371526700E57856 /* YGFloatOptional.h in Headers */,
 				452EA7CB228BAEAF004BB575 /* UITabBar+FDPrivateObject.h in Headers */,
 				45A204842266F0C200C068AE /* NSString+FDURL.h in Headers */,
 				45A2047F2265BE8900C068AE /* NSBundle+FDMainBundle.h in Headers */,
@@ -1323,10 +1415,12 @@
 				452EA942229D4BD2004BB575 /* CGGeometry+LOTAdditions.h in Headers */,
 				452EA96A229D4BD2004BB575 /* LOTRenderGroup.h in Headers */,
 				452EA969229D4BD2004BB575 /* LOTRepeaterRenderer.h in Headers */,
+				453B5B982371526700E57856 /* YGNode.h in Headers */,
 				452EA982229D4BD2004BB575 /* LOTAssetGroup.h in Headers */,
 				452EA77D22817534004BB575 /* UIButton+FDLoadingIndicator.h in Headers */,
 				6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */,
 				452EA975229D4BD2004BB575 /* LOTShapeCircle.h in Headers */,
+				453B5BA12371526700E57856 /* Yoga.h in Headers */,
 				452EA77922812CFB004BB575 /* UIButton+FDConvenientMethod.h in Headers */,
 				452EA775228045EC004BB575 /* UIControl+FDTargetAction.h in Headers */,
 				452EA991229D4BD2004BB575 /* LOTAnimatedControl.h in Headers */,
@@ -1346,6 +1440,7 @@
 				452EA94D229D4BD2004BB575 /* LOTValueInterpolator.h in Headers */,
 				45A20442225DF8CC00C068AE /* WebViewJavascriptBridge_JS.h in Headers */,
 				453A6F64225CAF1C006CC30A /* NSObject+FDPropertyMethod.h in Headers */,
+				453B5B9D2371526700E57856 /* YGMarker.h in Headers */,
 				452EA99C229D4BD2004BB575 /* LOTValueCallback.h in Headers */,
 				452EA946229D4BD2004BB575 /* LOTAnimatorNode.h in Headers */,
 				453A6F5E225C9DC4006CC30A /* FDNativeInterface.h in Headers */,
@@ -1359,10 +1454,13 @@
 				453A6F53225C49B9006CC30A /* FDWebJsViewController.h in Headers */,
 				45936AE4224A1B670073C9E2 /* FDMemoryCache.h in Headers */,
 				452EA962229D4BD2004BB575 /* LOTCircleAnimator.h in Headers */,
+				453B5B9F2371526700E57856 /* CompactValue.h in Headers */,
+				453B5BA62371526700E57856 /* YGValue.h in Headers */,
 				45936ADA224367660073C9E2 /* FDDiskCache.h in Headers */,
 				452EA987229D4BD2004BB575 /* LOTLayerGroup.h in Headers */,
 				45936ADE2243A0A20073C9E2 /* NSString+FDFileDirectory.h in Headers */,
 				45936AD5224361350073C9E2 /* NSString+FDMD5.h in Headers */,
+				453B5B902371526700E57856 /* YGStyle.h in Headers */,
 				45A2045A2260710700C068AE /* FDPermissionMng.h in Headers */,
 				452EA968229D4BD2004BB575 /* LOTStrokeRenderer.h in Headers */,
 				452EA97E229D4BD2004BB575 /* LOTShapeTransform.h in Headers */,
@@ -1375,6 +1473,7 @@
 				452EA974229D4BD2004BB575 /* LOTAsset.h in Headers */,
 				452EA986229D4BD2004BB575 /* LOTShapeStar.h in Headers */,
 				45A204A722730F8000C068AE /* FDAudioFrequencySpectrum.h in Headers */,
+				453B5B9E2371526700E57856 /* instrumentation.h in Headers */,
 				45623AFC236C2B8D007125E6 /* FLViewAtrribute.h in Headers */,
 				453A6F462255A490006CC30A /* FDActivityIndicatorAnimationBallClipRotate.h in Headers */,
 				452EA99B229D4BD2004BB575 /* LOTAnimationView_Compat.h in Headers */,
@@ -1401,6 +1500,7 @@
 				45A20443225DF8CC00C068AE /* WebViewJavascriptBridgeBase.h in Headers */,
 				452EA972229D4BD2004BB575 /* LOTShapeRectangle.h in Headers */,
 				45820E3621EF358C0052F033 /* FDPopMenu.h in Headers */,
+				453B5BA02371526700E57856 /* YGMacros.h in Headers */,
 				452EA93C229D4BD2004BB575 /* LOTHelpers.h in Headers */,
 				452EA938229D4BD2004BB575 /* LOTPlatformCompat.h in Headers */,
 				452EA948229D4BD2004BB575 /* LOTTrimPathNode.h in Headers */,
@@ -1408,6 +1508,7 @@
 				452EA9B1229D4BD2004BB575 /* LOTLayerContainer.h in Headers */,
 				45623AF0236AEB55007125E6 /* FLHStack.h in Headers */,
 				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
+				453B5B9A2371526700E57856 /* Utils.h in Headers */,
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
 				452EA7CF228C080D004BB575 /* NSObject+FDRuntime.h in Headers */,
 				452EA935229D4BD2004BB575 /* CALayer+Compat.h in Headers */,
@@ -1416,12 +1517,16 @@
 				45A20450225F22B800C068AE /* FDWebViewJavascriptBridge.h in Headers */,
 				452EA94F229D4BD2004BB575 /* LOTNumberInterpolator.h in Headers */,
 				452EA950229D4BD2004BB575 /* LOTTransformInterpolator.h in Headers */,
+				453B5BA92371526700E57856 /* Yoga-internal.h in Headers */,
 				4514D23721BFB4420076290D /* UIView+FDLayout.h in Headers */,
+				453B5BA72371526700E57856 /* YGConfig.h in Headers */,
 				452EA99A229D4BD2004BB575 /* LOTAnimationView.h in Headers */,
 				452EA9A0229D4BD2004BB575 /* LOTKeyframe.h in Headers */,
 				452EA95E229D4BD2004BB575 /* LOTRoundedRectAnimator.h in Headers */,
 				452EA9A8229D4BD2004BB575 /* LOTAnimationView_Internal.h in Headers */,
 				452EA933229D4BD2004BB575 /* UIColor.h in Headers */,
+				453B5BA82371526700E57856 /* YGEnums.h in Headers */,
+				453B5B9C2371526700E57856 /* YGNodePrint.h in Headers */,
 				452EA954229D4BD2004BB575 /* LOTPathInterpolator.h in Headers */,
 				4514D1E821BFAD8A0076290D /* FDControl.h in Headers */,
 				45A2044C225F194F00C068AE /* FDWebProgressView.h in Headers */,
@@ -1536,13 +1641,16 @@
 				452EA9AC229D4BD2004BB575 /* LOTInterpolatorCallback.m in Sources */,
 				452EA9AE229D4BD2004BB575 /* LOTLayerContainer.m in Sources */,
 				45A204B52276E57800C068AE /* FDRect180UpDownAni.m in Sources */,
+				453B5B922371526700E57856 /* YGNodePrint.cpp in Sources */,
 				452EA953229D4BD2004BB575 /* LOTSizeInterpolator.m in Sources */,
 				45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */,
 				452EA945229D4BD2004BB575 /* LOTRenderNode.m in Sources */,
 				452EA93E229D4BD2004BB575 /* CGGeometry+LOTAdditions.m in Sources */,
 				452EA977229D4BD2004BB575 /* LOTShapeStar.m in Sources */,
+				453B5B972371526700E57856 /* Utils.cpp in Sources */,
 				452EA95C229D4BD2004BB575 /* LOTPolystarAnimator.m in Sources */,
 				45A204852266F0C200C068AE /* NSString+FDURL.m in Sources */,
+				453B5B942371526700E57856 /* YGEnums.cpp in Sources */,
 				45A2048E2269A23B00C068AE /* UIButton+FDImageTitleVerticalLayout.m in Sources */,
 				45936AC22241E13D0073C9E2 /* FDWebImageManager.m in Sources */,
 				452EA9AD229D4BD2004BB575 /* LOTAnimatedSwitch.m in Sources */,
@@ -1572,8 +1680,10 @@
 				45936ADF2243A0A20073C9E2 /* NSString+FDFileDirectory.m in Sources */,
 				452EA95D229D4BD2004BB575 /* LOTPolygonAnimator.m in Sources */,
 				452EA96E229D4BD2004BB575 /* LOTRepeaterRenderer.m in Sources */,
+				453B5B962371526700E57856 /* YGStyle.cpp in Sources */,
 				45894CFB21E5C43800E5E9A9 /* FDActivityIndicatorView.m in Sources */,
 				45A2048922671B0800C068AE /* UIViewController+FDRouter.m in Sources */,
+				453B5B912371526700E57856 /* YGLayout.cpp in Sources */,
 				452EA9A2229D4BD2004BB575 /* LOTAnimationCache.m in Sources */,
 				452EA79222819ACC004BB575 /* FDVerticalButton.m in Sources */,
 				452EA97F229D4BD2004BB575 /* LOTAsset.m in Sources */,
@@ -1590,6 +1700,7 @@
 				45A7A465230AAA5600B311CA /* UIButton+FDChainMethod.m in Sources */,
 				452EA941229D4BD2004BB575 /* LOTRadialGradientLayer.m in Sources */,
 				45623AED236AEB47007125E6 /* FLVStack.m in Sources */,
+				453B5B992371526700E57856 /* log.cpp in Sources */,
 				452EA988229D4BD2004BB575 /* LOTShapeCircle.m in Sources */,
 				452EA95A229D4BD2004BB575 /* LOTAnimatorNode.m in Sources */,
 				453A6F4B2255FCDE006CC30A /* FDActivityIndicatorAnimationSquareSpin.m in Sources */,
@@ -1626,10 +1737,12 @@
 				45A2043F225DF8CC00C068AE /* WebViewJavascriptBridge.m in Sources */,
 				452EA9B3229D4BD2004BB575 /* LOTMaskContainer.m in Sources */,
 				452EA949229D4BD2004BB575 /* LOTTrimPathNode.m in Sources */,
+				453B5BA52371526700E57856 /* YGMarker.cpp in Sources */,
 				452EA776228045EC004BB575 /* UIControl+FDTargetAction.m in Sources */,
 				452EA97C229D4BD2004BB575 /* LOTShapeGradientFill.m in Sources */,
 				452EA96C229D4BD2004BB575 /* LOTFillRenderer.m in Sources */,
 				452EA7B022855FF9004BB575 /* UITabBarItem+FDTabBar.m in Sources */,
+				453B5B8F2371526700E57856 /* YGConfig.cpp in Sources */,
 				45A20451225F22B800C068AE /* FDWebViewJavascriptBridge.m in Sources */,
 				452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */,
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
@@ -1638,10 +1751,12 @@
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,
 				452EA95B229D4BD2004BB575 /* LOTPathAnimator.m in Sources */,
 				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,
+				453B5B9B2371526700E57856 /* Yoga.cpp in Sources */,
 				45936AD6224361350073C9E2 /* NSString+FDMD5.m in Sources */,
 				45A2045F2260980D00C068AE /* UIColor+FDPalettes.m in Sources */,
 				452EA9A4229D4BD2004BB575 /* LOTValueCallback.m in Sources */,
 				452EA971229D4BD2004BB575 /* LOTAssetGroup.m in Sources */,
+				453B5BA32371526700E57856 /* YGNode.cpp in Sources */,
 				452EA95F229D4BD2004BB575 /* LOTCircleAnimator.m in Sources */,
 				45936AC32241E13D0073C9E2 /* UIImageView+FDWebImageView.m in Sources */,
 				45A20449225E03CD00C068AE /* NSDictionary+FDJSONSerialization.m in Sources */,
@@ -1658,6 +1773,7 @@
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
 				453A6F4F225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.m in Sources */,
 				452EA989229D4BD2004BB575 /* LOTShapePath.m in Sources */,
+				453B5BA22371526700E57856 /* YGValue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

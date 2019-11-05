@@ -28,7 +28,8 @@
     // Use XCTAssert and related functions to verify your tests produce the correct results.
     
     UIView* rootView;
-    FLVStack* vStack = [FLVStack new].alignment(FL_leading);
+    
+    FLVStack* vStack = [FLVStack new];
     [vStack contentView:^(UIView * _Nonnull content) {
         [UIView new].renderTo(content)
                     .padding(@3)
@@ -40,8 +41,7 @@
         [[FLVStack new].alignment(FL_leading) contentView:^(UIView * _Nonnull content) {
             
         }].renderTo(content)
-    }];
-    [rootView addSubview:vStack];
+    }].alignment(FL_leading).renderTo(rootView);
 }
 
 - (void)testPerformanceExample {

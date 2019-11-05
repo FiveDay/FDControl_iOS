@@ -14,6 +14,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FLViewAtrribute : NSObject
+
+- (instancetype)initWithView:(UIView*)view;
+
 //padding
 @property(strong, nonatomic)NSNumber* padding_top;
 @property(strong, nonatomic)NSNumber* padding_right;
