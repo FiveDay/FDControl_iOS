@@ -1,21 +1,21 @@
 //
-//  FLViewAtrribute.m
+//  FLViewAttribute.m
 //  FDControl
 //
 //  Created by zhangyu528 on 2019/11/1.
 //  Copyright © 2019 zhangyu528. All rights reserved.
 //
 
-#import "FLViewAtrribute.h"
+#import "FLViewAttribute.h"
 #import "Yoga.h"
 
 static YGConfigRef globalConfig;
 
-@interface FLViewAtrribute ()
+@interface FLViewAttribute ()
 @property(nonatomic, assign)YGNodeRef node;
 @end
 
-@implementation FLViewAtrribute
+@implementation FLViewAttribute
 
 + (void)initialize {
     globalConfig = YGConfigNew();
@@ -29,6 +29,14 @@ static YGConfigRef globalConfig;
         YGNodeSetContext(_node, (__bridge void *) view);
     }
     return self;
+}
+
+- (void)setFlexDirection:(FLFlexDirection)flexDirection {
+    YGNodeStyleSetFlexDirection(self.node, (YGFlexDirection)flexDirection);
+}
+
+- (void)setAlign:(FLAlign)align {
+    YGNodeStyleSetAlignContent(self.node, (YGAlign)align);
 }
 
 - (void)dealloc {

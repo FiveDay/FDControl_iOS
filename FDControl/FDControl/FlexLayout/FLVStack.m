@@ -8,25 +8,29 @@
 
 #import "FLVStack.h"
 
+@interface UIView ()
+@property(nonatomic, readonly, strong)FLViewAttribute* attribute;
+@end
+
 @interface FLVStack ()
 @property(strong, nonatomic)UIView* contentView;
-@property(assign, nonatomic)FLAlignment align;
 @end
 
 @implementation FLVStack
 
 - (instancetype)init {
     if (self = [super init]) {
-        _align = FL_leading;
         _contentView = [UIView new];
         _contentView.bounds = self.bounds;
+        self.attribute.flexDirection = FLFlexDirectionColumn;
+        self.attribute.align = FLAlignFlexStart;
     }
     return self;
 }
 
-- (FLAlign)alignment {
-    return ^FLVStack*(FLAlignment alignment) {
-        self.align = alignment;
+- (FLAlignBlock)alignment {
+    return ^FLVStack*(FLAlign alignment) {
+        self.attribute.align = alignment;
         return self;
     };
 }
@@ -40,28 +44,6 @@
     [super layoutSubviews];
     
     self.contentView.bounds = self.bounds;
-    
-    switch (self.align) {
-        case FL_leading:
-            [self layoutByLeading];
-            break;
-        case FL_center:
-            [self layoutByCenter];
-        case FL_end:
-            [self layoutByEnd];
-        default:
-            break;
-    }
 }
-
-- (void)layoutByLeading {
-}
-
-- (void)layoutByCenter {
-}
-
-- (void)layoutByEnd {
-}
-
 
 @end

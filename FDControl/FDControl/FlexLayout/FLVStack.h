@@ -16,9 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FLVStack : UIView
 
-typedef FLVStack*(^FLAlign)(FLAlignment alignment);
+typedef FLVStack*(^FLAlignBlock)(FLAlign alignment);
 
-@property(assign, nonatomic)FLAlign alignment;
+@property(assign, nonatomic)FLAlignBlock alignment;
 
 - (FLVStack*)contentView:(void(^)(UIView* content))block;
 

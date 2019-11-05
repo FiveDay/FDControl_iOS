@@ -9,13 +9,8 @@
 #ifndef FLPublicHeader_h
 #define FLPublicHeader_h
 
-typedef enum : NSUInteger {
-    FL_leading,
-    FL_center,
-    FL_end,
-} FLAlignment;
-
-#import "FLVStack.h"
 #import "UIView+FlexLayout.h"
+#import "FLViewAttribute.h"
+#import "FLVStack.h"
 
 #endif /* FLPublicHeader_h */

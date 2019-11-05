@@ -7,13 +7,13 @@
 //
 
 #import "UIView+FlexLayout.h"
-#import "FLViewAtrribute.h"
+#import "FLViewAttribute.h"
 #import <objc/runtime.h>
 
 static const void *kViewAttrributeKey = &kViewAttrributeKey;
 
 @interface UIView ()
-@property(nonatomic, readonly, strong)FLViewAtrribute* attribute;
+@property(nonatomic, readonly, strong)FLViewAttribute* attribute;
 @end
 
 @implementation UIView (FlexLayout)
@@ -25,10 +25,10 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
     };
 }
 
-- (FLViewAtrribute*)attribute {
-    FLViewAtrribute* attribute = objc_getAssociatedObject(self, kViewAttrributeKey);
+- (FLViewAttribute*)attribute {
+    FLViewAttribute* attribute = objc_getAssociatedObject(self, kViewAttrributeKey);
     if (!attribute) {
-        attribute = [FLViewAtrribute new];
+        attribute = [[FLViewAttribute alloc]initWithView:self];
         objc_setAssociatedObject(self, kViewAttrributeKey, attribute, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     return attribute;
