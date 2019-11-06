@@ -7,13 +7,13 @@
 //
 
 #import "UIView+FlexLayout.h"
-#import "FLViewAttribute.h"
+#import "FLViewLayout.h"
 #import <objc/runtime.h>
 
-static const void *kViewAttrributeKey = &kViewAttrributeKey;
+static const void *kViewLayoutKey = &kViewLayoutKey;
 
 @interface UIView ()
-@property(nonatomic, readonly, strong)FLViewAttribute* attribute;
+@property(nonatomic, readonly, strong) FLViewLayout* layout;
 @end
 
 @implementation UIView (FlexLayout)
@@ -21,17 +21,19 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
 - (FLRender)renderTo {
     return ^UIView*(UIView* content) {
         [content addSubview:self];
+        NSUInteger index = [[content subviews]count] - 1;
+        [content.layout insertChild:self index:index];
         return self;
     };
 }
 
-- (FLViewAttribute*)attribute {
-    FLViewAttribute* attribute = objc_getAssociatedObject(self, kViewAttrributeKey);
-    if (!attribute) {
-        attribute = [[FLViewAttribute alloc]initWithView:self];
-        objc_setAssociatedObject(self, kViewAttrributeKey, attribute, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (FLViewLayout*)layout {
+    FLViewLayout* layout = objc_getAssociatedObject(self, kViewLayoutKey);
+    if (!layout) {
+        layout = [[FLViewLayout alloc]initWithView:self];
+        objc_setAssociatedObject(self, kViewLayoutKey, layout, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    return attribute;
+    return layout;
 }
 
 - (FLColorAttribute)backgroundColor {
@@ -44,14 +46,14 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
 //layout
 - (FLWidthAttribute)width {
     return ^UIView*(CGFloat width) {
-        self.bounds = CGRectMake(0, 0, width, self.bounds.size.height);
+        self.layout.width = width;
         return self;
     };
 }
 
 - (FLHeightAttribute)height {
     return ^UIView*(CGFloat height) {
-        self.bounds = CGRectMake(0, 0, self.bounds.size.width, height);
+        self.layout.height = height;
         return self;
     };
 }
@@ -70,10 +72,10 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
         if (![value isKindOfClass:[NSNumber class]]) {
             left = bottom = right = top;
             va_end(args);
-            self.attribute.padding_top = top;
-            self.attribute.padding_right = right;
-            self.attribute.padding_bottom = bottom;
-            self.attribute.padding_left = left;
+            self.layout.padding_top = top;
+            self.layout.padding_right = right;
+            self.layout.padding_bottom = bottom;
+            self.layout.padding_left = left;
             return self;
         }
         right = value;
@@ -81,28 +83,28 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
         value = va_arg(args, NSNumber*);
         if (![value isKindOfClass:[NSNumber class]]) {
             va_end(args);
-            self.attribute.padding_top = top;
-            self.attribute.padding_right = right;
-            self.attribute.padding_bottom = bottom;
-            self.attribute.padding_left = left;
+            self.layout.padding_top = top;
+            self.layout.padding_right = right;
+            self.layout.padding_bottom = bottom;
+            self.layout.padding_left = left;
             return self;
         }
         bottom = value;
         value = va_arg(args, NSNumber*);
         if (![value isKindOfClass:[NSNumber class]]) {
             va_end(args);
-            self.attribute.padding_top = top;
-            self.attribute.padding_right = right;
-            self.attribute.padding_bottom = bottom;
-            self.attribute.padding_left = left;
+            self.layout.padding_top = top;
+            self.layout.padding_right = right;
+            self.layout.padding_bottom = bottom;
+            self.layout.padding_left = left;
             return self;
         }
         left = value;
         va_end(args);
-        self.attribute.padding_top = top;
-        self.attribute.padding_right = right;
-        self.attribute.padding_bottom = bottom;
-        self.attribute.padding_left = left;
+        self.layout.padding_top = top;
+        self.layout.padding_right = right;
+        self.layout.padding_bottom = bottom;
+        self.layout.padding_left = left;
         return self;
     };
 }
@@ -119,38 +121,38 @@ static const void *kViewAttrributeKey = &kViewAttrributeKey;
         if (![value isKindOfClass:[NSNumber class]]) {
             left = bottom = right = top;
             va_end(args);
-            self.attribute.margin_top = top;
-            self.attribute.margin_right = right;
-            self.attribute.margin_bottom = bottom;
-            self.attribute.margin_left = left;
+            self.layout.margin_top = top;
+            self.layout.margin_right = right;
+            self.layout.margin_bottom = bottom;
+            self.layout.margin_left = left;
             return self;
         }
         right = value;
         value = va_arg(args, NSNumber*);
         if (![value isKindOfClass:[NSNumber class]]) {
             va_end(args);
-            self.attribute.margin_top = top;
-            self.attribute.margin_right = right;
-            self.attribute.margin_bottom = bottom;
-            self.attribute.margin_left = left;
+            self.layout.margin_top = top;
+            self.layout.margin_right = right;
+            self.layout.margin_bottom = bottom;
+            self.layout.margin_left = left;
             return self;
         }
         bottom = value;
         value = va_arg(args, NSNumber*);
         if (![value isKindOfClass:[NSNumber class]]) {
             va_end(args);
-            self.attribute.margin_top = top;
-            self.attribute.margin_right = right;
-            self.attribute.margin_bottom = bottom;
-            self.attribute.margin_left = left;
+            self.layout.margin_top = top;
+            self.layout.margin_right = right;
+            self.layout.margin_bottom = bottom;
+            self.layout.margin_left = left;
             return self;
         }
         left = value;
         va_end(args);
-        self.attribute.margin_top = top;
-        self.attribute.margin_right = right;
-        self.attribute.margin_bottom = bottom;
-        self.attribute.margin_left = left;
+        self.layout.margin_top = top;
+        self.layout.margin_right = right;
+        self.layout.margin_bottom = bottom;
+        self.layout.margin_left = left;
         return self;
     };
 }

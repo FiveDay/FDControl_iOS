@@ -12,13 +12,16 @@
 @class FLVStack;
 
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FLVStack : UIView
 
 typedef FLVStack*(^FLAlignBlock)(FLAlign alignment);
 
+//align
 @property(assign, nonatomic)FLAlignBlock alignment;
+
 
 - (FLVStack*)contentView:(void(^)(UIView* content))block;
 

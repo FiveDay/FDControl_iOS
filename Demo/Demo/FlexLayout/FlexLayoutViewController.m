@@ -21,7 +21,6 @@
     [self.view setBackgroundColor:[UIColor whiteColor]];
     
     FLVStack* vStack = [FLVStack new];
-    vStack.frame = self.view.bounds;
     
     [vStack contentView:^(UIView * _Nonnull content) {
         [UIView new].renderTo(content)

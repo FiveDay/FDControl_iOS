@@ -221,8 +221,8 @@
 		45623AF5236AF55C007125E6 /* FlexLayoutCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AF4236AF55C007125E6 /* FlexLayoutCase.m */; };
 		45623AF8236BD74B007125E6 /* UIView+FlexLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45623AF9236BD74B007125E6 /* UIView+FlexLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */; };
-		45623AFC236C2B8D007125E6 /* FLViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AFA236C2B8D007125E6 /* FLViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45623AFD236C2B8D007125E6 /* FLViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AFB236C2B8D007125E6 /* FLViewAttribute.m */; };
+		45623AFC236C2B8D007125E6 /* FLViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AFA236C2B8D007125E6 /* FLViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45623AFD236C2B8D007125E6 /* FLViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AFB236C2B8D007125E6 /* FLViewLayout.m */; };
 		4580BDDC2306B540001CB8BC /* NSData+FDCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */; };
 		4580BDDD2306B540001CB8BC /* NSData+FDCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = 4580BDDB2306B540001CB8BC /* NSData+FDCompare.m */; };
 		4580BDE02306B7BB001CB8BC /* NSDate+FDExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 4580BDDE2306B7BB001CB8BC /* NSDate+FDExchange.h */; };
@@ -535,8 +535,8 @@
 		45623AF4236AF55C007125E6 /* FlexLayoutCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexLayoutCase.m; sourceTree = "<group>"; };
 		45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FlexLayout.h"; sourceTree = "<group>"; };
 		45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FlexLayout.m"; sourceTree = "<group>"; };
-		45623AFA236C2B8D007125E6 /* FLViewAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewAttribute.h; sourceTree = "<group>"; };
-		45623AFB236C2B8D007125E6 /* FLViewAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLViewAttribute.m; sourceTree = "<group>"; };
+		45623AFA236C2B8D007125E6 /* FLViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewLayout.h; sourceTree = "<group>"; };
+		45623AFB236C2B8D007125E6 /* FLViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLViewLayout.m; sourceTree = "<group>"; };
 		4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FDCompare.h"; sourceTree = "<group>"; };
 		4580BDDB2306B540001CB8BC /* NSData+FDCompare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+FDCompare.m"; sourceTree = "<group>"; };
 		4580BDDE2306B7BB001CB8BC /* NSDate+FDExchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FDExchange.h"; sourceTree = "<group>"; };
@@ -1114,8 +1114,8 @@
 				45623AF2236AEF40007125E6 /* FLPublicHeader.h */,
 				45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */,
 				45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */,
-				45623AFA236C2B8D007125E6 /* FLViewAttribute.h */,
-				45623AFB236C2B8D007125E6 /* FLViewAttribute.m */,
+				45623AFA236C2B8D007125E6 /* FLViewLayout.h */,
+				45623AFB236C2B8D007125E6 /* FLViewLayout.m */,
 			);
 			path = FlexLayout;
 			sourceTree = "<group>";
@@ -1378,7 +1378,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45623AFC236C2B8D007125E6 /* FLViewAttribute.h in Headers */,
+				45623AFC236C2B8D007125E6 /* FLViewLayout.h in Headers */,
 				453B5B952371526700E57856 /* log.h in Headers */,
 				45623AF8236BD74B007125E6 /* UIView+FlexLayout.h in Headers */,
 				45623AF3236AEF40007125E6 /* FLPublicHeader.h in Headers */,
@@ -1747,7 +1747,7 @@
 				452EA7CC228BAEAF004BB575 /* UITabBar+FDPrivateObject.m in Sources */,
 				45A20440225DF8CC00C068AE /* WebViewJavascriptBridge_JS.m in Sources */,
 				452EA93A229D4BD2004BB575 /* NSValue+Compat.m in Sources */,
-				45623AFD236C2B8D007125E6 /* FLViewAttribute.m in Sources */,
+				45623AFD236C2B8D007125E6 /* FLViewLayout.m in Sources */,
 				453A6F65225CAF1C006CC30A /* NSObject+FDPropertyMethod.m in Sources */,
 				452EA95B229D4BD2004BB575 /* LOTPathAnimator.m in Sources */,
 				45936AC02241E13D0073C9E2 /* FDWebImageDownloader.m in Sources */,

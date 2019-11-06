@@ -53,8 +53,8 @@
     [tabCtl addChildViewController:[self demo3]];
     [tabCtl addChildViewController:[self demo4]];
     
-    UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:[FlexLayoutViewController new]];
-    self.window.rootViewController = rootVC;
+    UINavigationController* rootVC = [[UINavigationController alloc]initWithRootViewController:tabCtl];
+    self.window.rootViewController = [FlexLayoutViewController new];
     [self.window makeKeyAndVisible];
     
     return YES;

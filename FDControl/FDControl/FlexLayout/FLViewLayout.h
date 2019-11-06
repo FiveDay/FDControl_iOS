@@ -1,5 +1,5 @@
 //
-//  FLViewAttribute.h
+//  FLViewLayout.h
 //  FDControl
 //
 //  Created by zhangyu528 on 2019/11/1.
@@ -23,13 +23,16 @@ typedef enum : NSUInteger {
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface FLViewAttribute : NSObject
+@interface  FLViewLayout : NSObject
 
 - (instancetype)initWithView:(UIView*)view;
 
 //flexDirection
 @property(assign, nonatomic)FLFlexDirection flexDirection;
 @property(assign, nonatomic)FLAlign align;
+
+@property(assign, nonatomic)CGFloat width;
+@property(assign, nonatomic)CGFloat height;
 //padding
 @property(strong, nonatomic)NSNumber* padding_top;
 @property(strong, nonatomic)NSNumber* padding_right;
@@ -42,6 +45,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(strong, nonatomic)NSNumber* margin_bottom;
 @property(strong, nonatomic)NSNumber* margin_left;
 
+
+
+- (void)insertChild:(UIView*)view index:(NSUInteger)index;
 - (void)applyLayout;
 
 @end

@@ -9,45 +9,35 @@
 #import "FLVStack.h"
 
 @interface UIView ()
-@property(nonatomic, readonly, strong)FLViewAttribute* attribute;
+@property(nonatomic, readonly, strong) FLViewLayout* layout;
 @end
 
 @interface FLVStack ()
-@property(strong, nonatomic)UIView* contentView;
 @end
 
 @implementation FLVStack
 
 - (instancetype)init {
     if (self = [super init]) {
-        _contentView = [UIView new];
-        [self addSubview:_contentView];
-        _contentView.frame = self.bounds;
-        self.attribute.flexDirection = FLFlexDirectionColumn;
-        self.attribute.align = FLAlignFlexStart;
+        self.layout.flexDirection = FLFlexDirectionColumn;
+        self.layout.align = FLAlignFlexStart;
     }
     return self;
 }
 
 - (FLAlignBlock)alignment {
     return ^FLVStack*(FLAlign alignment) {
-        self.attribute.align = alignment;
+        self.layout.align = alignment;
         return self;
     };
 }
 
 - (FLVStack*)contentView:(void(^)(UIView* content))block {
-    block(self.contentView);
+    block(self);
     return self;
 }
 
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    self.contentView.frame = self.bounds;
-}
-
 - (void)applyLayout {
-    [self.attribute applyLayout];
+    [self.layout applyLayout];
 }
 @end
