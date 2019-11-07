@@ -12,8 +12,7 @@
 typedef UIView*(^FLLayout)(UIView* content);
 
 //layout
-typedef UIView*(^FLWidth)(CGFloat width);
-typedef UIView*(^FLHeight)(CGFloat height);
+typedef UIView*(^FLSize)(CGFloat width, CGFloat height);
 
 typedef UIView*(^FLPadding)(NSNumber* top, ...);
 //typedef UIView*(^FLMargin)(NSNumber* top, ...);
@@ -28,8 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy, readonly)FLLayout layoutTo;
 
 //Layout
-@property(nonatomic, copy, readonly)FLWidth width;
-@property(nonatomic, copy, readonly)FLHeight height;
+@property(nonatomic, copy, readonly)FLSize size;
 
 @property(nonatomic, copy, readonly)FLPadding padding;
 //@property(nonatomic, copy, readonly)FLMargin margin;

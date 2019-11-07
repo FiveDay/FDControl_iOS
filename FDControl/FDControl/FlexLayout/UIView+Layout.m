@@ -47,15 +47,9 @@ static const void *kViewLayoutKey = &kViewLayoutKey;
 //}
 
 //layout
-- (FLWidth)width {
-    return ^UIView*(CGFloat width) {
+- (FLSize)size {
+    return ^UIView*(CGFloat width, CGFloat height) {
         self.layout.width = width;
-        return self;
-    };
-}
-
-- (FLHeight)height {
-    return ^UIView*(CGFloat height) {
         self.layout.height = height;
         return self;
     };

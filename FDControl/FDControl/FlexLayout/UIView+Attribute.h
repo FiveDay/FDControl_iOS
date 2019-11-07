@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Attribute)
 
-//css
+//block
 typedef UIView*(^FLColor)(UIColor*);
 typedef UIView*(^FLCornerRadius)(CGFloat radius);
 //css
