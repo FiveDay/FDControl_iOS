@@ -9,8 +9,10 @@
 #ifndef FLPublicHeader_h
 #define FLPublicHeader_h
 
-#import "UIView+FlexLayout.h"
+#import "UIView+Layout.h"
+#import "UIView+Attribute.h"
 #import "FLViewLayout.h"
+#import "FLStack.h"
 #import "FLVStack.h"
-
+#import "FLHStack.h"
 #endif /* FLPublicHeader_h */

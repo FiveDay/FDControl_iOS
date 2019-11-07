@@ -7,6 +7,7 @@
 //
 
 #import "FLVStack.h"
+#import "FLViewLayout.h"
 
 @interface UIView ()
 @property(nonatomic, readonly, strong) FLViewLayout* layout;
@@ -17,23 +18,12 @@
 
 @implementation FLVStack
 
-- (instancetype)init {
+- (instancetype)init:(FLHorizontalAlignment)alignment content:(void(^)(UIView* content))content {
     if (self = [super init]) {
         self.layout.flexDirection = FLFlexDirectionColumn;
-        self.layout.align = FLAlignFlexStart;
+        self.layout.alignItems = (FLAlign)alignment;
+        content(self);
     }
-    return self;
-}
-
-- (FLAlignBlock)alignment {
-    return ^FLVStack*(FLAlign alignment) {
-        self.layout.align = alignment;
-        return self;
-    };
-}
-
-- (FLVStack*)contentView:(void(^)(UIView* content))block {
-    block(self);
     return self;
 }
 

@@ -1,12 +1,12 @@
 //
-//  UIView+FlexLayout.m
+//  UIView+Layout.m
 //  FDControl
 //
 //  Created by zhangyu528 on 2019/11/1.
 //  Copyright © 2019 zhangyu528. All rights reserved.
 //
 
-#import "UIView+FlexLayout.h"
+#import "UIView+Layout.h"
 #import "FLViewLayout.h"
 #import <objc/runtime.h>
 
@@ -18,11 +18,17 @@ static const void *kViewLayoutKey = &kViewLayoutKey;
 
 @implementation UIView (FlexLayout)
 
-- (FLRender)renderTo {
+//+ (void)load {
+//    Method method1 = class_getInstanceMethod(self.class, @selector(layoutSubviews));
+//    Method method2 = class_getInstanceMethod(self.class, @selector(fl_layoutSubviews));
+//    method_exchangeImplementations(method1, method2);
+//}
+
+- (FLLayout)layoutTo {
     return ^UIView*(UIView* content) {
         [content addSubview:self];
-        NSUInteger index = [[content subviews]count] - 1;
-        [content.layout insertChild:self index:index];
+        NSUInteger newIndex = [content.layout getChildCount];
+        [content.layout insertChild:self index:newIndex];
         return self;
     };
 }
@@ -36,29 +42,26 @@ static const void *kViewLayoutKey = &kViewLayoutKey;
     return layout;
 }
 
-- (FLColorAttribute)backgroundColor {
-    return ^UIView*(UIColor* color) {
-        [self setBackgroundColor:color];
-        return self;
-    };
-}
+//- (void)fl_layoutSubviews {
+//    [self.layout applyLayout];
+//}
 
 //layout
-- (FLWidthAttribute)width {
+- (FLWidth)width {
     return ^UIView*(CGFloat width) {
         self.layout.width = width;
         return self;
     };
 }
 
-- (FLHeightAttribute)height {
+- (FLHeight)height {
     return ^UIView*(CGFloat height) {
         self.layout.height = height;
         return self;
     };
 }
 
-- (FLPaddingAttribute)padding {
+- (FLPadding)padding {
     return ^UIView*(NSNumber* top, ...) {
         
         va_list args;
@@ -109,53 +112,53 @@ static const void *kViewLayoutKey = &kViewLayoutKey;
     };
 }
 
-- (FLMarginAttribute)margin {
-    return ^UIView*(NSNumber* top, ...) {
-        va_list args;
-        va_start(args, top);
-        NSNumber* right = @0;
-        NSNumber* bottom = @0;
-        NSNumber* left = @0;
-        NSNumber* value;
-        value = va_arg(args, NSNumber*);
-        if (![value isKindOfClass:[NSNumber class]]) {
-            left = bottom = right = top;
-            va_end(args);
-            self.layout.margin_top = top;
-            self.layout.margin_right = right;
-            self.layout.margin_bottom = bottom;
-            self.layout.margin_left = left;
-            return self;
-        }
-        right = value;
-        value = va_arg(args, NSNumber*);
-        if (![value isKindOfClass:[NSNumber class]]) {
-            va_end(args);
-            self.layout.margin_top = top;
-            self.layout.margin_right = right;
-            self.layout.margin_bottom = bottom;
-            self.layout.margin_left = left;
-            return self;
-        }
-        bottom = value;
-        value = va_arg(args, NSNumber*);
-        if (![value isKindOfClass:[NSNumber class]]) {
-            va_end(args);
-            self.layout.margin_top = top;
-            self.layout.margin_right = right;
-            self.layout.margin_bottom = bottom;
-            self.layout.margin_left = left;
-            return self;
-        }
-        left = value;
-        va_end(args);
-        self.layout.margin_top = top;
-        self.layout.margin_right = right;
-        self.layout.margin_bottom = bottom;
-        self.layout.margin_left = left;
-        return self;
-    };
-}
+//- (FLMargin)margin {
+//    return ^UIView*(NSNumber* top, ...) {
+//        va_list args;
+//        va_start(args, top);
+//        NSNumber* right = @0;
+//        NSNumber* bottom = @0;
+//        NSNumber* left = @0;
+//        NSNumber* value;
+//        value = va_arg(args, NSNumber*);
+//        if (![value isKindOfClass:[NSNumber class]]) {
+//            left = bottom = right = top;
+//            va_end(args);
+//            self.layout.margin_top = top;
+//            self.layout.margin_right = right;
+//            self.layout.margin_bottom = bottom;
+//            self.layout.margin_left = left;
+//            return self;
+//        }
+//        right = value;
+//        value = va_arg(args, NSNumber*);
+//        if (![value isKindOfClass:[NSNumber class]]) {
+//            va_end(args);
+//            self.layout.margin_top = top;
+//            self.layout.margin_right = right;
+//            self.layout.margin_bottom = bottom;
+//            self.layout.margin_left = left;
+//            return self;
+//        }
+//        bottom = value;
+//        value = va_arg(args, NSNumber*);
+//        if (![value isKindOfClass:[NSNumber class]]) {
+//            va_end(args);
+//            self.layout.margin_top = top;
+//            self.layout.margin_right = right;
+//            self.layout.margin_bottom = bottom;
+//            self.layout.margin_left = left;
+//            return self;
+//        }
+//        left = value;
+//        va_end(args);
+//        self.layout.margin_top = top;
+//        self.layout.margin_right = right;
+//        self.layout.margin_bottom = bottom;
+//        self.layout.margin_left = left;
+//        return self;
+//    };
+//}
 
 
 @end

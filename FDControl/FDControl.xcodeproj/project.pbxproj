@@ -215,12 +215,12 @@
 		453B5BA92371526700E57856 /* Yoga-internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 453B5B8E2371526700E57856 /* Yoga-internal.h */; };
 		45623AEC236AEB47007125E6 /* FLVStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AEA236AEB47007125E6 /* FLVStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45623AED236AEB47007125E6 /* FLVStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AEB236AEB47007125E6 /* FLVStack.m */; };
-		45623AF0236AEB55007125E6 /* FLHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AEE236AEB55007125E6 /* FLHStack.h */; };
+		45623AF0236AEB55007125E6 /* FLHStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AEE236AEB55007125E6 /* FLHStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45623AF1236AEB55007125E6 /* FLHStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AEF236AEB55007125E6 /* FLHStack.m */; };
 		45623AF3236AEF40007125E6 /* FLPublicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AF2236AEF40007125E6 /* FLPublicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45623AF5236AF55C007125E6 /* FlexLayoutCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AF4236AF55C007125E6 /* FlexLayoutCase.m */; };
-		45623AF8236BD74B007125E6 /* UIView+FlexLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45623AF9236BD74B007125E6 /* UIView+FlexLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */; };
+		45623AF8236BD74B007125E6 /* UIView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AF6236BD74B007125E6 /* UIView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45623AF9236BD74B007125E6 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AF7236BD74B007125E6 /* UIView+Layout.m */; };
 		45623AFC236C2B8D007125E6 /* FLViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 45623AFA236C2B8D007125E6 /* FLViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45623AFD236C2B8D007125E6 /* FLViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 45623AFB236C2B8D007125E6 /* FLViewLayout.m */; };
 		4580BDDC2306B540001CB8BC /* NSData+FDCompare.h in Headers */ = {isa = PBXBuildFile; fileRef = 4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */; };
@@ -301,6 +301,10 @@
 		45A204B92277070300C068AE /* FDRect360UpDownAni.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A204B72277070300C068AE /* FDRect360UpDownAni.m */; };
 		45A7A464230AAA5600B311CA /* UIButton+FDChainMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A7A462230AAA5600B311CA /* UIButton+FDChainMethod.h */; };
 		45A7A465230AAA5600B311CA /* UIButton+FDChainMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A7A463230AAA5600B311CA /* UIButton+FDChainMethod.m */; };
+		45BCDFBC2372D7EA00F8E327 /* UIView+Attribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BCDFBA2372D7EA00F8E327 /* UIView+Attribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45BCDFBD2372D7EA00F8E327 /* UIView+Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BCDFBB2372D7EA00F8E327 /* UIView+Attribute.m */; };
+		45BCDFC12373BE9C00F8E327 /* FLStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BCDFBF2373BE9C00F8E327 /* FLStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45BCDFC22373BE9C00F8E327 /* FLStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 45BCDFC02373BE9C00F8E327 /* FLStack.m */; };
 		6D050CCD225C349F00B4FAF1 /* UIImageView+FDImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */; };
 		6D050CCE225C349F00B4FAF1 /* UIImageView+FDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D3B4B4421F842360073662D /* UIImage+FDColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D3B4B4221F842360073662D /* UIImage+FDColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -533,8 +537,8 @@
 		45623AEF236AEB55007125E6 /* FLHStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLHStack.m; sourceTree = "<group>"; };
 		45623AF2236AEF40007125E6 /* FLPublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLPublicHeader.h; sourceTree = "<group>"; };
 		45623AF4236AF55C007125E6 /* FlexLayoutCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlexLayoutCase.m; sourceTree = "<group>"; };
-		45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FlexLayout.h"; sourceTree = "<group>"; };
-		45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FlexLayout.m"; sourceTree = "<group>"; };
+		45623AF6236BD74B007125E6 /* UIView+Layout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		45623AF7236BD74B007125E6 /* UIView+Layout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
 		45623AFA236C2B8D007125E6 /* FLViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLViewLayout.h; sourceTree = "<group>"; };
 		45623AFB236C2B8D007125E6 /* FLViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLViewLayout.m; sourceTree = "<group>"; };
 		4580BDDA2306B540001CB8BC /* NSData+FDCompare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+FDCompare.h"; sourceTree = "<group>"; };
@@ -615,6 +619,10 @@
 		45A204B72277070300C068AE /* FDRect360UpDownAni.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FDRect360UpDownAni.m; sourceTree = "<group>"; };
 		45A7A462230AAA5600B311CA /* UIButton+FDChainMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+FDChainMethod.h"; sourceTree = "<group>"; };
 		45A7A463230AAA5600B311CA /* UIButton+FDChainMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+FDChainMethod.m"; sourceTree = "<group>"; };
+		45BCDFBA2372D7EA00F8E327 /* UIView+Attribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Attribute.h"; sourceTree = "<group>"; };
+		45BCDFBB2372D7EA00F8E327 /* UIView+Attribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Attribute.m"; sourceTree = "<group>"; };
+		45BCDFBF2373BE9C00F8E327 /* FLStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLStack.h; sourceTree = "<group>"; };
+		45BCDFC02373BE9C00F8E327 /* FLStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLStack.m; sourceTree = "<group>"; };
 		6D050CCB225C349F00B4FAF1 /* UIImageView+FDImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FDImageCoder.m"; sourceTree = "<group>"; };
 		6D050CCC225C349F00B4FAF1 /* UIImageView+FDImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FDImageCoder.h"; sourceTree = "<group>"; };
 		6D3B4B4221F842360073662D /* UIImage+FDColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+FDColor.h"; sourceTree = "<group>"; };
@@ -1107,13 +1115,12 @@
 			isa = PBXGroup;
 			children = (
 				453B5B732371521E00E57856 /* Yoga */,
-				45623AEA236AEB47007125E6 /* FLVStack.h */,
-				45623AEB236AEB47007125E6 /* FLVStack.m */,
-				45623AEE236AEB55007125E6 /* FLHStack.h */,
-				45623AEF236AEB55007125E6 /* FLHStack.m */,
+				45BCDFBE2373BE4D00F8E327 /* Item */,
 				45623AF2236AEF40007125E6 /* FLPublicHeader.h */,
-				45623AF6236BD74B007125E6 /* UIView+FlexLayout.h */,
-				45623AF7236BD74B007125E6 /* UIView+FlexLayout.m */,
+				45623AF6236BD74B007125E6 /* UIView+Layout.h */,
+				45623AF7236BD74B007125E6 /* UIView+Layout.m */,
+				45BCDFBA2372D7EA00F8E327 /* UIView+Attribute.h */,
+				45BCDFBB2372D7EA00F8E327 /* UIView+Attribute.m */,
 				45623AFA236C2B8D007125E6 /* FLViewLayout.h */,
 				45623AFB236C2B8D007125E6 /* FLViewLayout.m */,
 			);
@@ -1362,6 +1369,19 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		45BCDFBE2373BE4D00F8E327 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				45BCDFBF2373BE9C00F8E327 /* FLStack.h */,
+				45BCDFC02373BE9C00F8E327 /* FLStack.m */,
+				45623AEA236AEB47007125E6 /* FLVStack.h */,
+				45623AEB236AEB47007125E6 /* FLVStack.m */,
+				45623AEE236AEB55007125E6 /* FLHStack.h */,
+				45623AEF236AEB55007125E6 /* FLHStack.m */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
 		6D050CCA225C340E00B4FAF1 /* UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1378,9 +1398,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45623AF0236AEB55007125E6 /* FLHStack.h in Headers */,
+				45BCDFC12373BE9C00F8E327 /* FLStack.h in Headers */,
+				45BCDFBC2372D7EA00F8E327 /* UIView+Attribute.h in Headers */,
 				45623AFC236C2B8D007125E6 /* FLViewLayout.h in Headers */,
 				453B5B952371526700E57856 /* log.h in Headers */,
-				45623AF8236BD74B007125E6 /* UIView+FlexLayout.h in Headers */,
+				45623AF8236BD74B007125E6 /* UIView+Layout.h in Headers */,
 				45623AF3236AEF40007125E6 /* FLPublicHeader.h in Headers */,
 				45623AEC236AEB47007125E6 /* FLVStack.h in Headers */,
 				452EA9B4229E7218004BB575 /* NSObject+FDClassInformation.h in Headers */,
@@ -1506,7 +1529,6 @@
 				452EA948229D4BD2004BB575 /* LOTTrimPathNode.h in Headers */,
 				452EA96D229D4BD2004BB575 /* LOTGradientFillRender.h in Headers */,
 				452EA9B1229D4BD2004BB575 /* LOTLayerContainer.h in Headers */,
-				45623AF0236AEB55007125E6 /* FLHStack.h in Headers */,
 				45936AC52241E13D0073C9E2 /* FDWebImageDownloader.h in Headers */,
 				453B5B9A2371526700E57856 /* Utils.h in Headers */,
 				45936ABF2241E13D0073C9E2 /* FDWebImageDownloaderOperation.h in Headers */,
@@ -1668,7 +1690,7 @@
 				4514D24521BFC05E0076290D /* NSString+FDOperator.m in Sources */,
 				4580BDE12306B7BB001CB8BC /* NSDate+FDExchange.m in Sources */,
 				45A20441225DF8CC00C068AE /* WebViewJavascriptBridgeBase.m in Sources */,
-				45623AF9236BD74B007125E6 /* UIView+FlexLayout.m in Sources */,
+				45623AF9236BD74B007125E6 /* UIView+Layout.m in Sources */,
 				452EA9A9229D4BD2004BB575 /* LOTKeypath.m in Sources */,
 				45A20444225DF8CC00C068AE /* WKWebViewJavascriptBridge.m in Sources */,
 				45A204632260A4BF00C068AE /* UIColor+FDGradientColor.m in Sources */,
@@ -1728,6 +1750,7 @@
 				45936AE5224A1B670073C9E2 /* FDMemoryCache.m in Sources */,
 				452EA9A6229D4BD2004BB575 /* LOTAnimationView.m in Sources */,
 				452EA9A3229D4BD2004BB575 /* LOTComposition.m in Sources */,
+				45BCDFC22373BE9C00F8E327 /* FLStack.m in Sources */,
 				452EA963229D4BD2004BB575 /* LOTRoundedRectAnimator.m in Sources */,
 				452EA957229D4BD2004BB575 /* LOTTransformInterpolator.m in Sources */,
 				45A2047B2265794E00C068AE /* UINavigationController+FDRouter.m in Sources */,
@@ -1772,6 +1795,7 @@
 				45A204682264705800C068AE /* FDRouterRegParam.m in Sources */,
 				45894CEE21E4AA5600E5E9A9 /* FDActivityIndicatorAnimationBallPulse.m in Sources */,
 				453A6F4F225B3B9C006CC30A /* FDActivityIndicatorAnimationTriangleSkewSpin.m in Sources */,
+				45BCDFBD2372D7EA00F8E327 /* UIView+Attribute.m in Sources */,
 				452EA989229D4BD2004BB575 /* LOTShapePath.m in Sources */,
 				453B5BA22371526700E57856 /* YGValue.cpp in Sources */,
 			);

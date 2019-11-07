@@ -27,9 +27,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithView:(UIView*)view;
 
+@property(nonatomic, strong, readonly)UIView* view;
+
 //flexDirection
 @property(assign, nonatomic)FLFlexDirection flexDirection;
-@property(assign, nonatomic)FLAlign align;
+@property(assign, nonatomic)FLAlign alignItems;
 
 @property(assign, nonatomic)CGFloat width;
 @property(assign, nonatomic)CGFloat height;
@@ -48,6 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)insertChild:(UIView*)view index:(NSUInteger)index;
+- (NSUInteger)getChildCount;
+
 - (void)applyLayout;
 
 @end
