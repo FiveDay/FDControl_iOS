@@ -26,11 +26,11 @@
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor redColor]);
-            
+
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor yellowColor]);
-            
+
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor blueColor]);
@@ -43,11 +43,11 @@
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor redColor]);
-            
+
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor yellowColor]);
-            
+
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor blueColor]);
@@ -55,16 +55,16 @@
         .backgroundColor([UIColor lightGrayColor])
         .size(self.view.bounds.size.width, self.view.bounds.size.height/3)
         .layoutTo(content);
-        
+
         [[FLVStack alloc]init:FLHorizontalAlignmentTrailing content:^(UIView * _Nonnull content) {
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor redColor]);
-            
+
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor yellowColor]);
-            
+
             [UIView new].layoutTo(content)
             .size(WIDTH, WIDTH)
             .backgroundColor([UIColor blueColor]);
@@ -74,10 +74,11 @@
         .layoutTo(content);
     }]
     .backgroundColor([UIColor blackColor])
-    .size(self.view.bounds.size.width, self.view.bounds.size.height)
-    .layoutTo(self.view);
+    .size(self.view.bounds.size.width, self.view.bounds.size.height);
     
-    [main applyLayout];
+    [self.view addSubview:main];
+    
+//    [main applyLayout];
 }
 
 @end

@@ -52,6 +52,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)insertChild:(UIView*)view index:(NSUInteger)index;
 - (NSUInteger)getChildCount;
 
+- (void)getLayout;
 - (void)applyLayout;
 
 @end

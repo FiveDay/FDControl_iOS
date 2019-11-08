@@ -8,6 +8,7 @@
 
 #import "UIView+Layout.h"
 #import "FLViewLayout.h"
+#import "FLVStack.h"
 #import <objc/runtime.h>
 
 static const void *kViewLayoutKey = &kViewLayoutKey;
@@ -18,11 +19,11 @@ static const void *kViewLayoutKey = &kViewLayoutKey;
 
 @implementation UIView (FlexLayout)
 
-//+ (void)load {
-//    Method method1 = class_getInstanceMethod(self.class, @selector(layoutSubviews));
-//    Method method2 = class_getInstanceMethod(self.class, @selector(fl_layoutSubviews));
-//    method_exchangeImplementations(method1, method2);
-//}
++ (void)load {
+    Method method1 = class_getInstanceMethod(self.class, @selector(layoutSubviews));
+    Method method2 = class_getInstanceMethod(self.class, @selector(fl_layoutSubviews));
+    method_exchangeImplementations(method1, method2);
+}
 
 - (FLLayout)layoutTo {
     return ^UIView*(UIView* content) {
@@ -42,9 +43,26 @@ static const void *kViewLayoutKey = &kViewLayoutKey;
     return layout;
 }
 
-//- (void)fl_layoutSubviews {
-//    [self.layout applyLayout];
-//}
+- (BOOL)isLayout {
+    FLViewLayout* layout = objc_getAssociatedObject(self, kViewLayoutKey);
+    if (layout) {
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+- (void)fl_layoutSubviews {
+    [self fl_layoutSubviews];
+    
+    FLViewLayout* layout = objc_getAssociatedObject(self, kViewLayoutKey);
+    
+    if ([layout.view isKindOfClass:[FLVStack class]]&&![[layout.view superview]isLayout]) {
+        [layout applyLayout];
+    } else if (layout) {
+        [layout getLayout];
+    }
+}
 
 //layout
 - (FLSize)size {

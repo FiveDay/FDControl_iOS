@@ -65,6 +65,29 @@ static YGConfigRef globalConfig;
     return YGNodeGetChildCount(self.node);
 }
 
+- (void)getLayout {
+    UIView* view = (__bridge UIView *)(YGNodeGetContext(self.node));
+    const CGPoint topLeft = {
+            YGNodeLayoutGetLeft(self.node),
+            YGNodeLayoutGetTop(self.node),
+        };
+        const CGPoint bottomRight = {
+            topLeft.x + YGNodeLayoutGetWidth(self.node),
+            topLeft.y + YGNodeLayoutGetHeight(self.node),
+        };
+        const CGPoint origin = CGPointZero;
+        view.frame = (CGRect) {
+            .origin = {
+                .x = topLeft.x + origin.x,
+                .y = topLeft.y + origin.y,
+            },
+            .size = {
+                .width = bottomRight.x - topLeft.x,
+                .height = bottomRight.y - topLeft.y,
+            },
+        };
+}
+
 - (void)applyLayout {
     const YGNodeRef node = self.node;
     YGNodeCalculateLayout(
@@ -87,31 +110,32 @@ static YGConfigRef globalConfig;
             .height = YGNodeLayoutGetHeight(node),
         }
     };
-    uint32_t count = YGNodeGetChildCount(node);
-    for (uint32_t index = 0; index < count; index++) {
-        const YGNodeRef childNode = YGNodeGetChild(node, index);
-        UIView* child = (__bridge UIView *)(YGNodeGetContext(childNode));
-        const CGPoint topLeft = {
-            YGNodeLayoutGetLeft(child.layout.node),
-            YGNodeLayoutGetTop(child.layout.node),
-        };
-        const CGPoint bottomRight = {
-            topLeft.x + YGNodeLayoutGetWidth(child.layout.node),
-            topLeft.y + YGNodeLayoutGetHeight(child.layout.node),
-        };
-        const CGPoint origin = CGPointZero;
-        child.frame = (CGRect) {
-            .origin = {
-                .x = topLeft.x + origin.x,
-                .y = topLeft.y + origin.y,
-            },
-            .size = {
-                .width = bottomRight.x - topLeft.x,
-                .height = bottomRight.y - topLeft.y,
-            },
-        };
-        [self applyChildLayout:childNode];
-    }
+    
+//    uint32_t count = YGNodeGetChildCount(node);
+//    for (uint32_t index = 0; index < count; index++) {
+//        const YGNodeRef childNode = YGNodeGetChild(node, index);
+//        UIView* child = (__bridge UIView *)(YGNodeGetContext(childNode));
+//        const CGPoint topLeft = {
+//            YGNodeLayoutGetLeft(child.layout.node),
+//            YGNodeLayoutGetTop(child.layout.node),
+//        };
+//        const CGPoint bottomRight = {
+//            topLeft.x + YGNodeLayoutGetWidth(child.layout.node),
+//            topLeft.y + YGNodeLayoutGetHeight(child.layout.node),
+//        };
+//        const CGPoint origin = CGPointZero;
+//        child.frame = (CGRect) {
+//            .origin = {
+//                .x = topLeft.x + origin.x,
+//                .y = topLeft.y + origin.y,
+//            },
+//            .size = {
+//                .width = bottomRight.x - topLeft.x,
+//                .height = bottomRight.y - topLeft.y,
+//            },
+//        };
+//        [self applyChildLayout:childNode];
+//    }
 }
 
 - (void)applyChildLayout:(YGNodeRef)node {
